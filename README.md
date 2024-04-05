@@ -1,25 +1,25 @@
-# Título do Projeto
+# AgendaClin
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas - PUC Minas`
 
-`DISCIPLINA`
+`Desenvolvimento de aplicação web front-end`
 
-`SEMESTRE`
+`1º semestre/2024`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+O objetivo geral da plataforma digital AgendaClin é transformar o sistema de agendamento de consultas médicas, encorajando uma interação mais eficaz e harmoniosa entre pacientes e médicos. O foco é simplificar e tornar mais conveniente o processo de marcação de consultas para ambos os lados, através de um conjunto de funcionalidades benéficas. Este objetivo é alcançado ao oferecer uma experiência de usuário otimizada que facilita a comunicação e o planejamento entre médicos e pacientes.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Breno Marques
+* Giovanni Gonçalves Shintaku
+* Ícaro de Jesus Souza e Cota
+* Michael Benyamin Gorenstein Brasil
+* Vinicius Machado lima
+* Yasmim Emmeline Brandão Nunes
 
 ## Orientador
 
-* Nome completo do professor
+* Hayala Nepomuceno Curto
 
 # Documentação
 
