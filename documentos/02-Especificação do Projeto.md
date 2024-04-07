@@ -72,7 +72,7 @@ De forma a detalhar os perfis de usuários da plataforma de gestão de saúde, �
 <html>
 <body>
 
-<h3>Histórias dos Usuários</h3>
+
 
 <table>
     <tr>
