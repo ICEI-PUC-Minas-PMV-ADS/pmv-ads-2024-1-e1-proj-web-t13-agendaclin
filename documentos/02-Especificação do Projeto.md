@@ -113,7 +113,7 @@ De forma a detalhar os perfis de usuários da plataforma de gestão de saúde, �
 <html>
 <body>
 
-<h2>Requisitos Funcionais da Aplicação</h2>
+
 
 <table>
     <tr>
