@@ -70,26 +70,8 @@ De forma a detalhar os perfis de usuários da plataforma de gestão de saúde, �
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Documentação da Aplicação de Saúde</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
 <body>
 
-<h2>Documentação da Aplicação de Saúde</h2>
 <h3>Histórias dos Usuários</h3>
 
 <table>
@@ -129,24 +111,6 @@ De forma a detalhar os perfis de usuários da plataforma de gestão de saúde, �
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Requisitos Funcionais</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-            min-width: 75px;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
 <body>
 
 <h2>Requisitos Funcionais da Aplicação</h2>
@@ -194,20 +158,6 @@ De forma a detalhar os perfis de usuários da plataforma de gestão de saúde, �
 
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  th, td {
-    border: 1px solid #ddd;
-    text-align: left;
-    padding: 8px;
-    min-width: 100px;
-  }
-</style>
-</head>
 <body>
 
 <table>
