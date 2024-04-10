@@ -62,11 +62,6 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Equipe de Desenvolvimento: Breno Marques, Giovanni Shintaku, Ícaro Cota, Michael  Brasil, Vinicius lima, Yasmim Nunes
 - Equipe de Design: Ícaro Cota, Michael  Brasil
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
 ### Processo
 
 Para a organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub, estruturado com as seguintes listas que refletem as cerimônias e artefatos do SCRUM:
@@ -81,15 +76,10 @@ Para a organização e distribuição das tarefas do projeto, a equipe está uti
 
 O quadro do Kanban do grupo está disponível no link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1003/views/1
 está sendo apresentado no estado atual na figura abaixo:
-![Captura de tela 2024-04-10 094231.png](..%2F..%2F..%2F..%2F..%2FDownloads%2FCaptura%20de%20tela%202024-04-10%20094231.png)
-Tela do Kaban no GitHub utilizada pelo grupo
-
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
-
+<figure> 
+  <img src="C:\Users\yasmi\OneDrive\Documentos\GitHub\pmv-ads-2024-1-e1-proj-web-t13-agendaclin\documentos\img\Captura de tela 2024-04-10 094231.png">
+    <figcaption>Tela do kanban no GitHub utilizada pelo grupo</figcaption>
+</figure> 
 
 ### Etiquetas
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
