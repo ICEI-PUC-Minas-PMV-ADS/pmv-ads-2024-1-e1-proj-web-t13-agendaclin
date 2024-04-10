@@ -57,10 +57,10 @@ No contexto do SCRUM, a equipe do projeto "AgendaClin" é composta por:
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 
-- Scrum Master: Nome de um membro da equipe, principal responsável pela gestão do projeto.
-- Product Owner: Nome de um membro da equipe, representante dos interesses de todos os envolvidos (Stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
-- Equipe de Desenvolvimento: Nomes de todos os membros da equipe, pois todos os membros deverão implementar uma tela/funcionalidade.
-- Equipe de Design: Nomes dos membros da equipe que trabalharão com design.
+- Scrum Master: Giovanni Shintaku
+- Product Owner: Yasmim Nunes
+- Equipe de Desenvolvimento: Breno Marques, Giovanni Shintaku, Ícaro Cota, Michael  Brasil, Vinicius lima, Yasmim Nunes
+- Equipe de Design: Ícaro Cota, Michael  Brasil
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu 
@@ -77,7 +77,13 @@ Para a organização e distribuição das tarefas do projeto, a equipe está uti
 - <b>In Progress:</b> As tarefas que estão sendo atualmente trabalhadas pela equipe. Isso assegura transparência e permite 
   que todos na equipe saibam o que está sendo desenvolvido. 
 - <b>Done</b>: Tarefas completadas, testadas, e prontas para serem entregues. Isso inclui funcionalidades que 
-  passaram por controle de qualidade e estão prontas para implantação.
+  passaram por controle de qualidade e estão prontas para implantação. <br>
+
+O quadro do Kanban do grupo está disponível no link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1003/views/1
+está sendo apresentado no estado atual na figura abaixo:
+![Captura de tela 2024-04-10 094231.png](..%2F..%2F..%2F..%2F..%2FDownloads%2FCaptura%20de%20tela%202024-04-10%20094231.png)
+Tela do Kaban no GitHub utilizada pelo grupo
+
 > **Links Úteis**:
 > - [Project management, made simple](https://github.com/features/project-management/)
 > - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
@@ -99,8 +105,8 @@ Para a organização e distribuição das tarefas do projeto, a equipe está uti
 
 <figure> 
   <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png"
-    <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
-</figure> 
+    <figcaption> Tela do esquema de cores e categorias</figcaption>
+</figure>
   
 ### Ferramentas
 
@@ -111,9 +117,9 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte         | GitHub                             | http://....                            |
-| Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de Interface                | Figma                              | http://....                            |
-| Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
+| Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin                           |
+| Projeto de Interface                | Figma                              | https://www.figma.com/file/NXWheuLV7lRZKXkaibOAVK/AgendaClin?type=design&node-id=0%3A1&mode=design&t=wCATpf08njL16Vfl-1                           |
+| Gerenciamento do Projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1003                            |
 | Hospedagem                          | GitHub Pages                       | http://....                            |
 
 
