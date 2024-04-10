@@ -4,15 +4,59 @@
 Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
 
 
-## Gerenciamento de Projeto
-A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a
+## Controle de versão
+A gestão do desenvolvimento da aplicação será feita utilizando
+GitFlow, que é uma estratégia de controle de versão 
+utilizando o Git, criada por Vincent Driessen. Ela define um modelo estruturado de como organizar e gerenciar as 
+branches (ramificações) de um repositório Git para otimizar o desenvolvimento de projetos de software,
+especialmente aqueles que seguem um cronograma de lançamentos.
+A seguir, uma descrição de como o GitFlow pode ser aplicado no controle de versão de um projeto de software usando o GitHub.
 
-“visão clara dos resultados a entregar; ritmo e disciplina necessários à execução; definição de papéis e responsabilidades dos integrantes do projeto (Scrum Owner, Scrum Master e Team); empoderamento dos membros da equipe de projetos para atingir o desafio; conhecimento distribuído e compartilhado de forma colaborativa; ambiência favorável para crítica às ideias e não às pessoas.”
+![img_7.png](img_7.png)###
+
+
+### Inicialização
+
+Para começar a usar o GitFlow em um projeto existente, primeiro é necessário inicializá-lo no repositório local. Isso configura as branches principais para desenvolvimento e produção, normalmente chamadas de develop e master respectivamente.
+
+#### Branches Principais
+
+<b> Master: </b> A branch master armazena o histórico oficial de lançamento do projeto. Cada commit na branch master 
+representa um novo lançamento de software no GitHub, estando sempre em um estado pronto para produção.<br>
+<b> Develop:</b> A branch develop serve como uma branch de integração para recursos a serem incluídos no próximo 
+lançamento.
+Essa é a branch "viva" onde as funcionalidades desenvolvidas são continuamente integradas.
+
+#### Branches de Suporte
+
+Além das branches principais, o GitFlow utiliza várias branches de suporte para auxiliar no desenvolvimento paralelo de recursos, facilitar correções de bugs e preparar lançamentos de software.
+
+<b>Feature branches:</b> Criadas a partir da develop, são usadas para desenvolver novas funcionalidades. Uma vez 
+concluídas, são mescladas de volta à develop. Exemplo: feature/novo-login. <br>
+<b>Release branches:</b> Criadas a partir da develop, são usadas para preparar lançamentos de software, permitindo 
+ajustes finais e preparação de metadados de lançamento. Após a conclusão, são mescladas em master e develop. Exemplo: release/1.0.0.
+<br><b>Hotfix branches:</b> Criadas a partir da master, são usadas para correções rápidas em produção. Após a correção, são 
+mescladas de volta em master e develop, e o master é marcado com uma nova versão. Exemplo: hotfix/correcao-bug-login.
+
+### Fluxo de Trabalho
+
+<b>Desenvolvimento de Funcionalidades:</b> Inicia-se com a criação de uma branch feature a partir da develop. Após o 
+desenvolvimento, essa branch é revisada por meio de Pull Requests (PR) e então mesclada de volta à develop.
+
+<b>Preparação de Lançamento:</b> Quando as funcionalidades para a próxima versão estão prontas, uma branch release é 
+criada a partir da develop. Alterações de última hora e preparação de metadados de lançamento são feitas nesta branch. Após a conclusão, ela é mesclada em master e develop, e o master é marcado com uma nova versão.
+
+<b>Correções de Produção:</b> Se um bug crítico é encontrado em produção, uma branch hotfix é criada a partir da master. Após a correção, a hotfix é mesclada de volta em master e develop, e o master recebe uma nova tag de versão.
+
+## Gerenciamento de Projeto
+A metodologia SCRUM foi escolhida para o desenvolvimento do projeto "AgendaClin" devido à sua adaptabilidade, eficiência em ambientes de desenvolvimento que experimentam mudanças frequentes e sua capacidade de entregar produtos de alta qualidade de maneira iterativa. O SCRUM é centrado na colaboração do time, auto-organização e flexibilidade para adaptar-se às mudanças de requisitos do projeto, o que é crucial para o sucesso do desenvolvimento de uma plataforma inovadora como o "AgendaClin". Segundo Schwaber (2013)
+“Scrum é um framework para desenvolver e manter produtos complexos, esta definição consiste em papéis, eventos, artefatos e as regras do Scrum que unem os demais e os mantém integrados. Ken Schwaber e Jeff Sutherland desenvolveram o Scrum, o Guia do Scrum é escrito e fornecido por eles.”
 
 ### Divisão de Papéis
+No contexto do SCRUM, a equipe do projeto "AgendaClin" é composta por:
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
-[Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
+
 - Scrum Master: Nome de um membro da equipe, principal responsável pela gestão do projeto.
 - Product Owner: Nome de um membro da equipe, representante dos interesses de todos os envolvidos (Stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
 - Equipe de Desenvolvimento: Nomes de todos os membros da equipe, pois todos os membros deverão implementar uma tela/funcionalidade.
@@ -25,12 +69,15 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 
 ### Processo
 
-[Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]
-- Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
-- To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
-- Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
-- Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
+Para a organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub, estruturado com as seguintes listas que refletem as cerimônias e artefatos do SCRUM:
 
+- <b>Backlog:</b> Mantido no GitHub, contém todas as funcionalidades, requisitos, e melhorias planejadas para o produto. 
+  Este é constantemente atualizado pelo Product Owner conforme novas necessidades surgem.  
+- <b>To Do:</b> As tarefas selecionadas para a Sprint atual são listadas aqui, representando o foco imediato da equipe de desenvolvimento.
+- <b>In Progress:</b> As tarefas que estão sendo atualmente trabalhadas pela equipe. Isso assegura transparência e permite 
+  que todos na equipe saibam o que está sendo desenvolvido. 
+- <b>Done</b>: Tarefas completadas, testadas, e prontas para serem entregues. Isso inclui funcionalidades que 
+  passaram por controle de qualidade e estão prontas para implantação.
 > **Links Úteis**:
 > - [Project management, made simple](https://github.com/features/project-management/)
 > - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
