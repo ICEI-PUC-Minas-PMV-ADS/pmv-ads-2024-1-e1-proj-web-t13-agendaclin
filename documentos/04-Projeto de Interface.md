@@ -5,11 +5,11 @@
 O fluxograma apresentado na figura 1 e 2 mostra o fluxo de interação do usuário e do Profissional de Saúde/administrador de clínica pelas telas do sistema.Cada uma das telas desses fluxos será detalhada na seção de Protótipo de baixa fidelidade. Para visualizar o protótipo interativo, acesse https://www.figma.com/proto/NXWheuLV7lRZKXkaibOAVK/AgendaClin?page-id=0%3A1&type=design&node-id=105-244&viewport=2550%2C-1629%2C0.22&t=U8y52cm0TyFcOsWF-1&scaling=scale-down&mode=design
 <br>
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Captura%20de%20tela%202024-04-10%20084659.png?raw=true"
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Fluxo%20do%20usu%C3%A1rio.png?raw=true"
     <figcaption>Figura 1 - Fluxo de telas do usuário
 </figure> 
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Captura%20de%20tela%202024-04-10%20084732.png?raw=true"
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Fluxo%20m%C3%A9dico_adm.png?raw=true"
     <figcaption>Figura 2 - Fluxo de telas do Profissional de Saúde/administrador de clínica
 </figure> 
 
