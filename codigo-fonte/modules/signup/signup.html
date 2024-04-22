@@ -1,4 +1,4 @@
-<div>
+<!--<div>
     <h1>Login</h1>
     <form id="loginForm">
         <input type="email" id="email" placeholder="Enter email" required>
@@ -6,4 +6,49 @@
         <button type="submit">Login</button>
     </form>
     <div id="messageBox"></div>
+</div> -->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Login | AgendaClin</title>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-logo">
+        <img src="../../assets/img/agendaClinLightgradiente.png" alt="Logo AgendaClin">
+    </div>
+    <hr class="hr-divider">
+    <h2>Faça login em sua conta</h2>
+    
+    <div class="social-login">
+        <button id="google-login">Continuar com Google</button>
+        <button id="apple-login">Continuar com Apple</button>
+    </div>
+    
+    <div class="or-divider">
+        <hr class="bar">
+        <span>OU</span>
+        <hr class="bar">
+    </div>
+    
+    <form id="login-form">
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+    </form>
+    
+    <a href="#" id="forgot-password">Esqueceu sua senha?</a>
+    <hr class="hr-divider">
+    <div class="signup">
+        Ainda não tem conta? <a href="#">Faça seu cadastro!</a>
+    </div>
 </div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
