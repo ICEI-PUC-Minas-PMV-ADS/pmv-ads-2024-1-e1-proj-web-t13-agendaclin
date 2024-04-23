@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,41 @@
     <link rel="stylesheet" href="schedule-consult-step-1.css">
     <title>Agendamento - AgendaClim</title>
 </head>
+
 <body>
 
 <table>
-<center>
-    <img defer src = "agendaClinLightgradiente.png" width="392" height="79" alt="Logo da AgendaClim">
-</center>
-
+    <img id="logoAgendaClim" defer src = "agendaClinLightgradiente.png" alt="Logo da AgendaClim">
 </table>
-    <hr size="1" width="780">
 
-    <table id="medico">
+    <hr>
+
+    <table id="tableMedico">
         <tr>
-            <td id="nomeDoMedico">
-                <img id="imagemMedico" defer src="Dra.jpg">
+            <td>
+                <div class="container">
+                <img id="imagemMedico" defer src="Dra.jpg" alt="Foto do medico">
+                <p>Dra. Sofia Martinez Riveira</p>
+                <p id="especialidadeDoMedico">Ginecologista</p>
+                </div>
             </td>
-            <td id="nomeDoMedico">
-                Dra. Sofia Martinez Riveira
-                <p id="especialidade">
-                Ginecologista
-                </p>
+        </tr>
+        <tr>
+            <td>
+                <div class="container">
+                <img id="iconCalendar" defer src="calendar.png"> 
+                <p>03 Abril 2024, 14:30 <br> Fuso horário de Brasília</p>
+                </div>
+                
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container">
+                <img id="iconLocal" defer src="local.png"> Endereço
+                </div>
+                <p>Rua das Acácias, 157, Apartamento 402, Bairro Jardim Primavera, Cidade das Flores, Estado do Sol, CEP 55235-000, Brasil</p>
             </td>
         </tr>
     </table>
