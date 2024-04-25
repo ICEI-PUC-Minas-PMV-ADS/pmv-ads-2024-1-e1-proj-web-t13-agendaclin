@@ -17,13 +17,19 @@ body {
 }
 
 #tableMedico {
-width: 1002px;
-height: 684px;
-margin: 0 auto;
-display: block;
-border-radius: 10px;
-background: var(--White, #FFF);
-box-shadow: 3px 3px 4px 1px rgba(3, 103, 165, 0.25), 0px -3px 4px 0px rgba(3, 103, 165, 0.25);
+    width: 1002px;
+    height: 684px;
+    top: 174px;
+    left: 255px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    background: var(--White, #FFF);
+    box-shadow: 3px 3px 4px 1px rgba(3, 103, 165, 0.25), 0px -3px 4px 0px rgba(3, 103, 165, 0.25);
+}
+
+#dadosMedico {
+    margin-top: 50px;
 }
 
 #imagemMedico {
@@ -31,6 +37,8 @@ box-shadow: 3px 3px 4px 1px rgba(3, 103, 165, 0.25), 0px -3px 4px 0px rgba(3, 10
     max-width: 100%;
     width: 194px;   
     border-radius: 50%;
+    margin-top: 30px;
+    margin-right: 30px;
 }
 
 #especialidadeDoMedico {
@@ -39,16 +47,39 @@ box-shadow: 3px 3px 4px 1px rgba(3, 103, 165, 0.25), 0px -3px 4px 0px rgba(3, 10
 }
 
 #iconCalendar {
+    margin-right: 20px;
     height: 40px;
     width: 40px;
 }
 
 #iconLocal {
+    margin-right: 20px;
+    margin-bottom: 20px;
     height: 40px;
     width: 40px;
 }
 
-.container {
+#dadosMedico {
+    margin-bottom: 40px;
+    margin-left: 80px;
     display: flex;
     align-items: center;
+}
+
+#dadosHorario {
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#dadosLocal {
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#local {
+    margin-left: 140px;
+    margin-right: 80px;
+    text-align: justify;
 }

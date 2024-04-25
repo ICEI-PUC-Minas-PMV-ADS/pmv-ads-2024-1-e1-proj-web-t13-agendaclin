@@ -11,42 +11,34 @@
 
 <body>
 
-<table>
+<header>
     <img id="logoAgendaClim" defer src = "agendaClinLightgradiente.png" alt="Logo da AgendaClim">
-</table>
-
     <hr>
+</header>
 
-    <table id="tableMedico">
-        <tr>
-            <td>
-                <div class="container">
-                <img id="imagemMedico" defer src="Dra.jpg" alt="Foto do medico">
-                <p>Dra. Sofia Martinez Riveira</p>
-                <p id="especialidadeDoMedico">Ginecologista</p>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div class="container">
-                <img id="iconCalendar" defer src="calendar.png"> 
-                <p>03 Abril 2024, 14:30 <br> Fuso horário de Brasília</p>
-                </div>
-                
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div class="container">
-                <img id="iconLocal" defer src="local.png"> Endereço
-                </div>
-                <p>Rua das Acácias, 157, Apartamento 402, Bairro Jardim Primavera, Cidade das Flores, Estado do Sol, CEP 55235-000, Brasil</p>
-            </td>
-        </tr>
-    </table>
+<main>
 
+<div id="tableMedico">
+
+    <div id="dadosMedico">
+        <img id="imagemMedico" defer src="Dra.jpg" alt="Foto do medico">
+            <p>Dra. Sofia Martinez Riveira<br><span id="especialidadeDoMedico">Ginecologista</span></p>
+    </div>
+
+    <div id="dadosHorario">
+        <img id="iconCalendar" defer src="calendar.png">
+        <p>03 Abril 2024, <time datetime="2024-04-03T14:30">14:30</time> <br> Fuso horário de Brasília</p>
+    </div>
+
+    <div id="dadosLocal">
+        <img id="iconLocal" defer src="local.png"> Endereço
+    </div>
+        <div id="local">Rua das Acácias, 157, Apartamento 402, Bairro Jardim Primavera, Cidade das Flores, Estado do Sol. <br> CEP 55235-000, Brasil</div>
+</div>
+
+<footer>
+</footer>
+</main>    
 </body>
 </html>
 
