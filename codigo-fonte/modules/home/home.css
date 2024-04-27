@@ -1,3 +1,72 @@
-h1 {
-    color: red;
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(16, 165, 199));
+}
+  
+li 
+{
+    float: right;
+}
+  
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover 
+{
+    background-color: #52a8cf;
+}
+
+body
+{
+    margin: 0px;  
+}
+
+.logo_navbar
+{
+    width: 210px;
+    height: 45px;
+}
+
+.full-width-image 
+{
+    background-image: url('../../assets/img/Background.png');
+    height: calc(100vw * 1.53);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.gradiente_title 
+{
+    text-align: center;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.03, rgb(3, 103, 165, 1)),
+    color-stop(0.52, rgb(100, 159, 226)),
+    color-stop(0.76, rgb(80, 243, 226, 1))
+);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid-esquerda
+{
+        width: 50%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
 }
