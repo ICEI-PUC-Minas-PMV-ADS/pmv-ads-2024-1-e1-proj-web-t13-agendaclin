@@ -12,13 +12,13 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 .login-logo {
     width: 100%;
-    max-width: 392px; /* Máximo de 392px de largura */
-    margin: 10px auto 0; /* 10px de margem superior, centralizado horizontalmente, 0 margem inferior */
+    max-width: 392px;
+    margin: 10px auto 0;
 }
 
 .login-logo img {
@@ -30,11 +30,12 @@ body {
 }
 
 .hr-divider {
+    width: 100%;
     border: none;
     height: 1px;
-    background-color:  #13C9F1; /* Cor da linha */
-    margin-top: 20px; /* Espaço acima da linha */
-    margin-bottom: 20px; /* Espaço abaixo da linha */
+    background-color:  #13C9F1;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -93,7 +94,7 @@ h2 {
 .or-divider .bar {
     flex-grow: 1;
     height: 1px;
-    background-color: #13C9F1;
+    background-color:  #13C9F1;
     border: none;
 }
 
@@ -104,62 +105,49 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Oxanium, sans-serif;
-    font-size: 48px;
+    font-size: 25px;
     font-weight: bold;
 }
 
-#login-form {
-    margin-bottom: 20px;
+.login-form {
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important;
+    flex-direction: column !important;
 }
 
-#login-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
+.login-form input {
+    color: #909091 !important;
+    font-family: "Open Sans", sans-serif;
+    height: 50px;
+    margin: 10px 0;
+    gap: 10px;
     border-radius: 5px;
-    box-sizing: border-box;
-    color: #909091;
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    background: white;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25), 0px -1px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 8px 32px;
+    cursor: pointer;
+    font-size: 25px;
+    width: 500px;
 }
 
-#login-form button {
-    width: 100%;
-    padding: 10px;
+.login-form button {
+    height: 50px;
+    margin: 10px 0;
+    gap: 10px;
     border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    background-color: #0367A5;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25), 0px -1px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    padding: 8px 32px;
     color: white;
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.00);
-    background: #0367A5;
-    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25), 0px -1px 4px 0px rgba(0, 0, 0, 0.25);
-    font-size: 32px; /* Size adjusted for specific buttons */
-    font-family: "Open Sans", sans-serif;
-}
-
-#forgot-password {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #0367A5;
-    text-decoration: none;
-    font-family: Oxanium, sans-serif;
-    font-size: 32px;
-    font-style: normal;
-}
-
-.signup {
-    text-align: center;
-    color: #0367A5;
-    font-family: Oxanium, sans-serif;
-    font-size: 32px;
-    font-style: normal;
-}
-
-.signup a {
-    color: #0367A5;
-    text-decoration: none;
-    font-family: Oxanium, sans-serif;
-    font-size: 32px;
-    font-style: normal;
+    font-size: 25px;
+    width: 500px;
+    justify-content: flex-start;
 }
 
 .social-media-button {
@@ -172,25 +160,46 @@ h2 {
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25), 0px -1px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
-    padding: 8px 32px; /* Adiciona padding no botão */
+    padding: 8px 32px;
     color: #909091;
     cursor: pointer;
     font-size: 25px;
-    width: 500px; /* Largura mínima para o botão */
-    justify-content: flex-start; /* Alinha itens ao início do botão */
+    width: 500px;
+    justify-content: flex-start;
 }
 
 .social-media-button img {
-    margin-right: auto; /* Empurra todo o conteúdo subsequente para a direita */
-    height: 30px; /* Tamanho da imagem */
-    width: 30px; /* Tamanho da imagem */
+    margin-right: auto;
+    height: 30px;
+    width: 30px;
 }
 
 .social-media-button span {
     flex-grow: 1;
     text-align: center;
-    padding-right: 16px; /* Compensar o padding adicional na esquerda da imagem */
+    padding-right: 16px;
 }
 .social-media-button:focus {
     outline: none;
+}
+.signup-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.signup-button span {
+    flex-grow: 1;
+    text-align: center;
+    padding-right: 16px;
+}
+
+.termos a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    text-align: justify;
+    color: #0367A5;
+    text-decoration: none;
+    font-family: Oxanium, sans-serif;
 }
