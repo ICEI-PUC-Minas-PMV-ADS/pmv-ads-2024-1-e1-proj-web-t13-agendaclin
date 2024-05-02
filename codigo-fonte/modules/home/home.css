@@ -50,6 +50,7 @@ body
 
 .gradiente_title 
 {
+    font-size: 42px;
     text-align: center;
     background-image: -webkit-gradient(
     linear,
@@ -73,7 +74,7 @@ body
 
 .medsgdl1
 {
-    width: 1177px;
+    width: 1014px;
     height: 1010px;
     text-align: center;
 }
@@ -89,5 +90,5 @@ body
 
 .center-text-agc
 {
-    
+    text-align: center;
 }
