@@ -1,13 +1,52 @@
-<div class="container">
-    <div class="row">
-        <div class="col d-flex justify-content-center align-items-center">
-            <h1>schedule-consult-step-3</h1>
-            <div id="dataContainer"></div>
-        </div>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="schedule-consult-step-3.css">
+    <title>Agendamento - AgendaClim</title>
+</head>
+
+<body>
+
+<header>
+    <a href="//www.google.com.br"><img id="logoAgendaClim" defer src = "agendaClinLightgradiente.png" alt="Logo da AgendaClim"></a>
+    <hr>
+</header>
+
+<main>
+
+<div id="tableMedico">
+
+    <div id="dadosMedico">
+        <img id="imagemMedico" defer src="Dra.jpg" alt="Foto do medico">
+        <p id="confirmacaoConsulta">A consulta está marcada.</p>
     </div>
-    <div class="row">
-        <div class="col d-flex justify-content-center align-items-center">
-            <button id="loadButton">Load Data</button>
-        </div>
+
+        <div id="nomeMedico">
+            <img src="medico.png" id="iconMedico" defer>
+            <p>Dra. Sofia Martinez Riveira<br><span id="especialidadeDoMedico">Ginecologista</span></p>
+        </div>    
+    
+
+    <div id="dadosHorario">
+        <img id="iconCalendar" defer src="calendar.png">
+        <p>03 Abril 2024, <time datetime="2024-04-03T14:30">14:30</time> <br> Fuso horário de Brasília</p>
     </div>
+
+    <div id="dadosLocal">
+        <img id="iconLocal" defer src="local.png">Endereço
+    </div>
+        <div id="local">Rua das Acácias, 157, Apartamento 402, Bairro Jardim Primavera, Cidade das Flores, Estado do Sol. <br> CEP 55235-000, Brasil</div>
 </div>
+
+<div id="bottonReagendar">
+    <button id="button">Reagendar Consulta</button>
+</div>
+
+<div id="bottonCancelar">
+    <button id="button">Cancelar consulta</button>
+</div>
+

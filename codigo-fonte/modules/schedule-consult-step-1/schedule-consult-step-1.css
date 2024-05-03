@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', 'Oxanium';
     color: #0367A5;
-    font-size: 32px;
+    font-size: 22px;
 }
 
 #logoAgendaClim {
@@ -18,7 +18,7 @@ hr {
 }
 
 #tableMedico {
-    width: 800px;
+    width: 740px;
     height: 500px;
     margin: 0 auto;
     display: block;
@@ -43,7 +43,6 @@ hr {
     display: flex;
     align-items: center;
     margin-top: 50px;
-    font-size: 23px;
 }
 
 #especialidadeDoMedico {
@@ -59,7 +58,6 @@ hr {
 
 #dadosHorario {
     margin-left: 80px;
-    font-size: 22px;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -74,25 +72,81 @@ hr {
 
 #dadosLocal {
     margin-left: 80px;
-    font-size: 22px;
     display: flex;
     align-items: center;
 }
 
 #local {
     margin-left: 130px;
-    font-size: 22px;
     margin-right: 80px;
     text-align: justify;
 }
 
 #convenio {
+    font-family: Oxanium;
+    font-size: 30px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 80px;
 }
 
+#convenioSelect {
+    width: 482px;
+    height: 63px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    background: var(--White, #FFF);
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25), 0px -1px 4px 0px rgba(0, 0, 0, 0.25);
+
+    color: var(--color-styles-primary-dark-hover, #0367A5);
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155.99%; /* 49.917px */
+    letter-spacing: -0.96px;
+}
+
 #primeiraConsulta {
+    text-align: center;
+    font-family: Oxanium;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.182%; /* 33.658px */
+    letter-spacing: -1.92px;
+    margin-bottom: 80px;
+}
+
+#inputPrimeiraConsulta {
+    word-spacing: 80px;
+    font-size: 24px;
+}
+
+#continuar {
     margin: 0 auto;
     text-align: center;
+}
+
+#buttonContinuar {
+    width: 600px;
+    height: 50px;
+    flex-shrink: 0;
+    text-align: center;
+    background-color: #0367A5;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: #0367A5;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25), 0px -1px 4px 0px rgba(0, 0, 0, 0.25);
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 155.99%;
+    letter-spacing: -0.96px;
+    margin-bottom: 100px;
 }
