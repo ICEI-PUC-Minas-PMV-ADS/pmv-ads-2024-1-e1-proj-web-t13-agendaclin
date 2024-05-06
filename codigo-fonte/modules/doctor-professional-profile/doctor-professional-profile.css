@@ -23,36 +23,106 @@ body
     height: 45px;
 }
 
-.perfil-medica
+.card 
 {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 922px;
+    padding: 20px;
+    margin-left: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.titulo
+{
+    color: #035385;
+    font-size: 25px;
+    /*
+    font-family: ; 
+    */
+}
+
+.escritas
+{
+    color: #0367A5;
+}
+
+.profile
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-img 
+{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+}
+
+h3
+{
+    margin: 5px 0;
+}
+
+.appointment-button 
+{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.appointment-button:hover {
+    background-color: #0056b3;
+}
+
+.schedule {
+    margin-top: 20px;
+}
+
+table {
     width: 100%;
-    background-color: blueviolet;
+    border-collapse: collapse;
     text-align: center;
 }
 
-.grid-total
-{
-    display: grid;
-    gap: 300px;
-    grid-template-columns: auto auto auto;
-    padding: 20px;
-    text-align: center;
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
-.grid-item1
-{
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 60px;
-    font-size: 30px;
-    text-align: center;
-  }
+th {
+    background-color: #f8f8f8;
+}
 
-  .grid-item2
-{
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
+.clinic-info {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 73%;
+    height: 100px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.estrelas {
+    color: #0367A5;
+}
