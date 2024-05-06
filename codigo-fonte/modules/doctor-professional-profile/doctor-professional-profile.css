@@ -126,3 +126,23 @@ input {
 .estrelas {
     color: #0367A5;
 }
+
+.balao{
+    border-radius: 25px;
+    border: 1px solid #013269;
+    padding: 10px;
+    width: 200px;
+    height: 10px;
+  }
+  
+.perfil {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}  
+
+.letras{
+   padding: 10px;
+   width: 2050px; 
+}
