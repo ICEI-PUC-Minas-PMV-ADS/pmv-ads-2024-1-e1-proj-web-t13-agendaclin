@@ -1,3 +1,58 @@
-h1 {
-    color: red;
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(16, 165, 199));
 }
+  
+li a:hover 
+{
+    background-color: #52a8cf;
+}
+
+body
+{
+    margin: 0px;  
+}
+
+.logo_navbar
+{
+    width: 210px;
+    height: 45px;
+}
+
+.perfil-medica
+{
+    width: 100%;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.grid-total
+{
+    display: grid;
+    gap: 300px;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item1
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 60px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-item2
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }

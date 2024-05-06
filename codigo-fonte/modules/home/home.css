@@ -48,8 +48,10 @@ body
     margin-right: 0;
 }
 
+
 .gradiente_title 
 {
+    font-size: 42px;
     text-align: center;
     background-image: -webkit-gradient(
     linear,
@@ -68,12 +70,11 @@ body
         width: 50%;
         float: left;
         padding: 15px;
-        border: 1px solid red;
 }
 
-.medsgdl1
+.medslinha1
 {
-    width: 1177px;
+    width: 1014px;
     height: 1010px;
     text-align: center;
 }
@@ -84,10 +85,82 @@ body
         height: 900px;
         float: right;
         padding: 15px;
-        border: 1px solid red;
+        text-align: center;
 }
 
-.center-text-agc
+.pic-icon1
 {
-    
+    height: 77px;
+    width: 77px;
+}
+
+.pic-icon2
+{
+    height: 118px;
+    width: 118px;
+}
+
+.pic-icon3
+{
+    height: 118px;
+    width: 122px;
+}
+
+.gradiente_title2
+{
+    font-size: 34px;
+    text-align: center;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.03, rgb(3, 103, 165, 1)),
+    color-stop(0.52, rgb(100, 159, 226)),
+    color-stop(0.76, rgb(80, 243, 226, 1))
+);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaço entre a imagem e o texto */
+    margin: 20px;
+    text-align: center;
+}
+
+.grid-esquerda_l2
+{
+        width: 50%;
+        float: left;
+        padding: 15px;
+}
+
+.grid-direita_l2
+{
+        width: 47%;
+        height: 900px;
+        float: right;
+        padding: 15px;
+        text-align: center;
+}
+
+.medslinha2
+{
+    width: 700px;
+    height: 467px;
+}
+
+.line {
+    display: flex; /* Alinha os elementos em uma linha */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+}
+
+.arrow {
+    color: rgb(16, 165, 199);
+    font-size: 40px;
+    margin-right: 10px; /* Espaçamento entre a seta e o texto */
 }
