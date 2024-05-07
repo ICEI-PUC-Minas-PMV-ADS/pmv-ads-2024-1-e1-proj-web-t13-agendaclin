@@ -1,3 +1,148 @@
-h1 {
-    color: red;
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #2d8fcc , #10A5C7);
+    height: 60px;
+}
+  
+li 
+{
+    float: right;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+  
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover 
+{
+    background-color: #52a8cf;
+}
+
+body
+{
+    margin: 0px;  
+    font-family: Arial, sans-serif;
+}
+
+.logo_navbar
+{
+    width: 210px;
+    height: 45px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.sidebar 
+{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    height: 892px;
+    width: 60px; 
+    background: linear-gradient(to right, #10A5C7, #1186cf);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.sidebar-item 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-item a 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    background-color: rgba(255, 255, 255, 0.452); 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+    color: white; 
+    text-decoration: none; 
+}
+
+.sidebar-item a:hover 
+{
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+.card 
+{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    padding: 20px;
+    margin-left: 32%;
+    margin-top: 6%;
+}
+
+h1 
+{
+    font-size: 18px;
+    color: #333;
+}
+
+p 
+{
+    font-size: 14px;
+    color: #666;
+}
+
+.upload-box 
+{
+    background: #f9f9f9;
+    border: 2px dashed #ccc;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.upload-box p
+{
+    margin: 10px 0 20px;
+    color: #333;
+}
+
+button 
+{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover 
+{
+    background-color: #0056b3;
+}
+
+.privacy-note 
+{
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
 }

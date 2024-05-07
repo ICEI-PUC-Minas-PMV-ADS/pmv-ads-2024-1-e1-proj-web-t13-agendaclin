@@ -48,6 +48,41 @@ body
     margin-right: 0;
 }
 
+.search-section {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px;
+    margin-right: 35%;
+    margin-top: 17%;
+}
+
+
+.search-section select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0e7ba0;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333333;
+    width: 200px;
+}
+
+
+.search-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00578d;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #00578d; 
+}
 
 .gradiente_title 
 {
@@ -64,6 +99,10 @@ body
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+
+
 
 .grid-esquerda_l1
 {
@@ -87,6 +126,49 @@ body
         padding: 15px;
         text-align: center;
 }
+
+.grid-esquerda_l2
+{
+        width: 50%;
+        float: left;
+        padding: 15px;
+}
+
+.grid-direita_l2
+{
+        width: 47%;
+        height: 900px;
+        float: right;
+        padding: 15px;
+        text-align: center;
+}
+
+.totalgrid-middle
+{
+    width: 100%;
+    background-color: blanchedalmond;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .pic-icon1
 {
@@ -131,22 +213,6 @@ body
     text-align: center;
 }
 
-.grid-esquerda_l2
-{
-        width: 50%;
-        float: left;
-        padding: 15px;
-}
-
-.grid-direita_l2
-{
-        width: 47%;
-        height: 900px;
-        float: right;
-        padding: 15px;
-        text-align: center;
-}
-
 .medslinha2
 {
     width: 700px;
@@ -154,13 +220,61 @@ body
 }
 
 .line {
-    display: flex; /* Alinha os elementos em uma linha */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
 .arrow {
     color: rgb(16, 165, 199);
     font-size: 40px;
-    margin-right: 10px; /* Espaçamento entre a seta e o texto */
+    margin-right: 10px;
 }
+
+
+
+
+.footer {
+    background: linear-gradient(to right, #0e7ba0, #30cee2);
+    padding: 30px 0;
+    color: white;
+    text-align: left;
+    bottom: 0px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-item {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-item h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-item li {
+    margin-bottom: 10px;
+}
+
+.footer-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-item a:hover {
+    text-decoration: underline;
+}
+
+/* resolver problema do footer/*
