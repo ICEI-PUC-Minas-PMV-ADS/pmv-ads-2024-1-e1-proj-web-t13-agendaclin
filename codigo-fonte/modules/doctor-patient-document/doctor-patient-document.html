@@ -33,7 +33,19 @@
             </div>
         </div>
         
-        
+
+        <div class="card">
+            <div class="container">
+                <h1>Carregue um arquivo com as informações de seu paciente</h1>
+                <p>Seu arquivo deve ficar em formato .CSV/.XLS/.XLSX</p>
+                <div class="upload-box">
+                    <p>Arraste aqui o arquivo</p>
+                    <button onclick="document.getElementById('fileInput').click()">Carregar o arquivo</button>
+                    <input type="file" id="fileInput" hidden>
+                </div>
+                <p class="privacy-note">Só você terá acesso às informações dos pacientes.</p>
+            </div>
+        </div>
 
     </main>
 </body>
