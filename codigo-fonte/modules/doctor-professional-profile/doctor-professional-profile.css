@@ -37,12 +37,14 @@ body
 .titulo
 {
     color: #035385;
-    font-size: 25px;   
+    font-size: 25px; 
+    font-family: 'open sans', sans-serif  
 }
 
 .escritas
 {
     color: #0367A5;
+    font-family: 'open sans', sans-serif
 }
 
 .profile
@@ -117,15 +119,19 @@ label
 
 input 
 {
-    width: 73%;
-    height: 100px;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    width: 3%;
+    height: 50px;
+    padding: 3px;
+    border-radius: 8px;
+    border: 0px solid #000000;
     margin-left: 12px;
     margin-right: 12px;
+    background-color: #0367A5;   
+}
+
+.icone
+{
+    background-image: url('../../assets/icon/pesquisa.png');   
 }
 
 .estrelas 
@@ -160,4 +166,11 @@ input
    padding: 10px;
    width: 2050px; 
 }
- 
+
+.opicao
+{
+    border-radius:50px;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
