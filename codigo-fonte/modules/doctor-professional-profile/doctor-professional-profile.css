@@ -129,9 +129,22 @@ input
     background-color: #0367A5;   
 }
 
-.icone
+.button
+{  
+    background-color: #007bff;
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+.icone 
 {
-    background-image: url('../../assets/icon/pesquisa.png');   
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px;
 }
 
 .estrelas 
@@ -167,10 +180,12 @@ input
    width: 2050px; 
 }
 
-.opicao
+select
 {
-    border-radius:50px;
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
+    padding: 8px; 
+    font-size: 13px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    appearance: none;
+    font-family: 'open sans', sans-serif;
 }
