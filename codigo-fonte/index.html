@@ -6,11 +6,47 @@
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth-compat.js"></script>
+    <script>
+        // Proteção através de CORS, também pode criptografar
+        const firebaseConfig = {
+            apiKey: "AIzaSyBqUTR4M6uzgLDqqu_T19vjF_Kny865gd8",
+            authDomain: "agenda-clin.firebaseapp.com",
+            projectId: "agenda-clin",
+            storageBucket: "agenda-clin.appspot.com",
+            messagingSenderId: "210665442785",
+            appId: "1:210665442785:web:1a4a79a633c759cfcd16a0",
+            measurementId: "G-L8VZZNRTX8"
+        };
+        
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <title>AgendaClin</title>
 </head>
 <body>
 <div id="app"></div>
 <script type="module" src="js/shared/main.js"></script>
+<script type="module" src="js/shared/auth.js"></script>
 <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+<script>
+    // Adjust asset paths
+    const adjustAssetPaths = () => {
+        const elements = document.querySelectorAll('[src], [href]');
+        elements.forEach(element => {
+            const src = element.getAttribute('src');
+            const href = element.getAttribute('href');
+            if (src && src.startsWith('assets/')) {
+                element.src = `/${src}`;
+            }
+            if (href && href.startsWith('assets/')) {
+                element.href = `/${href}`;
+            }
+        });
+    };
+    
+    document.addEventListener('DOMContentLoaded', adjustAssetPaths);
+</script>
 </body>
 </html>
