@@ -192,3 +192,45 @@ Estrutura de dados:
 Instruções de acesso: 
 
 1.	Abra um navegador de internet e informe a seguinte URL: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/codigo-fonte/modules/cancel-consult/cancel-consult.html
+
+# Programação de Funcionalidades
+
+Tela de login do fluxo Médico/Administrador (RF - 02)    
+Segue Tela de login do usuário, após o usuário efetuar o login, ele será direcionado à tela.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Tela%20login.png)
+
+Segue tela do cadastro do usuário, após o preenchimento dos dados o usuário será direcionado à segunda tela de cadastro  
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Tela%20registro_medico_1.png)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Tela%20registro_medico_2.png)
+
+Requisito atendido
+RF-02: Criação de perfis completos para cada especialista incluindo especialidades, qualificações, anos de experiência, e avaliações feitas por pacientes anteriores.
+
+Artefatos da funcionalidade:
+• doctor-login.html
+• doctor-login.css
+• doctor-signup-step-1.html
+• doctor-signup-step-1.css
+• doctor-signup-step-2.html
+• doctor-signup-step-2.css
+
+Estrutura de Dados
+• schedule-consult-step-1.html
+
+Instruções de acesso:
+1- Abra um navegador de internet e informe a seguinte URL: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/codigo-fonte/modules/doctor-login/doctor-login.html
+
+2- Faça login em sua conta por meio do Google ou por meio da Apple, salvo ainda a possibilidade de fazer login com suas credênciais pré-cadastradas.
+  
+3- Clique em "Entrar" para entrar em sua conta.
+
+4- Caso o usuário não saiba sua senha, clicar no link "Esqueceu sua senha?".
+
+5- Caso o usuário ainda não tenha sua conta feita, clicar no link "Ainda não tem conta? Faça seu cadastro".
+
+Responsável 
+Giovanni Gonçalves Shintaku
+
