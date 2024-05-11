@@ -97,3 +97,98 @@ Instruções de acesso:
 
 
 
+
+
+
+# Programação de Funcionalidades
+
+Implementação da aplicação descritas por meio dos requisitos codificados. 
+
+[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
+
+### Título da funcionalidade
+
+[Adicione imagem da funcionalidade/tela]
+
+
+#### Requisito atendido
+
+[RF-X: adicione a descrição do requisito atendido]
+
+
+#### Artefatos da funcionalidade
+
+[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+
+
+#### Estrutura de Dados
+
+[Caso exista estrutura de dados, adicione aqui]
+
+
+#### Instruções de acesso
+
+[Adicione as orientações de acesso à funcionalidade]
+
+
+#### Responsável
+
+[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+
+
+
+
+> **Links Úteis**:
+> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
+> - [JSON Tutorial](https://www.w3resource.com/JSON)
+> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
+> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+
+
+
+Tela de agendamento de consulta (RF-03)
+
+Responsável: Breno Marques de Moura
+
+O acesso a tela de cancelamento  da consulta será após o paciente marcar a consulta e depois optar por cancelar a consulta. As estruturas de dados foram baseadas em HTML, CSS.
+
+Exemplo da primeira tela de confirmação:
+
+ ![image]( https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Tela%20consulta%20cancelada.png)
+
+O acesso a segunda tela de reagendamento da consulta será após o preenchimento da tela de agendar consulta e o paciente terá a opção de remarcar vendo os dias e horários disponíveis para o reagendamento. As estruturas de dados foram baseadas em HTML, CSS.
+
+Exemplo segunda tela de confirmação:
+
+ ![image]( https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Tela%20reagendamento.png)
+
+O acesso a terceira tela já é do médico e será possível ver as informações como telefone, nome, e-mail etc. do paciente após o médico fazer o cadastro dele na opção adicionar paciente . As estruturas de dados foram baseadas em HTML, CSS.
+
+Exemplo terceira tela de confirmação:
+
+ ![image]( https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Tela%20lista%20pacientes.png)
+
+Requisito atendido
+
+RF-03: Ferramentas que permitem aos profissionais e às clínicas gerenciarem agendamentos, cancelamentos e reagendamentos de maneira eficiente.
+
+Artefatos da funcionalidade:
+•	cancel-consulta.html
+
+•	cancel-consulta.css
+
+•	reschedule-consult.html
+
+•	reschedule-consult.css
+
+•	doctor-patient-list.html
+
+•	doctor-patient-list.css
+
+Estrutura de dados:
+
+•	reschedule-consult-step-1.html
+
+Instruções de acesso: 
+
+1.	Abra um navegador de internet e informe a seguinte URL: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/codigo-fonte/modules/cancel-consult/cancel-consult.html
