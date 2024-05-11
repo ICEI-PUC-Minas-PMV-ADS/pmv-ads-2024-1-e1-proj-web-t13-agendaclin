@@ -236,3 +236,43 @@ Instruções de acesso:
 Responsável: 
 Giovanni Gonçalves Shintaku
 
+
+
+Tela perfil médico (RF-05)
+
+Responsável: Vinicius
+
+O acesso à tela "perfil médico" será onde somente o médico terá as informações, la ele coloca seus dados como o endereço, número de telefone e informações sobre o médico e sua Experiência, pode também organizar suas consultas marcadas. As estruturas foram baseadas em HTML, CSS.
+
+Exemplo da primeira tela de confirmação:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Tela%20perfil%20m%C3%A9dico.png)
+
+O acesso da segunda tela é a tela "perfil paciente" será onde o paciente terá as informações sobre o médico, la ele ver os dados como endereço, número de telefone e informações sobre a Experiência que o médico coloca em no perfil e ate mesmo comentarios de outros pacientes que ja tiveram consultas com ele, pode também olhas Horário disponiveis para consulta. As estruturas foram baseadas em HTML, CSS.
+
+Exemplo segunda tela de confirmação:
+
+ ![image](http://127.0.0.1:5500/codigo-fonte/modules/doctor-professional-profile/doctor-professional-profile.html)
+
+
+Requisito atendido
+
+RF-05: ferramentas que permitem o paciente saber mais informações sobre  médico,e facilitar a Interação de agendamentos
+
+Artefatos da funcionalidade:
+
+• doctor-professional-profile.html
+
+• doctor-professional-profile.css
+
+Estrutura de dados:
+
+•	doctor-professional-profile
+
+Instruções de acesso: 
+
+1.	Abra um navegador de internet e informe a seguinte URL: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/d0e1f3ec470b9acf2a4646474a6689806ee83f9e/codigo-fonte/modules/doctor-professional-profile/doctor-professional-profile.html
+2.	Ao selecionar a especialidade, doença ou nome no campo de buscar.
+3.	Efetue seu cadastrado/login.
+4.	Selecione um dos horários dos médicos disponíveis.
+5.	Terá acesso ao primeiro passo da confirmação de agendamento.
