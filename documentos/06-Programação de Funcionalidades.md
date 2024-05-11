@@ -49,21 +49,25 @@ Tela de agendamento de consulta (RF-03)
 Responsável: Icaro
 
 O acesso a tela de agendamento da consulta será após o paciente escolher o profissional, a data e o horário. As estruturas de dados foram baseadas em HTML, CSS.
+
 Exemplo da primeira tela de confirmação:
+
  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/165850657/909cdf49-26dc-4b8d-aec2-cb8afc499c1d)
 
- 
 O acesso a segunda tela de agendamento da consulta será após o preenchimento da primeira tela de confirmação. As estruturas de dados foram baseadas em HTML, CSS.
+
 Exemplo segunda tela de confirmação:
+
  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/165850657/10508b49-41cb-4ad9-9769-f1ab210a2a88)
 
-
 O acesso a terceira tela de agendamento da consulta será após o preenchimento da segunda tela de confirmação. As estruturas de dados foram baseadas em HTML, CSS.
- 
+
 Exemplo terceira tela de confirmação:
+
  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/165850657/d21ad01f-6408-4daa-81ed-55dab2d3d4b6)
 
 Requisito atendido
+
 RF-03: Ferramentas que permitem aos profissionais e às clínicas gerenciarem agendamentos, cancelamentos e reagendamentos de maneira eficiente.
 
 Artefatos da funcionalidade:
