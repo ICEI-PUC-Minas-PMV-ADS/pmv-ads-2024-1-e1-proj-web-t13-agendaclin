@@ -238,7 +238,7 @@ Giovanni Gonçalves Shintaku
 
 
 
-Tela perfil médico (RF-05)
+## Tela perfil médico (RF-05)
 
 Responsável: Vinicius
 
@@ -246,13 +246,14 @@ O acesso à tela "perfil médico" será onde somente o médico terá as informa�
 
 Exemplo da primeira tela de confirmação:
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Tela%20perfil%20m%C3%A9dico.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/166730468/7e158651-1e5b-41b2-a267-5d8667fd9b5c)
+
 
 O acesso da segunda tela é a tela "perfil paciente" será onde o paciente terá as informações sobre o médico, la ele ver os dados como endereço, número de telefone e informações sobre a Experiência que o médico coloca em no perfil e ate mesmo comentarios de outros pacientes que ja tiveram consultas com ele, pode também olhas Horário disponiveis para consulta. As estruturas foram baseadas em HTML, CSS.
 
 Exemplo segunda tela de confirmação:
 
- ![image](http://127.0.0.1:5500/codigo-fonte/modules/doctor-professional-profile/doctor-professional-profile.html)
+ ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/166730468/53d7a559-9c17-4877-874d-cf314736f622)
 
 
 Requisito atendido
