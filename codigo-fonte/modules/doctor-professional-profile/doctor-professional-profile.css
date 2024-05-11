@@ -138,6 +138,11 @@ input
     border-radius: 5px; 
     cursor: pointer; 
     font-size: 16px; 
+    display: block;
+    margin: 0;
+    float: inline-end;
+    margin-right:878px;
+    margin-top: 20px;
 }
 
 .icone 
@@ -180,7 +185,7 @@ input
    width: 2050px; 
 }
 
-select
+#select
 {
     padding: 8px; 
     font-size: 13px; 
@@ -188,4 +193,18 @@ select
     border-radius: 5px; 
     appearance: none;
     font-family: 'open sans', sans-serif;
+    margin: 0;
+    margin-left: 450px;
 }
+
+#opicao
+{
+    padding: 8px; 
+    font-size: 13px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    appearance: none;
+    font-family: 'open sans', sans-serif;
+    margin: 0;
+}
+
