@@ -145,6 +145,65 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 > - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
 
 
+# Programação de Funcionalidades
+
+Tela de home onde o visitante irá conhecer melhor sobre a AgendaClin, será a primeira tela de todas. As estruturas de dados foram baseadas nas tecnologias HTML e CSS.
+
+Exemplo da primeira tela de confirmação:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/165437811/7c8839be-92f1-4bb7-9a29-a3a093a8273d)
+
+
+
+O acesso a segunda tela de agendamento da consulta será após clicar no botão do calendario. As estruturas de dados foram baseadas também em HTML e CSS.
+
+Exemplo segunda tela de confirmação:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/165437811/7e18507d-3753-4912-b03f-53f106169ca0)
+
+
+
+#### Requisito atendido
+
+[RF-1: Ferramentas que permitem aos profissionais e às clínicas gerenciarem agendamentos, cancelamentos e reagendamentos de maneira eficiente.]
+
+
+#### Artefatos da funcionalidade
+
+•	home.html
+
+•	home.css
+
+•	doctor-patient-document.html
+
+•	doctor-patient-document.css
+
+
+#### Estrutura de Dados
+
+•	home.html
+
+•	doctor-patient-document.html
+
+#### Instruções de acesso
+
+você precisa abrir um navegador de internet de sua preferência e digitar a seguinte URL: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/00be7490908eb37a99bcf94a4878d75278c7bf53/codigo-fonte/modules/home/home.html
+
+
+
+#### Responsável
+
+Michael Benyamin Gorenstein Brasil
+
+
+
+
+> **Links Úteis**:
+> - [Tutorial HTML](https://www.w3schools.com/html/default.asp)
+> - [Tutorial css](https://www.w3schools.com/css/default.asp)
+
+
+
 
 Tela de agendamento de consulta (RF-03)
 
