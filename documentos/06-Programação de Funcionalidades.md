@@ -72,10 +72,15 @@ RF-03: Ferramentas que permitem aos profissionais e às clínicas gerenciarem ag
 
 Artefatos da funcionalidade:
 •	schedule-consult-step-1.html
+
 •	schedule-consult-step-1.css
+
 •	schedule-consult-step-2.html
+
 •	schedule-consult-step-2.css
+
 •	schedule-consult-step-3.html
+
 •	schedule-consult-step-3.css
 
 Estrutura de dados:
