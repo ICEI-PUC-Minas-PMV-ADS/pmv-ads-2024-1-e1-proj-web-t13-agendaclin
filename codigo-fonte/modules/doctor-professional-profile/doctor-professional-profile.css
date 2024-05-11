@@ -37,12 +37,14 @@ body
 .titulo
 {
     color: #035385;
-    font-size: 25px;   
+    font-size: 25px;  
+    font-family: 'open sans', sans-serif; 
 }
 
 .escritas
 {
     color: #0367A5;
+    font-family: 'open sans', sans-serif; 
 }
 
 .profile
