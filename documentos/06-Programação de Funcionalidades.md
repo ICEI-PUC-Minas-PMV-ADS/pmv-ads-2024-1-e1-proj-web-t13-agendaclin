@@ -210,6 +210,7 @@ Requisito atendido:
 RF-02: Criação de perfis completos para cada especialista incluindo especialidades, qualificações, anos de experiência, e avaliações feitas por pacientes anteriores.
 
 Artefatos da funcionalidade:
+
 • doctor-login.html
 • doctor-login.css
 • doctor-signup-step-1.html
@@ -218,6 +219,7 @@ Artefatos da funcionalidade:
 • doctor-signup-step-2.css
 
 Estrutura de Dados
+
 • schedule-consult-step-1.html
 
 Instruções de acesso:
