@@ -47,6 +47,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 Tela de agendamento de consulta (RF-03)
 
 Responsável: Icaro
+
 O acesso a tela de agendamento da consulta será após o paciente escolher o profissional, a data e o horário. As estruturas de dados foram baseadas em HTML, CSS.
 Exemplo da primeira tela de confirmação:
  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/165850657/909cdf49-26dc-4b8d-aec2-cb8afc499c1d)
