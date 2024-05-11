@@ -206,7 +206,7 @@ Segue tela do cadastro do usuário, após o preenchimento dos dados o usuário s
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/documentos/img/Tela%20registro_medico_2.png)
 
-Requisito atendido
+Requisito atendido:
 RF-02: Criação de perfis completos para cada especialista incluindo especialidades, qualificações, anos de experiência, e avaliações feitas por pacientes anteriores.
 
 Artefatos da funcionalidade:
@@ -231,6 +231,6 @@ Instruções de acesso:
 
 5- Caso o usuário ainda não tenha sua conta feita, clicar no link "Ainda não tem conta? Faça seu cadastro".
 
-Responsável 
+Responsável: 
 Giovanni Gonçalves Shintaku
 
