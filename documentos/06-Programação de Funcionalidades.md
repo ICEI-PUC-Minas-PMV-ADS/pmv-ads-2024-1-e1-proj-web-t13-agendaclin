@@ -84,8 +84,11 @@ Artefatos da funcionalidade:
 •	schedule-consult-step-3.css
 
 Estrutura de dados:
+
 •	schedule-consult-step-1.html
+
 Instruções de acesso: 
+
 1.	Abra um navegador de internet e informe a seguinte URL: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/00be7490908eb37a99bcf94a4878d75278c7bf53/codigo-fonte/modules/home/home.html
 2.	Ao selecionar a especialidade, doença ou nome no campo de buscar.
 3.	Efetue seu cadastrado/login.
