@@ -253,7 +253,8 @@ O acesso da segunda tela é a tela "perfil paciente" será onde o paciente terá
 
 Exemplo segunda tela de confirmação:
 
- ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/166730468/53d7a559-9c17-4877-874d-cf314736f622)
+ ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/166730468/a1813722-449f-40f2-bc99-a1bd77376465)
+
 
 
 Requisito atendido
