@@ -1,10 +1,18 @@
+/* Home css fin */
+
+.nav-top 
+{
+    width: 100%;
+    z-index: 10; 
+}
+
 ul 
 {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(16, 165, 199));
+    height: 59px;
 }
   
 li 
@@ -14,11 +22,13 @@ li
   
 li a 
 {
+    background-color: #24afff;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
 }
   
 li a:hover 
@@ -26,67 +36,41 @@ li a:hover
     background-color: #52a8cf;
 }
 
-body
+body 
 {
-    margin: 0px;  
+    margin: 0;  
 }
 
-.logo_navbar
+.logo_navbar 
 {
     width: 210px;
     height: 45px;
+    margin-left: 16px;
 }
 
 .full-width-image 
 {
     background-image: url('../../assets/img/Background.png');
-    height: calc(100vw * 1.53);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: calc(100vw * 0.80);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
     margin-left: 0;
     margin-right: 0;
 }
 
-.search-section {
-    display: flex;
-    justify-content: center; 
-    gap: 10px; 
-    margin-top: 20px;
-    margin-right: 35%;
-    margin-top: 17%;
+@media (max-width: 768px) 
+{
+    .full-width-image 
+    {
+        height: 300px; 
+    }
 }
 
-
-.search-section select {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #0e7ba0;
-    font-size: 16px;
-    background-color: #ffffff;
-    color: #333333;
-    width: 200px;
-}
-
-
-.search-button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: #00578d;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.search-button:hover {
-    background-color: #00578d; 
-}
 
 .gradiente_title 
 {
-    font-size: 42px;
+    font-size: 2.00vw;
     text-align: center;
     background-image: -webkit-gradient(
     linear,
@@ -99,76 +83,6 @@ body
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
-
-
-
-.grid-esquerda_l1
-{
-        width: 50%;
-        float: left;
-        padding: 15px;
-}
-
-.medslinha1
-{
-    width: 1014px;
-    height: 1010px;
-    text-align: center;
-}
-
-.grid-direita_l1
-{
-        width: 47%;
-        height: 900px;
-        float: right;
-        padding: 15px;
-        text-align: center;
-}
-
-.grid-esquerda_l2
-{
-        width: 50%;
-        float: left;
-        padding: 15px;
-}
-
-.grid-direita_l2
-{
-        width: 47%;
-        height: 900px;
-        float: right;
-        padding: 15px;
-        text-align: center;
-}
-
-.totalgrid-middle
-{
-    width: 100%;
-    background-color: blanchedalmond;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .pic-icon1
 {
@@ -190,7 +104,7 @@ body
 
 .gradiente_title2
 {
-    font-size: 34px;
+    font-size: 1.97vw;
     text-align: center;
     background-image: -webkit-gradient(
     linear,
@@ -204,11 +118,11 @@ body
   -webkit-text-fill-color: transparent;
 }
 
-
-.container {
+.container 
+{
     display: flex;
     align-items: center;
-    gap: 15px; /* Espaço entre a imagem e o texto */
+    gap: 15px; 
     margin: 20px;
     text-align: center;
 }
@@ -219,62 +133,51 @@ body
     height: 467px;
 }
 
-.line {
+.line 
+{
     display: flex;
     align-items: center;
     text-align: center;
 }
 
-.arrow {
+.arrow 
+{
     color: rgb(16, 165, 199);
     font-size: 40px;
     margin-right: 10px;
 }
 
-
-
-
 .footer {
-    background: linear-gradient(to right, #0e7ba0, #30cee2);
-    padding: 30px 0;
-    color: white;
-    text-align: left;
-    bottom: 0px;
+    background-color: #0056b3; 
+    color: white; 
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+.footer h5 
+{
+    margin-bottom: 20px; 
 }
 
-.footer-item {
-    flex: 1;
-    margin: 0 15px;
+.footer ul 
+{
+    padding-left: 0; 
+    list-style-type: none; 
 }
 
-.footer-item h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
+.footer li 
+{
+    margin-bottom: 10px; 
+    margin-right: 15px; 
+    display: inline-block; 
 }
 
-.footer-item ul {
-    list-style-type: none;
-    padding: 0;
+@media (max-width: 768px) 
+{
+    .footer h5 
+    {
+        text-align: center; 
+    }
+    .footer ul 
+    {
+        text-align: center; 
+    }
 }
-
-.footer-item li {
-    margin-bottom: 10px;
-}
-
-.footer-item a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-item a:hover {
-    text-decoration: underline;
-}
-
-/* resolver problema do footer/*
