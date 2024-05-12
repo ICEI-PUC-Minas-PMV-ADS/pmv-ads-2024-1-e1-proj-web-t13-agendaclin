@@ -2,25 +2,44 @@ import { SearchDoctorService } from './search-doctor-service.js';
 
 export class SearchDoctorController {
     constructor() {
-        this.loginService = new SearchDoctorService();
         this.setupEventListeners();
     }
 
     setupEventListeners() {
-        document.getElementById('loginForm').addEventListener('submit', (event) => {
-            event.preventDefault();
-            this.login();
-        });
-    }
+        document.addEventListener('DOMContentLoaded', function() {
+            const calendarEl = document.getElementById('calendar');
 
-    login() {
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        this.loginService.authenticate(email, password).then(message => {
-            document.getElementById('messageBox').innerText = message;
-        }).catch(err => {
-            document.getElementById('messageBox').innerText = 'Login failed';
-            console.error(err);
+            const calendar = new FullCalendar.Calendar(calendarEl, {
+                locale: 'pt-br',                 // Idioma
+                initialView: 'timeGridWeek',     // Visão semanal com grade de tempo
+                slotDuration: '00:30:00',        // Intervalos de 30 minutos
+                slotLabelInterval: '00:30:00',   // Rótulos a cada 30 minutos
+                slotLabelFormat: {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    hour12: false               // Formato 24h
+                },
+                allDaySlot: false,               // Desativa a área de Todo o Dia
+                nowIndicator: true,              // Indicador do horário atual
+                height: 'auto',                  // Altura automática
+                headerToolbar: {
+                    left: '',
+                    center: '',
+                    right: ''
+                },
+                hiddenDays: [0, 6],
+                dayHeaderFormat: {
+                    weekday: 'long',
+                    day: 'numeric',
+                    month: 'numeric',
+                    omitCommas: true,
+                },
+                expandRows: true,
+                slotMinTime: '8:00:00',
+                slotMaxTime: '17:30:00'
+            });
+            calendar.render();
         });
     }
 }
+new SearchDoctorController();
