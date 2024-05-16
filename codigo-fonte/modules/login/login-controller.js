@@ -4,6 +4,7 @@ import { googleLogin, emailLogin } from '/js/shared/auth.js';
 export class LoginController {
     constructor() {
         this.loginService = new LoginService();
+        console.log('LoginController instanciado');
         this.setupEventListeners();
     }
 
@@ -11,6 +12,7 @@ export class LoginController {
         // Definir os listeners para botões específicos de login (Google e Apple)
         document.getElementById('googleLoginButton').addEventListener('click', googleLogin);
         document.getElementById('appleLoginButton').addEventListener('click', googleLogin);
+
 
         // Definir o listener para o formulário de login por email
         document.getElementById('emailLoginForm').addEventListener('submit', (event) => {

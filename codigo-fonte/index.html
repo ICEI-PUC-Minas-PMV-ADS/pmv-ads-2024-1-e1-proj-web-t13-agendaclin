@@ -4,6 +4,9 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
@@ -26,10 +29,14 @@
     <title>AgendaClin</title>
 </head>
 <body>
-<div id="app"></div>
+<div id="app">
+    <div id="calendar"></div>
+</div>
 <script type="module" src="js/shared/main.js"></script>
 <script type="module" src="js/shared/auth.js"></script>
 <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script>
     // Adjust asset paths
     const adjustAssetPaths = () => {

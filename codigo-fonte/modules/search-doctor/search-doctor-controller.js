@@ -6,9 +6,7 @@ export class SearchDoctorController {
     }
 
     setupEventListeners() {
-        document.addEventListener('DOMContentLoaded', function() {
             const calendarEl = document.getElementById('calendar');
-
             const calendar = new FullCalendar.Calendar(calendarEl, {
                 locale: 'pt-br',                 // Idioma
                 initialView: 'timeGridWeek',     // Visão semanal com grade de tempo
@@ -39,7 +37,6 @@ export class SearchDoctorController {
                 slotMaxTime: '17:30:00'
             });
             calendar.render();
-        });
     }
 }
 new SearchDoctorController();

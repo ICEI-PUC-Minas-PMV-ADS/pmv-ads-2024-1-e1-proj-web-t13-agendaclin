@@ -1,28 +1,125 @@
 
+.logo{
+    display: flex !important;
+    justify-content: center !important;
+}
+.logopng{
+    width: 300px !important;
+}
+
+hr{
+    width: 388px !important;
+    border-color: #13c9f1 !important;
+}
+
+.container2{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.box{
+    margin-top: 2rem !important;
+    border-radius: 5px !important;
+    box-shadow: 3px 3px 4px 1px rgba(3, 103, 165, 0.25), 0px -3px 4px 0px rgba(3, 103, 165, 0.25) !important;
+    width: 600px !important;
+    height: auto !important;
+    margin-bottom: 30px !important;
+}
+
+.doctor{
+    margin-top: 10px !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50% !important;
+}
+
+.dra{
+    width: 100px !important;
+    height: 100px !important;
+    margin-left: 250px !important;
+}
+.reagendar{
+    margin-top: 30px !important;
+    margin-bottom: 40px !important;
+}
+
+.reagendar>p{
+    text-align: center !important;
+    font-family: Oxanium !important;
+    color: #0367A5 !important;
+    font-weight: bold !important;
+}
+.informações{
+    margin-bottom: 60px !important;
+}
+.informações>img{
+    width: 2rem !important;
+    margin-left: 2rem !important;
+    float: left !important;
+}
+.informações>p{
+    margin-left: 5rem !important;
+    font-family: "Open Sans" !important;
+    color: #0367A5 !important;
+}
+
+.selecionar{
+    font-weight: bold !important;
+    text-align: center !important;
+    font-family: Oxanium !important;
+    color: #0367A5 !important;
+    margin-bottom: 20px !important;
+}
+
+.grid-container{
+    font-weight: 550 !important;
+    text-align: center !important;
+    font-size: 0.9rem !important;
+    color: #0367A5 !important;
+    font-family: "Open Sans" !important;
+    display: grid !important;
+    grid-template-columns: auto 1fr 1fr 1fr 1fr  !important;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr !important;
+    gap: 5px !important;
+    margin-bottom: 40px !important;
+}
+
+button{
+    font-family: "Open Sans" !important;
+    background-color: #0367A5 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px !important;
+    font-size: 17px !important;
+    border-radius: 5px !important;
+    width: 300px !important;
+    margin-bottom: 50px !important;
+}
 nav {
-    background: linear-gradient(185deg, #13C9F1 26.18%, rgba(25, 25, 25, 0.16) 133.19%);
-    height: 70px;
+    background: linear-gradient(49deg, #0367A5 17.81%, #50F3E2 84.62%) !important;
+    height: 70px !important;
 }
 
 #side-menu{
-    background: linear-gradient(185deg, #13C9F1 26.18%, rgba(25, 25, 25, 0.16) 133.19%);
-    height: 100vh;
-    max-width: 100px;
+    background: linear-gradient(90deg, #0367A5 6.25%, #50F3E2 93.44%) !important;
+    height: 100vh !important;
+    max-width: 100px !important;
 }
 
 button {
     img{
-        width: 40px;
-        height: 40px;
+        width: 40px !important;
+        height: 40px !important;
     }
 }
 #calendar {
-    width: 100%;
-     margin: 40px auto;
+    width: 100% !important;
+     margin: 40px auto !important;
  }
 .fc-col-header-cell {
-    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
-    text-transform: capitalize;
+    font-size: 18px !important;
+    text-transform: capitalize !important;
 
 
 
@@ -30,23 +127,26 @@ button {
 
 }
 .fc-day-header {
-    text-transform: capitalize; /* Garante capitalização se necessário */
+    text-transform: capitalize !important; /* Garante capitalização se necessário */
 }
 .fc-col-header-cell .fc-col-header-cell-cushion {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #0367A5 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    color: #0367A5  !important;
 }
 .fc-timegrid-slot, .fc-timegrid-slot-label {
-    width: 100%;
+    width: 100% !important;
 }
 .custom-header {
-    font-size: 16px;
-    color: #666;
-    padding: 10px;
-    background-color: #f9f9f9;
-    width: 100%;
-    border-bottom: 1px solid #ddd;
+    font-size: 16px !important;
+    color: #666 !important;
+    padding: 10px !important;
+    background-color: #f9f9f9 !important;
+    width: 100% !important;
+    border-bottom: 1px solid #ddd !important;
 }
->>>>>>> develop
+
+.menu-button {
+    background: #90909199 !important;
+}

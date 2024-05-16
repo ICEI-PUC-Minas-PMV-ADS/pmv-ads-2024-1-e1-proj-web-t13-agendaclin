@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="doctor-consult-dashboard.css">
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
-    <title>Search-doctor | AgendaClin</title>
-</head>
-<body>
 <div class="col-12">
     <nav class="d-flex align-items-center justify-content-center w-100">
         <div class="container-fluid">
@@ -22,33 +11,29 @@
         </div>
     </nav>
 </div>
- <div class="container-fluid h-100">
-     <div class="row h-100">
-         <div class="col-1 " id="side-menu">
-             <div class="row">
-                 <div class="col-12 pt-4 d-flex justify-content-center align-items-center">
-                     <button class="btn btn-primary">
-                            <img src="../../assets/icon/calendário.png" alt="">
-                     </button>
-                   
-                 </div>
-                 </div>
-             <div class="row">
-                 <div class="col-12 pt-4 d-flex justify-content-center align-items-center">
-                     <button class="btn btn-primary ">
-                         <img src="../../assets/icon/pessoa.png" alt="">
-                     </button>
-                   
-                 </div>
-             </div>
-         </div>
-         <div class="col-11 d-flex justify-content-end">
-             <div id='calendar'></div>
-         </div>
-     </div>
- </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <div class="col-1 " id="side-menu">
+            <div class="row">
+                <div class="col-12 pt-4 d-flex justify-content-center align-items-center">
+                    <button class="btn menu-button">
+                        <img src="../../assets/icon/calendário.png" alt="">
+                    </button>
+                
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pt-4 d-flex justify-content-center align-items-center">
+                    <button class="btn menu-button">
+                        <img src="../../assets/icon/pessoa.png" alt="">
+                    </button>
+                
+                </div>
+            </div>
+        </div>
+        <div class="col-11 d-flex justify-content-end">
+            <div id='calendar'></div>
+        </div>
+    </div>
+</div>
 <script src="doctor-consult-dashboard-controller.js" type="module"></script>
-</body>
