@@ -1,13 +1,52 @@
-<div class="container">
-    <div class="row">
-        <div class="col d-flex justify-content-center align-items-center">
-            <h1>Welcome to Home</h1>
-            <div id="dataContainer"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="doctor-signup-step-1.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+    </style>
+    <title>AgendaClin</title>
+</head>
+<body>
+    <div class="container oxaniumRegular">
+        <div id="line">
+        <img src="/codigo-fonte/assets/img/agendaClinLightgradiente.png" alt="AgendaClin logo" id="logo">
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <h1 id="signUpAs">Cadastre-se como</h1>
+                <div id="dataContainer">
+                    <form>
+                        <input type="radio" id="medicSpecialist" name="option" value="Médico / especialista">
+                        <label for="medicEspecialist"> Médico / especialista </label>
+                        <br>            
+                        <input type="radio" id="clinic" name="option" value="Clínica">
+                        <label for="clinic"> Clínica </label>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center data">
+                <form>
+                 <label for="specialty" class="formLabel"> Especialização </label> 
+                 <input type="text" id="specialty" class="form" placeholder="Selecione">
+                 <br>
+                 <label for="name" class="formLabel"> Nome </label> 
+                 <input type="text" id="name" class="form" placeholder="Nome">
+                 <br>
+                 <label for="surname" class="formLabel"> Sobrenome </label>
+                 <input type="text" id="surname" class="form" placeholder="Sobrenome">
+                </form>
+                 
+                <a href="codigo-fonte\modules\doctor-signup-step-2\doctor-signup-step-2.html"> <button id="nextStep"> Próximo passo </button> </a>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col d-flex justify-content-center align-items-center">
-            <button id="loadButton">Load Data</button>
-        </div>
-    </div>
-</div>
+    
+</body>
+</html>

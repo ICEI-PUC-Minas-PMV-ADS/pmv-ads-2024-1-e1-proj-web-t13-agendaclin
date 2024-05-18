@@ -1,13 +1,55 @@
-<div class="container">
-    <div class="row">
-        <div class="col d-flex justify-content-center align-items-center">
-            <h1>doctor-login</h1>
-            <div id="dataContainer"></div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="doctor-login.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+    </style>
+    <title> AgendaClin </title>
+</head>
+<body>
+    <div class="container oxaniumRegular">
+        <div class="line">
+            <img src="/codigo-fonte/assets/img/agendaClinLightgradiente.png" alt="AgendaClin logo" id="logo">
+        </div>
+        <div class="row">
+            <h1>Faça login em sua conta</h1>
+            <div class="col d-flex justify-content-center align-items-center">
+                
+                <br> 
+                <div id="loginWith">
+                  <a href=""> <input type="button" class="button" value="Continuar com Google"> </a>
+                  <a href=""> <input type="button" class="button" value="Continuar com Apple"> </a>
+    
+                </div>
+                <br>
+                 
+            </div>
+        </div>
+        <h2> Ou </h2> 
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <div id="dataContainer">
+                    <form>   
+                       <input type="text" id="email" class="form" placeholder="E-mail" required>
+                       <input type="password" id="password" class="form" placeholder="Senha" required>
+                       <input type="submit" id="enter" value="Entrar">
+    
+                   </form>
+                    <a href="" id="forgot">Esqueceu sua senha?</a>
+
+                    <div id="line">
+                    <a href="codigo-fonte\modules\doctor-signup-step-1\doctor-signup-step-1.html" id="signUp">Ainda não tem conta? Faça seu cadastro !
+                    </a>
+                   </div>
+                </div>
+                
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col d-flex justify-content-center align-items-center">
-            <button id="loadButton">Load Data</button>
-        </div>
-    </div>
-</div>
+    
+</body>
+</html>
+

@@ -1,13 +1,47 @@
-<div class="container">
-    <div class="row">
-        <div class="col d-flex justify-content-center align-items-center">
-            <h1>doctor-signup-step-2</h1>
-            <div id="dataContainer"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="doctor-signup-step-2.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+    </style>
+    <title>AgendaClin</title>
+</head>
+<body>
+    <div class="container oxaniumRegular">
+      <div id="line">
+        <img src="/codigo-fonte/assets/img/agendaClinLightgradiente.png" alt="AgendaClin logo" id="logo">
+     </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <h1>Cadastre-se como</h1>
+                <div id="dataContainer">
+                    <form>
+                        <label for="city"> Cidade </label> 
+                        <input type="text" id="city" class="form">
+                         
+                        <div id="phoneDiv">
+                        <label for="phone"> Número de celular </label> 
+                        <input type="text" id="DDE" class="form" placeholder="DDD">
+                        <input type="text" id="phone" class="form" placeholder="Celular">
+                        </div>
+                        <label for="email"> E-mail </label> 
+                        <input type="text" id="email" class="form">
+    
+                        <label for="password"> Senha </label> 
+                        <input type="password" id="password" class="form">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <a href=""> <button id="signUp"> Registre-se </button> </a>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col d-flex justify-content-center align-items-center">
-            <button id="loadButton">Load Data</button>
-        </div>
-    </div>
-</div>
+</body>
+</html>
+
