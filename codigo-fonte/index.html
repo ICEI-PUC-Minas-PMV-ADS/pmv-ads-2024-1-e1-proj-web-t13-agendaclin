@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+<!--    instalação do bootstrap -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+<!--    arquivo css principal-->
     <link rel="stylesheet" href="css/main.css">
+<!--    instalação fullcalendar-->
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+<!--    instalação fontes google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    instalação do firebase-->
     <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth-compat.js"></script>
     <script>
@@ -29,16 +34,21 @@
     <title>AgendaClin</title>
 </head>
 <body>
+<!--div principal do SPA-->
+<!--todas as páginas serão carregadas aqui-->
 <div id="app">
-    <div id="calendar"></div>
+    
 </div>
+<!--instalação do modulo principal-->
 <script type="module" src="js/shared/main.js"></script>
+<!--instalação do modulo de autenticação-->
 <script type="module" src="js/shared/auth.js"></script>
+<!--instalação dos demais componentes visuais, como bootstrap e jquery-->
 <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script>
-    // Adjust asset paths
+    // Adjust asset paths ajusta o endereço dos arquivos de imagem e css
     const adjustAssetPaths = () => {
         const elements = document.querySelectorAll('[src], [href]');
         elements.forEach(element => {
