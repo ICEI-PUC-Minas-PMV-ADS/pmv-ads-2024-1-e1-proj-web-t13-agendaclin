@@ -1,7 +1,6 @@
 <div class="container-fluid">
     <div class="login-logo" >
-        <a href="http://localhost:63342/README.md/codigo-fonte/modules/home/home.html?_ijt=7ojidj4ubn0himt4d236bhssj3&_ij_reload=RELOAD_ON_SAVE"><img src="../../assets/img/agendaClinLightgradiente.png"
-                                                                                                                                                      alt="Logo AgendaClin"></a>
+        <a href="/#/home"><img src="../../assets/img/agendaClinLightgradiente.png" alt="Logo AgendaClin"></a>
     </div>
     <div class="row">
         <div class="col-8 offset-2 d-flex align-items-center justify-content-center">
@@ -23,7 +22,7 @@
     </div>
     <div class="row">
         <div class="col-12 login-buttons">
-            <button id="apple-login" class="social-media-button" id="appleLoginButton">
+            <button class="social-media-button" id="appleLoginButton">
                 <img src="../../assets/icon/apple.png" alt="Apple" class="apple-icon">
                 <span>Continuar com Apple</span>
             </button>
@@ -38,9 +37,9 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" >
         <div class="col-12 ">
-            <form >
+            <form id="emailLoginForm">
                 <div class="row">
                     <div class="col-12 login-form d-flex justify-content-center align-items-center">
                         <input type="email" id="email" placeholder="E-mail" required>
@@ -48,7 +47,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 login-form d-flex justify-content-center align-items-center">
-                        <input type="password" id="password" placeholder="Senha" required>
+                        <input type="password" id="password" placeholder="Senha" required  minlength="6">
                     </div>
                 </div>
                 <div class="row">
@@ -63,15 +62,36 @@
             </form>
         </div>
     </div>
-    <a href="#" id="forgot-password">Esqueceu sua senha?</a>
+    <a id="forgot-password">Esqueceu sua senha?</a>
     <div class="row">
         <div class="col-8 offset-2 d-flex align-items-center justify-content-center">
             <div class="hr-divider"></div>
         </div>
     </div>
-    
     <div class="signup">
         Ainda não tem conta? <a href="/#/signup">Faça seu cadastro!</a>
+    </div>
+</div>
+<!-- Modal para Esqueci a Senha -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="forgotPasswordModalLabel">Redefinir Senha</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="forgotPasswordForm">
+                    <div class="form-group">
+                        <label for="resetEmail">E-mail</label>
+                        <input type="email" class="form-control" id="resetEmail" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 <script src="login-controller.js" type="module"></script>

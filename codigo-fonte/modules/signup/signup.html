@@ -1,6 +1,6 @@
 <div class="container">
     <div class="login-logo">
-        <img src="../../assets/img/agendaClinLightgradiente.png" alt="Logo AgendaClin">
+        <a href="/#/home"><img src="../../assets/img/agendaClinLightgradiente.png" alt="Logo AgendaClin"></a>
     </div>
     <div class="row">
         <div class="col-8 offset-2 d-flex align-items-center justify-content-center">
@@ -14,7 +14,7 @@
     </div>
     <div class="row">
         <div class="col-12 login-buttons">
-            <button class="social-media-button">
+            <button class="social-media-button" id="googleLoginButton">
                 <img src="../../assets/icon/google.png" alt="Google" class="google-icon">
                 <span>Continuar com Google</span>
             </button>
@@ -22,7 +22,7 @@
     </div>
     <div class="row">
         <div class="col-12 login-buttons">
-            <button id="apple-login" class="social-media-button">
+            <button id="appleLoginButton" class="social-media-button">
                 <img src="../../assets/icon/apple.png" alt="Apple" class="apple-icon">
                 <span>Continuar com Apple</span>
             </button>
@@ -39,7 +39,7 @@
     </div>
     <div class="row">
         <div class="col-12 ">
-            <form >
+            <form id="emailSignupForm">
                 <div class="row">
                     <div class="col-12 login-form d-flex justify-content-center align-items-center">
                         <input type="email" id="email" placeholder="E-mail" required>
@@ -52,7 +52,8 @@
                 </div>
                 <div class="row">
                     <div class="col-12 login-form d-flex justify-content-center align-items-center">
-                        <input type="password" id="password" placeholder="Senha" required>
+                        <input type="password" id="password" placeholder="Senha" required
+                               minlength="6">
                     </div>
                 </div>
                 <div class="row">
@@ -71,4 +72,26 @@
         <a href="#">Ao criar sua conta, você está de acordo com nossos termos de uso e condições, e confirmar estar ciente de nossa política de privacidade.</a>
     </div>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Sucesso</h5>
+                <button type="button" id="closeModalicon"  class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Cadastro realizado com sucesso!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="closeModalButton"
+                        data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="signup-controller.js" type="module"></script>
