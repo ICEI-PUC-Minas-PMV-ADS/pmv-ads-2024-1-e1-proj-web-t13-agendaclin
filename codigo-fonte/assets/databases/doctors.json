@@ -1,0 +1,794 @@
+[
+  {
+    "name": "Dra. Sofia Martinez",
+    "specialty": "Ginecologista",
+    "rating": 4.7,
+    "average_rating": 4.5,
+    "city": "São Paulo",
+    "street": "Rua das Amélias",
+    "neighborhood": "Centro",
+    "zip_code": "12345-678",
+    "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
+    "profile_pic_url": "../../assets/img/doctors/Dra. Sofia Martinez.jpg",
+    "reviews": [
+      {
+        "reviewer": "Ana Paula",
+        "comment": "Excelente médica, muito atenciosa.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Maria José",
+        "comment": "Atendimento rápido e eficaz.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dr. Pedro Ferreira",
+    "specialty": "Ginecologista",
+    "rating": 4.5,
+    "average_rating": 4.4,
+    "city": "Curitiba",
+    "street": "Avenida das Araucárias",
+    "neighborhood": "Batel",
+    "zip_code": "45678-901",
+    "insurance_accepted": ["SulAmérica", "Porto Seguro", "Allianz"],
+    "profile_pic_url": "../../assets/img/doctors/Dr. Pedro Ferreira.webp",
+    "reviews": [
+      {
+        "reviewer": "Juliana Silva",
+        "comment": "Muito bom profissional, esclareceu todas as dúvidas.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Patrícia Gomes",
+        "comment": "Atendimento excelente.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dra. Carla Mendes",
+    "specialty": "Ginecologista",
+    "rating": 4.8,
+    "average_rating": 4.7,
+    "city": "Rio de Janeiro",
+    "street": "Rua das Laranjeiras",
+    "neighborhood": "Botafogo",
+    "zip_code": "23456-789",
+    "insurance_accepted": ["Amil", "Unimed", "Bradesco Saúde"],
+    "profile_pic_url": "../../assets/img/doctors/Dra. Carla Mendes.webp",
+    "reviews": [
+      {
+        "reviewer": "Marina Costa",
+        "comment": "Muito atenciosa e profissional.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Renata Souza",
+        "comment": "Excelente atendimento.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dr. Paulo Almeida",
+    "specialty": "Psiquiatra",
+    "rating": 4.8,
+    "average_rating": 4.7,
+    "city": "Rio de Janeiro",
+    "street": "Avenida das Nações",
+    "neighborhood": "Copacabana",
+    "zip_code": "23456-789",
+    "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
+    "profile_pic_url": "https://example.com/img/dr_paulo_almeida.jpg",
+    "reviews": [
+      {
+        "reviewer": "João Carlos",
+        "comment": "Profissional muito competente e empático.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Fernanda Lima",
+        "comment": "Ótimo atendimento, me senti muito bem acolhida.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dra. Mariana Torres",
+    "specialty": "Psiquiatra",
+    "rating": 4.6,
+    "average_rating": 4.5,
+    "city": "São Paulo",
+    "street": "Rua das Palmeiras",
+    "neighborhood": "Jardins",
+    "zip_code": "12345-678",
+    "insurance_accepted": ["Allianz", "Hapvida", "Bradesco Saúde"],
+    "profile_pic_url": "https://example.com/img/dra_mariana_torres.jpg",
+    "reviews": [
+      {
+        "reviewer": "Carlos Mendes",
+        "comment": "Excelente profissional, recomendo.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Ana Clara",
+        "comment": "Muito atenciosa e competente.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dr. Ricardo Silva",
+    "specialty": "Psiquiatra",
+    "rating": 4.9,
+    "average_rating": 4.8,
+    "city": "Porto Alegre",
+    "street": "Avenida Borges de Medeiros",
+    "neighborhood": "Centro",
+    "zip_code": "56789-012",
+    "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
+    "profile_pic_url": "https://example.com/img/dr_ricardo_silva.jpg",
+    "reviews": [
+      {
+        "reviewer": "Mariana Lopes",
+        "comment": "Muito bom, excelente atendimento.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Pedro Santos",
+        "comment": "Profissional atencioso e qualificado.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dra. Renata Oliveira",
+    "specialty": "Psicólogo",
+    "rating": 4.9,
+    "average_rating": 4.8,
+    "city": "Belo Horizonte",
+    "street": "Rua das Flores",
+    "neighborhood": "Savassi",
+    "zip_code": "34567-890",
+    "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
+    "profile_pic_url": "https://example.com/img/dra_renata_oliveira.jpg",
+    "reviews": [
+      {
+        "reviewer": "Lucas Martins",
+        "comment": "Muito profissional e atenciosa.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Carla Souza",
+        "comment": "Excelente psicóloga, recomendo.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dr. André Lima",
+    "specialty": "Psicólogo",
+    "rating": 4.6,
+    "average_rating": 4.5,
+    "city": "São Paulo",
+    "street": "Avenida Paulista",
+    "neighborhood": "Bela Vista",
+    "zip_code": "12345-678",
+    "insurance_accepted": ["SulAmérica", "Allianz", "Porto Seguro"],
+    "profile_pic_url": "https://example.com/img/dr_andre_lima.jpg",
+    "reviews": [
+      {
+        "reviewer": "Fernanda Rocha",
+        "comment": "Ótimo atendimento, muito atencioso.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Marcelo Oliveira",
+        "comment": "Profissional qualificado, recomendo.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dra. Júlia Costa",
+    "specialty": "Psicólogo",
+    "rating": 4.8,
+    "average_rating": 4.7,
+    "city": "Rio de Janeiro",
+    "street": "Rua das Laranjeiras",
+    "neighborhood": "Botafogo",
+    "zip_code": "23456-789",
+    "insurance_accepted": ["Amil", "Unimed", "Bradesco Saúde"],
+    "profile_pic_url": "https://example.com/img/dra_julia_costa.jpg",
+    "reviews": [
+      {
+        "reviewer": "Renata Ferreira",
+        "comment": "Muito boa, recomendo.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Gustavo Souza",
+        "comment": "Atendimento excelente.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dr. Carlos Yu",
+    "specialty": "Ortopedista - Traumatologista",
+    "rating": 4.7,
+    "average_rating": 4.6,
+    "city": "Curitiba",
+    "street": "Avenida das Araucárias",
+    "neighborhood": "Batel",
+    "zip_code": "45678-901",
+    "insurance_accepted": ["Allianz", "Hapvida", "Porto Seguro"],
+    "profile_pic_url": "https://example.com/img/dr_carlos_pereira.jpg",
+    "reviews": [
+      {
+        "reviewer": "Ricardo Santos",
+        "comment": "Excelente médico, resolveu meu problema rapidamente.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Andréa Lima",
+        "comment": "Muito bom, atendimento eficiente.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dr. Pedro Santos",
+    "specialty": "Ortopedista - Traumatologista",
+    "rating": 4.8,
+    "average_rating": 4.7,
+    "city": "São Paulo",
+    "street": "Rua da Consolação",
+    "neighborhood": "Centro",
+    "zip_code": "12345-678",
+    "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
+    "profile_pic_url": "https://example.com/img/dr_pedro_santos.jpg",
+    "reviews": [
+      {
+        "reviewer": "José Almeida",
+        "comment": "Médico muito competente.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Maria Clara",
+        "comment": "Atendimento excelente, recomendo.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dra. Ana Pereira",
+    "specialty": "Ortopedista - Traumatologista",
+    "rating": 4.6,
+    "average_rating": 4.5,
+    "city": "Rio de Janeiro",
+    "street": "Rua da Glória",
+    "neighborhood": "Lapa",
+    "zip_code": "23456-789",
+    "insurance_accepted": ["SulAmérica", "Allianz", "Porto Seguro"],
+    "profile_pic_url": "https://example.com/img/dra_ana_pereira.jpg",
+    "reviews": [
+      {
+        "reviewer": "Fábio Souza",
+        "comment": "Atendimento muito bom e rápido.",
+        "rating": 4
+      },
+      {
+        "reviewer": "Patrícia Silva",
+        "comment": "Profissional excelente.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dra. Ana Costa",
+    "specialty": "Dermatologista",
+    "rating": 4.8,
+    "average_rating": 4.7,
+    "city": "Porto Alegre",
+    "street": "Rua das Acácias",
+    "neighborhood": "Moinhos de Vento",
+    "zip_code": "56789-012",
+    "insurance_accepted": ["Unimed", "Amil", "Bradesco Saúde"],
+    "profile_pic_url": "https://example.com/img/dra_ana_costa.jpg",
+    "reviews": [
+      {
+        "reviewer": "Bruno Almeida",
+        "comment": "Muito atenciosa e competente.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Mariana Silva",
+        "comment": "Ótima dermatologista, recomendo.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dr. Felipe Lima",
+    "specialty": "Dermatologista",
+    "rating": 4.6,
+    "average_rating": 4.5,
+    "city": "São Paulo",
+    "street": "Avenida Paulista",
+    "neighborhood": "Jardins",
+    "zip_code": "12345-678",
+    "insurance_accepted": ["SulAmérica", "Allianz", "Porto Seguro"],
+    "profile_pic_url": "https://example.com/img/dr_felipe_lima.jpg",
+    "reviews": [
+      {
+        "reviewer": "Joana Carvalho",
+        "comment": "Profissional muito bom.",
+        "rating": 4
+      },
+      {
+        "reviewer": "Carlos Eduardo",
+        "comment": "Excelente atendimento.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dra. Camila Santos",
+    "specialty": "Dermatologista",
+    "rating": 4.9,
+    "average_rating": 4.8,
+    "city": "Rio de Janeiro",
+    "street": "Avenida Atlântica",
+    "neighborhood": "Copacabana",
+    "zip_code": "23456-789",
+    "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
+    "profile_pic_url": "https://example.com/img/dra_camila_santos.jpg",
+    "reviews": [
+      {
+        "reviewer": "Fernanda Rocha",
+        "comment": "Ótima dermatologista, recomendo.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Gustavo Souza",
+        "comment": "Muito atenciosa e competente.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dr. Ricardo Lima",
+    "specialty": "Endocrinologista",
+    "rating": 4.6,
+    "average_rating": 4.5,
+    "city": "Florianópolis",
+    "street": "Avenida Beira Mar",
+    "neighborhood": "Centro",
+    "zip_code": "67890-123",
+    "insurance_accepted": ["SulAmérica", "Allianz", "Hapvida"],
+    "profile_pic_url": "https://example.com/img/dr_ricardo_lima.jpg",
+    "reviews": [
+      {
+        "reviewer": "Paula Castro",
+        "comment": "Muito bom, tirou todas as minhas dúvidas.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Fernando Rocha",
+        "comment": "Atendimento rápido e eficaz.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dra. Carolina Souza",
+    "specialty": "Endocrinologista",
+    "rating": 4.8,
+    "average_rating": 4.7,
+    "city": "São Paulo",
+    "street": "Rua Augusta",
+    "neighborhood": "Consolação",
+    "zip_code": "12345-678",
+    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
+    "profile_pic_url": "https://example.com/img/dra_carolina_souza.jpg",
+    "reviews": [
+      {
+        "reviewer": "Márcia Almeida",
+        "comment": "Excelente profissional.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Rafael Lima",
+        "comment": "Muito atenciosa e competente.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dr. Marcos Silva",
+    "specialty": "Endocrinologista",
+    "rating": 4.9,
+    "average_rating": 4.8,
+    "city": "Rio de Janeiro",
+    "street": "Avenida das Américas",
+    "neighborhood": "Barra da Tijuca",
+    "zip_code": "23456-789",
+    "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
+    "profile_pic_url": "https://example.com/img/dr_marcos_silva.jpg",
+    "reviews": [
+      {
+        "reviewer": "Fernanda Lima",
+        "comment": "Ótimo atendimento.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Pedro Santos",
+        "comment": "Muito bom, recomendo.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dra. Fernanda Sousa",
+    "specialty": "Oftalmologista",
+    "rating": 4.9,
+    "average_rating": 4.8,
+    "city": "Fortaleza",
+    "street": "Avenida do Sol",
+    "neighborhood": "Meireles",
+    "zip_code": "89012-345",
+    "insurance_accepted": ["Amil", "Bradesco Saúde", "Allianz"],
+    "profile_pic_url": "https://example.com/img/dra_fernanda_sousa.jpg",
+    "reviews": [
+      {
+        "reviewer": "Carlos Eduardo",
+        "comment": "Excelente profissional, recomendo.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Tatiana Menezes",
+        "comment": "Muito atenciosa e competente.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dr. João Alves",
+    "specialty": "Oftalmologista",
+    "rating": 4.7,
+    "average_rating": 4.6,
+    "city": "São Paulo",
+    "street": "Rua da Consolação",
+    "neighborhood": "Higienópolis",
+    "zip_code": "12345-678",
+    "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
+    "profile_pic_url": "https://example.com/img/dr_joao_alves.jpg",
+    "reviews": [
+      {
+        "reviewer": "Marina Costa",
+        "comment": "Muito atencioso e competente.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Lucas Souza",
+        "comment": "Excelente oftalmologista, recomendo.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dra. Ana Clara",
+    "specialty": "Oftalmologista",
+    "rating": 4.8,
+    "average_rating": 4.7,
+    "city": "Rio de Janeiro",
+    "street": "Rua das Laranjeiras",
+    "neighborhood": "Botafogo",
+    "zip_code": "23456-789",
+    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
+    "profile_pic_url": "https://example.com/img/dra_ana_clara.jpg",
+    "reviews": [
+      {
+        "reviewer": "Fernanda Souza",
+        "comment": "Profissional muito atenciosa.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Marcelo Silva",
+        "comment": "Ótimo atendimento, recomendo.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dr. João Silva",
+    "specialty": "Cardiologista",
+    "rating": 4.8,
+    "average_rating": 4.6,
+    "city": "Salvador",
+    "street": "Rua do Farol",
+    "neighborhood": "Barra",
+    "zip_code": "78901-234",
+    "insurance_accepted": ["Unimed", "Porto Seguro", "NotreDame"],
+    "profile_pic_url": "https://example.com/img/dr_joao_silva.jpg",
+    "reviews": [
+      {
+        "reviewer": "Marcos Teixeira",
+        "comment": "Muito bom, excelente cardiologista.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Alice Nogueira",
+        "comment": "Atendimento rápido e eficiente.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dr. Paulo Andrade",
+    "specialty": "Cardiologista",
+    "rating": 4.7,
+    "average_rating": 4.5,
+    "city": "São Paulo",
+    "street": "Rua Augusta",
+    "neighborhood": "Jardins",
+    "zip_code": "12345-678",
+    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
+    "profile_pic_url": "https://example.com/img/dr_paulo_andrade.jpg",
+    "reviews": [
+      {
+        "reviewer": "Fernanda Lima",
+        "comment": "Excelente profissional.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Gustavo Souza",
+        "comment": "Atendimento muito bom.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dra. Marina Souza",
+    "specialty": "Cardiologista",
+    "rating": 4.9,
+    "average_rating": 4.8,
+    "city": "Rio de Janeiro",
+    "street": "Avenida das Américas",
+    "neighborhood": "Barra da Tijuca",
+    "zip_code": "23456-789",
+    "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
+    "profile_pic_url": "https://example.com/img/dra_marina_souza.jpg",
+    "reviews": [
+      {
+        "reviewer": "Carlos Eduardo",
+        "comment": "Profissional muito atenciosa.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Tatiana Menezes",
+        "comment": "Excelente cardiologista, recomendo.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dr. Pedro Oliveira",
+    "specialty": "Urologista",
+    "rating": 4.7,
+    "average_rating": 4.5,
+    "city": "Brasília",
+    "street": "Rua das Palmeiras",
+    "neighborhood": "Asa Sul",
+    "zip_code": "34567-890",
+    "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
+    "profile_pic_url": "https://example.com/img/dr_pedro_oliveira.jpg",
+    "reviews": [
+      {
+        "reviewer": "Gabriel Alves",
+        "comment": "Profissional muito competente.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Roberta Maia",
+        "comment": "Atendimento de qualidade, recomendo.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dr. Marcelo Lima",
+    "specialty": "Urologista",
+    "rating": 4.6,
+    "average_rating": 4.4,
+    "city": "São Paulo",
+    "street": "Avenida Paulista",
+    "neighborhood": "Bela Vista",
+    "zip_code": "12345-678",
+    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
+    "profile_pic_url": "https://example.com/img/dr_marcelo_lima.jpg",
+    "reviews": [
+      {
+        "reviewer": "Juliana Souza",
+        "comment": "Excelente profissional, atencioso.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Felipe Almeida",
+        "comment": "Muito bom, recomendo.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dra. Clara Souza",
+    "specialty": "Urologista",
+    "rating": 4.8,
+    "average_rating": 4.7,
+    "city": "Rio de Janeiro",
+    "street": "Rua das Laranjeiras",
+    "neighborhood": "Botafogo",
+    "zip_code": "23456-789",
+    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
+    "profile_pic_url": "https://example.com/img/dra_clara_souza.jpg",
+    "reviews": [
+      {
+        "reviewer": "Renata Souza",
+        "comment": "Excelente atendimento, muito atenciosa.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Lucas Martins",
+        "comment": "Ótima profissional, recomendo.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dra. Beatriz Almeida",
+    "specialty": "Neurologista",
+    "rating": 4.9,
+    "average_rating": 4.8,
+    "city": "Manaus",
+    "street": "Avenida das Flores",
+    "neighborhood": "Adrianópolis",
+    "zip_code": "56789-012",
+    "insurance_accepted": ["SulAmérica", "Allianz", "Hapvida"],
+    "profile_pic_url": "https://example.com/img/dra_beatriz_almeida.jpg",
+    "reviews": [
+      {
+        "reviewer": "Felipe Costa",
+        "comment": "Excelente médica, muito atenciosa.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Juliana Ferreira",
+        "comment": "Muito boa, recomendo a todos.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dr. Gustavo Lima",
+    "specialty": "Neurologista",
+    "rating": 4.6,
+    "average_rating": 4.5,
+    "city": "São Paulo",
+    "street": "Rua Augusta",
+    "neighborhood": "Consolação",
+    "zip_code": "12345-678",
+    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
+    "profile_pic_url": "https://example.com/img/dr_gustavo_lima.jpg",
+    "reviews": [
+      {
+        "reviewer": "Marina Souza",
+        "comment": "Excelente atendimento, recomendo.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Rodrigo Alves",
+        "comment": "Ótimo profissional, muito competente.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dra. Patrícia Silva",
+    "specialty": "Neurologista",
+    "rating": 4.8,
+    "average_rating": 4.7,
+    "city": "Rio de Janeiro",
+    "street": "Avenida Atlântica",
+    "neighborhood": "Copacabana",
+    "zip_code": "23456-789",
+    "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
+    "profile_pic_url": "https://example.com/img/dra_patricia_silva.jpg",
+    "reviews": [
+      {
+        "reviewer": "Gabriel Almeida",
+        "comment": "Ótima profissional, muito atenciosa.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Fernanda Lima",
+        "comment": "Excelente atendimento, recomendo.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dra. Julia Ramos",
+    "specialty": "Nutricionista",
+    "rating": 4.6,
+    "average_rating": 4.5,
+    "city": "Recife",
+    "street": "Rua das Mangueiras",
+    "neighborhood": "Boa Viagem",
+    "zip_code": "67890-123",
+    "insurance_accepted": ["Amil", "Bradesco Saúde", "Allianz"],
+    "profile_pic_url": "https://example.com/img/dra_julia_ramos.jpg",
+    "reviews": [
+      {
+        "reviewer": "Renato Oliveira",
+        "comment": "Muito atenciosa e competente.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Camila Dias",
+        "comment": "Ótima profissional, recomendo.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "name": "Dra. Amanda Silva",
+    "specialty": "Nutricionista",
+    "rating": 4.8,
+    "average_rating": 4.7,
+    "city": "São Paulo",
+    "street": "Avenida Paulista",
+    "neighborhood": "Bela Vista",
+    "zip_code": "12345-678",
+    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
+    "profile_pic_url": "https://example.com/img/dra_amanda_silva.jpg",
+    "reviews": [
+      {
+        "reviewer": "Fernanda Souza",
+        "comment": "Excelente profissional, muito atenciosa.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Lucas Almeida",
+        "comment": "Atendimento de qualidade, recomendo.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "name": "Dr. Rafael Almeida",
+    "specialty": "Nutricionista",
+    "rating": 4.7,
+    "average_rating": 4.6,
+    "city": "Rio de Janeiro",
+    "street": "Rua das Laranjeiras",
+    "neighborhood": "Botafogo",
+    "zip_code": "23456-789",
+    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
+    "profile_pic_url": "https://example.com/img/dr_rafael_almeida.jpg",
+    "reviews": [
+      {
+        "reviewer": "Mariana Lima",
+        "comment": "Profissional muito competente.",
+        "rating": 5
+      },
+      {
+        "reviewer": "Ricardo Souza",
+        "comment": "Ótimo atendimento, recomendo.",
+        "rating": 4
+      }
+    ]
+  }
+]
