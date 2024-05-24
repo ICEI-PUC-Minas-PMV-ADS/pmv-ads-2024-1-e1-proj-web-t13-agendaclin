@@ -7,6 +7,7 @@ header {
 
 body {
     margin: 0;
+    height: 70%;
     font-family: 'Open Sans', 'Oxanium';
     color: #0367A5;
     box-sizing: border-box;
@@ -39,28 +40,22 @@ main {
 }
 
 hr {
-    width: 80%;
+    width: 60%;
     border-color: #13C9F1;
 }
 
 #tableMedico {
-    width: 100%;
-    padding: 40px;
+    width: 75%;
+    margin: 0 auto;
+    padding: 30px;
     display: block;
     border-radius: 10px;    
     background: var(--White, #FFF);
-    box-shadow: 3px 3px 4px 1px rgba(3, 103, 165, 0.25), 0px -3px 4px 0px rgba(3, 103, 165, 0.25);
+    box-shadow: 5px 5px 6px 3px rgba(3, 103, 165, 0.25), 0px -3px 4px 0px rgba(3, 103, 165, 0.25);
 }
 
-#containerImagemMedico {
-    width: 110px;
-    height: 110px;
-}
-
-#imagemMedico {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
+#containerDadosTable {
+    margin: 0 auto;
 }
 
 #dadosMedico {
@@ -68,33 +63,65 @@ hr {
     align-items: center;
 }
 
+#containerImagemMedico {
+    width: 15%;
+    height: auto;
+    margin-right: 30px;
+}
+
+#imagemMedico {
+    max-width: 100%;
+    margin-right: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#containerNomeMedico {
+    max-width: 40%;
+    font-size: 120%;
+}
+
 #especialidadeDoMedico {
     font-weight: bold;
 }
 
-#iconCalendar {
+#containerIconCalendar {
     margin-right: 20px;
-    max-height: 28px;
-    max-width: 28px;
+    height: 10%;
+    max-height: 30px;
+    max-width: 30px;
+}
+
+#iconCalendar {
+    height: 100%;
+    width: 100%;
+}
+
+#dadosLocal {
+    display: flex;
+    align-items: flex-start;
+    font-size: 100%;
 }
 
 #dadosHorario {
     display: flex;
     align-items: center;
+    font-size: 100%;
+}
+
+#containerIconLocal {
+    margin-right: 20px;
+    height: 10%;
+    max-height: 30px;
+    max-width: 30px;
 }
 
 #iconLocal {
-    margin-right: 20px;
-    max-height: 28px;
-    max-width: 28px;
+    height: 100%;
+    width: 100%;
 }
 
-#dadosLocal {
-    display: flex;
-    align-items: flex-start
-}
-
-#textoLocal {
+#containerLocal {
     display: flex;
     flex-direction: column;
 }
@@ -105,41 +132,65 @@ hr {
 
 #local {
     text-align: justify;
+    width: 90%;
+    line-height: 1.5;
 }
 
-#convenio {
+#containerConvenio {
     font-family: Oxanium;
-    font-size: 30px;
+    font-size: 165%;
+    width: 80%;
     margin: 0 auto;
+    margin-top: 80px;
     text-align: center;
     margin-bottom: 80px;
 }
 
+#containerSelectConvenio {
+    width: 80%;
+    margin: 0 auto;
+}
+
 #convenioSelect {
-    width: 482px;
-    height: 63px;
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    max-height: 60px;
+    flex-shrink: 0; 
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.00);
     background: var(--White, #FFF);
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25), 0px -1px 4px 0px rgba(0, 0, 0, 0.25);
-
     color: var(--color-styles-primary-dark-hover, #0367A5);
     font-family: "Open Sans";
-    font-size: 22px;
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
     font-style: normal;
-    font-weight: 400;
-    line-height: 155.99%; /* 49.917px */
+    line-height: 155.99%;
     letter-spacing: -0.96px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+#convenioSelect option {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+    font-size: inherit;
 }
 
 #primeiraConsulta {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
     font-family: Oxanium;
-    font-size: 30px;
+    font-size: 165%;
     font-style: normal;
-    font-weight: 400;
-    line-height: 105.182%; /* 33.658px */
+    line-height: 105.182%;
     letter-spacing: -1.92px;
     margin-bottom: 80px;
 }
@@ -149,13 +200,13 @@ hr {
     font-size: 24px;
 }
 
-#continuar {
+#bottonContinuar {
     margin: 0 auto;
     text-align: center;
 }
 
 #buttonContinuar {
-    width: 600px;
+    width: 50%;
     height: 50px;
     flex-shrink: 0;
     text-align: center;
@@ -173,5 +224,65 @@ hr {
     font-weight: 700;
     line-height: 155.99%;
     letter-spacing: -0.96px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 940px) {
+    #containerImagemMedico {
+        width: 20%;
+        height: auto;
+        margin-right: 30px;
+        }
+}
+
+@media (max-width: 600px) {
+    #logoAgendaClim {
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    #containerImagemMedico {
+        width: 20%;
+        height: auto;
+        margin-right: 30px;
+    }
+
+    #containerNomeMedico {
+        font-size: 60%;
+    }
+
+    #containerIconCalendar {
+        width: 8%;
+        height: auto;
+    }
+
+    #dadosHorario {
+        font-size: 60%;
+    }
+
+    #containerIconLocal {
+        width: 25%;
+        height: auto;
+    }
+
+    #dadosLocal {
+        font-size: 60%;
+        text-align: justify;
+    }
+
+    #containerConvenio {
+        font-size: 80%;
+    }
+
+    #convenioSelect {
+        font-size: 100%;
+    }
+    
+    #primeiraConsulta {
+        font-size: 90%;
+    }
+
+    #inputPrimeiraConsulta {
+        font-size: 100%;
+    }
 }

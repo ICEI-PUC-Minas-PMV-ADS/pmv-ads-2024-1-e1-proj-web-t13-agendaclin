@@ -1,100 +1,151 @@
+header {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding: 10px 0;
+}
+
 body {
+    margin: 0;
+    height: 70%;
     font-family: 'Open Sans', 'Oxanium';
     color: #0367A5;
+    box-sizing: border-box;
+    overflow-x: hidden;
     font-size: 22px;
 }
 
+main {
+    padding: 10px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
 #logoAgendaClim {
-    width: 250px;
-    height: 50px;
-    margin: 0 auto;
-    display: block;
+    max-width: 30%;
+    max-height: 30%;
 }
 
 hr {
-    width: 780px;
-    height: 0px;
+    width: 60%;
     border-color: #13C9F1;
 }
 
 #tableMedico {
-    width: 740px;
-    height: 760px;
+    width: 75%;
     margin: 0 auto;
+    padding: 30px;
     display: block;
-    margin-top: 80px;
-    border-radius: 10px;
+    border-radius: 10px;    
     background: var(--White, #FFF);
-    box-shadow: 3px 3px 4px 1px rgba(3, 103, 165, 0.25), 0px -3px 4px 0px rgba(3, 103, 165, 0.25);
+    box-shadow: 5px 5px 6px 3px rgba(3, 103, 165, 0.25), 0px -3px 4px 0px rgba(3, 103, 165, 0.25);
+}
+
+#containerDadosTable {
+    margin: 0 auto;
+}
+
+#containerImagemMedico {
+    width: 15%;
+    height: auto;
+    margin: 0 auto;
 }
 
 #imagemMedico {
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    margin: 0 auto;
-    display: block;
-    padding: 30px;
-}
-
-#confirmacaoConsulta {
-    text-align: center;
-    font-family: Oxanium;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 105.182%;
-    letter-spacing: -2.16px;
-}
-
-#iconMedico {
-    margin-right: 20px;
-    height: 28px;
-    width: 28px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 #nomeMedico {
-    margin-left: 80px;
     display: flex;
+    text-align: left;
     align-items: center;
-    margin-bottom: 3px
+}
+
+#containerIconMedico {
+    margin-right: 20px;
+    height: 10%;
+    max-height: 30px;
+    max-width: 30px;
+}
+
+#iconMedico {
+    height: 100%;
+    width: 100%;
 }
 
 #especialidadeDoMedico {
     font-weight: bolder;
-    color: #0367A5;
+}
+
+#consultaMarcada {
+    font-weight: bold;
+    text-align: center;
+}
+
+#containerIconCalendar {
+    margin-right: 20px;
+    height: 10%;
+    max-height: 30px;
+    max-width: 30px;
 }
 
 #iconCalendar {
-    margin-right: 20px;
-    height: 28px;
-    width: 28px;
-}
-
-#dadosHorario {
-    margin-left: 80px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-#iconLocal {
-    margin-right: 20px;
-    margin-bottom: 20px;
-    height: 28px;
-    width: 28px;
+    height: 100%;
+    width: 100%;
 }
 
 #dadosLocal {
-    margin-left: 80px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 100%;
+}
+
+#dadosHorario {
     display: flex;
     align-items: center;
+    font-size: 100%;
+}
+
+#containerIconLocal {
+    margin-right: 20px;
+    height: 10%;
+    max-height: 30px;
+    max-width: 30px;
+}
+
+#iconLocal {
+    height: 100%;
+    width: 100%;
+}
+
+#containerLocal {
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloLocal {
+    margin-bottom: 8px;
 }
 
 #local {
-    margin-left: 130px;
-    margin-right: 80px;
     text-align: justify;
+    width: 90%;
+    line-height: 1.5;
 }
 
 #bottonReagendar {
@@ -111,7 +162,7 @@ hr {
 }
 
 #button {
-    width: 600px;
+    width: 50%;
     height: 50px;
     flex-shrink: 0;
     text-align: center;
@@ -129,5 +180,44 @@ hr {
     font-weight: 700;
     line-height: 155.99%;
     letter-spacing: -0.96px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 940px) {
+    #containerImagemMedico {
+        width: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    #logoAgendaClim {
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    #containerImagemMedico {
+        width: 25%;
+    }
+
+    #consultaMarcada {
+        font-size: 70%;
+    }
+
+    #nomeMedico, #dadosHorario, #dadosLocal  {
+        font-size: 70%;
+    }
+    
+    #containerIconMedico, #containerIconCalendar {
+        width: 8%;
+        height: auto;
+    }
+
+    #containerIconLocal {
+        width: 25%;
+        height: auto;
+    }
+
+    #button {
+        font-size: 80%;
+    }
 }
