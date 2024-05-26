@@ -1,10 +1,18 @@
+/* Home css fin 1.5*/
+
+.nav-top 
+{
+    width: 100%;
+    z-index: 10; 
+}
+
 ul 
 {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(16, 165, 199));
+    height: 59px;
 }
   
 li 
@@ -14,44 +22,55 @@ li
   
 li a 
 {
+    background-color: #0085f100;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
 }
   
 li a:hover 
 {
-    background-color: #52a8cf;
+    background-color: #2bade9;
 }
 
-body
+body 
 {
-    margin: 0px;  
+    margin: 0;  
 }
 
-.logo_navbar
+.logo_navbar 
 {
     width: 210px;
     height: 45px;
+    margin-left: 16px;
 }
 
 .full-width-image 
 {
     background-image: url('../../assets/img/Background.png');
-    height: calc(100vw * 1.53);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: calc(100vw * 0.80);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
     margin-left: 0;
     margin-right: 0;
+}
+
+@media (max-width: 768px) 
+{
+    .full-width-image 
+    {
+        height: 300px; 
+    }
 }
 
 
 .gradiente_title 
 {
-    font-size: 42px;
+    font-size: 2.00vw;
     text-align: center;
     background-image: -webkit-gradient(
     linear,
@@ -63,29 +82,6 @@ body
 );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.grid-esquerda_l1
-{
-        width: 50%;
-        float: left;
-        padding: 15px;
-}
-
-.medslinha1
-{
-    width: 1014px;
-    height: 1010px;
-    text-align: center;
-}
-
-.grid-direita_l1
-{
-        width: 47%;
-        height: 900px;
-        float: right;
-        padding: 15px;
-        text-align: center;
 }
 
 .pic-icon1
@@ -108,7 +104,7 @@ body
 
 .gradiente_title2
 {
-    font-size: 34px;
+    font-size: 1.97vw;
     text-align: center;
     background-image: -webkit-gradient(
     linear,
@@ -122,29 +118,13 @@ body
   -webkit-text-fill-color: transparent;
 }
 
-
-.container {
+.container 
+{
     display: flex;
     align-items: center;
-    gap: 15px; /* Espaço entre a imagem e o texto */
+    gap: 15px; 
     margin: 20px;
     text-align: center;
-}
-
-.grid-esquerda_l2
-{
-        width: 50%;
-        float: left;
-        padding: 15px;
-}
-
-.grid-direita_l2
-{
-        width: 47%;
-        height: 900px;
-        float: right;
-        padding: 15px;
-        text-align: center;
 }
 
 .medslinha2
@@ -153,14 +133,51 @@ body
     height: 467px;
 }
 
-.line {
-    display: flex; /* Alinha os elementos em uma linha */
-    align-items: center; /* Centraliza verticalmente */
+.line 
+{
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
-.arrow {
+.arrow 
+{
     color: rgb(16, 165, 199);
     font-size: 40px;
-    margin-right: 10px; /* Espaçamento entre a seta e o texto */
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #0056b3; 
+    color: white; 
+}
+
+.footer h5 
+{
+    margin-bottom: 20px; 
+}
+
+.footer ul 
+{
+    padding-left: 0; 
+    list-style-type: none; 
+}
+
+.footer li 
+{
+    margin-bottom: 10px; 
+    margin-right: 15px; 
+    display: inline-block; 
+}
+
+@media (max-width: 768px) 
+{
+    .footer h5 
+    {
+        text-align: center; 
+    }
+    .footer ul 
+    {
+        text-align: center; 
+    }
 }
