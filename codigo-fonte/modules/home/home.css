@@ -1,4 +1,4 @@
-/* Home css fin */
+/* Home css fin 1.5*/
 
 .nav-top 
 {
@@ -22,7 +22,7 @@ li
   
 li a 
 {
-    background-color: #24afff;
+    background-color: #0085f100;
     display: block;
     color: white;
     text-align: center;
@@ -33,7 +33,7 @@ li a
   
 li a:hover 
 {
-    background-color: #52a8cf;
+    background-color: #2bade9;
 }
 
 body 
