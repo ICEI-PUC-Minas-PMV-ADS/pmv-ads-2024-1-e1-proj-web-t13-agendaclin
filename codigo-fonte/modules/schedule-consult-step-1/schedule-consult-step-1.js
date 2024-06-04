@@ -1,17 +1,16 @@
-const buttonContinuar = document.getElementById("bottonContinuar");
+const buttonContinuar = document.getElementById("buttonContinuar");
 
-function salvarDados () {
+function salvarDados() {
     const convenio = document.getElementById("convenioSelect").value;
     const primeiraConsultaElement = document.querySelector('input[name="primeiraConsulta"]:checked');
 
-    if (primeiraConsultaElement) {
-        const primeiraConsulta = primeiraConsultaElement.value;
-        localStorage.setItem('convenio', convenio);
-        localStorage.setItem('primeiraConsulta', primeiraConsulta);
-    }
+    const primeiraConsulta = primeiraConsultaElement ? primeiraConsultaElement.value : '';
+
+    localStorage.setItem('convenio', convenio);
+    localStorage.setItem('primeiraConsulta', primeiraConsulta);
 }
 
-function validarFormulario () {
+function validarFormulario() {
     const convenio = document.getElementById("convenioSelect").value;
 
     if (convenio === "Selecione") {

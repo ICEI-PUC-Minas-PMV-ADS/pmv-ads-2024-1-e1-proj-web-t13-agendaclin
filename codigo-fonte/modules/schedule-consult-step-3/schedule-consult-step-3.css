@@ -161,7 +161,7 @@ hr {
     text-align: center;
 }
 
-#button {
+button {
     width: 50%;
     height: 50px;
     flex-shrink: 0;
@@ -217,7 +217,7 @@ hr {
         height: auto;
     }
 
-    #button {
+    button {
         font-size: 80%;
     }
 }

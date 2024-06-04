@@ -10,15 +10,14 @@ function salvarDados() {
     localStorage.setItem('informacoesAdicionais', informacoesAdicionais);
 }
 
-function validarFormulario(event) {
-    const nome = document.getElementById("nome").value.trim();
-    const sobrenome = document.getElementById("sobrenome").value.trim();
-    const numero = document.getElementById("numeroTelefone").value.trim();
+function validarFormulario() {
+    const nome = document.getElementById("nome").value;
+    const sobrenome = document.getElementById("sobrenome").value;
+    const numero = document.getElementById("numeroTelefone").value;
     const numeroRegex = /^\(\d{2}\)\d{9}$/;
 
     if (nome === "" || sobrenome === "" || !numeroRegex.test(numero)) {
         alert("Por favor, preencha todos os campos obrigatórios corretamente.");
-        event.preventDefault();
         return false;
     }
     return true;
@@ -43,13 +42,15 @@ function formatarNumero(event) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector("form");
+    const form = document.getElementById("consultaForm");
     const numeroTelefone = document.getElementById("numeroTelefone");
 
     numeroTelefone.addEventListener("input", formatarNumero);
 
     form.addEventListener("submit", function(event) {
-        if (validarFormulario(event)) {
+        event.preventDefault();
+
+        if (validarFormulario()) {
             salvarDados();
             window.location.href = "../schedule-consult-step-3/schedule-consult-step-3.html";
         }
