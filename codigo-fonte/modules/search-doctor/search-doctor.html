@@ -1,4 +1,101 @@
-<div>
-    <h1>search-doctor</h1>
-    <div id="messageBox"></div>
+<div class="col-12">
+    <nav class="d-flex align-items-center justify-content-center w-100">
+        <div class="container-fluid">
+            <div class="row" >
+                <div class="col-3">
+                    <a class="navbar-brand" href="#">
+                        <img src="../../assets/img/agendaClinLight.png" alt="" width="288"
+                             height="57" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <div class="col-6 d-flex align-items-center " >
+                    <form action=""
+                          class="d-flex align-items-center justify-content-center w-100">
+                        <select class="form-select select-style-form " aria-label="Default select example">
+                            <option selected>Especialidade,doença ou nome</option>
+                            <option value="1">Unimed</option>
+                            <option value="2">Sulamerica</option>
+                            <option value="3">Bradesco</option>
+                        </select>
+                        <select class="form-select select-style-form " aria-label="Default select example">
+                            <option selected>Filtre sua cidade</option>
+                            <option value="1">Unimed</option>
+                            <option value="2">Sulamerica</option>
+                            <option value="3">Bradesco</option>
+                        </select>
+                        <button class="btn btn-primary" type="submit"><img
+                                src="../../assets/icon/pesquisa.png" width="16" height="16"></button>
+                    </form>
+                
+                </div>
+                <div class="col-3"></div>
+            </div>
+        
+        </div>
+    </nav>
 </div>
+<div class="col-12 mb-2 filter-bar d-flex align-items-center justify-content-center">
+    <select class="form-select select-style">
+        <option>
+            Convênios
+        </option>
+    </select>
+    <select class="form-select select-style">
+        <option>
+            Datas disponíveis
+        </option>
+    </select>
+    <select class="form-select select-style">
+        <option>
+            Bairros
+        </option>
+    </select>
+
+</div>
+<div class="container container-margin">
+    <div class="row profile-card ">
+        <div class="col-5 pt-5" style="border-right:  1.5px solid #0367A5;">
+            <div class="doctor-info">
+                <div style="width: 30%"><img src="../../assets/img/Dra.jpg" alt="Dr. Sofia Martinez Rivera" class="img-fluid doctor-img-avatar"></div>
+                <div style="width: 70%">
+                    <span class="doctor-info ps-2">
+                        <strong>Dra. Sofia Martinez Rivera</strong>
+                    </span>
+                    <span class="doctor-info  ps-2">
+                        <strong>Ginecologista</strong>
+                    </span>
+                    <div class="doctor-feedback">
+                <span>
+                    <img src="../../assets/icon/estrela-azul.png" alt="Phone Icon"
+                         class="feedback-star">
+                    <img src="../../assets/icon/estrela-azul.png" alt="Phone Icon"
+                         class="feedback-star">
+                    <img src="../../assets/icon/estrela-azul.png" alt="Phone Icon"
+                         class="feedback-star">
+                    <img src="../../assets/icon/estrela-azul.png" alt="Phone Icon"
+                         class="feedback-star">
+                    <img src="../../assets/icon/estrela-azul.png" alt="Phone Icon"
+                         class="feedback-star">
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div  class="location-icon-position mt-5">
+                <div style="width: 10%" >
+                    <img src="../../assets/icon/local.png" alt="" class="doctor-info-icone">
+                </div>
+                <div style="width: 90%" class="doctor-address ">
+                    <span >Endereço <br> Rua das Acácias, 157, Apartamento 402, <br> Bairro Jardim
+                        Primavera, Estado do Sol, <br> CEP 55235-000, Brasil</span>
+                </div>
+            
+            </div>
+        </div>
+        <div class="col-7">
+            <div id='calendar'>
+            
+            </div>
+        </div>
+    </div>
+</div>
+<script src="search-doctor-controller.js" type="module"></script>

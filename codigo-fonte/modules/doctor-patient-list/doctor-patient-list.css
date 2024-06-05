@@ -1,3 +1,108 @@
-h1 {
-    color: red;
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.superior{
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(#0367A5,#50F3E2);
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.superior>a>img{
+    margin-top: 6px;
+    width: 250px;
+}
+
+.vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(to right, #0367A5,#50F3E2);
+    height: 100%;
+    width: 60px;
+}
+.vertical>a>img{
+    display: flex;
+    align-self: center;
+    width: 40px;
+    margin-top: 30px;
+    color:white;
+    opacity: 1;
+}
+
+.pessoa{
+    margin-top: 30px;
+}
+.pacientes{
+    position: absolute;
+    left: 80px;
+    top: 50px;
+    font-size: 1.5rem;
+    font-family: "Open Sans";
+    color: #0367A5;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    position: absolute;
+    top: 180px;
+    left: 70px;
+    gap: 5px;
+}
+select{
+    border: 1px solid #C0C0C2;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    font-family: "Open Sans";
+    border-radius: 5px;
+    opacity: 0.6;
+}
+
+.informações{
+    display: flex;
+    position: absolute;
+    font-family: "Open Sans";
+    left: 70px;
+    top: 300px;
+    color: #0367A5;
+    gap: 200px;
+}
+
+.botão{
+    width: 15px;
+    float: left;
+    margin-top: 2px;
+    margin-right: 1rem;
+}
+
+button{
+    display: flex;
+    justify-self: flex-end;
+    font-size: 1rem;
+    color: white;
+    font-family:"Open Sans";
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border: #0367A5;
+    background-color: #0367A5;
+    margin-top: 0.6rem;
+    border-radius: 5px;
+}
+
+.end{
+    margin-right: 1.5rem;
 }

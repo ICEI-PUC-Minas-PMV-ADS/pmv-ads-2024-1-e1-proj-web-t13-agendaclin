@@ -12,52 +12,106 @@
 <body>
 
 <header>
-    <a href="//www.google.com.br"><img id="logoAgendaClim" defer src = "agendaClinLightgradiente.png" alt="Logo da AgendaClim"></a>
-    <hr>
+    <div id="cabecalho">
+        <a href="../../index.html"><img id="logoAgendaClim" src = "../../assets/img/agendaClinLightgradiente.png" alt="Logo da AgendaClim"></a>
+        <hr>
+    </div>
 </header>
 
 <main>
 
-<div id="tableMedico">
+    <div id="tableMedico">
 
-    <div id="dadosMedico">
-        <img id="imagemMedico" defer src="Dra.jpg" alt="Foto do medico">
-            <p>Dra. Sofia Martinez Riveira<br><span id="especialidadeDoMedico">Ginecologista</span></p>
-    </div>
+        <div id="containerDadosTable">
 
-    <div id="dadosHorario">
-        <img id="iconCalendar" defer src="calendar.png">
-        <p>03 Abril 2024, <time datetime="2024-04-03T14:30">14:30</time> <br> Fuso horário de Brasília</p>
-    </div>
+            <div id="dadosMedico">
 
-    <div id="dadosLocal">
-        <img id="iconLocal" defer src="local.png"> Endereço
+                <div id="containerImagemMedico">
+                    <img id="imagemMedico" src="../../assets/img/Dra.jpg" alt="Foto do medico">
+                </div>
+        
+                <div id="containerNomeMedico">
+
+                <p>Dra. Sofia Martinez Riveira<br><span id="especialidadeDoMedico">Ginecologista</span></p>
+            
+                </div>
+
+            </div>
+
+        <div id="dadosHorario">
+
+            <div id="containerIconCalendar">
+                <img id="iconCalendar" src="../../assets/icon/calendar.png">
+            </div>
+        
+                <p>03 Abril 2024, <time datetime="2024-04-03T14:30">14:30</time> <br> Fuso horário de Brasília</p>
+        
+        </div>
+
+        <div id="dadosLocal">
+
+            <div id="containerIconLocal">
+                <img id="iconLocal" src="../../assets/icon/local.png" alt="Icone de localizacao">
+            </div>
+
+            <div class="containerLocal">
+                
+                <div class="tituloLocal">
+
+                    Endereço
+                
+                </div>
+
+                <div id="local">
+
+                    Rua das Acácias, 157, Apartamento 402, Bairro Jardim Primavera, Cidade das Flores, Estado do Sol. <br>CEP 55235-000, Brasil
+                
+                </div> 
+                     
+            </div>
+        </div>
     </div>
-        <div id="local">Rua das Acácias, 157, Apartamento 402, Bairro Jardim Primavera, Cidade das Flores, Estado do Sol. <br> CEP 55235-000, Brasil</div>
 </div>
 
-<div id="convenio">
-<p>Convênio médico</p>
+<form id="containerSelectConvenio">
+    <div id="containerConvenio">
+    
+        <label for="convenioSelect">Convênio medico*</label> <br>
 
-<select convenio required ="conveio">
-    <option value="Selecione" selected disabled>Escolha seu convênio</option>
-    <option value="Amil">Amil</option>
-    <option value="Bradesco">Bradesco</option>
-    <option value="Hapvida">Hapvida</option>
-    <option value="NotreDame">NotreDame</option>
-    <option value="Unimed">Unimed</option>
-</select>
-</div>
+            <select id="convenioSelect" required>
+                <option value="Selecione" selected disabled>Escolha seu convênio</option>
+                <option value="Particular">Particular</option>
+                <option value="Amil">Amil</option>
+                <option value="Bradesco">Bradesco</option>
+                <option value="Hapvida">Hapvida</option>
+                <option value="NotreDame">Porto Seguro</option>
+                <option value="Unimed">Unimed</option>
+            </select>
 
-<div id="primeiraConsulta">
-    <p>É a sua primeira consulta?</p>
-    <input type="radio" name="primeiraConsulta" value="sim">Sim
-    <input type="radio" name="primeiraConsulta" value="nao">Não
-</div>
+    </div>
+
+    <div id="primeiraConsulta">
+
+        <p>É a sua primeira consulta?</p>
+
+        <div id="inputPrimeiraConsulta">
+            <input type="radio" name="primeiraConsulta" value="true">Sim
+            <input type="radio" name="primeiraConsulta" value="false">Não
+        </div>
+
+
+    </div>
+
+    <div id="containerButtonContinuar">
+
+        <button type="button" id="buttonContinuar">Continuar</button>
+
+    </div>
+</form>    
 
 <footer>
 </footer>
-</main>    
+</main>
+<script type="text/javascript" src="schedule-consult-step-1.js"></script>
 </body>
 </html>
-

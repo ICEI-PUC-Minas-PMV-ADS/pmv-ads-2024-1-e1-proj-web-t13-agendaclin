@@ -1,13 +1,41 @@
-<div class="container">
-    <div class="row">
-        <div class="col d-flex justify-content-center align-items-center">
-            <h1>doctor-patient-list</h1>
-            <div id="dataContainer"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./doctor-patient-list.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="superior">
+            <a href="../home/home.html"><img src="../../assets/img/agendaClinLight.png"></a>
+            <div class="end"><button><img class="botão" src="../../assets/icon/+.png">Adicionar pacientes</button></div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col d-flex justify-content-center align-items-center">
-            <button id="loadButton">Load Data</button>
+        <div class="vertical">
+            <a href><img src="../../assets/icon/calendar.png"></a>
+            <a class="pessoa" href=""><img src="../../assets/icon/pessoa.png"/></a> 
         </div>
+        <div class="pacientes">
+            <p>Pacientes</p>
+        </div>
+        <div class="buttons">
+            <select>
+                <option>Nome, sobrenome</option>
+            </select>
+            <select>
+                <option>Dados do contato</option>
+            </select>
+        </div>
+        <div class="informações">
+            <div><p>Nome e Sobrenome</p></div>
+            <div><p>Telefones</p></div>
+            <div><p>Ultima Visita</p></div>
+            <div><p>Email</p></div>
+            </div>
     </div>
-</div>
+
+</body>
+</html>

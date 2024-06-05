@@ -1,3 +1,160 @@
-h1 {
-    color: red;
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(16, 165, 199));
+}
+  
+li a:hover 
+{
+    background-color: #52a8cf;
+}
+
+body
+{
+    margin: 0px;  
+}
+
+.logo_navbar
+{
+    width: 210px;
+    height: 45px;
+}
+
+.card 
+{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 922px;
+    padding: 20px;
+    margin-left: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.titulo
+{
+    color: #035385;
+    font-size: 25px;  
+    font-family: 'open sans', sans-serif; 
+}
+
+.escritas
+{
+    color: #0367A5;
+    font-family: 'open sans', sans-serif; 
+}
+
+.profile
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-img 
+{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+}
+
+h3
+{
+    margin: 5px 0;
+}
+
+.appointment-button 
+{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.appointment-button:hover 
+{
+    background-color: #0056b3;
+}
+
+.schedule 
+{
+    margin-top: 20px;
+}
+
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td 
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th 
+{
+    background-color: #f8f8f8;
+}
+
+.clinic-info 
+{
+    margin-top: 20px;
+}
+
+label 
+{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input 
+{
+    width: 73%;
+    height: 100px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.estrelas 
+{
+    color: #0367A5;
+}
+
+.botao
+{
+    border-radius: 25px;
+    border: 1px solid #013269;
+    background-color: rgb(214, 211, 211);
+    padding: 17px 40px;
+    width: 200px;
+    height: 10px;
+  }
+  
+.perfil 
+{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}  
+
+.letras
+{
+   padding: 10px;
+   width: 2050px; 
 }
