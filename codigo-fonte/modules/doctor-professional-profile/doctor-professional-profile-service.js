@@ -32,7 +32,7 @@
 
     if(endereço === "" || numero === "" || sobreMim === "" || experiencia === "" || formaçao === "" ) 
         {
-            alert("por favor, certifique-se se está preenchido corretamente.");
+            alert("por favor, certifique se está preenchido corretamente.");
             return false;
         }
         return true;
