@@ -12,6 +12,7 @@ select {
     backdrop-filter: blur(10px);
 }
 .profile-card {
+    margin: 20px 0;
     padding: 15px 0;
     border-radius: 10px;
     background: white;
@@ -60,7 +61,7 @@ button {
 }
 
 .select-style {
-    max-width: 175px;
+    max-width: 200px;
     height: 50px;
 }
 
@@ -122,4 +123,26 @@ button {
         width: 40px;
         height: auto;
     }
+}
+.form-select {
+    background-color: #f8f9fa;
+    color: #495057;
+    border: 1px solid #ced4da;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+}
+
+/* Estilos para as opções */
+.form-select option {
+    min-height: 50px;
+    background-color: #f8f9fa;
+    color: #495057;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+}
+
+/* Estilos ao passar o mouse sobre as opções */
+.form-select option:hover {
+    background-color: #e9ecef;
 }
