@@ -1,7 +1,7 @@
 class SearchDoctorService {
-    async fetchDoctorsData() {
+    async fetchData(databaseName) {
         try {
-            const response = await fetch('assets/databases/doctors.json');
+            const response = await fetch(`assets/databases/${databaseName}.json`);
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
             }
@@ -12,5 +12,17 @@ class SearchDoctorService {
             return [];
         }
     }
+    sortObjectsByField(array, field) {
+        return array.sort((a, b) => {
+            if (a[field] < b[field]) {
+                return -1;
+            }
+            if (a[field] > b[field]) {
+                return 1;
+            }
+            return 0;
+        });
+    }
 }
+
 export default SearchDoctorService;
