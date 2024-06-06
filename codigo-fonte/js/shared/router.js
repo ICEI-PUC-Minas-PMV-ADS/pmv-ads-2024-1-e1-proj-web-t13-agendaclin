@@ -72,7 +72,7 @@ export const Router = {
         }
     },
     updateTitle(title) {
-        document.title = title || 'SPA Example';
+        document.title = title || 'AgendaClin Example';
     },
     updateCSS(path) {
         const head = document.getElementsByTagName('head')[0];

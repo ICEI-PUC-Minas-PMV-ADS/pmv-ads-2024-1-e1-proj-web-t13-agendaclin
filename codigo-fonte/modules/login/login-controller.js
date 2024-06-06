@@ -12,7 +12,9 @@ export class LoginController {
         // Definir os listeners para botões específicos de login (Google e Apple)
         document.getElementById('googleLoginButton').addEventListener('click', googleLogin);
         document.getElementById('appleLoginButton').addEventListener('click', googleLogin);
-
+        document.getElementById("forgot-password").addEventListener('click', function() {
+            $('#forgotPasswordModal').modal('show');
+        });
 
         // Definir o listener para o formulário de login por email
         document.getElementById('emailLoginForm').addEventListener('submit', (event) => {
@@ -23,8 +25,26 @@ export class LoginController {
         });
     }
 }
+// Função de reset de senha
+document.getElementById('forgotPasswordForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const email = document.getElementById('resetEmail').value;
+    auth.sendPasswordResetEmail(email)
+        .then(() => {
+            // Email de redefinição enviado com sucesso
+            console.log('Email de redefinição enviado');
+            $('#forgotPasswordModal').modal('hide');
+            alert('Email de redefinição de senha enviado com sucesso!');
+        })
+        .catch((error) => {
+            // Erro ao enviar email de redefinição
+            console.error('Erro ao enviar email de redefinição:', error.message);
+        });
+});
 
 // Garantir que o LoginController seja instanciado após o carregamento do DOM
 document.addEventListener('DOMContentLoaded', () => {
     new LoginController();
 });
+
+
