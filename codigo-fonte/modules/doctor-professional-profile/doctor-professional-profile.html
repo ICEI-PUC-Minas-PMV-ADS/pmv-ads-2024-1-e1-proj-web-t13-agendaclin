@@ -98,7 +98,7 @@
                     </tr>
                     <tr>
                         <td class="escritas">14:30</td>         
-                        <td class="escritas">14:30</td>
+                        <td class="escritas" id="horas">14:30</td>
                         <td class="escritas">14:30</td>     <!-- nona linha -->
                         <td class="escritas">14:30</td>
                         <td class="escritas">14:30</td>
@@ -150,13 +150,13 @@
             <h3 class="titulo"><strong>Consultório</strong></h3>
             <img src="../../assets/icon/local.png" style="height: 20px; width: 20px;">
             <p class="escritas">Endereços</p>
-            <input type="text" placeholder="Digite aqui">
+            <input type="text"  id="endereço" placeholder="Digite aqui">
 
             <br>
 
             <img src="../../assets/icon/telefone.png" style="height: 20px; width: 20px;">
             <p class="escritas">Número de Telefone</p>
-            <input type="text" placeholder="Digite aqui">
+            <input type="text"  id="numero"  placeholder="Digite aqui">
         </div>
     </div>    
     
@@ -166,21 +166,21 @@
         <div class="clinic-info">
             <h3 class="titulo"><strong>experiência</strong></h3>
             <p class="escritas">sobre mim:</p>
-            <input type="text" placeholder="Digite aqui">
+            <input type="text"  id="sobreMim"  placeholder="Digite aqui">
 
             <br>
             
             <p class="escritas">experiência em:</p>
-            <input type="text" placeholder="Digite aqui">
+            <input type="text"  id="experiencia"  placeholder="Digite aqui">
             
             <br>
 
             <p class="escritas">Formação</p>
-            <input type="text" placeholder="Digite aqui">
+            <input type="text"  id="fornaçao"  placeholder="Digite aqui">
 
             <br><br>
-
-            <button class="appointment-button" style="margin-left: 90%;">salvar</button> 
+            
+            <button class="appointment-button"  id="salvar" style="margin-left: 90%"; onclick="salvarDados()" onclick="verificarInput()">salvar</button> 
 
         </div>
     </div>  
