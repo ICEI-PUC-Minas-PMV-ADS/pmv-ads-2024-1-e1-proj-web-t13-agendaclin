@@ -20,15 +20,17 @@
     localStorage.setItem("sobreMim" , sobreMim)
     localStorage.setItem("experiencia" , experiencia)
     localStorage.setItem("formaçao" , formaçao)
+
+    document.write.value
  }
 //verifica se os dados estao preenchidos
  function verificarInput()
  {
-    const endereço = document.getElementById("endereço")
-    const numero = document.getElementById("numero")
-    const sobreMim = document.getElementById("sobreMim")
-    const experiencia = document.getElementById("experiencia")
-    const formaçao = document.getElementById("formaçao")
+    const endereço = document.getElementById("endereço").Value;
+    const numero = document.getElementById("numero").Value;
+    const sobreMim = document.getElementById("sobreMim").Value;
+    const experiencia = document.getElementById("experiencia").Value;
+    const formaçao = document.getElementById("formaçao").Value;
 
     if(endereço === "" || numero === "" || sobreMim === "" || experiencia === "" || formaçao === "" ) 
         {
