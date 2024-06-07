@@ -24,10 +24,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto" >
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;">Entrar</a>
+                            <a class="nav-link" href="../login/login.html" style="color: white;">Entrar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;">Cadastre-se</a>
+                            <a class="nav-link" href="../signup/signup.html" style="color: white;">Cadastre-se</a>
                         </li>
                     </ul>
                 </div>
@@ -65,9 +65,17 @@
                             </select>
                         </div>
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-primary">
+                            <button type="submit" class="btn btn-primary" id="pesq_button">
                                 <i class="bi bi-search"></i> Pesquise
                             </button>
+
+                            <script>
+                                document.getElementById('pesq_button').addEventListener('click', function(event) {
+                                    event.preventDefault();
+                                    alert('Você precisa estar logado para fazer uma pesquisa. Você será redirecionado para a página de login.');
+                                    window.location.href = '../login/login.html';
+                                });
+                            </script>
                         </div>
                     </form>
                 </div>              
