@@ -367,7 +367,11 @@
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
 > - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
 
+<br><br>
+
 <hr>
+
+<br><br>
 
 # Plano de Testes de Software
 <h1>Plano de Teste do AgendaClin</h1>
@@ -389,7 +393,9 @@
         <li>Firebase Console</li>
         <li>Fullcalendar</li>
     </ul>
+    
 <h1>Página Home</h1>
+
 <table>
   <tr>
     <th>Caso de Teste</th>
@@ -399,8 +405,7 @@
     <th>Critérios de Êxito</th>
     <th>Responsável</th>
   </tr>
-
-    <!--  linha 1  -->
+    
   <tr>
     <td>CT-01: Acessar a página de login</td>
     <td>RF-001: O site deve permitir ao usuário acessar a página de login.</td>
@@ -412,8 +417,6 @@
     <td>Michael</td>
   </tr>
 
-
-  
   <tr>
     <td>CT-02: Acessar a página de cadastro</td>
     <td>RF-002: O site deve permitir ao usuário acessar a pagina de cadastro</td>
@@ -425,8 +428,6 @@
     <td>Michael</td>
   </tr>
 
-
-  
   <tr>
     <td>CT-03: Pesquisa que manda para a página de login</td>
     <td>RF-003: O site deve emitir um alerta ao usuário no qual informa para loggar</td>
@@ -442,7 +443,7 @@
 </table>
 
 
- <!-- 
+  
 <table>
   <tr>
     <th>Caso de Teste</th>
@@ -452,41 +453,40 @@
     <th>Critérios de Êxito</th>
     <th>Responsável</th>
   </tr>
-  <tr>
-    <td>CT-01: Verificar barra de pesquisa</td>
-    <td>RF-001: O site deve permitir ao usuário fazer pesquisa sobre o médico.</td>
-    <td>Verificar se a barra de pesquisa está funcionando corretamente.</td>
+
+<tr>
+    <td>CT-01: Acessar a página de agendamentos</td>
+    <td>RF-001: O site deve permitir ao usuário acessar a página de agendamentos</td>
+    <td>Verificar se foi aberta a página.</td>
     <td>
-      1. Acessar a Página perfil médico.<br>
-      2. Clicar na barra de pesquisa.<br>
-      3. digitar algo.<br>
-      4. clicar no botão de pesquisar.
+      1. Acessar a página pelo botão com ícone de calendário na barra barra de navegação lateral.
     </td>
-    <td>O usuário deve ser autenticado e direcionado para o resultado da pesquisa.</td>
-    <td>vinicius</td>
-  </tr>
+    <td>O usuário deve ter tido acesso à pagina</td>
+    <td>Michael</td>
+</tr>
+
   <tr>
-    <td>CT-02: Verificar o preenchimento do número de telefone</td>
-    <td>RF-002: O site deve permitir ao usuário preencha com seu número.</td>
-    <td>Verificar se o preenchimento está funcionando corretamente.</td>
+    <td>CT-02: Acessar a página do perfil do médico</td>
+    <td>RF-002: O site deve permitir ao usuário acessar a pagina do perfil do médico</td>
+    <td>Verificar se foi aberta a página.</td>
     <td>
-      1. Acessar a Página perfil médico.<br>
-      2. Clicar no input de preenchimento.<br>
-      3. preencher com seu número.
+      1. Acessar a página pelo botão com o ícone do perfil na barra barra de navegação lateral.
     </td>
-    <td>O número do usuário deverá aparecer na tela .</td>
-    <td>vinicius</td>
+    <td>O usuário deve ter tido acesso à pagina</td>
+    <td>Michael</td>
   </tr>
+
   <tr>
-    <td>CT-06: Verificar link do logo para home</td>
-    <td>RF-006: O site deve permitir ao usuário retornar à página inicial ao clicar no logo.</td>
-    <td>Verificar se ao clicar no logo "AgendaClin" o usuário é redirecionado para a página inicial.</td>
+    <td>CT-03: O arquivo do laudo médico ser armazenado em localstorage</td>
+    <td>RF-003: O site deve emitir um alerta ao usuário no qual informa que o arquivo foi armazenado com sucesso</td>
+    <td>Verificar se o arquivo está armazenado.</td>
     <td>
-      1. Acessar a página de login.<br>
-      2. Clicar no logo "AgendaClin".
+      1. Clique no botão ou arraste o arquivo.<br>
+      2. Aperte f12 e vá em application. (Habilite o modo desenvolvedor no seu navegador, caso esteja testando no Safari ou outros)<br>
+      3. Clique em localstorage e veja se o nome do seu arquivo está aparecendo.
     </td>
-    <td>O usuário deve ser redirecionado para a página inicial.</td>
-    <td>vinicius</td>
+    <td>O arquivo deve ser enviado e aparecer o alerta de envio bem sucedido.</td>
+    <td>Michael</td>
   </tr>
-</table> 
--->
+  
+</table>
