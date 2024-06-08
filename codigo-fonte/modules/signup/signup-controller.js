@@ -1,4 +1,5 @@
 import { SignupService } from './signup-service.js';
+import { googleLogin, emailSignUp } from '/js/shared/auth.js';
 
 export class SignupController {
     constructor() {
@@ -7,20 +8,33 @@ export class SignupController {
     }
 
     setupEventListeners() {
-        document.getElementById('loginForm').addEventListener('submit', (event) => {
-            event.preventDefault();
-            this.login();
-        });
-    }
+        // Definir os listeners para botões específicos de login (Google e Apple)
+        document.getElementById('googleLoginButton').addEventListener('click', googleLogin);
+        document.getElementById('appleLoginButton').addEventListener('click', googleLogin);
 
-    login() {
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        this.loginService.authenticate(email, password).then(message => {
-            document.getElementById('messageBox').innerText = message;
-        }).catch(err => {
-            document.getElementById('messageBox').innerText = 'Login failed';
-            console.error(err);
+
+
+        // Definir o listener para o formulário de login por email
+        document.getElementById('emailSignupForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            try {
+                const signup = await emailSignUp(email, password);
+                console.log('Usuário cadastrado:', signup);
+                $('#successModal').modal('show');
+                document.getElementById('closeModalButton').addEventListener('click', function() {
+                    window.location.href = '/#/search-doctor';
+                });
+
+                document.getElementById('closeModalicon').addEventListener('click', function() {
+                    window.location.href = '/#/search-doctor';
+                });
+
+            } catch (error) {
+                console.error('Erro ao fazer cadastro:', error.message);
+            }
+
         });
     }
 }

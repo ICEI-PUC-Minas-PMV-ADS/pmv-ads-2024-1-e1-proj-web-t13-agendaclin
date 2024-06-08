@@ -1,10 +1,18 @@
+/* Home css fin 1.5*/
+
+.nav-top 
+{
+    width: 100%;
+    z-index: 10; 
+}
+
 ul 
 {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(16, 165, 199));
+    height: 59px;
 }
   
 li 
@@ -14,42 +22,55 @@ li
   
 li a 
 {
+    background-color: #0085f100;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
 }
   
 li a:hover 
 {
-    background-color: #52a8cf;
+    background-color: #2bade9;
 }
 
-body
+body 
 {
-    margin: 0px;  
+    margin: 0;  
 }
 
-.logo_navbar
+.logo_navbar 
 {
     width: 210px;
     height: 45px;
+    margin-left: 16px;
 }
 
 .full-width-image 
 {
     background-image: url('../../assets/img/Background.png');
-    height: calc(100vw * 1.53);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: calc(100vw * 0.80);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
     margin-left: 0;
     margin-right: 0;
 }
 
+@media (max-width: 768px) 
+{
+    .full-width-image 
+    {
+        height: 300px; 
+    }
+}
+
+
 .gradiente_title 
 {
+    font-size: 2.00vw;
     text-align: center;
     background-image: -webkit-gradient(
     linear,
@@ -63,31 +84,100 @@ body
   -webkit-text-fill-color: transparent;
 }
 
-.grid-esquerda_l1
+.pic-icon1
 {
-        width: 50%;
-        float: left;
-        padding: 15px;
-        border: 1px solid red;
+    height: 77px;
+    width: 77px;
 }
 
-.medsgdl1
+.pic-icon2
 {
-    width: 1177px;
-    height: 1010px;
+    height: 118px;
+    width: 118px;
+}
+
+.pic-icon3
+{
+    height: 118px;
+    width: 122px;
+}
+
+.gradiente_title2
+{
+    font-size: 1.97vw;
+    text-align: center;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.03, rgb(3, 103, 165, 1)),
+    color-stop(0.52, rgb(100, 159, 226)),
+    color-stop(0.76, rgb(80, 243, 226, 1))
+);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin: 20px;
     text-align: center;
 }
 
-.grid-direita_l1
+.medslinha2
 {
-        width: 47%;
-        height: 900px;
-        float: right;
-        padding: 15px;
-        border: 1px solid red;
+    width: 700px;
+    height: 467px;
 }
 
-.center-text-agc
+.line 
 {
-    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.arrow 
+{
+    color: rgb(16, 165, 199);
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #0056b3; 
+    color: white; 
+}
+
+.footer h5 
+{
+    margin-bottom: 20px; 
+}
+
+.footer ul 
+{
+    padding-left: 0; 
+    list-style-type: none; 
+}
+
+.footer li 
+{
+    margin-bottom: 10px; 
+    margin-right: 15px; 
+    display: inline-block; 
+}
+
+@media (max-width: 768px) 
+{
+    .footer h5 
+    {
+        text-align: center; 
+    }
+    .footer ul 
+    {
+        text-align: center; 
+    }
 }

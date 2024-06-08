@@ -1,3 +1,148 @@
-h1 {
-    color: #0a53be;
+nav {
+    background: linear-gradient(185deg, #13C9F1 26.18%, rgba(25, 25, 25, 0.16) 133.19%);
+    height: 86.4px;
+}
+select {
+    margin: 0 5px;
+}
+.filter-bar {
+    height: 50px;
+    flex-shrink: 0;
+    background: #F4F5F8;
+    backdrop-filter: blur(10px);
+}
+.profile-card {
+    margin: 20px 0;
+    padding: 15px 0;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 3px 3px 4px 1px rgba(3, 103, 165, 0.25), 0 -3px 4px 0 rgba(3, 103, 165, 0.25);
+}
+.feedback-star {
+    max-width: 50px;
+    height: auto;
+}
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+}
+.fc-col-header-cell {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-transform: capitalize;
+
+}
+.fc-day-header {
+    text-transform: capitalize; /* Garante capitalização se necessário */
+}
+.fc-col-header-cell .fc-col-header-cell-cushion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #0367A5 !important;
+}
+.custom-header {
+    font-size: 16px;
+    color: #666;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    background: #0367A5;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    gap: 19px;
+}
+
+.select-style {
+    max-width: 200px;
+    height: 50px;
+}
+
+.select-style-form {
+    height: 50px;
+}
+
+.container-margin {
+    margin-top: 100px;
+}
+
+.doctor-img-avatar {
+    border-radius: 50%;
+    width: 125px;
+    height: auto;
+    margin: 0 20px;
+}
+
+.doctor-info {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155.99%; /* 37.438px */
+    letter-spacing: -0.72px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    color: #0367A5;
+}
+.location-icon-position {
+    display: flex!important;
+    align-items: flex-start!important;
+    padding-top: 30px;
+    border-top: 1.5px solid #0367A5;
+}
+.doctor-info-icone {
+    width: 40px;
+    height: 40px;
+}
+.doctor-address {
+    span{
+        font-family: "Open Sans", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 155.99%; /* 37.438px */
+        letter-spacing: -0.72px;
+        color: #0367A5;
+    }
+
+}
+
+.doctor-feedback {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img{
+        width: 40px;
+        height: auto;
+    }
+}
+.form-select {
+    background-color: #f8f9fa;
+    color: #495057;
+    border: 1px solid #ced4da;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+}
+
+/* Estilos para as opções */
+.form-select option {
+    min-height: 50px;
+    background-color: #f8f9fa;
+    color: #495057;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+}
+
+/* Estilos ao passar o mouse sobre as opções */
+.form-select option:hover {
+    background-color: #e9ecef;
 }
