@@ -466,7 +466,7 @@
       3. Clicar em "salvar".
     </td>
     <td>Os dados do usuário deverá aparecer na tela</td>
-    <td>vinicius</td>
+    <td>icaro</td>
   </tr>
   <tr>
     <td>CT-02: Verificar o ícone calendário</td>
