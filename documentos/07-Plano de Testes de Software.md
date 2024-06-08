@@ -12,6 +12,8 @@
         <li>Página de Pesquisa de Médicos</li>
         <li>Página de Calendário</li>
         <li>Página de Confirmaçao do Agendamento</li>
+        <li>Página perfil profissional médico</li>
+        <li>Página perfil médico</li>
     </ul>
 
 <h2>Ferramentas de Teste</h2>
@@ -443,26 +445,7 @@
   </tr>
 </table> 
 
-# Plano de Testes de Software
-<h1>Plano de Teste do AgendaClin</h1>
 
-<h2>Objetivo</h2>
-    <p>Garantir que todas as funcionalidades das páginas perfil profissional médico, Página perfil médico estejam funcionando corretamente e de acordo com os requisitos especificados.</p>
-
-<h2>Escopo</h2>
-    <p>Testar as páginas:</p>
-    <ul>
-        <li>Página perfil profissional médico</li>
-        <li>Página perfil médico</li>
-    </ul>
-
-<h2>Ferramentas de Teste</h2>
-    <ul>
-        <li>Navegadores: Chrome, Firefox, Edge</li>
-        <li>Ferramentas de depuração do navegador (DevTools)</li>
-        <li>Firebase Console</li>
-        <li>Fullcalendar</li>
-    </ul>
 <h1>perfil profissional médico</h1>
 <table>
   <tr>
