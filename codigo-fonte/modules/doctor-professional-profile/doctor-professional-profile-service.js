@@ -62,7 +62,7 @@ const icone = document.getElementById("icone")
 
 icone.addEventListener("click", function()
 {
-   window.location.href = "../doctor-consult-dashboard.html"
+   window.location.href = "../doctor-consult-dashboard/doctor-consult-dashboard.html"
 }
 )
 
