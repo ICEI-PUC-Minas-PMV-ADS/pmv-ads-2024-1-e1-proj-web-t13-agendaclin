@@ -49,3 +49,21 @@
             window.location.href = "../schedule-consult-step-2/schedule-consult-step-2.html"
         }
  });
+
+ const logo = document.getElementById("logo")
+
+ logo.addEventListener("click", function()
+{
+    window.location.href = "../../index.html"
+}
+)
+
+const icone = document.getElementById("icone")
+
+icone.addEventListener("click", function()
+{
+   window.location.href = "../doctor-consult-dashboard.html"
+}
+)
+
+
