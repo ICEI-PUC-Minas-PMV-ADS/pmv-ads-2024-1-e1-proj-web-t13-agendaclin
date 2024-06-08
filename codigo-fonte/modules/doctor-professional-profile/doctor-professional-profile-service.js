@@ -8,11 +8,11 @@
  //salva os dados
  function salvarDados()
  {
-    const endereço = document.getElementById("endereço").Value;
-    const numero = document.getElementById("numero").Value;
-    const sobreMim = document.getElementById("sobreMim").Value;
-    const experiencia = document.getElementById("experiencia").Value;
-    const formaçao = document.getElementById("formaçao").Value;
+    const endereço = document.getElementById("endereço").value;
+    const numero = document.getElementById("numero").value;
+    const sobreMim = document.getElementById("sobreMim").value;
+    const experiencia = document.getElementById("experiencia").value;
+    const formaçao = document.getElementById("formaçao").value;
 
 
     localStorage.setItem("endereço" , endereço)
@@ -26,11 +26,11 @@
 //verifica se os dados estao preenchidos
  function verificarInput()
  {
-    const endereço = document.getElementById("endereço").Value;
-    const numero = document.getElementById("numero").Value;
-    const sobreMim = document.getElementById("sobreMim").Value;
-    const experiencia = document.getElementById("experiencia").Value;
-    const formaçao = document.getElementById("formaçao").Value;
+    const endereço = document.getElementById("endereço").value;
+    const numero = document.getElementById("numero").value;
+    const sobreMim = document.getElementById("sobreMim").value;
+    const experiencia = document.getElementById("experiencia").value;
+    const formaçao = document.getElementById("formaçao").value;
 
     if(endereço === "" || numero === "" || sobreMim === "" || experiencia === "" || formaçao === "" ) 
         {
