@@ -2,7 +2,7 @@
 <h1>Plano de Teste do AgendaClin</h1>
 
 <h2>Objetivo</h2>
-    <p>Garantir que todas as funcionalidades das páginas de login, cadastro, pesquisa de médicos e calendário estejam funcionando corretamente e de acordo com os requisitos especificados.</p>
+    <p>Garantir que todas as funcionalidades das páginas de login, cadastro, pesquisa de médicos, calendário e agendamento de consulta estejam funcionando corretamente e de acordo com os requisitos especificados.</p>
 
 <h2>Escopo</h2>
     <p>Testar as páginas:</p>
@@ -11,6 +11,7 @@
         <li>Página de Cadastro</li>
         <li>Página de Pesquisa de Médicos</li>
         <li>Página de Calendário</li>
+        <li>Página de Confirmaçao do Agendamento</li>
     </ul>
 
 <h2>Ferramentas de Teste</h2>
@@ -359,6 +360,88 @@
             <td>Yasmim</td>
         </tr>
     </table>
+
+<h1>Página de Confirmaçao do Agendamento</h1>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+  <tr>
+    <td>CT-26: Verificar a opçao de selecionar o convenio</td>
+    <td>RF-026: O site deve permitir de forma obrigatoria, a seleçao de convenio ou particular .</td>
+    <td>Verificar se a seleçao esta obrigatoria e armazenando o dado.</td>
+    <td>
+      1. Acessar a página de confirmacao de agendamento.<br>
+      2. Escolher uma das opçoes de convenio.<br>
+      3. Clicar em "Continuar".
+    </td>
+    <td>A pagina deve avançar para a proxima tela e salvar a informaçao em LocalStorage.</td>
+    <td>Icaro</td>
+  </tr>
+  <tr>
+    <td>CT-27: Verificar opçao de primeira consulta </td>
+    <td>RF-027: O site deve permitir o usuario selecionar se é a sua primeira consulta ou nao.</td>
+    <td>Verificar se a opçao esta sendo salva no LocalStorage.</td>
+    <td>
+      1. Acessar a página de confirmacao de agendamento.<br>
+      2. Selecionar uma opçao de "sim" ou "nao" em "É a sua primeira consulta?".<br>
+      3. Clicar em "Continuar".
+    </td>
+    <td>A pagina deve avançar para a proxima tela e salvar a informaçao em LocalStorage.</td>
+    <td>Icaro</td>
+  </tr>
+  <tr>
+    <td>CT-28: Verificar o preenchimento dos dados pessoais</td>
+    <td>RF-028: O site deve permitir a inserçao do nome, sobrenome e telefone do usuario.</td>
+    <td>Verificar se os campos estao preenchidos e armazenando os dados em LocalStorage.</td>
+    <td>
+      1. Acessar a página de confirmacao de agendamento 2.<br>
+      2. Preencher campos "Nome", "Sobrenome" e "Telefone".<br>
+      3. Clicar em "Continuar".
+    </td>
+    <td>A pagina deve avançar para a proxima tela e salvar as informaçoes em LocalStorage.</td>
+    <td>Icaro</td>
+  </tr>
+  <tr>
+    <td>CT-29: Verificar opçao de informaçoes adicionais</td>
+    <td>RF-029: O site deve permitir o preenchimento de informaçoes adicionais.</td>
+    <td>Verificar se os dados estao sendo salvos em LocalStorage.</td>
+    <td>
+      1. Acessar a confirmacao de agendamento 2.<br>
+      2. Preencher o campo de "Informaçoes Adicionais".<br>
+      3. Clicar em "Continuar".
+    </td>
+    <td>A pagina deve avançar para a proxima tela e salvar as informacoes em LocalStorage.</td>
+    <td>Icaro</td>
+  </tr>
+  <tr>
+    <td>CT-30: Verificar opçao de Reagendar Consulta</td>
+    <td>RF-030: O site deve permitir reagendar a consulta.</td>
+    <td>Verificar se o paciente será redirecionado para a tela de reagendamento.</td>
+    <td>
+      1. Acessar a página de confirmacao de agendamento 3.<br>
+      2. Ir na opçao "Reagendar Consulta".<br>
+    </td>
+    <td>O usuario deve ser redirecionado para a tela de reagendamento.</td>
+    <td>Icaro</td>
+  </tr>
+  <tr>
+    <td>CT-31: Verificar opçao de Cancelar Consulta</td>
+    <td>RF-031: O site deve permitir o cancelamento da consulta.</td>
+    <td>Verificar se o paciente será redirecionado para a tela de confirmacao do cancelamento e se os dados serao apagados.</td>
+    <td>
+      1. Acessar a página de confirmacao de agendamento 3.<br>
+      2. Ir na opçao "Cancelar Consulta".
+    </td>
+    <td>O usuario deve ser redirecionado para a tela de confirmaçao do cancelamento e os dados apagados do LocalStorage.</td>
+    <td>Icaro</td>
+  </tr>
+</table>    
 
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
