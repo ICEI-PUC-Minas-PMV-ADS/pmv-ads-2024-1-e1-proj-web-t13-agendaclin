@@ -478,7 +478,7 @@
       3. direcionar para a página de consultas agendadas.
     </td>
     <td>O usuário deve ser direcionado para a página de consultas agendadas.</td>
-    <td>vinicius</td>
+    <td>icaro</td>
   </tr>
   <tr>
     <td>CT-03: Verificar os horarios da tabela</td>
@@ -489,7 +489,7 @@
       2.  Clicar em algum "horario da tabela"<br>
     </td>
     <td>O usuário deve ser direcionado para a página de marcar consulta.</td>
-    <td>vinicius</td>
+    <td>icaro</td>
   </tr>
   <tr>
     <td>CT-06: Verificar link do logo para home</td>
@@ -500,7 +500,7 @@
       2. Clicar no logo "AgendaClin".
     </td>
     <td>O usuário deve ser redirecionado para a página inicial.</td>
-    <td>vinicius</td>
+    <td>icaro</td>
   </tr>
 </table>
 
@@ -525,7 +525,7 @@
       4. clicar no botão de pesquisar.
     </td>
     <td>O usuário deve ser autenticado e direcionado para o resultado da pesquisa.</td>
-    <td>vinicius</td>
+    <td>icaro</td>
   </tr>
   <tr>
     <td>CT-02: Verificar o preenchimento do número de telefone</td>
@@ -537,7 +537,7 @@
       3. preencher com seu número.
     </td>
     <td>O número do usuário deverá aparecer na tela .</td>
-    <td>vinicius</td>
+    <td>icaro</td>
   </tr>
   <tr>
     <td>CT-06: Verificar link do logo para home</td>
@@ -548,7 +548,7 @@
       2. Clicar no logo "AgendaClin".
     </td>
     <td>O usuário deve ser redirecionado para a página inicial.</td>
-    <td>vinicius</td>
+    <td>icaro</td>
   </tr>
 </table>
 
