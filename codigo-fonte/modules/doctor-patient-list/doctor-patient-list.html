@@ -3,16 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="./doctor-patient-list.css">
+  <link rel="stylesheet" href="doctor-patient-list.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos para o formulário de adição de pacientes */
+    #popup-form {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+    }
+
+    #popup-form h2 {
+      text-align: center;
+      color: #0367A5;
+    }
+
+    #popup-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #popup-form label {
+      margin-bottom: 10px;
+    }
+
+    #popup-form input[type="text"],
+    #popup-form input[type="email"],
+    #popup-form input[type="tel"] {
+      padding: 5px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+
+    #popup-form button[type="submit"] {
+      padding: 10px;
+      background-color: #0367A5;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    /* Estilos para exibição dos dados */
+    .data-display {
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
     <div class="container">
         <div class="superior">
             <a href="../home/home.html"><img src="../../assets/img/agendaClinLight.png"></a>
-            <div class="end"><button><img class="botão" src="../../assets/icon/+.png">Adicionar pacientes</button></div>
+            <div class="end"><button id="addPatientBtn"><img class="botão" src="../../assets/icon/+.png">Adicionar pacientes</button></div>
         </div>
         <div class="vertical">
             <a href><img src="../../assets/icon/calendar.png"></a>
@@ -30,12 +83,42 @@
             </select>
         </div>
         <div class="informações">
-            <div><p>Nome e Sobrenome</p></div>
-            <div><p>Telefones</p></div>
-            <div><p>Ultima Visita</p></div>
-            <div><p>Email</p></div>
-            </div>
+            <div id="nomeDisplay" class="data-display"></div>
+            <div id="sobrenomeDisplay" class="data-display"></div>
+            <div id="emailDisplay" class="data-display"></div>
+            <div id="telefoneDisplay" class="data-display"></div>
+        </div>
     </div>
 
+    <!-- Formulário de adição de paciente -->
+    <div id="popup-form">
+        <h2>Adicionar Paciente</h2>
+        <form id="patientForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br>
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("addPatientBtn").addEventListener("click", function() {
+            document.getElementById("popup-form").style.display = "block";
+        });
+
+        document.getElementById("patientForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("nomeDisplay").innerText = "Nome: " + document.getElementById("nome").value;
+            document.getElementById("sobrenomeDisplay").innerText = "Sobrenome: " + document.getElementById("sobrenome").value;
+            document.getElementById("emailDisplay").innerText = "Email: " + document.getElementById("email").value;
+            document.getElementById("telefoneDisplay").innerText = "Telefone: " + document.getElementById("telefone").value;
+            document.getElementById("popup-form").style.display = "none";
+        });
+    </script>
 </body>
 </html>
