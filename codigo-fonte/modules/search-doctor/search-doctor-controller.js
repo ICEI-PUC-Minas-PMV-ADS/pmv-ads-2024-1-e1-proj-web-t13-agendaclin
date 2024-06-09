@@ -200,9 +200,68 @@ export class SearchDoctorController {
             },
             expandRows: true,
             slotMinTime: '8:00:00',
-            slotMaxTime: '18:00:00'
+            slotMaxTime: '18:00:00',
+            dateClick: this.handleDateClick.bind(this) ,
+            events: this.loadEvents(calendarId),
+            eventDidMount: function(info) {
+                info.el.style.fontSize = '16px'; // Altere o tamanho da fonte
+                info.el.style.lineHeight = '1.2'; // Altere a altura da linha
+
+                // Adiciona um botão de deletar ao evento
+                const deleteButton = document.createElement('button');
+                deleteButton.innerHTML = 'Delete';
+                deleteButton.classList.add('delete-event-btn');
+                deleteButton.addEventListener('click', function() {
+                    info.event.remove(); // Remove o evento do calendário
+                    const events = JSON.parse(localStorage.getItem('events')) || [];
+                    const updatedEvents = events.filter(e => e.id !== info.event.id);
+                    localStorage.setItem('events', JSON.stringify(updatedEvents)); // Atualiza o localStorage
+                });
+                info.el.appendChild(deleteButton);
+            }
         });
         calendar.render();
+        const timeGridSlots = calendarEl.querySelectorAll('.fc-timegrid-slot');
+        timeGridSlots.forEach(slot => {
+            slot.style.height = '100px';
+        });
+    }
+    handleDateClick(info) {
+        const calendarEl = info.view.calendar;
+        const calendarId = calendarEl.el.id; // Obtém o ID do calendário
+        const title = prompt('Digite o título do evento:'); // Pergunta ao usuário o título do evento
+
+        if (title) {
+            const eventId = new Date().getTime();
+            const eventData = {
+                id: eventId,
+                title: title,
+                start: info.date,
+                allDay: info.allDay,
+                calendarId: calendarId
+            };
+            calendarEl.addEvent(eventData);
+            this.saveEvent(eventData);
+        }
+    }
+    deleteEvent(event) {
+        // Remove o evento do calendário
+        event.remove();
+
+        // Remove o evento do localStorage
+        const events = JSON.parse(localStorage.getItem('events')) || [];
+        const updatedEvents = events.filter(e => e.id !== event.id);
+        localStorage.setItem('events', JSON.stringify(updatedEvents));
+    }
+    saveEvent(eventData) {
+        console.log('eventData', eventData)
+        const events = JSON.parse(localStorage.getItem('events')) || [];
+        events.push(eventData);
+        localStorage.setItem('events', JSON.stringify(events));
+    }
+    loadEvents(calendarId) {
+        const events = JSON.parse(localStorage.getItem('events')) || [];
+        return events.filter(event => event.calendarId === calendarId);
     }
 }
 
