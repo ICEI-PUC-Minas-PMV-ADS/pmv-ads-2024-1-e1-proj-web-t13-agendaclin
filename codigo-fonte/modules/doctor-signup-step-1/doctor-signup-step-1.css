@@ -83,7 +83,7 @@ h1, h2 {
 
 
 #nextStep {
-    width: 530px;
+    max-width: 527px;
     height: 40px;
     background-color: var(--color);
     border: 1px solid var(--color);
@@ -93,7 +93,7 @@ h1, h2 {
 }
 
 #nextStep:hover {
-    width: 530px;
+    max-width: 527px;
     height: 40px;
     background-color: #8994a5;
     border: 1px solid #000000;
@@ -135,7 +135,8 @@ h1, h2 {
      }
 
     #nextStep {
-        width: 465px;
+        min-width: 465px;
+        max-width: 465px;
         height: 40px;
         background-color: var(--color);
         border: 1px solid var(--color);
@@ -143,6 +144,18 @@ h1, h2 {
         font-size: large;
         font-family: inherit;
     }
+
+    #nextStep:hover {
+        min-width: 465px;
+        max-width: 465px;
+        height: 40px;
+        background-color: #8994a5;
+        border: 1px solid #000000;
+        color: #000000;
+        font-size: large;
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+    }
+
     
 }
     
@@ -178,7 +191,7 @@ h1, h2 {
      }
 
     #nextStep {
-        width: 465px;
+        min-width: 465px;
         height: 40px;
         background-color: var(--color);
         border: 1px solid var(--color);
@@ -186,7 +199,17 @@ h1, h2 {
         font-size: large;
         font-family: inherit;
     }
-    
+
+    #nextStep:hover {
+        min-width: 465px;
+        height: 40px;
+        background-color: #8994a5;
+        border: 1px solid #000000;
+        color: #000000;
+        font-size: large;
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+         }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -223,16 +246,27 @@ h1, h2 {
      
      
      #nextStep {
-         width: 530px;
+         min-width: 530px;
          height: 40px;
          background-color: var(--color);
          border: 1px solid var(--color);
          color: #fff;
          font-size: large;
          font-family: inherit;
+
      }
      
-
+     #nextStep:hover {
+        min-width: 530px;
+        height: 40px;
+        background-color: #8994a5;
+        border: 1px solid #000000;
+        color: #000000;
+        font-size: large;
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+    }
+    
+    
 }
 
 
