@@ -18,7 +18,7 @@ export const Router = {
         '/schedule-consult-step-1': 'modules/schedule-consult-step-1/schedule-consult-step-1.html',
         '/schedule-consult-step-2': 'modules/schedule-consult-step-2/schedule-consult-step-2.html',
         '/schedule-consult-step-3': 'modules/schedule-consult-step-3/schedule-consult-step-3.html',
-        '/search-doctor':  { path: 'modules/search-doctor/search-doctor.html' , protected: false, title: 'Buscar' +
+        '/search-doctor':  { path: 'modules/search-doctor/search-doctor.html' , protected: true, title: 'Buscar' +
                 ' Médico' +
                 ' Agendadas | AgendaClin' },
     },

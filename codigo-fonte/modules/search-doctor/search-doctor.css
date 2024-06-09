@@ -23,8 +23,7 @@ select {
 }
 
 .feedback-star {
-    max-width: 50px;
-    height: auto;
+    min-height: 50px;
 }
 
 #calendar {
@@ -130,8 +129,7 @@ button {
     align-items: center;
     gap: 10px;
     img{
-        width: 40px;
-        height: auto;
+        width: 175px;
     }
 }
 
@@ -165,7 +163,7 @@ button {
 
 /* Ajusta a altura dos eventos */
 .fc-event {
-    height: 100px;
+    height: 25px;
     font-size: 16px; /* Altere este valor conforme necessário */
     line-height: 1.2; /* Ajusta a altura da linha para o texto */
     white-space: normal; /* Permite quebra de linha no texto */

@@ -135,8 +135,35 @@ export class SearchDoctorController {
         doctors.forEach(doctor => {
             const doctorCard = document.createElement('div');
             doctorCard.classList.add('row', 'profile-card');
-            const calendarId = `calendar-${doctor.name.replace(/\s+/g, '-')}`;
-            const stars = Array(Math.round(doctor.rating)).fill('<img src="../../assets/icon/estrela-azul.png" alt="Star" class="feedback-star">').join('');
+            const calendarId = `calendar-${doctor.id}`;
+            let stars ;
+            if (this.roundDownToNearestHalf(doctor.rating) === 5) {
+                stars = '<img src="../../assets/icon/5 estrelas.svg"' +
+                    ' alt="Star"' +
+                    ' class="feedback-star">'
+            }
+            if (this.roundDownToNearestHalf(doctor.rating) === 4.5) {
+                stars = '<img src="../../assets/icon/4,5%20estrelas.svg"' +
+                    ' alt="Star"' +
+                    ' class="feedback-star">'
+            }
+            if (this.roundDownToNearestHalf(doctor.rating) === 4) {
+                stars = '<img src="../../assets/icon/4%20estrelas.svg"' +
+                    ' alt="Star"' +
+                    ' class="feedback-star">'
+            }
+            if (this.roundDownToNearestHalf(doctor.rating) === 3.5) {
+                stars = '<img src="../../assets/icon/3,5%20estrelas.svg"' +
+                    ' alt="Star"' +
+                    ' class="feedback-star">'
+            }
+            if (this.roundDownToNearestHalf(doctor.rating) === 3) {
+                stars = '<img src="../../assets/icon/3%20estrelas.svg"' +
+                    ' alt="Star"' +
+                    ' class="feedback-star">'
+            }
+            console.log('stars',  this.roundDownToNearestHalf(doctor.rating))
+            // console.log(stars, stars)
 
             doctorCard.innerHTML = `
                 <div class="col-5" style="border-right:  1.5px solid #0367A5;">
@@ -204,45 +231,52 @@ export class SearchDoctorController {
             dateClick: this.handleDateClick.bind(this) ,
             events: this.loadEvents(calendarId),
             eventDidMount: function(info) {
-                info.el.style.fontSize = '16px'; // Altere o tamanho da fonte
-                info.el.style.lineHeight = '1.2'; // Altere a altura da linha
+                info.el.style.fontSize = '16px';
+                info.el.style.lineHeight = '1.2';
 
-                // Adiciona um botão de deletar ao evento
-                const deleteButton = document.createElement('button');
-                deleteButton.innerHTML = 'Delete';
-                deleteButton.classList.add('delete-event-btn');
-                deleteButton.addEventListener('click', function() {
-                    info.event.remove(); // Remove o evento do calendário
-                    const events = JSON.parse(localStorage.getItem('events')) || [];
-                    const updatedEvents = events.filter(e => e.id !== info.event.id);
-                    localStorage.setItem('events', JSON.stringify(updatedEvents)); // Atualiza o localStorage
-                });
-                info.el.appendChild(deleteButton);
+                // const deleteButton = document.createElement('button');
+                // deleteButton.innerHTML = 'Delete';
+                // deleteButton.classList.add('delete-event-btn');
+                // deleteButton.addEventListener('click', function() {
+                //     info.event.remove(); // Remove o evento do calendário
+                //     const events = JSON.parse(localStorage.getItem('events')) || [];
+                //     const updatedEvents = events.filter(e => e.id !== info.event.id);
+                //     localStorage.setItem('events', JSON.stringify(updatedEvents)); // Atualiza o localStorage
+                // });
+                // info.el.appendChild(deleteButton);
             }
         });
         calendar.render();
         const timeGridSlots = calendarEl.querySelectorAll('.fc-timegrid-slot');
         timeGridSlots.forEach(slot => {
-            slot.style.height = '100px';
+            slot.style.height = '25px';
         });
     }
     handleDateClick(info) {
         const calendarEl = info.view.calendar;
         const calendarId = calendarEl.el.id; // Obtém o ID do calendário
-        const title = prompt('Digite o título do evento:'); // Pergunta ao usuário o título do evento
+        console.log('calendarId', calendarId)
+        //Criar evento para Teste
+        //     const eventId = new Date().getTime();
+        //     const eventData = {
+        //         id: eventId,
+        //         start: info.date,
+        //         allDay: info.allDay,
+        //         calendarId: calendarId
+        //     };
+        //     calendarEl.addEvent(eventData); // Adiciona o evento ao calendário
+        //     this.saveEvent(eventData); // Salva o evento no localStorage
 
-        if (title) {
-            const eventId = new Date().getTime();
+        // Iniciar a consulta
             const eventData = {
-                id: eventId,
-                title: title,
+                id:new Date().getTime(),
                 start: info.date,
                 allDay: info.allDay,
                 calendarId: calendarId
             };
-            calendarEl.addEvent(eventData);
-            this.saveEvent(eventData);
-        }
+            this.startConsultation(eventData);
+
+
     }
     deleteEvent(event) {
         // Remove o evento do calendário
@@ -261,7 +295,16 @@ export class SearchDoctorController {
     }
     loadEvents(calendarId) {
         const events = JSON.parse(localStorage.getItem('events')) || [];
+        // console.log('events', events)
         return events.filter(event => event.calendarId === calendarId);
+    }
+    startConsultation(eventData) {
+        console.log('eventData', eventData)
+        localStorage.setItem('currentEvent', JSON.stringify(eventData));
+        window.location.href = '/#/schedule-consult-step-1';
+    }
+    roundDownToNearestHalf(num) {
+        return Math.floor(num * 2) / 2;
     }
 }
 
