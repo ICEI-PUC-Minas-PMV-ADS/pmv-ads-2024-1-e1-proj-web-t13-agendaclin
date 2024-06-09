@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="doctor-login.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <script defer src="doctor-login-controller.js" type="module"></script>
+    <script defer src="doctor-login-service.js" type="module"></script>
     <title> AgendaClin </title>
 </head>
 <body>
@@ -15,13 +17,13 @@
             <img src="/codigo-fonte/assets/img/agendaClinLightgradiente.png" alt="AgendaClin logo" id="logo">
         </div>
         <div class="row">
-            <h1>Faça login em sua conta</h1>
+            <h1 class="h1">Faça login em sua conta</h1>
             <div class="col d-flex justify-content-center align-items-center">
                 
                 <br> 
                 <div id="loginWith">
-                  <a href=""> <input type="button" class="button" value="Continuar com Google"> </a>
-                  <a href=""> <input type="button" class="button" value="Continuar com Apple"> </a>
+                  <a href="" id="googleLoginButton"> <button class="button"> <img src="../../assets/icon/google.png" alt="Google" class="icon"> <span> Continuar com Google </span> </button> </a>
+                  <a href="" id="appleLoginButton"> <button class="button"> <img src="../../assets/icon/apple.png" alt="apple" class="icon"> <span> Continuar com Apple </span> </button> </a>
     
                 </div>
                 <br>
@@ -50,6 +52,28 @@
         </div>
     </div>
     
+<!--<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="forgotPasswordModalLabel">Redefinir Senha</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="forgotPasswordForm">
+                    <div class="form-group">
+                        <label for="resetEmail">E-mail</label>
+                        <input type="email" class="form-control" id="resetEmail" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>  -->
+
 </body>
 </html>
 

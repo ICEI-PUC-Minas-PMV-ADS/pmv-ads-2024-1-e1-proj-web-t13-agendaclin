@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="doctor-signup-step-1.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="doctor-signup-step-1-service.js" type="module"></script>
+    <script defer src="doctor-signup-step-1-controller.js" type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
     <title>AgendaClin</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
                 <div id="dataContainer">
                     <form>
                         <input type="radio" id="medicSpecialist" name="option" value="Médico / especialista">
-                        <label for="medicEspecialist"> Médico / especialista </label>
+                        <label for="medicSpecialist"> Médico / especialista </label>
                         <br>            
                         <input type="radio" id="clinic" name="option" value="Clínica">
                         <label for="clinic"> Clínica </label>
@@ -34,16 +36,17 @@
             <div class="col d-flex justify-content-center align-items-center data">
                 <form>
                  <label for="specialty" class="formLabel"> Especialização </label> 
-                 <input type="text" id="specialty" class="form" placeholder="Selecione">
+                 <input type="text" id="specialty" class="form" placeholder="Selecione" required>
                  <br>
                  <label for="name" class="formLabel"> Nome </label> 
-                 <input type="text" id="name" class="form" placeholder="Nome">
+                 <input type="text" id="name" class="form" placeholder="Nome" required>
                  <br>
                  <label for="surname" class="formLabel"> Sobrenome </label>
-                 <input type="text" id="surname" class="form" placeholder="Sobrenome">
+                 <input type="text" id="surname" class="form" placeholder="Sobrenome" required>
+                 <input type="submit" id="nextStep" value="Próximo passo">
                 </form>
                  
-                <a href="codigo-fonte\modules\doctor-signup-step-2\doctor-signup-step-2.html"> <button id="nextStep"> Próximo passo </button> </a>
+                  
             </div>
         </div>
     </div>

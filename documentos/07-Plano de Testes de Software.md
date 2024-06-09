@@ -884,3 +884,166 @@
 
   
 </table>
+
+<h1>Página de login das clínicas e profissionais da saúde</h1>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+  <tr>
+    <td>CT-01: Verificar o login dos profissionais e clínicas com google.</td>
+    <td>RF-001: O site deve permitir ao usuário fazer login em sua conta Google. </td>
+    <td>Verificar se o login está sendo feito corretamente.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Clicar em "Continuar com Google".<br>
+      3. Realizar login com uma conta Google válida.
+    </td>
+    <td>O usuário deve ser autenticado e redirecionado para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-02: Verificar login com Apple</td>
+    <td>RF-002: Verificar o login dos profissionais e clínicas com Apple.</td>
+    <td>Verificar se o login com Apple está funcionando corretamente.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Clicar em "Continuar com Apple".<br>
+      3. Realizar login com uma conta Apple válida.
+    </td>
+    <td>O usuário deve ser autenticado e redirecionado para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-03: Verificar o login dos profissionais e clínicas com e-mail e senha</td>
+    <td>RF-003: O site deve permitir ao usuário fazer login com e-mail e senha.</td>
+    <td>Verificar se o login com e-mail e senha cadastrados no Firebase está funcionando corretamente.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Inserir e-mail e senha.<br>
+      3. Clicar em "Entrar".
+    </td>
+    <td>O usuário deve ser autenticado e redirecionado para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-04: Verificar link de recuperação de senha</td>
+    <td>RF-004: O site deve permitir ao usuário recuperar a senha.</td>
+    <td>Verificar se o link "Esqueceu sua senha?" redireciona para a página de recuperação de senha.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Clicar em "Esqueceu sua senha?".
+    </td>
+    <td>O usuário deve ser redirecionado para a página de recuperação de senha.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-05: Verificar link de cadastro de profissionais e clínicas</td>
+    <td>RF-005: O site deve permitir ao usuário acessar a página de cadastro.</td>
+    <td>Verificar se o link "Ainda não tem conta? Faça seu cadastro!" redireciona para a página de cadastro.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Clicar em "Ainda não tem conta? Faça seu cadastro!".
+    </td>
+    <td>O usuário deve ser redirecionado para a página de cadastro.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-06: Verificar link do logo para home</td>
+    <td>RF-006: O site deve permitir ao usuário retornar à página inicial ao clicar no logo.</td>
+    <td>Verificar se ao clicar no logo "AgendaClin" o usuário é redirecionado para a página inicial.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Clicar no logo "AgendaClin".
+    </td>
+    <td>O usuário deve ser redirecionado para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+</table>
+
+<h1>Página de cadastro de clínicas e profissionais da saúde</h1>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+  <tr>
+    <td>CT-07: Verificar o cadastro dos profissionais e clínicas.</td>
+    <td>RF-007: O site deve permitir ao usuário cadastrar uma conta.</td>
+    <td>Verificar se o cadastro está sendo feito corretamente.</td>
+    <td>
+      1. Acessar a página de cadastro.<br>
+      2. Selecionar se irá se cadastrar como clínica ou profissional da saúde.<br>
+      3. Preencher o formulário e clicar em "próximo passo".
+    </td>
+    <td>Deve se ocorrer o tratamento das informações inseridas, as guardando e direcionar o usuário para a próxima página de cadastro.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-08: Verificar se a segunda parte do cadastro está sendo feito corretamente.</td>
+    <td>RF-008: O site deve permitir ao usuário cadastrar uma conta</td>
+    <td>Verificar se o cadastro está sendo feito corretamente.</td>
+    <td>
+      1. Preencher o formulário e clicar em "Registrar-se".
+    </td>
+    <td>O usuário deve ser cadastrado e redirecionado para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-09: Verificar cadastro com e-mail e senha</td>
+    <td>RF-009: O site deve permitir ao usuário cadastrar uma conta com e-mail e senha.</td>
+    <td>Verificar se o cadastro com e-mail e senha no Firebase está funcionando corretamente.</td>
+    <td>
+      1. Acessar a página de cadastro.<br>
+      2. Inserir e-mail, verificar e-mail e senha.<br>
+      3. Clicar em "Criar perfil".
+    </td>
+    <td>Deve se ocorrer o tratamento das informações inseridas, as guardando e direcionar o usuário para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-10: Verificar erro ao cadastrar usuário já existente</td>
+    <td>RF-010: O site deve exibir mensagem de erro ao tentar cadastrar com e-mail já existente.</td>
+    <td>Verificar se a mensagem de erro é exibida corretamente.</td>
+    <td>
+      1. Acessar a página de cadastro.<br>
+      2. Inserir e-mail já existente e senha.<br>
+      3. Clicar em "Criar perfil".
+    </td>
+    <td>Uma mensagem de erro deve ser exibida.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-11: Verificar erro para senhas que não cumprem requisitos</td>
+    <td>RF-011: O site deve exibir mensagem de erro para senhas que não cumprem os requisitos mínimos.</td>
+    <td>Verificar se a mensagem de erro é exibida corretamente.</td>
+    <td>
+      1. Acessar a página de cadastro.<br>
+      2. Inserir e-mail válido e senha que não cumpre os requisitos.<br>
+      3. Clicar em "Criar perfil".
+    </td>
+    <td>Uma mensagem de erro deve ser exibida.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-12: Verificar link do logo para home</td>
+    <td>RF-012: O site deve permitir ao usuário retornar à página inicial ao clicar no logo.</td>
+    <td>Verificar se ao clicar no logo "AgendaClin" o usuário é redirecionado para a página inicial.</td>
+    <td>
+      1. Acessar a página de cadastro.<br>
+      2. Clicar no logo "AgendaClin".
+    </td>
+    <td>O usuário deve ser redirecionado para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+</table>
+
