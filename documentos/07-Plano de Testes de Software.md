@@ -680,5 +680,207 @@
     <td>O arquivo deve ser enviado e aparecer o alerta de envio bem sucedido.</td>
     <td>Michael</td>
   </tr>
+
+  <tr>
+  <td>CT-01
+  </tr>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+    
+  <tr>
+    <td>CT-01: Verificar a funcionalidade do botão de adicionar pacientes</td>
+    <td>RF-001: O site deve permitir ao usuário abrir o formulário de adição de pacientes.</td>
+    <td>Verificar se o formulário de adição de pacientes é exibido.</td>
+    <td>
+      1. Clique no botão "Adicionar pacientes" no topo da página.
+    </td>
+    <td>O formulário de adição de pacientes deve ser exibido.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-02: Submeter o formulário de adição de pacientes</td>
+    <td>RF-002: O site deve permitir ao usuário adicionar novos pacientes.</td>
+    <td>Verificar se os dados do paciente são exibidos após a submissão do formulário.</td>
+    <td>
+      1. Clique no botão "Adicionar pacientes" no topo da página.<br>
+      2. Preencha todos os campos do formulário (Nome, Sobrenome, Email, Telefone).<br>
+      3. Clique no botão "Adicionar".
+    </td>
+    <td>Os dados do paciente devem ser exibidos na seção de informações da página.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-03: Verificar a funcionalidade dos links de navegação</td>
+    <td>RF-003: O site deve permitir ao usuário navegar para outras páginas.</td>
+    <td>Verificar se os links de navegação funcionam corretamente.</td>
+    <td>
+      1. Clique na logo no topo da página.<br>
+      2. Clique no ícone de calendário na barra de navegação lateral.<br>
+      3. Clique no ícone de perfil na barra de navegação lateral.
+    </td>
+    <td>O usuário deve ser redirecionado para as páginas correspondentes.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-04: Verificar a funcionalidade dos filtros de pesquisa</td>
+    <td>RF-004: O site deve permitir ao usuário filtrar a lista de pacientes.</td>
+    <td>Verificar se os filtros de pesquisa funcionam corretamente.</td>
+    <td>
+      1. Utilize o dropdown de "Nome, sobrenome".<br>
+      2. Utilize o dropdown de "Dados do contato".
+    </td>
+    <td>A lista de pacientes deve ser filtrada conforme os critérios selecionados.</td>
+    <td>Breno</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+    
+  <tr>
+    <td>CT-01: Verificar o redirecionamento do logo para a página inicial</td>
+    <td>RF-001: O site deve permitir ao usuário retornar à página inicial ao clicar no logo.</td>
+    <td>Garantir que o logo redireciona para a página inicial.</td>
+    <td>
+      1. Clique no logo no topo da página.
+    </td>
+    <td>O usuário deve ser redirecionado para a página inicial.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-02: Exibir mensagem de cancelamento de consulta</td>
+    <td>RF-002: O site deve exibir uma mensagem de cancelamento de consulta.</td>
+    <td>Verificar se a mensagem de cancelamento de consulta é exibida corretamente.</td>
+    <td>
+      1. Acesse a página de cancelamento de consulta.
+    </td>
+    <td>A mensagem "Sua consulta foi cancelada" deve ser exibida corretamente.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-03: Exibir informações do médico</td>
+    <td>RF-003: O site deve exibir as informações do médico.</td>
+    <td>Verificar se as informações do médico são exibidas corretamente.</td>
+    <td>
+      1. Acesse a página de cancelamento de consulta.<br>
+      2. Verifique a seção com as informações do médico.
+    </td>
+    <td>As informações do médico, incluindo nome, especialidade e imagem, devem ser exibidas corretamente.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-04: Exibir informações da data e hora da consulta</td>
+    <td>RF-004: O site deve exibir a data e hora da consulta cancelada.</td>
+    <td>Verificar se as informações da data e hora são exibidas corretamente.</td>
+    <td>
+      1. Acesse a página de cancelamento de consulta.<br>
+      2. Verifique a seção com a data e hora da consulta.
+    </td>
+    <td>A data e hora da consulta, incluindo o fuso horário, devem ser exibidas corretamente.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-05: Exibir informações do local da consulta</td>
+    <td>RF-005: O site deve exibir o endereço do local da consulta cancelada.</td>
+    <td>Verificar se o endereço do local da consulta é exibido corretamente.</td>
+    <td>
+      1. Acesse a página de cancelamento de consulta.<br>
+      2. Verifique a seção com o endereço do local da consulta.
+    </td>
+    <td>O endereço completo do local da consulta deve ser exibido corretamente.</td>
+    <td>Breno</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+    
+  <tr>
+    <td>CT-01: Verificar o redirecionamento do logo para a página inicial</td>
+    <td>RF-001: O site deve permitir ao usuário retornar à página inicial ao clicar no logo.</td>
+    <td>Garantir que o logo redireciona para a página inicial.</td>
+    <td>
+      1. Clique no logo no topo da página.
+    </td>
+    <td>O usuário deve ser redirecionado para a página inicial.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-02: Exibir título da página de reagendamento</td>
+    <td>RF-002: O site deve exibir o título "Reagendar consulta".</td>
+    <td>Verificar se o título "Reagendar consulta" é exibido corretamente.</td>
+    <td>
+      1. Acesse a página de reagendamento de consulta.
+    </td>
+    <td>O título "Reagendar consulta" deve ser exibido corretamente.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-03: Exibir informações do médico</td>
+    <td>RF-003: O site deve exibir as informações do médico.</td>
+    <td>Verificar se as informações do médico são exibidas corretamente.</td>
+    <td>
+      1. Acesse a página de reagendamento de consulta.<br>
+      2. Verifique a seção com as informações do médico.
+    </td>
+    <td>As informações do médico, incluindo nome, especialidade e imagem, devem ser exibidas corretamente.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-04: Selecionar data e horário para reagendamento</td>
+    <td>RF-004: O site deve permitir ao usuário selecionar uma data e horário para reagendamento.</td>
+    <td>Verificar se a seleção de data e horário funciona corretamente.</td>
+    <td>
+      1. Acesse a página de reagendamento de consulta.<br>
+      2. Selecione uma data na grade de datas disponíveis.<br>
+      3. Selecione um horário na grade de horários disponíveis.
+    </td>
+    <td>O usuário deve conseguir selecionar uma data e horário para reagendamento.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-05: Finalizar reagendamento</td>
+    <td>RF-005: O site deve permitir ao usuário finalizar o reagendamento.</td>
+    <td>Verificar se o reagendamento é finalizado corretamente.</td>
+    <td>
+      1. Acesse a página de reagendamento de consulta.<br>
+      2. Selecione uma data e horário.<br>
+      3. Clique no botão "Finalizar Reagendamento".
+    </td>
+    <td>O usuário deve ser notificado de que o reagendamento foi finalizado com sucesso.</td>
+    <td>Breno</td>
+  </tr>
+</table>
+
   
 </table>

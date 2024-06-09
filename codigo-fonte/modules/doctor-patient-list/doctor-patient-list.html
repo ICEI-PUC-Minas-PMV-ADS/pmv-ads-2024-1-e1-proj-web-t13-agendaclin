@@ -59,6 +59,32 @@
       margin-top: 10px;
       text-align: center;
     }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .remove-button {
+      cursor: pointer;
+      color: grey;
+      transition: color 0.3s;
+    }
+
+    .remove-button:hover {
+      color: red;
+    }
   </style>
 </head>
 <body>
@@ -75,18 +101,23 @@
             <p>Pacientes</p>
         </div>
         <div class="buttons">
-            <select>
-                <option>Nome, sobrenome</option>
-            </select>
-            <select>
-                <option>Dados do contato</option>
-            </select>
+            <input type="text" id="filterByName" placeholder="Filtrar por nome">
+            <input type="text" id="filterByContact" placeholder="Filtrar por contato">
+            <button id="applyFilterBtn">Aplicar Filtro</button>
         </div>
-        <div class="informações">
-            <div id="nomeDisplay" class="data-display"></div>
-            <div id="sobrenomeDisplay" class="data-display"></div>
-            <div id="emailDisplay" class="data-display"></div>
-            <div id="telefoneDisplay" class="data-display"></div>
+        <div id="patientList" class="informações">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Remover</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </div>
     </div>
 
@@ -113,12 +144,70 @@
 
         document.getElementById("patientForm").addEventListener("submit", function(event) {
             event.preventDefault();
-            document.getElementById("nomeDisplay").innerText = "Nome: " + document.getElementById("nome").value;
-            document.getElementById("sobrenomeDisplay").innerText = "Sobrenome: " + document.getElementById("sobrenome").value;
-            document.getElementById("emailDisplay").innerText = "Email: " + document.getElementById("email").value;
-            document.getElementById("telefoneDisplay").innerText = "Telefone: " + document.getElementById("telefone").value;
+            var nome = document.getElementById("nome").value;
+            var sobrenome = document.getElementById("sobrenome").value;
+            var email = document.getElementById("email").value;
+            var telefone = document.getElementById("telefone").value;
+            var patient = { nome: nome, sobrenome: sobrenome, email: email, telefone: telefone };
+            var patients = JSON.parse(localStorage.getItem("patients")) || [];
+            patients.push(patient);
+            localStorage.setItem("patients", JSON.stringify(patients));
+            updatePatientList();
             document.getElementById("popup-form").style.display = "none";
         });
+
+        document.getElementById("applyFilterBtn").addEventListener("click", function() {
+            var filterByName = document.getElementById("filterByName").value.toLowerCase();
+            var filterByContact = document.getElementById("filterByContact").value.toLowerCase();
+            filterPatients(filterByName, filterByContact);
+        });
+
+        function updatePatientList() {
+            var patients = JSON.parse(localStorage.getItem("patients")) || [];
+            var patientTable = document.querySelector("#patientList tbody");
+            patientTable.innerHTML = "";
+            patients.forEach(function(patient, index) {
+                var row = patientTable.insertRow();
+                row.innerHTML = `
+                    <td>${patient.nome}</td>
+                    <td>${patient.sobrenome}</td>
+                    <td>${patient.email}</td>
+                    <td>${patient.telefone}</td>
+                    <td><span class="remove-button" onclick="removePatient(${index})">&#10060;</span></td>
+                `;
+            });
+        }
+
+        function removePatient(index) {
+          var patients = JSON.parse(localStorage.getItem("patients")) || [];
+          patients.splice(index, 1);
+          localStorage.setItem("patients", JSON.stringify(patients));
+          updatePatientList();
+        }
+
+        function filterPatients(name, contact) {
+          var patients = JSON.parse(localStorage.getItem("patients")) || [];
+          var filteredPatients = patients.filter(function(patient) {
+            return (patient.nome.toLowerCase().includes(name) || patient.sobrenome.toLowerCase().includes(name)) &&
+                   (patient.email.toLowerCase().includes(contact) || patient.telefone.toLowerCase().includes(contact));
+          });
+          var patientTable = document.querySelector("#patientList tbody");
+          patientTable.innerHTML = "";
+          filteredPatients.forEach(function(patient, index) {
+              var row = patientTable.insertRow();
+              row.innerHTML = `
+                  <td>${patient.nome}</td>
+                  <td>${patient.sobrenome}</td>
+                  <td>${patient.email}</td>
+                  <td>${patient.telefone}</td>
+                  <td><span class="remove-button" onclick="removePatient(${index})">&#10060;</span></td>
+              `;
+          });
+        }
+
+        // Atualize a lista de pacientes quando a página carregar
+        window.addEventListener("load", updatePatientList);
     </script>
 </body>
 </html>
+
