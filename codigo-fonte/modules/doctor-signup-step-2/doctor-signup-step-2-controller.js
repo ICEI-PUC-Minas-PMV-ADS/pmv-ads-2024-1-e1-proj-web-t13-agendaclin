@@ -9,7 +9,6 @@ export class DoctorSignupStep2Controller {
     setData() {
         document.addEventListener('submit', (e)=> {
             e.preventDefault();
-            alert('.')
             this.login();
             localStorage.setItem('novo usuário', JSON.stringify(this.homeService));
             
