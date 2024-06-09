@@ -383,7 +383,7 @@
       3. Clicar em "Continuar".
     </td>
     <td>A pagina deve avançar para a proxima tela e salvar a informaçao em LocalStorage.</td>
-    <td>Icaro</td>
+    <td>Vinicius</td>
   </tr>
   <tr>
     <td>CT-27: Verificar opçao de primeira consulta </td>
@@ -395,7 +395,7 @@
       3. Clicar em "Continuar".
     </td>
     <td>A pagina deve avançar para a proxima tela e salvar a informaçao em LocalStorage.</td>
-    <td>Icaro</td>
+    <td>Vinicius</td>
   </tr>
   <tr>
     <td>CT-28: Verificar o preenchimento dos dados pessoais</td>
@@ -407,7 +407,7 @@
       3. Clicar em "Continuar".
     </td>
     <td>A pagina deve avançar para a proxima tela e salvar as informaçoes em LocalStorage.</td>
-    <td>Icaro</td>
+    <td>Vinicius</td>
   </tr>
   <tr>
     <td>CT-29: Verificar opçao de informaçoes adicionais</td>
@@ -419,7 +419,7 @@
       3. Clicar em "Continuar".
     </td>
     <td>A pagina deve avançar para a proxima tela e salvar as informacoes em LocalStorage.</td>
-    <td>Icaro</td>
+    <td>Vinicius</td>
   </tr>
   <tr>
     <td>CT-30: Verificar opçao de Reagendar Consulta</td>
@@ -430,7 +430,7 @@
       2. Ir na opçao "Reagendar Consulta".<br>
     </td>
     <td>O usuario deve ser redirecionado para a tela de reagendamento.</td>
-    <td>Icaro</td>
+    <td>Vinicius</td>
   </tr>
   <tr>
     <td>CT-31: Verificar opçao de Cancelar Consulta</td>
@@ -441,7 +441,7 @@
       2. Ir na opçao "Cancelar Consulta".
     </td>
     <td>O usuario deve ser redirecionado para a tela de confirmaçao do cancelamento e os dados apagados do LocalStorage.</td>
-    <td>Icaro</td>
+    <td>Vinicius</td>
   </tr>
 </table> 
 
