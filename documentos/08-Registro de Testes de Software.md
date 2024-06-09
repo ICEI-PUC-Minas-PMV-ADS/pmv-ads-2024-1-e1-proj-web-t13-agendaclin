@@ -20,4 +20,7 @@
 ### CT-06: Verificar link do logo para home
 **Responsável:** Yasmim
 
-[pagina login.mov](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/feature/full_calendar_setup/documentos/video/pagina%20login.mov)
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/166125804/4327a37f-5e1c-41be-af87-7636ebf5326c
+
