@@ -6,7 +6,15 @@
 .logopng{
     width: 300px !important;
 }
-
+.doctor-name {
+    font-family: Oxanium !important;
+    font-size: 25px !important;
+    color: white !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+    font-weight: bold;
+}
 hr{
     width: 388px !important;
     border-color: #13c9f1 !important;
@@ -149,4 +157,23 @@ button {
 
 .menu-button {
     background: #90909199 !important;
+}
+/* Ajusta a altura das linhas no FullCalendar */
+.fc-timegrid-slot {
+    height: 200px; /* Altere este valor conforme necessário */
+}
+
+/* Ajusta a altura dos eventos */
+.fc-event {
+    height: 25px;
+    font-size: 16px; /* Altere este valor conforme necessário */
+    line-height: 1.2; /* Ajusta a altura da linha para o texto */
+    white-space: normal; /* Permite quebra de linha no texto */
+}
+
+/* Ajusta a altura das células do cabeçalho */
+.fc-col-header-cell {
+    height: 50px; /* Altere este valor conforme necessário */
+    font-size: 16px; /* Ajusta o tamanho da fonte do cabeçalho */
+    line-height: 1.2; /* Ajusta a altura da linha para o texto do cabeçalho */
 }

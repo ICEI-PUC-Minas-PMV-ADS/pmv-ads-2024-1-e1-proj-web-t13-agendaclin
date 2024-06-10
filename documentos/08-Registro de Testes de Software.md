@@ -1,12 +1,26 @@
 # Registro de Testes de Software
 
-Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
+# Página de Login
 
-Os resultados dos testes funcionais realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste executado]
+### CT-01: Verificar login com Google
+**Responsável:** Yasmim
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
-|:---|:---|
-| Resultados obtidos | Descrever resultados do teste  |
-| Responsável pela execução do caso de Teste | Nome do integrante da equipe |
+### CT-02: Verificar login com e-mail e senha
+**Responsável:** Yasmim
 
-[Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
+### CT-03: Verificar link de recuperação de senha
+**Responsável:** Yasmim
+
+### CT-04: Verificar link de cadastro
+**Responsável:** Yasmim
+
+### CT-05: Verificar link do logo para home
+**Responsável:** Yasmim
+
+### CT-06: Verificar link do logo para home
+**Responsável:** Yasmim
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/166125804/4327a37f-5e1c-41be-af87-7636ebf5326c
+

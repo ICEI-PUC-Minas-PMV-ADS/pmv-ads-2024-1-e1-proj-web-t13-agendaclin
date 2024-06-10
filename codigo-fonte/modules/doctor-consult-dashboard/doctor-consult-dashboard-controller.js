@@ -7,20 +7,25 @@ export class DoctorConsultDashboardController {
     }
 
     setupEventListeners() {
-            const calendarEl = document.getElementById('calendar');
+        const currentDoctor = 1
+        const calendarId = `calendar-${currentDoctor}`;
+        const container = document.getElementById('doctor-container');
+        container.innerHTML = `<div id='${calendarId}' class='calendar'></div>`;
+        // const currentDoctor = localStorage.getItem('currentDoctor');
+            const calendarEl = document.getElementById(calendarId);
             const calendar = new FullCalendar.Calendar(calendarEl, {
-                locale: 'pt-br',                 // Idioma
-                initialView: 'timeGridWeek',     // Visão semanal com grade de tempo
-                slotDuration: '00:30:00',        // Intervalos de 30 minutos
-                slotLabelInterval: '00:30:00',   // Rótulos a cada 30 minutos
+                locale: 'pt-br',
+                initialView: 'timeGridWeek',
+                slotDuration: '00:45:00',
+                slotLabelInterval: '00:45:00',
                 slotLabelFormat: {
                     hour: '2-digit',
                     minute: '2-digit',
-                    hour12: false               // Formato 24h
+                    hour12: false
                 },
-                allDaySlot: false,               // Desativa a área de Todo o Dia
-                nowIndicator: true,              // Indicador do horário atual
-                height: 'auto',                  // Altura automática
+                allDaySlot: false,
+                nowIndicator: true,
+                height: 'auto',
                 headerToolbar: {
                     left: '',
                     center: '',
@@ -35,9 +40,19 @@ export class DoctorConsultDashboardController {
                 },
                 expandRows: true,
                 slotMinTime: '8:00:00',
-                slotMaxTime: '17:30:00'
+                slotMaxTime: '18:00:00',
+                events: this.loadEvents(calendarId),
             });
             calendar.render();
+        const timeGridSlots = calendarEl.querySelectorAll('.fc-timegrid-slot');
+        timeGridSlots.forEach(slot => {
+            slot.style.height = '25px';
+        });
+    }
+    loadEvents(calendarId) {
+        const events = JSON.parse(localStorage.getItem('events')) || [];
+        // console.log('events', events)
+        return events.filter(event => event.calendarId === calendarId);
     }
 }
 new DoctorConsultDashboardController();

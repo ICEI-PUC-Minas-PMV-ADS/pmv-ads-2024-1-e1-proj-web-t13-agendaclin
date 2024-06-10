@@ -21,6 +21,7 @@ export function emailLogin(email, password) {
         localStorage.setItem('userToken', JSON.stringify(result));
         window.location.href = '/#/search-doctor';
     }).catch(function(error) {
+        alert('Erro ao fazer login, verifique usuário e senha');
         console.error('Erro na autenticação', error);
     });
 }
