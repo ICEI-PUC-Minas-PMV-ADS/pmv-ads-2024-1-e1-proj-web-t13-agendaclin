@@ -19,6 +19,11 @@
 
 ### CT-06: Verificar link do logo para home
 **Responsável:** Yasmim
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/166125804/0d85716e-f2c0-4fab-a7b2-1d09b952906f
+
+
 # Página de Cadastro
 
 ### CT-07: Verificar cadastro com Google
@@ -35,6 +40,10 @@
 
 ### CT-11: Verificar link do logo para home
 **Responsável:** Yasmim
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/166125804/c1f10ab6-3c53-45b0-9842-225ebdc91746
+
 
 # Página de Pesquisa de Médicos
 
@@ -53,6 +62,10 @@
 ### CT-16: Verificar detalhes dos médicos
 **Responsável:** Yasmim
 
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/166125804/d086c404-8005-44af-b99b-3186d727c460
+
+
 # Página de Consultas Agendadas
 
 ### CT-17: Verificar exibição das datas
@@ -69,5 +82,3 @@
 
 ### CT-21: Verificar link do logo para home
 **Responsável:** Yasmim
-
-
