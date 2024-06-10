@@ -1,5 +1,5 @@
 import { LoginService } from './login-service.js';
-import { googleLogin, emailLogin } from '/js/shared/auth.js';
+import {googleLogin, emailLogin, emailReset} from '/js/shared/auth.js';
 
 export class LoginController {
     constructor() {
@@ -28,8 +28,10 @@ export class LoginController {
 // Função de reset de senha
 document.getElementById('forgotPasswordForm').addEventListener('submit', function(event) {
     event.preventDefault();
+
     const email = document.getElementById('resetEmail').value;
-    auth.sendPasswordResetEmail(email)
+    console.log('email', email);
+    emailReset(email)
         .then(() => {
             // Email de redefinição enviado com sucesso
             console.log('Email de redefinição enviado');

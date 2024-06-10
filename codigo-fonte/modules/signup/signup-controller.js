@@ -21,7 +21,7 @@ export class SignupController {
             const password = document.getElementById('password').value;
             try {
                 const signup = await emailSignUp(email, password);
-                console.log('Usuário cadastrado:', signup);
+                localStorage.setItem('userToken', JSON.stringify(signup));
                 $('#successModal').modal('show');
                 document.getElementById('closeModalButton').addEventListener('click', function() {
                     window.location.href = '/#/search-doctor';
@@ -33,6 +33,7 @@ export class SignupController {
 
             } catch (error) {
                 console.error('Erro ao fazer cadastro:', error.message);
+                alert(`Erro ao criar usuário: ${error.message}`);
             }
 
         });
