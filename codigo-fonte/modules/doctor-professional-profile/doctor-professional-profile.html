@@ -13,7 +13,8 @@
             <div class="container-fluid p-0">
                 <div class="row full-width-image">
                     <ul>
-                        <img src="../../assets/img/agendaClinLight.png" alt="ac" class="logo_navbar">
+                        <img src="../../assets/img/agendaClinLight.png" alt="ac" class="logo_navbar" id="logo">
+                        <img style="width: 20px; margin-left: 1600px; text-align: center;" src="../../assets/icon/calendar.png" id="icone">
                     </ul>
                 </div>
             </div>
@@ -25,7 +26,7 @@
     <div class="card">
         <div class="profile">
             <img src="../../assets/img/Dra.jpg" alt="Dra. Sofia Martinez Rivera" class="profile-img">
-            <div>
+            <div style="margin-right: 500px;">
                 <h3 style="color: #0367A5;">Dra. Sofia Martinez Rivera</h3>
                 <p class="escritas">Ginecologista</p>
                 <p class="escritas">Número de Registro :</p>
@@ -33,7 +34,6 @@
                     <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                 </div>
             </div>
-            <button class="appointment-button">Agendar Consulta</button>
         </div>
         <div class="schedule">
             <table>
@@ -98,7 +98,7 @@
                     </tr>
                     <tr>
                         <td class="escritas">14:30</td>         
-                        <td class="escritas">14:30</td>
+                        <td class="escritas" id="horas">14:30</td>
                         <td class="escritas">14:30</td>     <!-- nona linha -->
                         <td class="escritas">14:30</td>
                         <td class="escritas">14:30</td>
@@ -145,18 +145,19 @@
 
     <br><br><br>
 
+    <form>
     <div class="card">    
         <div class="clinic-info">
             <h3 class="titulo"><strong>Consultório</strong></h3>
             <img src="../../assets/icon/local.png" style="height: 20px; width: 20px;">
             <p class="escritas">Endereços</p>
-            <input type="text" placeholder="Digite aqui">
+            <input type="text"  id="endereço" placeholder="Digite aqui">
 
             <br>
 
             <img src="../../assets/icon/telefone.png" style="height: 20px; width: 20px;">
             <p class="escritas">Número de Telefone</p>
-            <input type="text" placeholder="Digite aqui">
+            <input type="text"  id="numero"  placeholder="Digite aqui">
         </div>
     </div>    
     
@@ -166,23 +167,25 @@
         <div class="clinic-info">
             <h3 class="titulo"><strong>experiência</strong></h3>
             <p class="escritas">sobre mim:</p>
-            <input type="text" placeholder="Digite aqui">
+            <input type="text"  id="sobreMim"  placeholder="Digite aqui">
 
             <br>
             
             <p class="escritas">experiência em:</p>
-            <input type="text" placeholder="Digite aqui">
+            <input type="text"  id="experiencia"  placeholder="Digite aqui">
             
             <br>
 
             <p class="escritas">Formação</p>
-            <input type="text" placeholder="Digite aqui">
+            <input type="text"  id="formaçao"  placeholder="Digite aqui">
 
             <br><br>
+            
+            <button class="appointment-button"  id="salvar" style="margin-left: 90%";>salvar</button> 
 
-            <button class="appointment-button" style="margin-left: 90%;">salvar</button>
         </div>
     </div>  
+</form>
 
     <br><br>
 
@@ -235,5 +238,8 @@
 
     <br><br><br>
 
-</body>
+    <script type="text/javascript" src="doctor-professional-profile-service.js">
+        
+    </script>
+</body> 
 </html>

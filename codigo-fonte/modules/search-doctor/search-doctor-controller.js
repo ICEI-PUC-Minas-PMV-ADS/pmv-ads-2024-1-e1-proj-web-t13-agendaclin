@@ -135,8 +135,35 @@ export class SearchDoctorController {
         doctors.forEach(doctor => {
             const doctorCard = document.createElement('div');
             doctorCard.classList.add('row', 'profile-card');
-            const calendarId = `calendar-${doctor.name.replace(/\s+/g, '-')}`;
-            const stars = Array(Math.round(doctor.rating)).fill('<img src="../../assets/icon/estrela-azul.png" alt="Star" class="feedback-star">').join('');
+            const calendarId = `calendar-${doctor.id}`;
+            let stars ;
+            if (this.roundDownToNearestHalf(doctor.rating) === 5) {
+                stars = '<img src="../../assets/icon/5 estrelas.svg"' +
+                    ' alt="Star"' +
+                    ' class="feedback-star">'
+            }
+            if (this.roundDownToNearestHalf(doctor.rating) === 4.5) {
+                stars = '<img src="../../assets/icon/4,5%20estrelas.svg"' +
+                    ' alt="Star"' +
+                    ' class="feedback-star">'
+            }
+            if (this.roundDownToNearestHalf(doctor.rating) === 4) {
+                stars = '<img src="../../assets/icon/4%20estrelas.svg"' +
+                    ' alt="Star"' +
+                    ' class="feedback-star">'
+            }
+            if (this.roundDownToNearestHalf(doctor.rating) === 3.5) {
+                stars = '<img src="../../assets/icon/3,5%20estrelas.svg"' +
+                    ' alt="Star"' +
+                    ' class="feedback-star">'
+            }
+            if (this.roundDownToNearestHalf(doctor.rating) === 3) {
+                stars = '<img src="../../assets/icon/3%20estrelas.svg"' +
+                    ' alt="Star"' +
+                    ' class="feedback-star">'
+            }
+            console.log('stars',  this.roundDownToNearestHalf(doctor.rating))
+            // console.log(stars, stars)
 
             doctorCard.innerHTML = `
                 <div class="col-5" style="border-right:  1.5px solid #0367A5;">
@@ -200,9 +227,84 @@ export class SearchDoctorController {
             },
             expandRows: true,
             slotMinTime: '8:00:00',
-            slotMaxTime: '18:00:00'
+            slotMaxTime: '18:00:00',
+            dateClick: this.handleDateClick.bind(this) ,
+            events: this.loadEvents(calendarId),
+            eventDidMount: function(info) {
+                info.el.style.fontSize = '16px';
+                info.el.style.lineHeight = '1.2';
+
+                // const deleteButton = document.createElement('button');
+                // deleteButton.innerHTML = 'Delete';
+                // deleteButton.classList.add('delete-event-btn');
+                // deleteButton.addEventListener('click', function() {
+                //     info.event.remove(); // Remove o evento do calendário
+                //     const events = JSON.parse(localStorage.getItem('events')) || [];
+                //     const updatedEvents = events.filter(e => e.id !== info.event.id);
+                //     localStorage.setItem('events', JSON.stringify(updatedEvents)); // Atualiza o localStorage
+                // });
+                // info.el.appendChild(deleteButton);
+            }
         });
         calendar.render();
+        const timeGridSlots = calendarEl.querySelectorAll('.fc-timegrid-slot');
+        timeGridSlots.forEach(slot => {
+            slot.style.height = '25px';
+        });
+    }
+    handleDateClick(info) {
+        const calendarEl = info.view.calendar;
+        const calendarId = calendarEl.el.id; // Obtém o ID do calendário
+        console.log('calendarId', calendarId)
+        //Criar evento para Teste
+        //     const eventId = new Date().getTime();
+        //     const eventData = {
+        //         id: eventId,
+        //         start: info.date,
+        //         allDay: info.allDay,
+        //         calendarId: calendarId
+        //     };
+        //     calendarEl.addEvent(eventData); // Adiciona o evento ao calendário
+        //     this.saveEvent(eventData); // Salva o evento no localStorage
+
+        // Iniciar a consulta
+            const eventData = {
+                id:new Date().getTime(),
+                start: info.date,
+                allDay: info.allDay,
+                calendarId: calendarId
+            };
+            this.startConsultation(eventData);
+
+
+    }
+    deleteEvent(event) {
+        // Remove o evento do calendário
+        event.remove();
+
+        // Remove o evento do localStorage
+        const events = JSON.parse(localStorage.getItem('events')) || [];
+        const updatedEvents = events.filter(e => e.id !== event.id);
+        localStorage.setItem('events', JSON.stringify(updatedEvents));
+    }
+    saveEvent(eventData) {
+        console.log('eventData', eventData)
+        const events = JSON.parse(localStorage.getItem('events')) || [];
+        events.push(eventData);
+        localStorage.setItem('events', JSON.stringify(events));
+    }
+    loadEvents(calendarId) {
+        const events = JSON.parse(localStorage.getItem('events')) || [];
+        // console.log('events', events)
+        return events.filter(event => event.calendarId === calendarId);
+    }
+    startConsultation(eventData) {
+        console.log('eventData', eventData)
+        localStorage.setItem('currentEvent', JSON.stringify(eventData));
+        window.location.href = '/#/schedule-consult-step-1';
+    }
+    roundDownToNearestHalf(num) {
+        return Math.floor(num * 2) / 2;
     }
 }
 

@@ -4,6 +4,7 @@ export class ScheduleConsultStep1Controller {
     constructor() {
         this.homeService = new ScheduleConsultStep1Service();
         this.setupEventListeners();
+        this.loadData();
     }
 
     setupEventListeners() {
@@ -11,9 +12,8 @@ export class ScheduleConsultStep1Controller {
     }
 
     loadData() {
-        this.homeService.getData().then(data => {
-            const container = document.getElementById('dataContainer');
-            container.innerHTML = data.map(item => `<p>${item}</p>`).join('');
-        });
+      const data = localStorage.getItem('currentDatacurrentEvent');
+        console.log(data);
     }
+
 }

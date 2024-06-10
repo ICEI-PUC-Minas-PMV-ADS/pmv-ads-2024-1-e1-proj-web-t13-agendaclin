@@ -15,9 +15,18 @@ h1, h2 {
     color: var(--color);
 }
 
+.h1 {
+    margin-left: 3.7rem;
+}
+
 #logo {
     width: 40rem;
     height: auto;
+}
+
+.icon {
+   height: 28px;
+   margin-right: 2rem;
 }
 
 #line {
@@ -42,6 +51,7 @@ h1, h2 {
 
 div #loginWith {
     margin-top: 1.5rem;
+    margin-right: 1rem;
     width: auto;
     height: 6rem;
     display: flex;
@@ -57,8 +67,17 @@ a input{
 }
 
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 1rem;
     padding: 0.2rem;
+    font-size: large;
+    width: 27rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 h2 {

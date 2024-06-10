@@ -1,19 +1,36 @@
-import { DoctorSignupStep1Service } from './doctor-signup-step-1-service.js';
+import { docCad } from './doctor-signup-step-1-service.js'
 
-export class DoctorSignupStep1Controller {
+export class DoctorSignupController {
     constructor() {
-        this.homeService = new DoctorSignupStep1Service();
-        this.setupEventListeners();
+        this.newUser = new docCad();
+        this.setData();
     }
 
-    setupEventListeners() {
-        document.getElementById('loadButton').addEventListener('click', () => this.loadData());
+    setData() {
+        document.addEventListener('submit', (e)=> {
+            e.preventDefault();
+            alert('.')
+            this.login();
+            localStorage.setItem('novo usuário', JSON.stringify(this.newUser));
+            
+        })
     }
 
-    loadData() {
-        this.homeService.getData().then(data => {
-            const container = document.getElementById('dataContainer');
-            container.innerHTML = data.map(item => `<p>${item}</p>`).join('');
+    login() {
+        const option = document.querySelector("input[name = 'option']:checked").value;
+        const specialty = document.getElementById('specialty').value;
+        const userName = document.getElementById('name').value;
+        const userSurname = document.getElementById('surname').value;
+
+        this.newUser.authenticate(option, specialty, userName, userSurname).then(message => {
+            document.getElementById('messageBox').innerText = message;
+            console.error(message);
+        }).catch(err => {
+            document.getElementById('messageBox').innerText = 'Login failed';
+            console.error(err);
         });
     }
-}
+
+} 
+
+

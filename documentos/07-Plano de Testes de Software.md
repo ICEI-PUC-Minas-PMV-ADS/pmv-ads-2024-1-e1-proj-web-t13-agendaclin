@@ -12,6 +12,8 @@
         <li>Página de Pesquisa de Médicos</li>
         <li>Página de Calendário</li>
         <li>Página de Confirmaçao do Agendamento</li>
+        <li>Página perfil profissional médico</li>
+        <li>Página perfil médico</li>
     </ul>
 
 <h2>Ferramentas de Teste</h2>
@@ -381,7 +383,7 @@
       3. Clicar em "Continuar".
     </td>
     <td>A pagina deve avançar para a proxima tela e salvar a informaçao em LocalStorage.</td>
-    <td>Icaro</td>
+    <td>Vinicius</td>
   </tr>
   <tr>
     <td>CT-27: Verificar opçao de primeira consulta </td>
@@ -393,7 +395,7 @@
       3. Clicar em "Continuar".
     </td>
     <td>A pagina deve avançar para a proxima tela e salvar a informaçao em LocalStorage.</td>
-    <td>Icaro</td>
+    <td>Vinicius</td>
   </tr>
   <tr>
     <td>CT-28: Verificar o preenchimento dos dados pessoais</td>
@@ -405,7 +407,7 @@
       3. Clicar em "Continuar".
     </td>
     <td>A pagina deve avançar para a proxima tela e salvar as informaçoes em LocalStorage.</td>
-    <td>Icaro</td>
+    <td>Vinicius</td>
   </tr>
   <tr>
     <td>CT-29: Verificar opçao de informaçoes adicionais</td>
@@ -417,7 +419,7 @@
       3. Clicar em "Continuar".
     </td>
     <td>A pagina deve avançar para a proxima tela e salvar as informacoes em LocalStorage.</td>
-    <td>Icaro</td>
+    <td>Vinicius</td>
   </tr>
   <tr>
     <td>CT-30: Verificar opçao de Reagendar Consulta</td>
@@ -428,7 +430,7 @@
       2. Ir na opçao "Reagendar Consulta".<br>
     </td>
     <td>O usuario deve ser redirecionado para a tela de reagendamento.</td>
-    <td>Icaro</td>
+    <td>Vinicius</td>
   </tr>
   <tr>
     <td>CT-31: Verificar opçao de Cancelar Consulta</td>
@@ -439,9 +441,116 @@
       2. Ir na opçao "Cancelar Consulta".
     </td>
     <td>O usuario deve ser redirecionado para a tela de confirmaçao do cancelamento e os dados apagados do LocalStorage.</td>
-    <td>Icaro</td>
+    <td>Vinicius</td>
   </tr>
-</table>    
+</table> 
+
+
+<h1>perfil profissional médico</h1>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+  <tr>
+    <td>CT-01: preencher os dados necessário</td>
+    <td>RF-001: O site deve permitir ao usuário registar dados do seu perfil</td>
+    <td>Verificar se tudo foi salvo corretamente.</td>
+    <td>
+      1. Acessar a página do perfil profissional médico.<br>
+      2. preencher os dados necessário.<br>
+      3. Clicar em "salvar".
+    </td>
+    <td>Os dados do usuário deverá aparecer na tela</td>
+    <td>icaro</td>
+  </tr>
+  <tr>
+    <td>CT-02: Verificar o ícone calendário</td>
+    <td>RF-002: O site deve permitir ao usuário clicar no ícone</td>
+    <td>Verificar se ao clicar no ícone está funcionando corretamente.</td>
+    <td>
+      1. Acessar a página do perfil profissional médico.<br>
+      2. Clicar no "ícone calendário".<br>
+      3. direcionar para a página de consultas agendadas.
+    </td>
+    <td>O usuário deve ser direcionado para a página de consultas agendadas.</td>
+    <td>icaro</td>
+  </tr>
+  <tr>
+    <td>CT-03: Verificar os horarios da tabela</td>
+    <td>RF-003: O site deve permitir ao usuário clicar em um dos horarios da tabela.</td>
+    <td>Verificar se ao Acessar a página do está funcionando corretamente.</td>
+    <td>
+      1. Acessar a página do perfil profissional médico.<br>
+      2.  Clicar em algum "horario da tabela"<br>
+    </td>
+    <td>O usuário deve ser direcionado para a página de marcar consulta.</td>
+    <td>icaro</td>
+  </tr>
+  <tr>
+    <td>CT-06: Verificar link do logo para home</td>
+    <td>RF-006: O site deve permitir ao usuário retornar à página inicial ao clicar no logo.</td>
+    <td>Verificar se ao clicar no logo "AgendaClin" o usuário é redirecionado para a página inicial.</td>
+    <td>
+      1. Acessar a página do perfil profissional médico.<br>
+      2. Clicar no logo "AgendaClin".
+    </td>
+    <td>O usuário deve ser redirecionado para a página inicial.</td>
+    <td>icaro</td>
+  </tr>
+</table>
+
+<h1>Página perfil médico</h1>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+  <tr>
+    <td>CT-01: Verificar barra de pesquisa</td>
+    <td>RF-001: O site deve permitir ao usuário fazer pesquisa sobre o médico.</td>
+    <td>Verificar se a barra de pesquisa está funcionando corretamente.</td>
+    <td>
+      1. Acessar a Página perfil médico.<br>
+      2. Clicar na barra de pesquisa.<br>
+      3. digitar algo.<br>
+      4. clicar no botão de pesquisar.
+    </td>
+    <td>O usuário deve ser autenticado e direcionado para o resultado da pesquisa.</td>
+    <td>icaro</td>
+  </tr>
+  <tr>
+    <td>CT-02: Verificar o preenchimento do número de telefone</td>
+    <td>RF-002: O site deve permitir ao usuário preencha com seu número.</td>
+    <td>Verificar se o preenchimento está funcionando corretamente.</td>
+    <td>
+      1. Acessar a Página perfil médico.<br>
+      2. Clicar no input de preenchimento.<br>
+      3. preencher com seu número.
+    </td>
+    <td>O número do usuário deverá aparecer na tela .</td>
+    <td>icaro</td>
+  </tr>
+  <tr>
+    <td>CT-06: Verificar link do logo para home</td>
+    <td>RF-006: O site deve permitir ao usuário retornar à página inicial ao clicar no logo.</td>
+    <td>Verificar se ao clicar no logo "AgendaClin" o usuário é redirecionado para a página inicial.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Clicar no logo "AgendaClin".
+    </td>
+    <td>O usuário deve ser redirecionado para a página inicial.</td>
+    <td>icaro</td>
+  </tr>
+</table>
 
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
@@ -571,5 +680,370 @@
     <td>O arquivo deve ser enviado e aparecer o alerta de envio bem sucedido.</td>
     <td>Michael</td>
   </tr>
+
+  <tr>
+  <td>CT-01
+  </tr>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+    
+  <tr>
+    <td>CT-01: Verificar a funcionalidade do botão de adicionar pacientes</td>
+    <td>RF-001: O site deve permitir ao usuário abrir o formulário de adição de pacientes.</td>
+    <td>Verificar se o formulário de adição de pacientes é exibido.</td>
+    <td>
+      1. Clique no botão "Adicionar pacientes" no topo da página.
+    </td>
+    <td>O formulário de adição de pacientes deve ser exibido.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-02: Submeter o formulário de adição de pacientes</td>
+    <td>RF-002: O site deve permitir ao usuário adicionar novos pacientes.</td>
+    <td>Verificar se os dados do paciente são exibidos após a submissão do formulário.</td>
+    <td>
+      1. Clique no botão "Adicionar pacientes" no topo da página.<br>
+      2. Preencha todos os campos do formulário (Nome, Sobrenome, Email, Telefone).<br>
+      3. Clique no botão "Adicionar".
+    </td>
+    <td>Os dados do paciente devem ser exibidos na seção de informações da página.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-03: Verificar a funcionalidade dos links de navegação</td>
+    <td>RF-003: O site deve permitir ao usuário navegar para outras páginas.</td>
+    <td>Verificar se os links de navegação funcionam corretamente.</td>
+    <td>
+      1. Clique na logo no topo da página.<br>
+      2. Clique no ícone de calendário na barra de navegação lateral.<br>
+      3. Clique no ícone de perfil na barra de navegação lateral.
+    </td>
+    <td>O usuário deve ser redirecionado para as páginas correspondentes.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-04: Verificar a funcionalidade dos filtros de pesquisa</td>
+    <td>RF-004: O site deve permitir ao usuário filtrar a lista de pacientes.</td>
+    <td>Verificar se os filtros de pesquisa funcionam corretamente.</td>
+    <td>
+      1. Utilize o dropdown de "Nome, sobrenome".<br>
+      2. Utilize o dropdown de "Dados do contato".
+    </td>
+    <td>A lista de pacientes deve ser filtrada conforme os critérios selecionados.</td>
+    <td>Breno</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+    
+  <tr>
+    <td>CT-01: Verificar o redirecionamento do logo para a página inicial</td>
+    <td>RF-001: O site deve permitir ao usuário retornar à página inicial ao clicar no logo.</td>
+    <td>Garantir que o logo redireciona para a página inicial.</td>
+    <td>
+      1. Clique no logo no topo da página.
+    </td>
+    <td>O usuário deve ser redirecionado para a página inicial.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-02: Exibir mensagem de cancelamento de consulta</td>
+    <td>RF-002: O site deve exibir uma mensagem de cancelamento de consulta.</td>
+    <td>Verificar se a mensagem de cancelamento de consulta é exibida corretamente.</td>
+    <td>
+      1. Acesse a página de cancelamento de consulta.
+    </td>
+    <td>A mensagem "Sua consulta foi cancelada" deve ser exibida corretamente.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-03: Exibir informações do médico</td>
+    <td>RF-003: O site deve exibir as informações do médico.</td>
+    <td>Verificar se as informações do médico são exibidas corretamente.</td>
+    <td>
+      1. Acesse a página de cancelamento de consulta.<br>
+      2. Verifique a seção com as informações do médico.
+    </td>
+    <td>As informações do médico, incluindo nome, especialidade e imagem, devem ser exibidas corretamente.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-04: Exibir informações da data e hora da consulta</td>
+    <td>RF-004: O site deve exibir a data e hora da consulta cancelada.</td>
+    <td>Verificar se as informações da data e hora são exibidas corretamente.</td>
+    <td>
+      1. Acesse a página de cancelamento de consulta.<br>
+      2. Verifique a seção com a data e hora da consulta.
+    </td>
+    <td>A data e hora da consulta, incluindo o fuso horário, devem ser exibidas corretamente.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-05: Exibir informações do local da consulta</td>
+    <td>RF-005: O site deve exibir o endereço do local da consulta cancelada.</td>
+    <td>Verificar se o endereço do local da consulta é exibido corretamente.</td>
+    <td>
+      1. Acesse a página de cancelamento de consulta.<br>
+      2. Verifique a seção com o endereço do local da consulta.
+    </td>
+    <td>O endereço completo do local da consulta deve ser exibido corretamente.</td>
+    <td>Breno</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+    
+  <tr>
+    <td>CT-01: Verificar o redirecionamento do logo para a página inicial</td>
+    <td>RF-001: O site deve permitir ao usuário retornar à página inicial ao clicar no logo.</td>
+    <td>Garantir que o logo redireciona para a página inicial.</td>
+    <td>
+      1. Clique no logo no topo da página.
+    </td>
+    <td>O usuário deve ser redirecionado para a página inicial.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-02: Exibir título da página de reagendamento</td>
+    <td>RF-002: O site deve exibir o título "Reagendar consulta".</td>
+    <td>Verificar se o título "Reagendar consulta" é exibido corretamente.</td>
+    <td>
+      1. Acesse a página de reagendamento de consulta.
+    </td>
+    <td>O título "Reagendar consulta" deve ser exibido corretamente.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-03: Exibir informações do médico</td>
+    <td>RF-003: O site deve exibir as informações do médico.</td>
+    <td>Verificar se as informações do médico são exibidas corretamente.</td>
+    <td>
+      1. Acesse a página de reagendamento de consulta.<br>
+      2. Verifique a seção com as informações do médico.
+    </td>
+    <td>As informações do médico, incluindo nome, especialidade e imagem, devem ser exibidas corretamente.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-04: Selecionar data e horário para reagendamento</td>
+    <td>RF-004: O site deve permitir ao usuário selecionar uma data e horário para reagendamento.</td>
+    <td>Verificar se a seleção de data e horário funciona corretamente.</td>
+    <td>
+      1. Acesse a página de reagendamento de consulta.<br>
+      2. Selecione uma data na grade de datas disponíveis.<br>
+      3. Selecione um horário na grade de horários disponíveis.
+    </td>
+    <td>O usuário deve conseguir selecionar uma data e horário para reagendamento.</td>
+    <td>Breno</td>
+  </tr>
+
+  <tr>
+    <td>CT-05: Finalizar reagendamento</td>
+    <td>RF-005: O site deve permitir ao usuário finalizar o reagendamento.</td>
+    <td>Verificar se o reagendamento é finalizado corretamente.</td>
+    <td>
+      1. Acesse a página de reagendamento de consulta.<br>
+      2. Selecione uma data e horário.<br>
+      3. Clique no botão "Finalizar Reagendamento".
+    </td>
+    <td>O usuário deve ser notificado de que o reagendamento foi finalizado com sucesso.</td>
+    <td>Breno</td>
+  </tr>
+</table>
+
   
 </table>
+
+<h1>Página de login das clínicas e profissionais da saúde</h1>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+  <tr>
+    <td>CT-01: Verificar o login dos profissionais e clínicas com google.</td>
+    <td>RF-001: O site deve permitir ao usuário fazer login em sua conta Google. </td>
+    <td>Verificar se o login está sendo feito corretamente.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Clicar em "Continuar com Google".<br>
+      3. Realizar login com uma conta Google válida.
+    </td>
+    <td>O usuário deve ser autenticado e redirecionado para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-02: Verificar login com Apple</td>
+    <td>RF-002: Verificar o login dos profissionais e clínicas com Apple.</td>
+    <td>Verificar se o login com Apple está funcionando corretamente.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Clicar em "Continuar com Apple".<br>
+      3. Realizar login com uma conta Apple válida.
+    </td>
+    <td>O usuário deve ser autenticado e redirecionado para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-03: Verificar o login dos profissionais e clínicas com e-mail e senha</td>
+    <td>RF-003: O site deve permitir ao usuário fazer login com e-mail e senha.</td>
+    <td>Verificar se o login com e-mail e senha cadastrados no Firebase está funcionando corretamente.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Inserir e-mail e senha.<br>
+      3. Clicar em "Entrar".
+    </td>
+    <td>O usuário deve ser autenticado e redirecionado para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-04: Verificar link de recuperação de senha</td>
+    <td>RF-004: O site deve permitir ao usuário recuperar a senha.</td>
+    <td>Verificar se o link "Esqueceu sua senha?" redireciona para a página de recuperação de senha.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Clicar em "Esqueceu sua senha?".
+    </td>
+    <td>O usuário deve ser redirecionado para a página de recuperação de senha.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-05: Verificar link de cadastro de profissionais e clínicas</td>
+    <td>RF-005: O site deve permitir ao usuário acessar a página de cadastro.</td>
+    <td>Verificar se o link "Ainda não tem conta? Faça seu cadastro!" redireciona para a página de cadastro.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Clicar em "Ainda não tem conta? Faça seu cadastro!".
+    </td>
+    <td>O usuário deve ser redirecionado para a página de cadastro.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-06: Verificar link do logo para home</td>
+    <td>RF-006: O site deve permitir ao usuário retornar à página inicial ao clicar no logo.</td>
+    <td>Verificar se ao clicar no logo "AgendaClin" o usuário é redirecionado para a página inicial.</td>
+    <td>
+      1. Acessar a página de login.<br>
+      2. Clicar no logo "AgendaClin".
+    </td>
+    <td>O usuário deve ser redirecionado para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+</table>
+
+<h1>Página de cadastro de clínicas e profissionais da saúde</h1>
+<table>
+  <tr>
+    <th>Caso de Teste</th>
+    <th>Requisitos Associados</th>
+    <th>Objetivo do Teste</th>
+    <th>Passos</th>
+    <th>Critérios de Êxito</th>
+    <th>Responsável</th>
+  </tr>
+  <tr>
+    <td>CT-07: Verificar o cadastro dos profissionais e clínicas.</td>
+    <td>RF-007: O site deve permitir ao usuário cadastrar uma conta.</td>
+    <td>Verificar se o cadastro está sendo feito corretamente.</td>
+    <td>
+      1. Acessar a página de cadastro.<br>
+      2. Selecionar se irá se cadastrar como clínica ou profissional da saúde.<br>
+      3. Preencher o formulário e clicar em "próximo passo".
+    </td>
+    <td>Deve se ocorrer o tratamento das informações inseridas, as guardando e direcionar o usuário para a próxima página de cadastro.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-08: Verificar se a segunda parte do cadastro está sendo feito corretamente.</td>
+    <td>RF-008: O site deve permitir ao usuário cadastrar uma conta</td>
+    <td>Verificar se o cadastro está sendo feito corretamente.</td>
+    <td>
+      1. Preencher o formulário e clicar em "Registrar-se".
+    </td>
+    <td>O usuário deve ser cadastrado e redirecionado para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-09: Verificar cadastro com e-mail e senha</td>
+    <td>RF-009: O site deve permitir ao usuário cadastrar uma conta com e-mail e senha.</td>
+    <td>Verificar se o cadastro com e-mail e senha no Firebase está funcionando corretamente.</td>
+    <td>
+      1. Acessar a página de cadastro.<br>
+      2. Inserir e-mail, verificar e-mail e senha.<br>
+      3. Clicar em "Criar perfil".
+    </td>
+    <td>Deve se ocorrer o tratamento das informações inseridas, as guardando e direcionar o usuário para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-10: Verificar erro ao cadastrar usuário já existente</td>
+    <td>RF-010: O site deve exibir mensagem de erro ao tentar cadastrar com e-mail já existente.</td>
+    <td>Verificar se a mensagem de erro é exibida corretamente.</td>
+    <td>
+      1. Acessar a página de cadastro.<br>
+      2. Inserir e-mail já existente e senha.<br>
+      3. Clicar em "Criar perfil".
+    </td>
+    <td>Uma mensagem de erro deve ser exibida.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-11: Verificar erro para senhas que não cumprem requisitos</td>
+    <td>RF-011: O site deve exibir mensagem de erro para senhas que não cumprem os requisitos mínimos.</td>
+    <td>Verificar se a mensagem de erro é exibida corretamente.</td>
+    <td>
+      1. Acessar a página de cadastro.<br>
+      2. Inserir e-mail válido e senha que não cumpre os requisitos.<br>
+      3. Clicar em "Criar perfil".
+    </td>
+    <td>Uma mensagem de erro deve ser exibida.</td>
+    <td>Giovanni</td>
+  </tr>
+  <tr>
+    <td>CT-12: Verificar link do logo para home</td>
+    <td>RF-012: O site deve permitir ao usuário retornar à página inicial ao clicar no logo.</td>
+    <td>Verificar se ao clicar no logo "AgendaClin" o usuário é redirecionado para a página inicial.</td>
+    <td>
+      1. Acessar a página de cadastro.<br>
+      2. Clicar no logo "AgendaClin".
+    </td>
+    <td>O usuário deve ser redirecionado para a página inicial.</td>
+    <td>Giovanni</td>
+  </tr>
+</table>
+
