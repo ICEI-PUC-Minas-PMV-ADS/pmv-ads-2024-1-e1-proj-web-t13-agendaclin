@@ -1,12 +1,74 @@
 # Registro de Testes de Software
 
-Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
+# Página de Login
 
-Os resultados dos testes funcionais realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste executado]
+### CT-01: Verificar login com Google
+**Responsável:** Yasmim
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
-|:---|:---|
-| Resultados obtidos | Descrever resultados do teste  |
-| Responsável pela execução do caso de Teste | Nome do integrante da equipe |
+### CT-02: Verificar login com e-mail e senha
+**Responsável:** Yasmim
 
-[Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
+### CT-03: Verificar link de recuperação de senha
+**Responsável:** Yasmim
+
+### CT-04: Verificar link de cadastro
+**Responsável:** Yasmim
+
+### CT-05: Verificar link do logo para home
+**Responsável:** Yasmim
+
+### CT-06: Verificar link do logo para home
+**Responsável:** Yasmim
+# Página de Cadastro
+
+### CT-07: Verificar cadastro com Google
+**Responsável:** Yasmim
+
+### CT-08: Verificar cadastro com e-mail e senha
+**Responsável:** Yasmim
+
+### CT-09: Verificar erro ao cadastrar com e-mail já existente
+**Responsável:** Yasmim
+
+### CT-10: Verificar erro para senhas que não cumprem requisitos
+**Responsável:** Yasmim
+
+### CT-11: Verificar link do logo para home
+**Responsável:** Yasmim
+
+# Página de Pesquisa de Médicos
+
+### CT-12: Verificar busca por especialidade, doença ou nome
+**Responsável:** Yasmim
+
+### CT-13: Verificar filtro por cidade
+**Responsável:** Yasmim
+
+### CT-14: Verificar filtro por convênios
+**Responsável:** Yasmim
+
+### CT-15: Verificar filtro por datas disponíveis
+**Responsável:** Yasmim
+
+### CT-16: Verificar detalhes dos médicos
+**Responsável:** Yasmim
+
+# Página de Consultas Agendadas
+
+### CT-17: Verificar exibição das datas
+**Responsável:** Yasmim
+
+### CT-18: Verificar exibição das consultas agendadas
+**Responsável:** Yasmim
+
+### CT-19: Verificar detalhes das consultas agendadas
+**Responsável:** Yasmim
+
+### CT-20: Verificar agendamento de consulta
+**Responsável:** Yasmim
+
+### CT-21: Verificar link do logo para home
+**Responsável:** Yasmim
+
+
+
