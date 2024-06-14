@@ -35,8 +35,8 @@ main {
 }
 
 #logoAgendaClim {
-    max-width: 30%;
-    max-height: 30%;
+    max-width: 392px;
+    max-height: 79px;
 }
 
 hr {
@@ -45,7 +45,10 @@ hr {
 }
 
 #tableMedico {
-    width: 75%;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 507px;
     margin: 0 auto;
     padding: 30px;
     display: block;
@@ -165,7 +168,7 @@ hr {
     font-family: "Open Sans";
     font-size: 1.4rem;
     padding: 0;
-    margin: 0;
+    margin: 30px 0;
     font-style: normal;
     line-height: 155.99%;
     letter-spacing: -0.96px;
@@ -173,6 +176,7 @@ hr {
     white-space: nowrap;
     text-overflow: ellipsis;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 #convenioSelect option {
@@ -185,7 +189,7 @@ hr {
 
 #primeiraConsulta {
     width: 80%;
-    margin: 0 auto;
+    margin: 30px auto;
     text-align: center;
     font-family: Oxanium;
     font-size: 165%;
@@ -206,7 +210,7 @@ hr {
 }
 
 #buttonContinuar {
-    width: 50%;
+    width: 600px;
     height: 50px;
     flex-shrink: 0;
     text-align: center;
@@ -215,7 +219,7 @@ hr {
     cursor: pointer;
     border: none;
     background-color: #0367A5;
-    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25), 0px -1px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25), 0 -1px 4px 0 rgba(0, 0, 0, 0.25);
     color: var(--White, #FFF);
     text-align: center;
     font-family: "Open Sans";

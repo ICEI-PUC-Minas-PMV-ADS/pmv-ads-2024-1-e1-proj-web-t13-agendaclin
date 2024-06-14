@@ -1,79 +1,63 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="doctor-login.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
-    <script defer src="doctor-login-controller.js" type="module"></script>
-    <script defer src="doctor-login-service.js" type="module"></script>
-    <title> AgendaClin </title>
-</head>
-<body>
-    <div class="container oxaniumRegular">
+<div class="container oxaniumRegular">
+    <div class="col-12 d-flex justify-content-center">
         <div class="line">
-            <img src="/codigo-fonte/assets/img/agendaClinLightgradiente.png" alt="AgendaClin logo" id="logo">
-        </div>
-        <div class="row">
-            <h1 class="h1">Faça login em sua conta</h1>
-            <div class="col d-flex justify-content-center align-items-center">
-                
-                <br> 
-                <div id="loginWith">
-                  <a href="" id="googleLoginButton"> <button class="button"> <img src="../../assets/icon/google.png" alt="Google" class="icon"> <span> Continuar com Google </span> </button> </a>
-                  <a href="" id="appleLoginButton"> <button class="button"> <img src="../../assets/icon/apple.png" alt="apple" class="icon"> <span> Continuar com Apple </span> </button> </a>
-    
-                </div>
-                <br>
-                 
-            </div>
-        </div>
-        <h2> Ou </h2> 
-        <div class="row">
-            <div class="col d-flex justify-content-center align-items-center">
-                <div id="dataContainer">
-                    <form>   
-                       <input type="text" id="email" class="form" placeholder="E-mail" required>
-                       <input type="password" id="password" class="form" placeholder="Senha" required>
-                       <input type="submit" id="enter" value="Entrar">
-    
-                   </form>
-                    <a href="" id="forgot">Esqueceu sua senha?</a>
-
-                    <div id="line">
-                    <a href="codigo-fonte\modules\doctor-signup-step-1\doctor-signup-step-1.html" id="signUp">Ainda não tem conta? Faça seu cadastro !
-                    </a>
-                   </div>
-                </div>
-                
-            </div>
+            <img src="../../assets/img/agendaClinLightgradiente.png"
+                 alt="AgendaClin logo" id="logo">
         </div>
     </div>
-    
-<!--<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="forgotPasswordModalLabel">Redefinir Senha</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center mt-4">
+            <h1 class="h1">Faça login em sua conta</h1>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+            <div id="loginWith">
+                <!--                                <a href="" id="googleLoginButton"> <button class="button"> <img src="../../assets/icon/google.png" alt="Google" class="icon"> <span> Continuar com Google </span> </button> </a>-->
+                <!--                                <a href="" id="appleLoginButton"> <button class="button"> <img src="../../assets/icon/apple.png" alt="apple" class="icon"> <span> Continuar com Apple </span> </button> </a>-->
+                <button class="social-media-button" id="googleLoginButton">
+                    <img src="../../assets/icon/google.png" alt="Google"
+                         class="google-icon">
+                    <span>Continuar com Google</span>
+                </button>
+                <button class="social-media-button" id="appleLoginButton">
+                    <img src="../../assets/icon/apple.png" alt="Apple"
+                         class="apple-icon">
+                    <span>Continuar com Apple</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <form id="forgotPasswordForm">
-                    <div class="form-group">
-                        <label for="resetEmail">E-mail</label>
-                        <input type="email" class="form-control" id="resetEmail" placeholder="Digite seu e-mail" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </div>
+    <div class="row w-100">
+        <div class="col-8 offset-2 ">
+            <div class="or-divider">
+                <hr class="bar">
+                <span class="m-3">OU</span>
+                <hr class="bar">
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center align-items-center">
+            <div id="dataContainer">
+                <form>
+                    <input type="text" id="email" class="form" placeholder="E-mail"
+                           required>
+                    <input type="password" id="password" class="form"
+                           placeholder="Senha" required>
+                    <input type="submit" id="enter" value="Entrar">
                 </form>
+                <a href="" id="forgot">Esqueceu sua senha?</a>
+                
+                <div id="line">
+                    <a href="codigo-fonte\modules\doctor-signup-step-1\doctor-signup-step-1.html"
+                       id="signUp">Ainda não tem conta? Faça seu cadastro !
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>  -->
+</div>
 
-</body>
-</html>
+
 

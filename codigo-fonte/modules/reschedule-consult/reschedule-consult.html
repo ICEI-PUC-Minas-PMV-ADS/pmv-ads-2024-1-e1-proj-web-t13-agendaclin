@@ -1,137 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="../reschedule-consult/reschedule-consult.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  <style>
-    .grid-item.selected {
-      background-color: #0367A5;
-      color: white;
-    }
-
-    .finalizar-btn {
-      padding: 10px 20px;
-      background-color: #ccc;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: not-allowed;
-    }
-
-    .finalizar-btn.enabled {
-      background-color: #0367A5;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-    <div class="container">
-        <div class="logo">
-            <a href="../home/home.html"><img class="logopng" src="../../assets/img/agendaClinLightgradiente.png"/></a>
-        </div>
-        <div class="linha">
-            <hr>
-        </div>
-    </div>
-    
-    <div class="container2">
-        <div class="box">
-            <div class="dra">
-                <img class="doctor" src="../../assets/img/Dra.jpg">
-            </div>
-            <div class="reagendar">
-                <p>Reagendar consulta</p>
-            </div>
-            <div class="informações">
-                <img src="../../assets/icon/medico.png"/>
-                <p>Dra.Sofia Martinez Rivera<br>
-                   Ginecologista</p>
-            </div>
-            <div class="selecionar">
-                <p>Selecione data e horário</p>
-            </div>
-            <div class="grid-container">
-                <div class="grid-item">Segunda-feira<br>01/Abril</div>
-                <div class="grid-item">Terça-feira<br>01/Abril</div>
-                <div class="grid-item">Quarta-feira<br>01/Abril</div>
-                <div class="grid-item">Quinta-feira<br>01/Abril</div>
-                <div class="grid-item">Sexta-feira<br>01/Abril</div>
-                <div class="grid-item">11:00</div>
-                <div class="grid-item">11:00</div>
-                <div class="grid-item">11:00</div>
-                <div class="grid-item">11:00</div>
-                <div class="grid-item">11:00</div>
-                <div class="grid-item">11:30</div>
-                <div class="grid-item">11:30</div>
-                <div class="grid-item">11:30</div>
-                <div class="grid-item">11:30</div>
-                <div class="grid-item">11:30</div>
-                <div class="grid-item">12:00</div>
-                <div class="grid-item">12:00</div>
-                <div class="grid-item">12:00</div>
-                <div class="grid-item">12:00</div>
-                <div class="grid-item">12:00</div>
-                <div class="grid-item">12:30</div>
-                <div class="grid-item">12:30</div>
-                <div class="grid-item">12:30</div>
-                <div class="grid-item">12:30</div>
-                <div class="grid-item">12:30</div>
-                <div class="grid-item">13:00</div>
-                <div class="grid-item">13:00</div>
-                <div class="grid-item">13:00</div>
-                <div class="grid-item">13:00</div>
-                <div class="grid-item">13:00</div>
-                <div class="grid-item">13:30</div>
-                <div class="grid-item">13:30</div>
-                <div class="grid-item">13:30</div>
-                <div class="grid-item">13:30</div>
-                <div class="grid-item">13:30</div>
-                <div class="grid-item">14:00</div>
-                <div class="grid-item">14:00</div>
-                <div class="grid-item">14:00</div>
-                <div class="grid-item">14:00</div>
-                <div class="grid-item">14:00</div>
-                <div class="grid-item">14:30</div>
-                <div class="grid-item">14:30</div>
-                <div class="grid-item">14:30</div>
-                <div class="grid-item">14:30</div>
-                <div class="grid-item">14:30</div>
-                <div class="grid-item">15:00</div>
-                <div class="grid-item">15:00</div>
-                <div class="grid-item">15:00</div>
-                <div class="grid-item">15:00</div>
-                <div class="grid-item">15:00</div>
-                <div class="grid-item">15:30</div>
-                <div class="grid-item">15:30</div>
-                <div class="grid-item">15:30</div>
-                <div class="grid-item">15:30</div>
-                <div class="grid-item">15:30</div>
-                <div class="grid-item">16:00</div>
-                <div class="grid-item">16:00</div>
-                <div class="grid-item">16:00</div>
-                <div class="grid-item">16:00</div>
-                <div class="grid-item">16:00</div>
-                <div class="grid-item">16:30</div>
-                <div class="grid-item">16:30</div>
-                <div class="grid-item">16:30</div>
-                <div class="grid-item">16:30</div>
-                <div class="grid-item">16:30</div>
-                <div class="grid-item">17:00</div>
-                <div class="grid-item">17:00</div>
-                <div class="grid-item">17:00</div>
-                <div class="grid-item">17:00</div>
-                <div class="grid-item">17:00</div>                
-            </div>
-        </div>
-        <div class="Finalizar">
-            <button id="finalizarBtn" class="finalizar-btn">Finalizar Reagendamento</button> 
-        </div>
-    </div>
-
+<div class="container">
+   <div class="row">
+       <div class="col-12 d-flex justify-content-center">
+           <div class="container">
+               <div class="logo">
+                   <a href="../home/home.html"><img class="logopng" src="../../assets/img/agendaClinLightgradiente.png"/></a>
+               </div>
+               <div class="col-12 d-flex justify-content-center">
+                   <hr>
+               </div>
+           </div>
+       </div>
+       
+       <div class="col-12 d-flex justify-content-center">
+           <div class="container2">
+               <div class="box">
+                   <div class="dra">
+                       <img class="doctor" src="../../assets/img/Dra.jpg">
+                   </div>
+                   <div class="reagendar">
+                       <p>Reagendar consulta</p>
+                   </div>
+                   <div class="informações">
+                       <img src="../../assets/icon/medico.png"/>
+                       <p>Dra.Sofia Martinez Rivera<br>
+                           Ginecologista</p>
+                   </div>
+                   <div class="selecionar">
+                       <p>Selecione data e horário</p>
+                   </div>
+                   <div class="grid-container">
+                       <div class="grid-item">Segunda-feira<br>01/Abril</div>
+                       <div class="grid-item">Terça-feira<br>01/Abril</div>
+                       <div class="grid-item">Quarta-feira<br>01/Abril</div>
+                       <div class="grid-item">Quinta-feira<br>01/Abril</div>
+                       <div class="grid-item">Sexta-feira<br>01/Abril</div>
+                       <div class="grid-item">11:00</div>
+                       <div class="grid-item">11:00</div>
+                       <div class="grid-item">11:00</div>
+                       <div class="grid-item">11:00</div>
+                       <div class="grid-item">11:00</div>
+                       <div class="grid-item">11:30</div>
+                       <div class="grid-item">11:30</div>
+                       <div class="grid-item">11:30</div>
+                       <div class="grid-item">11:30</div>
+                       <div class="grid-item">11:30</div>
+                       <div class="grid-item">12:00</div>
+                       <div class="grid-item">12:00</div>
+                       <div class="grid-item">12:00</div>
+                       <div class="grid-item">12:00</div>
+                       <div class="grid-item">12:00</div>
+                       <div class="grid-item">12:30</div>
+                       <div class="grid-item">12:30</div>
+                       <div class="grid-item">12:30</div>
+                       <div class="grid-item">12:30</div>
+                       <div class="grid-item">12:30</div>
+                       <div class="grid-item">13:00</div>
+                       <div class="grid-item">13:00</div>
+                       <div class="grid-item">13:00</div>
+                       <div class="grid-item">13:00</div>
+                       <div class="grid-item">13:00</div>
+                       <div class="grid-item">13:30</div>
+                       <div class="grid-item">13:30</div>
+                       <div class="grid-item">13:30</div>
+                       <div class="grid-item">13:30</div>
+                       <div class="grid-item">13:30</div>
+                       <div class="grid-item">14:00</div>
+                       <div class="grid-item">14:00</div>
+                       <div class="grid-item">14:00</div>
+                       <div class="grid-item">14:00</div>
+                       <div class="grid-item">14:00</div>
+                       <div class="grid-item">14:30</div>
+                       <div class="grid-item">14:30</div>
+                       <div class="grid-item">14:30</div>
+                       <div class="grid-item">14:30</div>
+                       <div class="grid-item">14:30</div>
+                       <div class="grid-item">15:00</div>
+                       <div class="grid-item">15:00</div>
+                       <div class="grid-item">15:00</div>
+                       <div class="grid-item">15:00</div>
+                       <div class="grid-item">15:00</div>
+                       <div class="grid-item">15:30</div>
+                       <div class="grid-item">15:30</div>
+                       <div class="grid-item">15:30</div>
+                       <div class="grid-item">15:30</div>
+                       <div class="grid-item">15:30</div>
+                       <div class="grid-item">16:00</div>
+                       <div class="grid-item">16:00</div>
+                       <div class="grid-item">16:00</div>
+                       <div class="grid-item">16:00</div>
+                       <div class="grid-item">16:00</div>
+                       <div class="grid-item">16:30</div>
+                       <div class="grid-item">16:30</div>
+                       <div class="grid-item">16:30</div>
+                       <div class="grid-item">16:30</div>
+                       <div class="grid-item">16:30</div>
+                       <div class="grid-item">17:00</div>
+                       <div class="grid-item">17:00</div>
+                       <div class="grid-item">17:00</div>
+                       <div class="grid-item">17:00</div>
+                       <div class="grid-item">17:00</div>
+                   </div>
+               </div>
+               <div class="Finalizar">
+                   <button id="finalizarBtn" class="finalizar-btn">Finalizar Reagendamento</button>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const gridItems = document.querySelectorAll('.grid-item');
@@ -154,5 +130,7 @@
         });
       });
     </script>
-</body>
-</html>
+    
+    
+
+

@@ -10,17 +10,15 @@ html,body{
   }
   
   #logo{
-    width: 200px;
-    height: auto;
+    max-width: 392px;
+    max-height: 79px;
     position: relative;
-    left: 40%;
     margin-top: 5px;
   }
   
   hr{
-    width: 600px;
+    width: 60%;
     border-color: #13c9f1;
-    height: auto;
   }
   
   .box{

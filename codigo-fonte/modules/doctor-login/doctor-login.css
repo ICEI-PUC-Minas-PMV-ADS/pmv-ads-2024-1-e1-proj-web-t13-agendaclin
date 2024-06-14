@@ -8,20 +8,20 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-      
-  }  
+
+  }
 
 h1, h2 {
     color: var(--color);
 }
 
 .h1 {
-    margin-left: 3.7rem;
+    color: #0367A5;
 }
 
 #logo {
-    width: 40rem;
-    height: auto;
+    max-width: 392px;
+    max-height: 79px;
 }
 
 .icon {
@@ -146,7 +146,7 @@ h2 {
     }
 
     #line {
-        width: 30rem;
+        width: 40rem;
         border-top: 1px solid var(--LineColor);
         padding: 1.5rem;
     
@@ -175,7 +175,7 @@ h2 {
     }
     
     #line {
-        width: 40rem;
+        width: 100rem;
         border-top: 1px solid var(--LineColor);
         padding: 1.5rem;
     
@@ -187,5 +187,61 @@ h2 {
     
     }
 }
+.or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
 
+.or-divider .bar {
+    flex-grow: 1;
+    height: 1px;
+    background-color:  #13C9F1;
+    border: none;
+}
+
+.or-divider span {
+    padding: 0 10px !important;
+    background: linear-gradient(49deg, #0367A5 17.81%, #0367A5 84.62%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-family: Oxanium, sans-serif !important;
+    font-size: 25px !important;
+    font-weight: bold !important;
+}
+.social-media-button {
+    height: 50px !important;
+    margin: 10px 0 !important;
+    gap: 10px !important;
+    border-radius: 5px !important;
+    border: 1px solid rgba(0, 0, 0, 0.00) !important;
+    background: white !important;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 -1px 4px 0 rgba(0, 0, 0, 0.25) !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 8px 32px !important;
+    color: #909091 !important;
+    cursor: pointer !important;
+    font-size: 25px !important;
+    width: 500px !important;
+    justify-content: flex-start !important;
+}
+
+.social-media-button img {
+    margin-right: auto !important;
+    height: 30px !important;
+    width: 30px !important;
+}
+
+.social-media-button span {
+    flex-grow: 1 !important;
+    text-align: center !important;
+    padding-right: 16px !important;
+}
+
+.social-media-button:focus {
+    outline: none !important;
+}
 

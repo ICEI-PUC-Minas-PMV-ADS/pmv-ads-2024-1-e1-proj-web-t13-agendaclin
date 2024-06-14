@@ -18,8 +18,8 @@ h1 {
 }
 
 #logo {
-    width: 40rem;
-    height: auto;
+    max-width: 392px;
+    max-height: 79px;
 }
 
 #line {
@@ -45,7 +45,6 @@ h1 {
     flex-wrap: wrap; 
     font-size: 30px;
     color: var(--color);
-
 }
 
 #phoneDiv {
