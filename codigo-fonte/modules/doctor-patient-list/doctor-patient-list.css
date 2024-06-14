@@ -45,11 +45,8 @@ body,html{
     margin-top: 30px;
 }
 .pacientes{
-    position: absolute;
-    left: 80px;
-    top: 50px;
-    font-size: 1.5rem;
-    font-family: "Open Sans";
+    padding-top: 15px;
+    font-size: 1.8rem;
     color: #0367A5;
     font-weight: bold;
 }
@@ -137,4 +134,26 @@ nav {
     margin-bottom: 20px !important;
     text-align: center !important;
     font-weight: bold;
+}
+.select-style-form {
+    height: 50px;
+    color: black;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 -1px 4px 0 rgba(0, 0, 0, 0.25) !important;
+    margin-bottom: 20px;
+}
+th {
+    text-align: center;
+    font-family: Oxanium !important;
+    font-size: 20px !important;
+    color: #0367A5 !important;
+    font-weight: bold;
+}
+td {
+    text-align: center;
+    font-family: Oxanium !important;
+    font-size: 18px !important;
+}
+table {
+    background: white !important;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 -1px 4px 0 rgba(0, 0, 0, 0.25) !important;
 }

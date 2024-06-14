@@ -150,3 +150,10 @@ label {
         border-bottom: 1px solid var(--LineColor);
     }
 }
+
+.line
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
