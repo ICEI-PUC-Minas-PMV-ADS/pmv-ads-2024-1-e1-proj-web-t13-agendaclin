@@ -4,17 +4,3 @@
   //  }
 //}
 
-const logo = document.getElementById("logo")
-
-logo.addEventListener("click", function()
-{
-   window.location.href = "../../index.html"
-})
-
-const hora = document.getElementById("hora")
-
-hora.addEventListener("click", function()
-{
-   window.location.href = "../schedule-consult-step-1/schedule-consult-step-1.html"
-}
-)

@@ -45,11 +45,8 @@ body,html{
     margin-top: 30px;
 }
 .pacientes{
-    position: absolute;
-    left: 80px;
-    top: 50px;
-    font-size: 1.5rem;
-    font-family: "Open Sans";
+    padding-top: 15px;
+    font-size: 1.8rem;
     color: #0367A5;
     font-weight: bold;
 }
@@ -81,11 +78,12 @@ select{
     gap: 200px;
 }
 
-.botão{
+.botao{
     width: 15px;
-    float: left;
+    height: 15px;
     margin-top: 2px;
     margin-right: 1rem;
+    align-items: center;
 }
 
 button{
@@ -101,8 +99,61 @@ button{
     background-color: #0367A5;
     margin-top: 0.6rem;
     border-radius: 5px;
+    align-items: center;
 }
 
 .end{
     margin-right: 1.5rem;
+}
+
+#side-menu{
+    background: linear-gradient(90deg, #0367A5 6.25%, #50F3E2 93.44%) !important;
+    height: 100vh !important;
+    max-width: 100px !important;
+}
+.menu-button {
+    background: #90909199 !important;
+}
+button {
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+nav {
+    background: linear-gradient(49deg, #0367A5 17.81%, #50F3E2 84.62%) !important;
+    height: 70px !important;
+}
+
+.doctor-name {
+    font-family: Oxanium !important;
+    font-size: 25px !important;
+    color: white !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+    font-weight: bold;
+}
+.select-style-form {
+    height: 50px;
+    color: black;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 -1px 4px 0 rgba(0, 0, 0, 0.25) !important;
+    margin-bottom: 20px;
+}
+th {
+    text-align: center;
+    font-family: Oxanium !important;
+    font-size: 20px !important;
+    color: #0367A5 !important;
+    font-weight: bold;
+}
+td {
+    text-align: center;
+    font-family: Oxanium !important;
+    font-size: 18px !important;
+}
+table {
+    background: white !important;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 -1px 4px 0 rgba(0, 0, 0, 0.25) !important;
 }

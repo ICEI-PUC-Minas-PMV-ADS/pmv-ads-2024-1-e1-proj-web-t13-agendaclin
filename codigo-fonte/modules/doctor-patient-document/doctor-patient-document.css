@@ -150,3 +150,34 @@ button:hover
 {
     background-color: #0056b3;
 }
+nav {
+    background: linear-gradient(49deg, #0367A5 17.81%, #50F3E2 84.62%) !important;
+    height: 70px !important;
+}
+#side-menu{
+    background: linear-gradient(90deg, #0367A5 6.25%, #50F3E2 93.44%) !important;
+    height: 100vh !important;
+    max-width: 100px !important;
+}
+button {
+    img{
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+#calendar {
+    width: 100% !important;
+    margin: 40px auto !important;
+}
+.menu-button {
+    background: #90909199 !important;
+}
+.doctor-name {
+    font-family: Oxanium !important;
+    font-size: 25px !important;
+    color: white !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+    font-weight: bold;
+}

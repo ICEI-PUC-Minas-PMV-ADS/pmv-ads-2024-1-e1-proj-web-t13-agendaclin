@@ -35,8 +35,8 @@ main {
 }
 
 #logoAgendaClim {
-    max-width: 30%;
-    max-height: 30%;
+    max-width: 392px;
+    max-height: 79px;
 }
 
 hr {
@@ -45,13 +45,16 @@ hr {
 }
 
 #tableMedico {
-    width: 75%;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 507px;
     margin: 0 auto;
     padding: 30px;
     display: block;
     border-radius: 10px;    
     background: var(--White, #FFF);
-    box-shadow: 5px 5px 6px 3px rgba(3, 103, 165, 0.25), 0px -3px 4px 0px rgba(3, 103, 165, 0.25);
+    box-shadow: 5px 5px 6px 3px rgba(3, 103, 165, 0.25), 0 -3px 4px 0 rgba(3, 103, 165, 0.25);
 }
 
 #containerDadosTable {
@@ -144,10 +147,11 @@ hr {
     font-weight: 700;
     line-height: 105.182%;
     letter-spacing: -2.16px;
+    margin:30px;
 }
 
 #informacoesPessoais {
-    margin: 0 auto;
+    margin: 30px;
     text-align: center;
 }
 
@@ -168,6 +172,7 @@ div input {
     line-height: 155.99%;
     letter-spacing: -0.96px;
     margin-bottom: 40px;
+    margin-top: 30px;
 }
 
 input::placeholder {

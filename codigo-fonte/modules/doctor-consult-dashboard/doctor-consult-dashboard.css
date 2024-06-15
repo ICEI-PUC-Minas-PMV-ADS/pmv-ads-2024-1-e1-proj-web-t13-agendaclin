@@ -128,11 +128,6 @@ button {
 .fc-col-header-cell {
     font-size: 18px !important;
     text-transform: capitalize !important;
-
-
-
-
-
 }
 .fc-day-header {
     text-transform: capitalize !important; /* Garante capitalização se necessário */

@@ -1,55 +1,44 @@
-<!DOCTYPE html>
-<html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="doctor-signup-step-1.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script defer src="doctor-signup-step-1-service.js" type="module"></script>
-    <script defer src="doctor-signup-step-1-controller.js" type="module"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
-    <title>AgendaClin</title>
-</head>
-<body>
-    <div class="container oxaniumRegular">
-        <div id="line">
-        <img src="/codigo-fonte/assets/img/agendaClinLightgradiente.png" alt="AgendaClin logo" id="logo">
-        </div>
-        <div class="row">
-            <div class="col d-flex justify-content-center align-items-center">
-                <h1 id="signUpAs">Cadastre-se como</h1>
-                <div id="dataContainer">
-                    <form>
-                        <input type="radio" id="medicSpecialist" name="option" value="Médico / especialista">
-                        <label for="medicSpecialist"> Médico / especialista </label>
-                        <br>            
-                        <input type="radio" id="clinic" name="option" value="Clínica">
-                        <label for="clinic"> Clínica </label>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col d-flex justify-content-center align-items-center data">
-                <form>
-                 <label for="specialty" class="formLabel"> Especialização </label> 
-                 <input type="text" id="specialty" class="form" placeholder="Selecione" required>
-                 <br>
-                 <label for="name" class="formLabel"> Nome </label> 
-                 <input type="text" id="name" class="form" placeholder="Nome" required>
-                 <br>
-                 <label for="surname" class="formLabel"> Sobrenome </label>
-                 <input type="text" id="surname" class="form" placeholder="Sobrenome" required>
-                 <input type="submit" id="nextStep" value="Próximo passo">
-                </form>
-                 
-                  
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <img src="../../assets/img/agendaClinLightgradiente.png" alt="AgendaClin logo" id="logo">
         </div>
     </div>
+    <div class="row"></div>
+</div>
+
+<div class="container oxaniumRegular ">
+    <div id="line"></div>
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+            <h1 id="signUpAs">Cadastre-se como</h1>
+        </div>
+        <div class="col-6 offset-3">
+            <div id="dataContainer">
+                <form>
+                    <input type="radio" id="medicSpecialist" name="option" value="Médico / especialista">
+                    <label for="medicSpecialist"> Médico / especialista </label>
+                    <br>
+                    <input type="radio" id="clinic" name="option" value="Clínica">
+                    <label for="clinic"> Clínica </label>
+                </form>
+            </div>
+        </div>
+        <div class="col-6 offset-3 data">
+            <form>
+                <label for="specialty" class=""> Especialização </label>
+                <input type="text" id="specialty" class="form" placeholder="Selecione" required>
+                <br>
+                <label for="name" class="formLabel"> Nome </label>
+                <input type="text" id="name" class="form" placeholder="Nome" required>
+                <br>
+                <label for="surname" class="formLabel"> Sobrenome </label>
+                <input type="text" id="surname" class="form" placeholder="Sobrenome" required>
+                <input type="submit" id="nextStep" value="Próximo passo">
+            </form>
+        </div>
+    </div>
+    </div>
     
-</body>
-</html>
+
+

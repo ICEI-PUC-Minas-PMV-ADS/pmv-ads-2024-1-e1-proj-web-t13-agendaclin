@@ -27,10 +27,7 @@ body
 {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 922px;
     padding: 20px;
-    margin-left: 25%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -50,8 +47,8 @@ body
 .profile
 {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
 }
 
 .profile-img 
@@ -117,8 +114,6 @@ label
     font-weight: bold;
 }
 
-
-
 .button
 {  
     background-color: #007bff;
@@ -130,7 +125,6 @@ label
     font-size: 16px; 
     display: block;
     margin: 0;
-    float: inline-end;
     margin-right:800px;
     margin-top: 23px
 }
@@ -142,9 +136,11 @@ label
     margin-right: 5px;
 }
 
-.estrelas 
-{
-    color: #0367A5;
+.estrelas {
+    padding-bottom: 20px;
+    img {
+        height: 20px;
+    }
 }
 
 .botao
@@ -168,12 +164,6 @@ label
     height: 100px;
     margin-right: 20px;
 }  
-
-.letras
-{
-   padding: 10px;
-   width: 2050px; 
-}
 
 .select
 {
@@ -207,4 +197,39 @@ td:hover
 {
     background-color: rgba(0, 0, 0, 0.548);
     color: white;
+}
+nav {
+    background: linear-gradient(49deg, #0367A5 17.81%, #50F3E2 84.62%);
+    height: 86.4px;
+}
+.segment {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+
+
+}
+
+.segment-button {
+    flex: 1;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.segment-button:hover {
+    background-color: #e0e0e0;
+}
+
+.segment-button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+.classificacao-geral{
+    width: 175px;
 }

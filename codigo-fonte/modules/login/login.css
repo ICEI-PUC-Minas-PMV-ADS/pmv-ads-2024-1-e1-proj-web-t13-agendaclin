@@ -86,17 +86,17 @@ h2 {
 }
 
 .or-divider {
-    display: flex !important;
-    align-items: center !important;
-    text-align: center !important;
-    margin: 20px 0 !important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .or-divider .bar {
-    flex-grow: 1 !important;
-    height: 1px !important;
-    background-color:  #13C9F1 !important;
-    border: none !important;
+    flex-grow: 1;
+    height: 1px;
+    background-color:  #13C9F1;
+    border: none;
 }
 
 .or-divider span {
@@ -186,7 +186,7 @@ h2 {
     border-radius: 5px !important;
     border: 1px solid rgba(0, 0, 0, 0.00) !important;
     background: white !important;
-    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25), 0px -1px 4px 0px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 -1px 4px 0 rgba(0, 0, 0, 0.25) !important;
     display: flex !important;
     align-items: center !important;
     padding: 8px 32px !important;

@@ -8,11 +8,11 @@ export class ScheduleConsultStep1Controller {
     }
 
     setupEventListeners() {
-        document.getElementById('loadButton').addEventListener('click', () => this.loadData());
+        // document.getElementById('loadButton').addEventListener('click', () => this.loadData());
     }
 
     loadData() {
-      const data = localStorage.getItem('currentDatacurrentEvent');
+      const data = localStorage.getItem('currentEvent');
         console.log(data);
     }
 
