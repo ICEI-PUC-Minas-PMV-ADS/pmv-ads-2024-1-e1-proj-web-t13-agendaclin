@@ -193,3 +193,11 @@ select {
 li {
     padding: 0 10px;
 }
+
+.gradiente {
+    border-radius: 5px;
+    border: 1px solid var(--White, #FFF);
+    background: var(--BG-Vertical, linear-gradient(49deg, #0367A5 17.81%, #50F3E2 84.62%));
+    min-width: 115px;
+    height: 45px;
+}

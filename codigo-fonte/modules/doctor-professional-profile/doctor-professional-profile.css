@@ -16,14 +16,12 @@ body {
 
 .logo_navbar {
     width: 210px;
-     height:  45px;
+    height:45px;
 }
 
 .card {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 922px;
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -41,8 +39,6 @@ body {
 
 .profile {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .profile-img {
@@ -111,7 +107,10 @@ input {
 }
 
 .estrelas {
-    color: #0367A5;
+    padding-bottom: 20px;
+    img {
+        height: 20px;
+    }
 }
 
 .botao {
@@ -139,16 +138,11 @@ nav {
     background: linear-gradient(185deg, #13C9F1 26.18%, rgba(25, 25, 25, 0.16) 133.19%);
     height: 86.4px;
 }
-img{
-    width: 175px;
-}
 .segment {
     display: flex;
     border-radius: 4px;
     overflow: hidden;
     background-color: #fff;
-
-
 }
 
 .segment-button {
@@ -169,4 +163,7 @@ img{
 .segment-button.active {
     background-color: #007bff;
     color: #fff;
+}
+.classificacao-geral{
+    width: 175px;
 }
