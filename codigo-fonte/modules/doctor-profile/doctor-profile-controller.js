@@ -1,19 +1,22 @@
-import { DoctorProfileService } from './doctor-profile-service.js';
-
 export class DoctorProfileController {
     constructor() {
-        this.homeService = new DoctorProfileService();
-        this.setupEventListeners();
+        this.setupEventsListeners();
     }
+    setupEventsListeners() {
+        const hora = document.getElementById("hora")
 
-    setupEventListeners() {
-        document.getElementById('loadButton').addEventListener('click', () => this.loadData());
-    }
-
-    loadData() {
-        this.homeService.getData().then(data => {
-            const container = document.getElementById('dataContainer');
-            container.innerHTML = data.map(item => `<p>${item}</p>`).join('');
+        hora.addEventListener("click", function()
+            {
+                window.location.href = "../schedule-consult-step-1/schedule-consult-step-1.html"
+            }
+        )
+        const segmentButtons = document.querySelectorAll('.segment-button');
+        segmentButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                console.log('click')
+                segmentButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
         });
     }
 }

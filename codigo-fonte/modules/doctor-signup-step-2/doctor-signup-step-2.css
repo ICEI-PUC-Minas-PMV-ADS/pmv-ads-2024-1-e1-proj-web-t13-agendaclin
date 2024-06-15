@@ -157,3 +157,31 @@ label {
     align-items: center;
     text-align: center;
 }
+.data {
+    width: 30rem;
+    height: 320px;
+    font-size: 28px;
+    color: var(--color);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5rem;
+
+    input {
+        height: 40px;
+        border: 1px solid var(--color);
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 18px;
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.12), 0 8px 25px 0 rgba(0,0,0,0.10);
+        border-radius: 2.5px;
+    }
+    label {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+}
+#signUpAs {
+    margin-top: 2.3rem;
+    margin-bottom: 2.5rem;
+}

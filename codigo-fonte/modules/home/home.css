@@ -51,12 +51,12 @@ body
 .full-width-image 
 {
     background-image: url('../../assets/img/Background.png');
-    height: calc(100vw * 0.80);
+    width: auto;
+    height: 700px;
     background-position: center center;
     background-repeat: no-repeat; 
-    background-size: cover; 
-    margin-left: 0;
-    margin-right: 0;
+    background-size: cover;
+    margin: 0;
 }
 
 @media (max-width: 768px) 
@@ -71,7 +71,6 @@ body
 .gradiente_title 
 {
     font-size: 2.00vw;
-    text-align: center;
     background-image: -webkit-gradient(
     linear,
     left top,
@@ -180,4 +179,17 @@ body
     {
         text-align: center; 
     }
+}
+.search-doctor {
+    padding-left: 200px;
+    padding-top: 250px;
+}
+select {
+    border: 1px solid #bbbb;
+    font-size: 15px;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.12), 0 8px 25px 0 rgba(0,0,0,0.10);
+    border-radius: 2.5px;
+}
+li {
+    padding: 0 10px;
 }

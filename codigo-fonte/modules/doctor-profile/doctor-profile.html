@@ -1,34 +1,39 @@
-<!-- ! -->
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgendaClin</title>
-    <link rel="stylesheet" href="doctor-profile.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="container-fluid p-0">
-                <div class="row full-width-image">                   
-                    <ul>
-                        <img src="../../assets/img/agendaClinLight.png" alt="ac" class="logo_navbar" id="logo">                      
-                            <input type="text" class="select" placeholder="especialidade, doenças">
-                                
-                            
-                            <input type="text" class="opicao" placeholder="filtre sua cidade" id="filtro">
-                                
-                            
-                            <button class="button" id="pesquisa">
-                            <img class="icone" src="../../assets/icon/pesquisa.png" alt="icone de lupa">
-                        </button>
-                    </ul>
+<div class="col-12">
+    <nav class="d-flex align-items-center justify-content-center w-100">
+        <div class="container-fluid">
+            <div class="row" >
+                <div class="col-3">
+                    <a class="navbar-brand" href="#">
+                        <img src="../../assets/img/agendaClinLight.png" alt="" width="288"
+                             height="57" class="d-inline-block align-text-top">
+                    </a>
                 </div>
+                <div class="col-6 d-flex align-items-center">
+                    <form action=""
+                          class="d-flex align-items-center justify-content-center w-100">
+                        <select class="form-select select-style-form"
+                                id="specialties"
+                                aria-label="Default select example">
+                            <option selected
+                                    class="form-select">Especialidade</option>
+                        </select>
+                        <select class="form-select select-style-form "
+                                aria-label="Default select example"  id="cities">
+                            <option selected class="select-style-form">Filtre sua cidade</option>
+                            <option value="1">Unimed</option>
+                            <option value="2">Sulamerica</option>
+                            <option value="3">Bradesco</option>
+                        </select>
+                        <button class="btn btn-primary" type="submit"><img
+                                src="../../assets/icon/pesquisa.png" width="16" height="16"></button>
+                    </form>
+                </div>
+                <div class="col-3"></div>
             </div>
-        </nav>
-    </header>
-
+        
+        </div>
+    </nav>
+</div>
     <br><br><br><br><br>
 
     <div class="card">
@@ -70,77 +75,77 @@
                         <td class="escritas">11:30</td>
                     </tr>
                     <tr>
-                        <td class="escritas">12:00</td>         
+                        <td class="escritas">12:00</td>
                         <td class="escritas">12:00</td>
                         <td class="escritas">12:00</td>     <!-- terceira linha -->
                         <td class="escritas">12:00</td>
                         <td class="escritas">12:00</td>
                     </tr>
                     <tr>
-                        <td class="escritas">12:30</td>         
+                        <td class="escritas">12:30</td>
                         <td class="escritas">12:30</td>
                         <td class="escritas">12:30</td>     <!-- quarta linha -->
                         <td class="escritas">12:30</td>
                         <td class="escritas">12:30</td>
                     </tr>
                     <tr>
-                        <td class="escritas">13:00</td>         
+                        <td class="escritas">13:00</td>
                         <td class="escritas">13:00</td>
                         <td class="escritas">13:00</td>     <!-- quinta linha -->
                         <td class="escritas">13:00</td>
-                        <td class="escritas">13:00</td>                        
+                        <td class="escritas">13:00</td>
                     </tr>
                     <tr>
-                        <td class="escritas">13:30</td>         
+                        <td class="escritas">13:30</td>
                         <td class="escritas">13:30</td>
                         <td class="escritas">13:30</td>     <!-- sexta linha -->
                         <td class="escritas">13:30</td>
                         <td class="escritas">13:30</td>
                     </tr>
                     <tr>
-                        <td class="escritas">14:00</td>         
+                        <td class="escritas">14:00</td>
                         <td class="escritas">14:00</td>
                         <td class="escritas">14:00</td>     <!-- oitava linha -->
                         <td class="escritas">14:00</td>
                         <td class="escritas">14:00</td>
                     </tr>
                     <tr>
-                        <td class="escritas">14:30</td>         
+                        <td class="escritas">14:30</td>
                         <td class="escritas">14:30</td>
                         <td class="escritas" id="hora">14:30</td>     <!-- nona linha -->
                         <td class="escritas">14:30</td>
                         <td class="escritas">14:30</td>
                     </tr>
                     <tr>
-                        <td class="escritas">15:00</td>         
+                        <td class="escritas">15:00</td>
                         <td class="escritas">15:00</td>
                         <td class="escritas">15:00</td>     <!-- décima linha -->
                         <td class="escritas">15:00</td>
                         <td class="escritas">15:00</td>
                     </tr>
                     <tr>
-                        <td class="escritas">15:30</td>         
+                        <td class="escritas">15:30</td>
                         <td class="escritas">15:30</td>
                         <td class="escritas">15:30</td>     <!-- décimo primeiro linha -->
                         <td class="escritas">15:30</td>
                         <td class="escritas">15:30</td>
                     </tr>
                     <tr>
-                        <td class="escritas">16:00</td>         
+                        <td class="escritas">16:00</td>
                         <td class="escritas">16:00</td>
                         <td class="escritas">16:00</td>     <!-- décimo segundo linha -->
                         <td class="escritas">16:00</td>
                         <td class="escritas">16:00</td>
                     </tr>
                     <tr>
-                        <td class="escritas">16:30</td>         
+                        <td class="escritas">16:30</td>
                         <td class="escritas">16:30</td>
                         <td class="escritas">16:30</td>     <!-- décimo terceiro linha -->
                         <td class="escritas">16:30</td>
                         <td class="escritas">16:30</td>
                     </tr>
                     <tr>
-                        <td class="escritas">17:00</td>         
+                        <td class="escritas">17:00</td>
                         <td class="escritas">17:00</td>
                         <td class="escritas">17:00</td>     <!-- décimo quarto linha -->
                         <td class="escritas">17:00</td>
@@ -242,7 +247,7 @@
 
     <br><br>
 
-<div
+<div>
     <h4 class="titulo" style="margin-left: 25%;"><strong>opiniões de pacientes</strong></h4>
         <p class="estrelas" style="margin-left: 25%;width:100px"></p>
             <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -252,7 +257,13 @@
         <button class="botao" style="margin-left: 3%;">maior avaliação</button>
     <button class="botao" style="margin-left: 3%;"> menor avaliação</button>
 </div>
-
+<div class="col-8 offset-2 p-0  pt-3 " >
+    <div class="segment">
+        <button class="segment-button active" data-value="option1">Mais recentes</button>
+        <button class="segment-button" data-value="option2">Maior avaliação</button>
+        <button class="segment-button" data-value="option3">Menor avaliação</button>
+    </div>
+</div>
     <br><br><br>
 
     <div class="card">
@@ -291,7 +302,6 @@
 
     <br><br><br>
 
-    <script type="text/javascript" src="doctor-profile-service.js">
+    <script type="module" src="doctor-profile-controller.js">
     </script>
-</body> 
-</html>
+

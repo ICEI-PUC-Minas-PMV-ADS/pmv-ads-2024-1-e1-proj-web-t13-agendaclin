@@ -208,3 +208,35 @@ td:hover
     background-color: rgba(0, 0, 0, 0.548);
     color: white;
 }
+nav {
+    background: linear-gradient(185deg, #13C9F1 26.18%, rgba(25, 25, 25, 0.16) 133.19%);
+    height: 86.4px;
+}
+.segment {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+
+
+}
+
+.segment-button {
+    flex: 1;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.segment-button:hover {
+    background-color: #e0e0e0;
+}
+
+.segment-button.active {
+    background-color: #007bff;
+    color: #fff;
+}

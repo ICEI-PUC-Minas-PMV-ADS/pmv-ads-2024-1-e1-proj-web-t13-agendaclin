@@ -1,245 +1,254 @@
-<!-- ! -->
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgendaClin</title>
-    <link rel="stylesheet" href="doctor-professional-profile.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="container-fluid p-0">
-                <div class="row full-width-image">
-                    <ul>
-                        <img src="../../assets/img/agendaClinLight.png" alt="ac" class="logo_navbar" id="logo">
-                        <img style="width: 20px; margin-left: 1600px; text-align: center;" src="../../assets/icon/calendar.png" id="icone">
-                    </ul>
+<div class="col-12">
+    <nav class="d-flex align-items-center justify-content-center w-100">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <a class="navbar-brand" href="/">
+                        <img src="../../assets/img/agendaClinLight.png" alt="" width="288"
+                             height="57" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <div class="col-8">
+                </div>
+                <div class="col-1 d-flex mt-2 justify-content-center align-items-start">
+                    <a href="/#/doctor-consult-dashboard">
+                        <img style="width: 30px; text-align: center;"
+                             src="../../assets/icon/calendar.png" id="icone">
+                    </a>
                 </div>
             </div>
-        </nav>
-    </header>
-
-    <br><br><br><br><br>
-
-    <div class="card">
-        <div class="profile">
-            <img src="../../assets/img/Dra.jpg" alt="Dra. Sofia Martinez Rivera" class="profile-img">
-            <div style="margin-right: 500px;">
-                <h3 style="color: #0367A5;">Dra. Sofia Martinez Rivera</h3>
-                <p class="escritas">Ginecologista</p>
-                <p class="escritas">Número de Registro :</p>
-                <div class="estrelas">
-                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                </div>
-            </div>
-        </div>
-        <div class="schedule">
-            <table>
-                <thead>
-                    <tr>
-                        <th class="escritas">Segunda-feira<br>01/abr</th>
-                        <th class="escritas">Terça-feira<br>02/abr</th>
-                        <th class="escritas">Quarta-feira<br>03/abr</th>
-                        <th class="escritas">Quinta-feira<br>04/abr</th>
-                        <th class="escritas">Sexta-feira<br>05/abr</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="escritas">11:00</td>
-                        <td class="escritas">11:00</td>     <!-- primeira linha -->
-                        <td class="escritas">11:00</td>
-                        <td class="escritas">11:00</td>
-                        <td class="escritas">11:00</td>
-                    </tr>
-                    <tr>
-                        <td class="escritas">11:30</td>
-                        <td class="escritas">11:30</td>
-                        <td class="escritas">11:30</td>     <!-- segunda linha -->
-                        <td class="escritas">11:30</td>
-                        <td class="escritas">11:30</td>
-                    </tr>
-                    <tr>
-                        <td class="escritas">12:00</td>         
-                        <td class="escritas">12:00</td>
-                        <td class="escritas">12:00</td>     <!-- terceira linha -->
-                        <td class="escritas">12:00</td>
-                        <td class="escritas">12:00</td>
-                    </tr>
-                    <tr>
-                        <td class="escritas">12:30</td>         
-                        <td class="escritas">12:30</td>
-                        <td class="escritas">12:30</td>     <!-- quarta linha -->
-                        <td class="escritas">12:30</td>
-                        <td class="escritas">12:30</td>
-                    </tr>
-                    <tr>
-                        <td class="escritas">13:00</td>         
-                        <td class="escritas">13:00</td>
-                        <td class="escritas">13:00</td>     <!-- quinta linha -->
-                        <td class="escritas">13:00</td>
-                        <td class="escritas">13:00</td>                        
-                    </tr>
-                    <tr>
-                        <td class="escritas">13:30</td>         
-                        <td class="escritas">13:30</td>
-                        <td class="escritas">13:30</td>     <!-- sexta linha -->
-                        <td class="escritas">13:30</td>
-                        <td class="escritas">13:30</td>
-                    </tr>
-                    <tr>
-                        <td class="escritas">14:00</td>         
-                        <td class="escritas">14:00</td>
-                        <td class="escritas">14:00</td>     <!-- oitava linha -->
-                        <td class="escritas">14:00</td>
-                        <td class="escritas">14:00</td>
-                    </tr>
-                    <tr>
-                        <td class="escritas">14:30</td>         
-                        <td class="escritas" id="horas">14:30</td>
-                        <td class="escritas">14:30</td>     <!-- nona linha -->
-                        <td class="escritas">14:30</td>
-                        <td class="escritas">14:30</td>
-                    </tr>
-                    <tr>
-                        <td class="escritas">15:00</td>         
-                        <td class="escritas">15:00</td>
-                        <td class="escritas">15:00</td>     <!-- décima linha -->
-                        <td class="escritas">15:00</td>
-                        <td class="escritas">15:00</td>
-                    </tr>
-                    <tr>
-                        <td class="escritas">15:30</td>         
-                        <td class="escritas">15:30</td>
-                        <td class="escritas">15:30</td>     <!-- décimo primeiro linha -->
-                        <td class="escritas">15:30</td>
-                        <td class="escritas">15:30</td>
-                    </tr>
-                    <tr>
-                        <td class="escritas">16:00</td>         
-                        <td class="escritas">16:00</td>
-                        <td class="escritas">16:00</td>     <!-- décimo segundo linha -->
-                        <td class="escritas">16:00</td>
-                        <td class="escritas">16:00</td>
-                    </tr>
-                    <tr>
-                        <td class="escritas">16:30</td>         
-                        <td class="escritas">16:30</td>
-                        <td class="escritas">16:30</td>     <!-- décimo terceiro linha -->
-                        <td class="escritas">16:30</td>
-                        <td class="escritas">16:30</td>
-                    </tr>
-                    <tr>
-                        <td class="escritas">17:00</td>         
-                        <td class="escritas">17:00</td>
-                        <td class="escritas">17:00</td>     <!-- décimo quarto linha -->
-                        <td class="escritas">17:00</td>
-                        <td class="escritas">17:00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <br><br><br>
-
-    <form>
-    <div class="card">    
-        <div class="clinic-info">
-            <h3 class="titulo"><strong>Consultório</strong></h3>
-            <img src="../../assets/icon/local.png" style="height: 20px; width: 20px;">
-            <p class="escritas">Endereços</p>
-            <input type="text"  id="endereço" placeholder="Digite aqui">
-
-            <br>
-
-            <img src="../../assets/icon/telefone.png" style="height: 20px; width: 20px;">
-            <p class="escritas">Número de Telefone</p>
-            <input type="text"  id="numero"  placeholder="Digite aqui">
-        </div>
-    </div>    
-    
-    <br><br>
-
-    <div class="card">    
-        <div class="clinic-info">
-            <h3 class="titulo"><strong>experiência</strong></h3>
-            <p class="escritas">sobre mim:</p>
-            <input type="text"  id="sobreMim"  placeholder="Digite aqui">
-
-            <br>
-            
-            <p class="escritas">experiência em:</p>
-            <input type="text"  id="experiencia"  placeholder="Digite aqui">
-            
-            <br>
-
-            <p class="escritas">Formação</p>
-            <input type="text"  id="formaçao"  placeholder="Digite aqui">
-
-            <br><br>
-            
-            <button class="appointment-button"  id="salvar" style="margin-left: 90%";>salvar</button> 
-
-        </div>
-    </div>  
-</form>
-
-    <br><br>
-
-<div
-    <h4 class="titulo" style="margin-left: 25%;"><strong>opiniões de pacientes</strong></h4>
-        <p class="estrelas" style="margin-left: 25%;width:100px"></p>
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                <p class="escritas">classificação geral</p>
-                    <h4 class="titulo"><strong>ordernar por</strong></h4>
-            <button class="botao">mais recentes</button>
-        <button class="botao" style="margin-left: 3%;">maior avaliação</button>
-    <button class="botao" style="margin-left: 3%;"> menor avaliação</button>
-</div>
-
-    <br><br><br>
-
-    <div class="card">
-        <div class="profile">
-            <img src="../../assets/icon/icone_1.png" class="perfil">
-            <div>
-               <h3><p class="letras"style="color: #0367A5;">maria eduarda lima:</p></h3>
-                <div class="estrelas">
-                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                </div>
-                <p class="escritas">A Dra.Ana Beatriz é Incrível!Sempreme senti muito nervosa em consultas<br>
-                                    ginecológicas, mas elame fez sentir segura e acolhida. Explicou tudo claramente e tirou<br>
-                                    todas as minhas dúvidas. Sinto-me muito mais informada e empoderada sobre minha saúde.
-                </p>                               
-            </div>
-        </div>
-    </div>
-
-    <br><br><br><br><br>
-
-    <div class="card">
-        <div class="profile">
-            <img src="../../assets/icon/icone_2.png" class="perfil">
-            <div>
-               <h3><p class="letras"style="color: #0367A5;">carolina soares:</p></h3>
-                <div class="estrelas">
-                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                </div>
-                <p class="escritas">Depois de anos lutando com endometriose e consultando vários especialistas,<br>
-                                    finalmente encontrei alívio com a Dra.Ana Beatriz. Ela é extremamente conhecedora e<br>
-                                    atualizada sobre os tratamentos mais recentes. Sua abordagem cuidadosa mudou minha vida!
-                </p>
-            </div>          
-        </div>
-    </div>
-
-    <br><br><br>
-
-    <script type="text/javascript" src="doctor-professional-profile-service.js">
         
-    </script>
-</body> 
-</html>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2 mt-5 d-flex justify-content-center" >
+            <div class="card">
+                <div class="profile">
+                    <img src="../../assets/img/Dra.jpg" alt="Dra. Sofia Martinez Rivera"
+                         class="profile-img">
+                    <div style="margin-right: 500px;">
+                        <h3 style="color: #0367A5;">Dra. Sofia Martinez Rivera</h3>
+                        <p class="escritas">Ginecologista</p>
+                        <p class="escritas">Número de Registro :</p>
+                        <div class="estrelas">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th class="escritas">Segunda-feira<br>01/abr</th>
+                            <th class="escritas">Terça-feira<br>02/abr</th>
+                            <th class="escritas">Quarta-feira<br>03/abr</th>
+                            <th class="escritas">Quinta-feira<br>04/abr</th>
+                            <th class="escritas">Sexta-feira<br>05/abr</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="escritas">11:00</td>
+                            <td class="escritas">11:00</td>     <!-- primeira linha -->
+                            <td class="escritas">11:00</td>
+                            <td class="escritas">11:00</td>
+                            <td class="escritas">11:00</td>
+                        </tr>
+                        <tr>
+                            <td class="escritas">11:30</td>
+                            <td class="escritas">11:30</td>
+                            <td class="escritas">11:30</td>     <!-- segunda linha -->
+                            <td class="escritas">11:30</td>
+                            <td class="escritas">11:30</td>
+                        </tr>
+                        <tr>
+                            <td class="escritas">12:00</td>
+                            <td class="escritas">12:00</td>
+                            <td class="escritas">12:00</td>     <!-- terceira linha -->
+                            <td class="escritas">12:00</td>
+                            <td class="escritas">12:00</td>
+                        </tr>
+                        <tr>
+                            <td class="escritas">12:30</td>
+                            <td class="escritas">12:30</td>
+                            <td class="escritas">12:30</td>     <!-- quarta linha -->
+                            <td class="escritas">12:30</td>
+                            <td class="escritas">12:30</td>
+                        </tr>
+                        <tr>
+                            <td class="escritas">13:00</td>
+                            <td class="escritas">13:00</td>
+                            <td class="escritas">13:00</td>     <!-- quinta linha -->
+                            <td class="escritas">13:00</td>
+                            <td class="escritas">13:00</td>
+                        </tr>
+                        <tr>
+                            <td class="escritas">13:30</td>
+                            <td class="escritas">13:30</td>
+                            <td class="escritas">13:30</td>     <!-- sexta linha -->
+                            <td class="escritas">13:30</td>
+                            <td class="escritas">13:30</td>
+                        </tr>
+                        <tr>
+                            <td class="escritas">14:00</td>
+                            <td class="escritas">14:00</td>
+                            <td class="escritas">14:00</td>     <!-- oitava linha -->
+                            <td class="escritas">14:00</td>
+                            <td class="escritas">14:00</td>
+                        </tr>
+                        <tr>
+                            <td class="escritas">14:30</td>
+                            <td class="escritas" id="horas">14:30</td>
+                            <td class="escritas">14:30</td>     <!-- nona linha -->
+                            <td class="escritas">14:30</td>
+                            <td class="escritas">14:30</td>
+                        </tr>
+                        <tr>
+                            <td class="escritas">15:00</td>
+                            <td class="escritas">15:00</td>
+                            <td class="escritas">15:00</td>     <!-- décima linha -->
+                            <td class="escritas">15:00</td>
+                            <td class="escritas">15:00</td>
+                        </tr>
+                        <tr>
+                            <td class="escritas">15:30</td>
+                            <td class="escritas">15:30</td>
+                            <td class="escritas">15:30</td>     <!-- décimo primeiro linha -->
+                            <td class="escritas">15:30</td>
+                            <td class="escritas">15:30</td>
+                        </tr>
+                        <tr>
+                            <td class="escritas">16:00</td>
+                            <td class="escritas">16:00</td>
+                            <td class="escritas">16:00</td>     <!-- décimo segundo linha -->
+                            <td class="escritas">16:00</td>
+                            <td class="escritas">16:00</td>
+                        </tr>
+                        <tr>
+                            <td class="escritas">16:30</td>
+                            <td class="escritas">16:30</td>
+                            <td class="escritas">16:30</td>     <!-- décimo terceiro linha -->
+                            <td class="escritas">16:30</td>
+                            <td class="escritas">16:30</td>
+                        </tr>
+                        <tr>
+                            <td class="escritas">17:00</td>
+                            <td class="escritas">17:00</td>
+                            <td class="escritas">17:00</td>     <!-- décimo quarto linha -->
+                            <td class="escritas">17:00</td>
+                            <td class="escritas">17:00</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-8 offset-2 mt-5 d-flex justify-content-center">
+            <form>
+                <div class="card">
+                    <div class="clinic-info">
+                        <h3 class="titulo"><strong>Consultório</strong></h3>
+                        <img src="../../assets/icon/local.png" style="height: 20px; width: 20px;">
+                        <p class="escritas">Endereços</p>
+                        <input type="text" id="endereço" placeholder="Digite aqui">
+                        
+                        <br>
+                        
+                        <img src="../../assets/icon/telefone.png"
+                             style="height: 20px; width: 20px;">
+                        <p class="escritas">Número de Telefone</p>
+                        <input type="text" id="numero" placeholder="Digite aqui">
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <div class="clinic-info">
+                        <h3 class="titulo"><strong>experiência</strong></h3>
+                        <p class="escritas">sobre mim:</p>
+                        <input type="text" id="sobreMim" placeholder="Digite aqui">
+                        
+                        <br>
+                        
+                        <p class="escritas">experiência em:</p>
+                        <input type="text" id="experiencia" placeholder="Digite aqui">
+                        
+                        <br>
+                        
+                        <p class="escritas">Formação</p>
+                        <input type="text" id="formaçao" placeholder="Digite aqui">
+                        
+                        <br><br>
+                        
+                        <button class="appointment-button" id="salvar" style="margin-left: 90%" ;>
+                            salvar
+                        </button>
+                    
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-8 offset-2  p-0 pt-5" >
+            <h4 class="titulo" ><strong>Opiniões de pacientes</strong></h4>
+        </div>
+        <div class="col-8 offset-2  p-0 " >
+            <img src="../../assets/icon/5%20estrelas.svg" alt="">
+        </div>
+        <div class="col-8 offset-2 p-0  pt-3 " >
+            <p class="escritas">Classificação Geral</p>
+        </div>
+        <div class="col-8 offset-2 p-0  pt-3 " >
+            <h4 class="titulo"><strong>Ordernar por</strong></h4>
+        </div>
+        <div class="col-8 offset-2 p-0  pt-3 " >
+            <div class="segment">
+                <button class="segment-button active" data-value="option1">Mais recentes</button>
+                <button class="segment-button" data-value="option2">Maior avaliação</button>
+                <button class="segment-button" data-value="option3">Menor avaliação</button>
+            </div>
+        </div>
+        <div class="col-8 offset-2 p-0  pt-5 " >
+            <div class="card">
+                <div class="profile">
+                    <img src="../../assets/icon/icone_1.png" class="perfil">
+                    <div>
+                        <h3><p class="letras" style="color: #0367A5;">Maria Eduarda Lima</p></h3>
+                        <div class="estrelas">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="escritas">A Dra.Ana Beatriz é Incrível!Sempreme senti muito nervosa em
+                            consultas<br>
+                            ginecológicas, mas elame fez sentir segura e acolhida. Explicou tudo claramente e
+                            tirou<br>
+                            todas as minhas dúvidas. Sinto-me muito mais informada e empoderada sobre minha
+                            saúde.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-8 offset-2 p-0  pt-5 " >
+            <div class="card">
+                <div class="profile">
+                    <img src="../../assets/icon/icone_2.png" class="perfil">
+                    <div>
+                        <h3><p class="letras" style="color: #0367A5;">Carolina Soares</p></h3>
+                        <div class="estrelas">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="escritas">Depois de anos lutando com endometriose e consultando vários
+                            especialistas,<br>
+                            finalmente encontrei alívio com a Dra.Ana Beatriz. Ela é extremamente conhecedora
+                            e<br>
+                            atualizada sobre os tratamentos mais recentes. Sua abordagem cuidadosa mudou minha
+                            vida!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script src="doctor-professional-profile-controller.js" type="module"></script>
