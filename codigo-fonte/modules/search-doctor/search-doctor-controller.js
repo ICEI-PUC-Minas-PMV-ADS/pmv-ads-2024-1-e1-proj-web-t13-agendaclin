@@ -272,7 +272,8 @@ export class SearchDoctorController {
                 id:new Date().getTime(),
                 start: info.date,
                 allDay: info.allDay,
-                calendarId: calendarId
+                calendarId: calendarId,
+                name: 'Consulta com Dr. Fulano',
             };
             this.startConsultation(eventData);
 

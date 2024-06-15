@@ -61,9 +61,9 @@ export class DoctorProfessionalProfileController {
                 window.location.href = "../schedule-consult-step-2/schedule-consult-step-2.html"
             }
         });
-        const icone = document.getElementById("icone")
-        icone.addEventListener("click", function () {
-            window.location.href = "../doctor-consult-dashboard/doctor-consult-dashboard.html"
-        })
+        // const icone = document.getElementById("icone")
+        // icone.addEventListener("click", function () {
+        //     window.location.href = "../doctor-consult-dashboard/doctor-consult-dashboard.html"
+        // })
     }
 }

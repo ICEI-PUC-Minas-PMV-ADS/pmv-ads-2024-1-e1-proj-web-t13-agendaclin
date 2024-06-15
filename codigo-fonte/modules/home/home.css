@@ -52,7 +52,7 @@ body
 {
     background-image: url('../../assets/img/Background.png');
     width: auto;
-    height: 700px;
+   min-height: 700px;
     background-position: center center;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -200,4 +200,17 @@ li {
     background: var(--BG-Vertical, linear-gradient(49deg, #0367A5 17.81%, #50F3E2 84.62%));
     min-width: 115px;
     height: 45px;
+}
+@media (min-width: 1360px) {
+    .full-width-image {
+        height: 900px;
+    }
+}
+@media (min-width: 1927px) {
+    .full-width-image {
+        height: 1200px;
+    }
+}
+.background {
+    background: linear-gradient(49deg, #0367A5 17.81%, #50F3E2 84.62%);
 }
