@@ -42,7 +42,7 @@
     <div class="row">
         <div class="col d-flex justify-content-center align-items-center">
             <div id="dataContainer">
-                <form>
+                <form id="emailLoginForm">
                     <input type="text" id="email" class="form" placeholder="E-mail"
                            required>
                     <input type="password" id="password" class="form"
@@ -52,13 +52,36 @@
                 <a href="" id="forgot">Esqueceu sua senha?</a>
                 
                 <div id="line">
-                    <a href="/#/doctor-signup-step-1" class="signUpLink id=signUp">Ainda não tem
+                    <a href="/codigo-fonte/modules/doctor-signup-step-1/doctor-signup-step-1.html" class="signUpLink" id="signUp">Ainda não tem
                     conta? Faça seu cadastro !</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Modal para Esqueci a Senha -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex justify-content-between">
+                <h5 class="modal-title" id="forgotPasswordModalLabel">Redefinir Senha</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="forgotPasswordForm">
+                    <div class="form-group">
+                        <label for="resetEmail" class="m-auto">E-mail</label>
+                        <input type="email" class="form-control mt-2" id="resetEmail"
+                               placeholder="Digite seu e-mail" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="doctor-login-controller.js" type="module"></script>
 
 
 
