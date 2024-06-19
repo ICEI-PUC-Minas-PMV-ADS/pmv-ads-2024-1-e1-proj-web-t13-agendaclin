@@ -1,5 +1,5 @@
 import { DoctorLogin } from './doctor-login-service.js'; 
-import { googleLogin, emailLogin } from "/js/shared/auth.js";
+import { googleLogin, emailLogin, emailReset } from "/js/shared/auth.js";
 
 export class DoctorController {
     constructor() {
@@ -9,33 +9,29 @@ export class DoctorController {
     }
 
     setupEventListeners() {
-        // Definindo os listeners para botões específicos de login (Google e Apple)
+        // Definir os listeners para botões específicos de login (Google e Apple)
         document.getElementById('googleLoginButton').addEventListener('click', googleLogin);
         document.getElementById('appleLoginButton').addEventListener('click', googleLogin);
-        document.getElementById("forgot").addEventListener('click', function() {
+        document.getElementById("forgot-password").addEventListener('click', function() {
             $('#forgotPasswordModal').modal('show');
         });
+
         // Definir o listener para o formulário de login por email
-        document.getElementById('enter').addEventListener('submit', (e) => {
-            e.preventDefault();
+        document.getElementById('emailLoginForm').addEventListener('submit', (event) => {
+            event.preventDefault();
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
             emailLogin(email, password);
-        })
+        });
     }
-
 }
-
 // Função de reset de senha
-
-document.getElementById('forgot').addEventListener('click', (e)=> {
-     document.getElementById('forgotPasswordModal').tabIndex = '2';
-});
-
 document.getElementById('forgotPasswordForm').addEventListener('submit', function(event) {
     event.preventDefault();
+
     const email = document.getElementById('resetEmail').value;
-    auth.sendPasswordResetEmail(email)
+    console.log('email', email);
+    emailReset(email)
         .then(() => {
             // Email de redefinição enviado com sucesso
             console.log('Email de redefinição enviado');
@@ -48,8 +44,10 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', functio
         });
 });
 
-// Garantir que o LoginController seja instanciado após o carregamento do DOM
+// Garantir que o DoctorController seja instanciado após o carregamento do DOM
 document.addEventListener('DOMContentLoaded', () => {
     new DoctorController();
 });
+
+
 
