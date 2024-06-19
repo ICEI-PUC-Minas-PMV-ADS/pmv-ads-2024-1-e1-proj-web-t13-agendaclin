@@ -12,8 +12,10 @@ export class SearchDoctorController {
     }
     async getAllData() {
         try {
-
-            this.doctors = await this.searchDoctorService.fetchData('doctors');
+            this.doctors = JSON.parse(localStorage.getItem('filteredDoctors')) || [];
+            if (this.doctors.length === 0) {
+                this.doctors = await this.searchDoctorService.fetchData('doctors');
+            }
             this.cities = await this.searchDoctorService.fetchData('cities');
             this.specialties = await this.searchDoctorService.fetchData('specialties');
             this.insurances = await this.searchDoctorService.fetchData('insurances');
@@ -26,6 +28,7 @@ export class SearchDoctorController {
 
             const neighborhoodsSelect = document.getElementById('neighborhoods');
             neighborhoodsSelect.disabled = true;
+            localStorage.removeItem('filteredDoctors');
         } catch (error) {
             console.error('Failed to fetch doctors data:', error);
         }
