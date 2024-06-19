@@ -28,78 +28,7 @@
                    <div class="selecionar">
                        <p>Selecione data e horário</p>
                    </div>
-<!--                   <div class="grid-container">-->
-<!--                       <div class="grid-item">Segunda-feira<br>01/Abril</div>-->
-<!--                       <div class="grid-item">Terça-feira<br>01/Abril</div>-->
-<!--                       <div class="grid-item">Quarta-feira<br>01/Abril</div>-->
-<!--                       <div class="grid-item">Quinta-feira<br>01/Abril</div>-->
-<!--                       <div class="grid-item">Sexta-feira<br>01/Abril</div>-->
-<!--                       <div class="grid-item">11:00</div>-->
-<!--                       <div class="grid-item">11:00</div>-->
-<!--                       <div class="grid-item">11:00</div>-->
-<!--                       <div class="grid-item">11:00</div>-->
-<!--                       <div class="grid-item">11:00</div>-->
-<!--                       <div class="grid-item">11:30</div>-->
-<!--                       <div class="grid-item">11:30</div>-->
-<!--                       <div class="grid-item">11:30</div>-->
-<!--                       <div class="grid-item">11:30</div>-->
-<!--                       <div class="grid-item">11:30</div>-->
-<!--                       <div class="grid-item">12:00</div>-->
-<!--                       <div class="grid-item">12:00</div>-->
-<!--                       <div class="grid-item">12:00</div>-->
-<!--                       <div class="grid-item">12:00</div>-->
-<!--                       <div class="grid-item">12:00</div>-->
-<!--                       <div class="grid-item">12:30</div>-->
-<!--                       <div class="grid-item">12:30</div>-->
-<!--                       <div class="grid-item">12:30</div>-->
-<!--                       <div class="grid-item">12:30</div>-->
-<!--                       <div class="grid-item">12:30</div>-->
-<!--                       <div class="grid-item">13:00</div>-->
-<!--                       <div class="grid-item">13:00</div>-->
-<!--                       <div class="grid-item">13:00</div>-->
-<!--                       <div class="grid-item">13:00</div>-->
-<!--                       <div class="grid-item">13:00</div>-->
-<!--                       <div class="grid-item">13:30</div>-->
-<!--                       <div class="grid-item">13:30</div>-->
-<!--                       <div class="grid-item">13:30</div>-->
-<!--                       <div class="grid-item">13:30</div>-->
-<!--                       <div class="grid-item">13:30</div>-->
-<!--                       <div class="grid-item">14:00</div>-->
-<!--                       <div class="grid-item">14:00</div>-->
-<!--                       <div class="grid-item">14:00</div>-->
-<!--                       <div class="grid-item">14:00</div>-->
-<!--                       <div class="grid-item">14:00</div>-->
-<!--                       <div class="grid-item">14:30</div>-->
-<!--                       <div class="grid-item">14:30</div>-->
-<!--                       <div class="grid-item">14:30</div>-->
-<!--                       <div class="grid-item">14:30</div>-->
-<!--                       <div class="grid-item">14:30</div>-->
-<!--                       <div class="grid-item">15:00</div>-->
-<!--                       <div class="grid-item">15:00</div>-->
-<!--                       <div class="grid-item">15:00</div>-->
-<!--                       <div class="grid-item">15:00</div>-->
-<!--                       <div class="grid-item">15:00</div>-->
-<!--                       <div class="grid-item">15:30</div>-->
-<!--                       <div class="grid-item">15:30</div>-->
-<!--                       <div class="grid-item">15:30</div>-->
-<!--                       <div class="grid-item">15:30</div>-->
-<!--                       <div class="grid-item">15:30</div>-->
-<!--                       <div class="grid-item">16:00</div>-->
-<!--                       <div class="grid-item">16:00</div>-->
-<!--                       <div class="grid-item">16:00</div>-->
-<!--                       <div class="grid-item">16:00</div>-->
-<!--                       <div class="grid-item">16:00</div>-->
-<!--                       <div class="grid-item">16:30</div>-->
-<!--                       <div class="grid-item">16:30</div>-->
-<!--                       <div class="grid-item">16:30</div>-->
-<!--                       <div class="grid-item">16:30</div>-->
-<!--                       <div class="grid-item">16:30</div>-->
-<!--                       <div class="grid-item">17:00</div>-->
-<!--                       <div class="grid-item">17:00</div>-->
-<!--                       <div class="grid-item">17:00</div>-->
-<!--                       <div class="grid-item">17:00</div>-->
-<!--                       <div class="grid-item">17:00</div>-->
-<!--                   </div>-->
+                   <div id="doctor-container"></div>
                </div>
                <div class="Finalizar">
                    <button id="finalizarBtn" class="finalizar-btn">Finalizar Reagendamento</button>
@@ -108,28 +37,8 @@
        </div>
    </div>
 </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const gridItems = document.querySelectorAll('.grid-item');
-        const finalizarBtn = document.getElementById('finalizarBtn');
 
-        gridItems.forEach(item => {
-          item.addEventListener('click', function() {
-            gridItems.forEach(i => i.classList.remove('selected'));
-            item.classList.add('selected');
-            finalizarBtn.classList.add('enabled');
-            finalizarBtn.disabled = false;
-          });
-        });
-
-        finalizarBtn.addEventListener('click', function() {
-            if (finalizarBtn.classList.contains('enabled')) {
-              alert('Reagendamento finalizado com sucesso!');
-              window.location.href = "../schedule-consult-step-3/schedule-consult-step-3.html";
-          }
-        });
-      });
-    </script>
+<script src="reschedule-consult-controller.js" type="module"></script>
     
     
 

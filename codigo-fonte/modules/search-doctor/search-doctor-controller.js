@@ -9,6 +9,7 @@ export class SearchDoctorController {
     constructor() {
         this.getAllData();
         this.addEventListeners();
+        this.setupSearchButton();
     }
     async getAllData() {
         try {
@@ -51,6 +52,10 @@ export class SearchDoctorController {
             optionElement.textContent = option.name;
             selectElement.appendChild(optionElement);
         });
+    }
+    setupSearchButton() {
+        const searchButton = document.querySelector('#searchButton');
+        searchButton.addEventListener('click', () => this.handleSearch());
     }
 
     addEventListeners() {
