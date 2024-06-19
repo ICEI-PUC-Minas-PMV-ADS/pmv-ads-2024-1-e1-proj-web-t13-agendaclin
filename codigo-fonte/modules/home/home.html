@@ -56,10 +56,28 @@
                             </button>
                             
                             <script>
-                                document.getElementById('pesq_button').addEventListener('click', function (event) {
-                                    event.preventDefault();
-                                    alert('Você precisa estar logado para fazer uma pesquisa. Você será redirecionado para a página de login.');
-                                    window.location.href = '../login/login.html';
+                                import SearchDoctorService from './SearchDoctorHome.js';
+
+                                document.addEventListener('DOMContentLoaded', () => {
+                                    const searchButton = document.querySelector('#searchButton');
+
+                                    searchButton.addEventListener('click', async () => {
+                                        const specialtyInput = document.querySelector('#specialtyInput').value;
+                                        const cityInput = document.querySelector('#cityInput').value;
+
+                                        const searchService = new SearchDoctorService();
+                                        const data = await searchService.fetchData('doctors'); // Assumindo que o arquivo JSON é doctors.json
+
+                                        const filteredData = data.filter(doctor => {
+                                            return (doctor.specialty.includes(specialtyInput) || doctor.name.includes(specialtyInput) || doctor.disease.includes(specialtyInput)) 
+                                                && doctor.city.includes(cityInput);
+                                        });
+
+                                        // Exibir os resultados filtrados (aqui você pode personalizar a exibição)
+                                        console.log(filteredData);
+                                        const resultsContainer = document.querySelector('#resultsContainer');
+                                        resultsContainer.innerHTML = filteredData.map(doctor => `<div>${doctor.name} - ${doctor.specialty} - ${doctor.city}</div>`).join('');
+                                    });
                                 });
                             </script>
                         </div>
