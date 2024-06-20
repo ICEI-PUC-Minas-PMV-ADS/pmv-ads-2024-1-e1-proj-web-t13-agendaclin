@@ -54,8 +54,22 @@ export class SearchDoctorController {
         });
     }
     setupSearchButton() {
-        const searchButton = document.querySelector('#searchButton');
-        searchButton.addEventListener('click', () => this.handleSearch());
+        const searchlupa = document.querySelector('#searchlupa');
+        searchlupa.addEventListener('click', () => this.handleSearch());
+    }
+    handleSearch() {
+        const specialtyInput = document.querySelector('#specialties').value;
+        const cityInput = document.querySelector('#cities').value;
+        console.log('Search:', specialtyInput, cityInput);
+        const filteredDoctors = this.doctors.filter(doctor => {
+            const matchesSpecialty = specialtyInput === 'Especialidade, doença ou nome' || doctor.specialty === specialtyInput;
+            const matchesCity = cityInput === 'Filtre sua cidade' || doctor.city === cityInput;
+            return matchesSpecialty && matchesCity;
+        });
+
+        localStorage.setItem('filteredDoctors', JSON.stringify(filteredDoctors));
+        window.location.href = '/#/search-doctor';
+        // console.log('Filtered Doctors:', filteredDoctors);
     }
 
     addEventListeners() {
@@ -68,11 +82,13 @@ export class SearchDoctorController {
             const selectedCityId = event.target.value;
             console.log('city', selectedCityId)
             this.updateNeighborhoodsSelect(selectedCityId);
-            this.filterDoctors('Cidade');
+            // this.filterDoctors('Cidade');
         });
 
-        specialtySelect.addEventListener('change', () => this.filterDoctors('Epecialidade'));
+        // specialtySelect.addEventListener('change', () => this.filterDoctors('Epecialidade'));
+
         insuranceSelect.addEventListener('change', () => this.filterDoctors('Convênios'));
+
         neighborhoodSelect.addEventListener('change', () => this.filterDoctors('Bairro'));
     }
 
@@ -142,6 +158,7 @@ export class SearchDoctorController {
 
         doctors.forEach(doctor => {
             const doctorCard = document.createElement('div');
+            doctorCard.id = doctor.id;
             doctorCard.classList.add('row', 'profile-card');
             const calendarId = `calendar-${doctor.id}`;
             let stars ;
@@ -204,8 +221,11 @@ export class SearchDoctorController {
             `;
             container.appendChild(doctorCard);
             this.setupCalendar(calendarId); // Inicializa o calendário para o médico atual
+            doctorCard.addEventListener('click', () => this.handleCardClick(doctor));
+
         });
     }
+
     setupCalendar(calendarId) {
         const calendarEl = document.getElementById(calendarId);
         const calendar = new FullCalendar.Calendar(calendarEl, {
@@ -311,6 +331,12 @@ export class SearchDoctorController {
         console.log('eventData', eventData)
         localStorage.setItem('currentEvent', JSON.stringify(eventData));
         window.location.href = '/#/schedule-consult-step-1';
+    }
+
+    handleCardClick(doctor) {
+        console.log('Doctor:', doctor);
+        localStorage.setItem('currentDoctor', JSON.stringify(doctor));
+        window.location.href = '/#/doctor-profile';
     }
     roundDownToNearestHalf(num) {
         return Math.floor(num * 2) / 2;

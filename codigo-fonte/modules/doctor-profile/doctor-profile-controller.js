@@ -60,7 +60,8 @@ export class DoctorProfileController {
     }
 
     setupEventListeners() {
-        const currentDoctor = 1
+        const doctorId = localStorage.getItem('currentDoctor');
+        const currentDoctor = doctorId.id;
         const calendarId = `calendar-${currentDoctor}`;
         const container = document.getElementById('doctor-container');
         container.innerHTML = `<div id='${calendarId}' class='calendar'></div>`;
@@ -95,6 +96,7 @@ export class DoctorProfileController {
             slotMinTime: '8:00:00',
             slotMaxTime: '18:00:00',
             events: this.loadEvents(calendarId),
+            dateClick: this.handleDateClick.bind(this),
         });
         calendar.render();
         const timeGridSlots = calendarEl.querySelectorAll('.fc-timegrid-slot');
@@ -102,10 +104,30 @@ export class DoctorProfileController {
             slot.style.height = '25px';
         });
     }
+    handleDateClick(info) {
+        const calendarEl = info.view.calendar;
+        const calendarId = calendarEl.el.id; // Obtém o ID do calendário
+        console.log('calendarId', calendarId);
+
+        // Iniciar a consulta
+        const eventData = {
+            id:new Date().getTime(),
+            start: info.date,
+            allDay: info.allDay,
+            calendarId: calendarId,
+            name: 'Consulta com Dr. Fulano',
+        };
+        this.startConsultation(eventData);
+    }
     loadEvents(calendarId) {
         const events = JSON.parse(localStorage.getItem('events')) || [];
         // console.log('events', events)
         return events.filter(event => event.calendarId === calendarId);
+    }
+    startConsultation(eventData) {
+        console.log('eventData', eventData)
+        localStorage.setItem('currentEvent', JSON.stringify(eventData));
+        window.location.href = '/#/schedule-consult-step-1';
     }
     loadSegment() {
         const segmentButtons = document.querySelectorAll('.segment-button');
