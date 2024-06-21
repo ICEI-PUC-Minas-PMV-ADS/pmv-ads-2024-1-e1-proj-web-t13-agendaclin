@@ -50,6 +50,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script>
     // Adjust asset paths ajusta o endereço dos arquivos de imagem e css
+    const adjustAssetPaths = () => {
+        const elements = document.querySelectorAll('[src], [href]');
+        elements.forEach(element => {
+            const src = element.getAttribute('src');
+            const href = element.getAttribute('href');
+            if (src && src.startsWith('assets/')) {
+                element.src = `${basePath}/${src}`;
+            }
+            if (href && href.startsWith('assets/')) {
+                element.href = `${basePath}/${href}`;
+            }
+        });
+    };
+    
+    document.addEventListener('DOMContentLoaded', adjustAssetPaths);
 
 </script>
 </body>
