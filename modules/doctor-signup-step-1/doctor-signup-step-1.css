@@ -1,0 +1,279 @@
+:root {
+    --color: #0a53be;
+    --LineColor: #13C9F1;
+}
+
+ .oxaniumRegular {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+h1, h2 {
+    color: #0a53be
+}
+
+#logo {
+    max-width: 392px;
+    max-height: 79px;
+}
+
+#line {
+    width: 41.5rem;
+    border-bottom: 1px solid var(--LineColor);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#signUpAs {
+    margin-top: 2.3rem;
+    margin-bottom: 2.5rem;
+}
+
+
+
+#dataContainer {
+   height: auto;
+   color: var(--color);
+   font-size: 27px;
+   display: flex;
+   justify-content: flex-start;
+}
+
+#dataContainer form input {
+    margin: 1.3rem;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--color);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.data {
+   width: 30rem;
+   height: 320px;
+   font-size: 28px;
+   color: var(--color);
+   display: flex;
+   flex-wrap: wrap;
+   padding: 2.5rem;
+
+    input {
+        height: 40px;
+        border: 1px solid var(--color);
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 18px;
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.12), 0 8px 25px 0 rgba(0,0,0,0.10);
+        border-radius: 2.5px;
+    }
+    label {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+}
+
+#nextStep {
+    max-width: 527px;
+    height: 40px;
+    background-color: var(--color);
+    border: 1px solid var(--color);
+    color: #fff;
+    font-size: large;
+    font-family: inherit;
+}
+
+#nextStep:hover {
+    max-width: 527px;
+    height: 40px;
+    background-color: #8994a5;
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: large;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    #logo {
+        width: 30rem;
+        height: auto;
+    }
+    
+    #line {
+        width: 31.2rem;
+        border-bottom: 1px solid var(--LineColor);
+    }
+
+    .form {
+        width: 28rem;
+        padding: 7px;
+        margin-bottom: 3rem;
+        margin-right: 10px;
+        border: 1px solid var(--color);
+    }
+
+    .data {
+        width: 30rem;
+        height: 320px;
+        font-size: 26px;
+        color: var(--color);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2.5rem;
+        
+     }
+
+    #nextStep {
+        min-width: 465px;
+        max-width: 465px;
+        height: 40px;
+        background-color: var(--color);
+        border: 1px solid var(--color);
+        color: #fff;
+        font-size: large;
+        font-family: inherit;
+    }
+
+    #nextStep:hover {
+        min-width: 465px;
+        max-width: 465px;
+        height: 40px;
+        background-color: #8994a5;
+        border: 1px solid #000000;
+        color: #000000;
+        font-size: large;
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+    }
+
+    
+}
+    
+@media only screen and (min-width: 601px) {
+
+    #logo {
+        width: 33rem;
+        height: auto;
+    }
+    
+    #line {
+        width: 34rem;
+        border-bottom: 1px solid var(--LineColor);
+    }
+
+    .form {
+        width: 28rem;
+        padding: 7px;
+        margin-bottom: 3rem;
+        margin-right: 10px;
+        border: 1px solid var(--color);
+    }
+
+    .data {
+        width: 30rem;
+        height: 320px;
+        font-size: 28px;
+        color: var(--color);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2.5rem;
+        
+     }
+
+    #nextStep {
+        min-width: 465px;
+        height: 40px;
+        background-color: var(--color);
+        border: 1px solid var(--color);
+        color: #fff;
+        font-size: large;
+        font-family: inherit;
+    }
+
+    #nextStep:hover {
+        min-width: 465px;
+        height: 40px;
+        background-color: #8994a5;
+        border: 1px solid #000000;
+        color: #000000;
+        font-size: large;
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+         }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  
+    #logo {
+        width: 40rem;
+        height: auto;
+    }
+    
+    #line {
+        width: 41.5rem;
+        border-bottom: 1px solid var(--LineColor);
+    }
+
+    .data {
+        width: 30rem;
+        height: 320px;
+        font-size: 28px;
+        color: var(--color);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2.5rem;
+        
+     }
+     
+     .form {
+         width: 32rem;
+         padding: 7px;
+         margin-bottom: 3rem;
+         margin-right: 10px;
+         border: 1px solid var(--color);
+     }
+     
+     
+     
+     #nextStep {
+         min-width: 530px;
+         height: 40px;
+         background-color: var(--color);
+         border: 1px solid var(--color);
+         color: #fff;
+         font-size: large;
+         font-family: inherit;
+
+     }
+     
+     #nextStep:hover {
+        min-width: 530px;
+        height: 40px;
+        background-color: #8994a5;
+        border: 1px solid #000000;
+        color: #000000;
+        font-size: large;
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+    }
+    
+    
+}
+.line
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+

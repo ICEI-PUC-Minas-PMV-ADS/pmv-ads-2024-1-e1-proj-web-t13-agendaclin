@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "name": "Bradesco Saúde",
+      "acronym": "BS"
+    },
+    {
+      "id": 2,
+      "name": "Amil",
+      "acronym": "AM"
+    },
+    {
+      "id": 3,
+      "name": "Unimed",
+      "acronym": "UN"
+    },
+    {
+      "id": 4,
+      "name": "SulAmérica",
+      "acronym": "SA"
+    },
+    {
+      "id": 5,
+      "name": "Porto Seguro",
+      "acronym": "PS"
+    },
+    {
+      "id": 6,
+      "name": "Allianz",
+      "acronym": "AL"
+    },
+    {
+      "id": 7,
+      "name": "Hapvida",
+      "acronym": "HV"
+    },
+    {
+      "id": 8,
+      "name": "NotreDame",
+      "acronym": "ND"
+    }
+  ]

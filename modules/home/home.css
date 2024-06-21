@@ -1,0 +1,216 @@
+/* Home css fin 1.5*/
+
+.nav-top 
+{
+    width: 100%;
+    z-index: 10; 
+}
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 59px;
+}
+  
+li 
+{
+    float: right;
+}
+  
+li a 
+{
+    background-color: #0085f100;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+  
+li a:hover 
+{
+    background-color: #2bade9;
+}
+
+body 
+{
+    margin: 0;  
+}
+
+.logo_navbar 
+{
+    width: 210px;
+    height: 45px;
+    margin-left: 16px;
+}
+
+.full-width-image 
+{
+    background-image: url('../../assets/img/Background.png');
+    width: auto;
+   min-height: 700px;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin: 0;
+}
+
+@media (max-width: 768px) 
+{
+    .full-width-image 
+    {
+        height: 300px; 
+    }
+}
+
+
+.gradiente_title 
+{
+    font-size: 2.00vw;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.03, rgb(3, 103, 165, 1)),
+    color-stop(0.52, rgb(100, 159, 226)),
+    color-stop(0.76, rgb(80, 243, 226, 1))
+);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pic-icon1
+{
+    height: 77px;
+    width: 77px;
+}
+
+.pic-icon2
+{
+    height: 118px;
+    width: 118px;
+}
+
+.pic-icon3
+{
+    height: 118px;
+    width: 122px;
+}
+
+.gradiente_title2
+{
+    font-size: 1.97vw;
+    text-align: center;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.03, rgb(3, 103, 165, 1)),
+    color-stop(0.52, rgb(100, 159, 226)),
+    color-stop(0.76, rgb(80, 243, 226, 1))
+);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin: 20px;
+    text-align: center;
+}
+
+.medslinha2
+{
+    width: 700px;
+    height: 467px;
+}
+
+.line 
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.arrow 
+{
+    color: rgb(16, 165, 199);
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #0056b3; 
+    color: white; 
+}
+
+.footer h5 
+{
+    margin-bottom: 20px; 
+}
+
+.footer ul 
+{
+    padding-left: 0; 
+    list-style-type: none; 
+}
+
+.footer li 
+{
+    margin-bottom: 10px; 
+    margin-right: 15px; 
+    display: inline-block; 
+}
+
+@media (max-width: 768px) 
+{
+    .footer h5 
+    {
+        text-align: center; 
+    }
+    .footer ul 
+    {
+        text-align: center; 
+    }
+}
+.search-doctor {
+    padding-left: 200px;
+    padding-top: 250px;
+}
+select {
+    border: 1px solid #bbbb;
+    font-size: 15px;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.12), 0 8px 25px 0 rgba(0,0,0,0.10);
+    border-radius: 2.5px;
+}
+li {
+    padding: 0 10px;
+}
+
+.gradiente {
+    border-radius: 5px;
+    border: 1px solid var(--White, #FFF);
+    background: var(--BG-Vertical, linear-gradient(49deg, #0367A5 17.81%, #50F3E2 84.62%));
+    min-width: 115px;
+    height: 45px;
+}
+@media (min-width: 1360px) {
+    .full-width-image {
+        height: 900px;
+    }
+}
+@media (min-width: 1927px) {
+    .full-width-image {
+        height: 1200px;
+    }
+}
+.background {
+    background: linear-gradient(49deg, #0367A5 17.81%, #50F3E2 84.62%);
+}

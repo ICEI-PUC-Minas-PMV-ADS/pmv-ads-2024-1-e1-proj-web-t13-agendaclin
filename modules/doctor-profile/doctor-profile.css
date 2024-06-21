@@ -1,0 +1,230 @@
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(16, 165, 199));
+}
+  
+li a:hover 
+{
+    background-color: #52a8cf;
+}
+
+body
+{
+    margin: 0px;  
+}
+
+.logo_navbar
+{
+    width: 210px;
+    height:45px;
+}
+
+.card 
+{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.titulo
+{
+    color: #035385;
+    font-size: 25px; 
+    font-family: 'open sans', sans-serif  
+}
+
+.escritas
+{
+    color: #0367A5;
+    font-family: 'open sans', sans-serif
+}
+
+.profile
+{
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+}
+
+.profile-img 
+{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+}
+
+h3
+{
+    margin: 5px 0;
+}
+
+.appointment-button 
+{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.appointment-button:hover 
+{
+    background-color: #0056b3;
+}
+
+.schedule 
+{
+    margin-top: 20px;
+}
+
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td 
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th 
+{
+    background-color: #f8f8f8;
+}
+
+.clinic-info 
+{
+    margin-top: 20px;
+}
+
+label 
+{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.button
+{  
+    background-color: #007bff;
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    display: block;
+    margin: 0;
+    margin-right:800px;
+    margin-top: 23px
+}
+
+.icone 
+{
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px;
+}
+
+.estrelas {
+    padding-bottom: 20px;
+    img {
+        height: 20px;
+    }
+}
+
+.botao
+{
+    border-radius: 20px;
+    border: 1px solid #013269;
+    background-color: white;
+    padding: 20px 40px;
+    width: 200px;
+    height: 10px;
+    color: #0367A5;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+.perfil 
+{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}  
+
+.select
+{
+    padding: 8px; 
+    font-size: 13px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    appearance: none;
+    font-family: 'open sans', sans-serif;
+    margin: 0;
+    margin-left: 460px;
+}
+
+.opicao
+{
+    padding: 8px; 
+    font-size: 13px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    appearance: none;
+    font-family: 'open sans', sans-serif;
+    margin: 0;
+}
+
+#hora
+{
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+}
+nav {
+    background: linear-gradient(49deg, #0367A5 17.81%, #50F3E2 84.62%);
+    height: 86.4px;
+}
+.segment {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+
+
+}
+
+.segment-button {
+    flex: 1;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.segment-button:hover {
+    background-color: #e0e0e0;
+}
+
+.segment-button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+.classificacao-geral{
+    width: 175px;
+}
