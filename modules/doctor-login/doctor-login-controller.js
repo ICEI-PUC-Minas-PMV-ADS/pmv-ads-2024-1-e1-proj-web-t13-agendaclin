@@ -1,5 +1,5 @@
 import { DoctorLogin } from './doctor-login-service.js'; 
-import { googleLogin, emailLogin, emailReset } from "/js/shared/auth.js";
+import { googleLogin, emailLogin, emailReset } from '/js/shared/auth.js';
 
 export class DoctorController {
     constructor() {
