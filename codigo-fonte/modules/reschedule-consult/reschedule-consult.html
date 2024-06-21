@@ -1,45 +1,85 @@
 <div class="container">
-   <div class="row">
-       <div class="col-12 d-flex justify-content-center">
-           <div class="container">
-               <div class="logo">
-                   <a href="../home/home.html"><img class="logopng" src="../../assets/img/agendaClinLightgradiente.png"/></a>
-               </div>
-               <div class="col-12 d-flex justify-content-center">
-                   <hr>
-               </div>
-           </div>
-       </div>
-       
-       <div class="col-12 d-flex justify-content-center">
-           <div class="container2">
-               <div class="box">
-                   <div class="dra">
-                       <img class="doctor" src="../../assets/img/Dra.jpg">
-                   </div>
-                   <div class="reagendar">
-                       <p>Reagendar consulta</p>
-                   </div>
-                   <div class="informações">
-                       <img src="../../assets/icon/medico.png"/>
-                       <p>Dra.Sofia Martinez Rivera<br>
-                           Ginecologista</p>
-                   </div>
-                   <div class="selecionar">
-                       <p>Selecione data e horário</p>
-                   </div>
-                   <div id="doctor-container"></div>
-               </div>
-               <div class="Finalizar">
-                   <button id="finalizarBtn" class="finalizar-btn">Finalizar Reagendamento</button>
-               </div>
-           </div>
-       </div>
-   </div>
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <div class="container">
+                <div class="logo">
+                    <a href="../home/home.html"><img class="logopng" src="../../assets/img/agendaClinLightgradiente.png"/></a>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <hr>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 d-flex justify-content-center">
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <div class="container2 ">
+                        <div class="box ">
+                            <div class="dra">
+                                <img class="doctor" src="../../assets/img/Dra.jpg">
+                            </div>
+                            <div class="reagendar">
+                                <p>Reagendar consulta</p>
+                            </div>
+                            <div class="informações">
+                                <img src="../../assets/icon/medico.png"/>
+                                <span>Dra.Sofia Martinez Rivera<br>
+                                    Ginecologista</span>
+                            </div>
+                            <div class="selecionar">
+                                <p>Selecione data e horário</p>
+                            </div>
+                            <div id="doctor-container"></div>
+                        </div>
+                        <div class="Finalizar">
+                            <button id="finalizarBtn" class="finalizar-btn finalizar-button">Finalizar
+                                Reagendamento</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="eventModalLabel">Confirmar Reagendamento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="eventDetails"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" id="confirmEventBtn" class="btn btn-primary">Confirmar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header d-flex justify-content-between">
+                <h5 class="modal-title" id="success">Success</h5>
+                <button type="button" id="closeSuccessModalIcon" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Reagendamento realizado com sucesso
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="closeSuccessModalButton" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="reschedule-consult-controller.js" type="module"></script>
-    
-    
-
-

@@ -62,14 +62,15 @@ export class SearchDoctorController {
         const cityInput = document.querySelector('#cities').value;
         console.log('Search:', specialtyInput, cityInput);
         const filteredDoctors = this.doctors.filter(doctor => {
-            const matchesSpecialty = specialtyInput === 'Especialidade, doença ou nome' || doctor.specialty === specialtyInput;
-            const matchesCity = cityInput === 'Filtre sua cidade' || doctor.city === cityInput;
+            const matchesSpecialty = specialtyInput === 'Especialidade' || doctor.specialty === specialtyInput;
+            const matchesCity = cityInput === 'Cidade' || doctor.city === cityInput;
+
             return matchesSpecialty && matchesCity;
         });
-
         localStorage.setItem('filteredDoctors', JSON.stringify(filteredDoctors));
         window.location.href = '/#/search-doctor';
-        // console.log('Filtered Doctors:', filteredDoctors);
+        console.log('Filtered Doctors:', filteredDoctors);
+        this.getAllData();
     }
 
     addEventListeners() {
@@ -151,6 +152,7 @@ export class SearchDoctorController {
 
         this.renderDoctors(filteredDoctors);
     }
+
 
     renderDoctors(doctors) {
         const container = document.getElementById('doctor-container');
