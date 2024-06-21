@@ -17,7 +17,7 @@ class ScheduleConsultStep1Service {
     }
 
     async fetchDoctorsData() {
-        const response = await fetch('../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/databases/doctors.json');
+        const response = await fetch('../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin//pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/databasesdoctors.json');
         const doctors = await response.json();
         return doctors;
     }
