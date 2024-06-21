@@ -1,0 +1,173 @@
+<div class="col-12">
+    <nav class="d-flex align-items-center justify-content-center w-100">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 d-flex align-items-center">
+                    <a class="navbar-brand" href="#"><img
+                            src="../../assets/img/agendaClinLight.png" alt=""
+                            height="40" class="d-inline-block align-text-top"></a>
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center doctor-name ">
+                    <span>Dra. Sofia Martinez</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container-fluid h-100">
+    <div class="row   " >
+        <div class="col" id="side-menu">
+            <div class="row">
+                <div class="col-12 pt-4 d-flex justify-content-center align-items-center">
+                    <button class="btn menu-button">
+                        <a href="/#/doctor-consult-dashboard"> <img src="../../assets/icon/calendário.png" alt=""></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col " >
+            <div class="row">
+                <div class="col-12 pacientes">
+                    <p>Pacientes</p>
+                </div>
+                <div class="col-4 d-flex ">
+                    <select class="form-select select-style-form me-2"
+                            id="specialties"
+                            aria-label="Default select example">
+                        <option selected
+                                class="form-select">Filtrar por nome</option>
+                    </select>
+                    <select class="form-select select-style-form "
+                            aria-label="Default select example"  id="cities">
+                        <option selected class="select-style-form">Filtrar por contato</option>
+                    </select>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <table class="table w-100">
+                        <thead>
+                        <tr>
+                            <th scope="col">Nome e Sobrenome</th>
+                            <th scope="col">Telefone</th>
+                            <th scope="col">Última Visita</th>
+                            <th scope="col">Próxima Consulta</th>
+                            <th scope="col">E-mail</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@fat</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    <div id="popup-form">-->
+<!--        <h2>Adicionar Paciente</h2>-->
+<!--        <form id="patientForm">-->
+<!--            <label for="nome">Nome:</label>-->
+<!--            <input type="text" id="nome" name="nome" required><br>-->
+<!--            <label for="sobrenome">Sobrenome:</label>-->
+<!--            <input type="text" id="sobrenome" name="sobrenome" required><br>-->
+<!--            <label for="email">Email:</label>-->
+<!--            <input type="email" id="email" name="email" required><br>-->
+<!--            <label for="telefone">Telefone:</label>-->
+<!--            <input type="tel" id="telefone" name="telefone" required><br>-->
+<!--            <button type="submit">Adicionar</button>-->
+<!--        </form>-->
+<!--    </div>-->
+
+<script>
+    document.getElementById("addPatientBtn").addEventListener("click", function () {
+        document.getElementById("popup-form").style.display = "block";
+    });
+    
+    document.getElementById("patientForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        var nome = document.getElementById("nome").value;
+        var sobrenome = document.getElementById("sobrenome").value;
+        var email = document.getElementById("email").value;
+        var telefone = document.getElementById("telefone").value;
+        var patient = {nome: nome, sobrenome: sobrenome, email: email, telefone: telefone};
+        var patients = JSON.parse(localStorage.getItem("patients")) || [];
+        patients.push(patient);
+        localStorage.setItem("patients", JSON.stringify(patients));
+        updatePatientList();
+        document.getElementById("popup-form").style.display = "none";
+    });
+    
+    document.getElementById("applyFilterBtn").addEventListener("click", function () {
+        var filterByName = document.getElementById("filterByName").value.toLowerCase();
+        var filterByContact = document.getElementById("filterByContact").value.toLowerCase();
+        filterPatients(filterByName, filterByContact);
+    });
+    
+    function updatePatientList() {
+        var patients = JSON.parse(localStorage.getItem("patients")) || [];
+        var patientTable = document.querySelector("#patientList tbody");
+        patientTable.innerHTML = "";
+        patients.forEach(function (patient, index) {
+            var row = patientTable.insertRow();
+            row.innerHTML = `
+                    <td>${patient.nome}</td>
+                    <td>${patient.sobrenome}</td>
+                    <td>${patient.email}</td>
+                    <td>${patient.telefone}</td>
+                    <td><span class="remove-button" onclick="removePatient(${index})">&#10060;</span></td>
+                `;
+        });
+    }
+    
+    function removePatient(index) {
+        var patients = JSON.parse(localStorage.getItem("patients")) || [];
+        patients.splice(index, 1);
+        localStorage.setItem("patients", JSON.stringify(patients));
+        updatePatientList();
+    }
+    
+    function filterPatients(name, contact) {
+        var patients = JSON.parse(localStorage.getItem("patients")) || [];
+        var filteredPatients = patients.filter(function (patient) {
+            return (patient.nome.toLowerCase().includes(name) || patient.sobrenome.toLowerCase().includes(name)) &&
+                    (patient.email.toLowerCase().includes(contact) || patient.telefone.toLowerCase().includes(contact));
+        });
+        var patientTable = document.querySelector("#patientList tbody");
+        patientTable.innerHTML = "";
+        filteredPatients.forEach(function (patient, index) {
+            var row = patientTable.insertRow();
+            row.innerHTML = `
+                  <td>${patient.nome}</td>
+                  <td>${patient.sobrenome}</td>
+                  <td>${patient.email}</td>
+                  <td>${patient.telefone}</td>
+                  <td><span class="remove-button" onclick="removePatient(${index})">&#10060;</span></td>
+              `;
+        });
+    }
+    
+    window.addEventListener("load", updatePatientList);
+</script>
+
+
+

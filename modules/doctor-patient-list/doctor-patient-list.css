@@ -1,0 +1,159 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.superior{
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(#0367A5,#50F3E2);
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.superior>a>img{
+    margin-top: 6px;
+    width: 250px;
+}
+
+.vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(to right, #0367A5,#50F3E2);
+    height: 100%;
+    width: 60px;
+}
+.vertical>a>img{
+    display: flex;
+    align-self: center;
+    width: 40px;
+    margin-top: 30px;
+    color:white;
+    opacity: 1;
+}
+
+.pessoa{
+    margin-top: 30px;
+}
+.pacientes{
+    padding-top: 15px;
+    font-size: 1.8rem;
+    color: #0367A5;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    position: absolute;
+    top: 180px;
+    left: 70px;
+    gap: 5px;
+}
+select{
+    border: 1px solid #C0C0C2;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    font-family: "Open Sans";
+    border-radius: 5px;
+    opacity: 0.6;
+}
+
+.informações{
+    display: flex;
+    position: absolute;
+    font-family: "Open Sans";
+    left: 70px;
+    top: 300px;
+    color: #0367A5;
+    gap: 200px;
+}
+
+.botao{
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    margin-right: 1rem;
+    align-items: center;
+}
+
+button{
+    display: flex;
+    justify-self: flex-end;
+    font-size: 1rem;
+    color: white;
+    font-family:"Open Sans";
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border: #0367A5;
+    background-color: #0367A5;
+    margin-top: 0.6rem;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.end{
+    margin-right: 1.5rem;
+}
+
+#side-menu{
+    background: linear-gradient(90deg, #0367A5 6.25%, #50F3E2 93.44%) !important;
+    height: 100vh !important;
+    max-width: 100px !important;
+}
+.menu-button {
+    background: #90909199 !important;
+}
+button {
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+nav {
+    background: linear-gradient(49deg, #0367A5 17.81%, #50F3E2 84.62%) !important;
+    height: 70px !important;
+}
+
+.doctor-name {
+    font-family: Oxanium !important;
+    font-size: 25px !important;
+    color: white !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+    font-weight: bold;
+}
+.select-style-form {
+    height: 50px;
+    color: black;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 -1px 4px 0 rgba(0, 0, 0, 0.25) !important;
+    margin-bottom: 20px;
+}
+th {
+    text-align: center;
+    font-family: Oxanium !important;
+    font-size: 20px !important;
+    color: #0367A5 !important;
+    font-weight: bold;
+}
+td {
+    text-align: center;
+    font-family: Oxanium !important;
+    font-size: 18px !important;
+}
+table {
+    background: white !important;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 -1px 4px 0 rgba(0, 0, 0, 0.25) !important;
+}

@@ -1,0 +1,108 @@
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logopng{
+    width: 300px;
+}
+
+hr{
+    width: 60%;
+    border-color: #13c9f1;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 2rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px 1px rgba(3, 103, 165, 0.25), 0px -3px 4px 0px rgba(3, 103, 165, 0.25);
+    height: auto;
+    margin-bottom: 1.875rem;
+}
+
+.doctor{
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.dra{
+    display: flex;
+    justify-content: center;
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+.reagendar{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.reagendar>p{
+    text-align: center;
+    font-family: Oxanium;
+    color: #0367A5;
+    font-weight: bold;
+}
+.informações{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+.informações>img{
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+}
+.informações>p{
+    margin-left: 5rem;
+    font-family: "Open Sans";
+    color: #0367A5;
+}
+
+.selecionar{
+    font-weight: bold;
+    text-align: center;
+    font-family: Oxanium;
+    color: #0367A5;
+    margin-bottom: 20px;
+}
+
+.grid-container{
+    font-weight: 550;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #0367A5;
+    font-family: "Open Sans";
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(12,auto);
+    gap: 5px;
+    margin-bottom: 40px;
+}
+
+.finalizar-button{
+    font-family: "Open Sans";
+    background-color: #0367A5;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    width: 300px;
+    margin-bottom: 50px;
+}

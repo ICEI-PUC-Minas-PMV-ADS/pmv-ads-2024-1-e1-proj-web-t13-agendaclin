@@ -1,0 +1,226 @@
+header {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+body {
+    margin: 0;
+    height: 70%;
+    font-family: 'Open Sans', 'Oxanium';
+    color: #0367A5;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: 22px;
+}
+
+main {
+    padding: 10px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#logoAgendaClim {
+    max-width: 392px;
+    max-height: 79px;
+}
+
+hr {
+    width: 60%;
+    border-color: #13C9F1;
+}
+
+#tableMedico {
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 507px;
+    margin: 0 auto;
+    padding: 30px;
+    display: block;
+    border-radius: 10px;    
+    background: var(--White, #FFF);
+    box-shadow: 5px 5px 6px 3px rgba(3, 103, 165, 0.25), 0 -3px 4px 0 rgba(3, 103, 165, 0.25);
+}
+
+#containerDadosTable {
+    margin: 0 auto;
+}
+
+#containerImagemMedico {
+    width: 15%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#imagemMedico {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#nomeMedico {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+#containerIconMedico {
+    margin-right: 20px;
+    height: 10%;
+    max-height: 30px;
+    max-width: 30px;
+}
+
+#iconMedico {
+    height: 100%;
+    width: 100%;
+}
+
+#especialidadeDoMedico {
+    font-weight: bolder;
+}
+
+#consultaMarcada {
+    font-weight: bold;
+    text-align: center;
+}
+
+#containerIconCalendar {
+    margin-right: 20px;
+    height: 10%;
+    max-height: 30px;
+    max-width: 30px;
+}
+
+#iconCalendar {
+    height: 100%;
+    width: 100%;
+}
+
+#dadosLocal {
+    display: flex;
+    align-items: flex-start;
+    font-size: 100%;
+}
+
+#dadosHorario {
+    display: flex;
+    align-items: center;
+    font-size: 100%;
+}
+
+#containerIconLocal {
+    margin-right: 20px;
+    height: 10%;
+    max-height: 30px;
+    max-width: 30px;
+}
+
+#iconLocal {
+    height: 100%;
+    width: 100%;
+}
+
+#containerLocal {
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloLocal {
+    margin-bottom: 8px;
+}
+
+#local {
+    text-align: justify;
+    width: 90%;
+    line-height: 1.5;
+}
+
+#bottonReagendar {
+    margin: 0 auto;
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+}
+
+#bottonCancelar {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+button {
+    width: 600px;
+    height: 50px;
+    flex-shrink: 0;
+    text-align: center;
+    background-color: #0367A5;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: #0367A5;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25), 0px -1px 4px 0px rgba(0, 0, 0, 0.25);
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 155.99%;
+    letter-spacing: -0.96px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 940px) {
+    #containerImagemMedico {
+        width: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    #logoAgendaClim {
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    #containerImagemMedico {
+        width: 25%;
+    }
+
+    #consultaMarcada {
+        font-size: 70%;
+    }
+
+    #nomeMedico, #dadosHorario, #dadosLocal  {
+        font-size: 70%;
+    }
+    
+    #containerIconMedico, #containerIconCalendar {
+        width: 8%;
+        height: auto;
+    }
+
+    #containerIconLocal {
+        width: 25%;
+        height: auto;
+    }
+
+    button {
+        font-size: 80%;
+    }
+}
