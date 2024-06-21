@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <base href="/pmv-ads-2024-1-e1-proj-web-t13-agendaclin">
 <!--    instalação do bootstrap -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 <!--    arquivo css principal-->
@@ -54,10 +55,10 @@
             const src = element.getAttribute('src');
             const href = element.getAttribute('href');
             if (src && src.startsWith('assets/')) {
-                element.src = `/${src}`;
+                element.src = `${basePath}/${src}`;
             }
             if (href && href.startsWith('assets/')) {
-                element.href = `/${href}`;
+                element.href = `${basePath}/${href}`;
             }
         });
     };
