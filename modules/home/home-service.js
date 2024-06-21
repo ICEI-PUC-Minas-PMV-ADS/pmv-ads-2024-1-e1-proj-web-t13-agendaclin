@@ -1,7 +1,7 @@
 export class HomeService {
     async fetchData(databaseName) {
         try {
-            const response = await fetch(`/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/databases${databaseName}.json`);
+            const response = await fetch(`/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/databases/${databaseName}.json`);
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
             }
