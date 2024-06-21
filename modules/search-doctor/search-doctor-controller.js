@@ -165,27 +165,27 @@ export class SearchDoctorController {
             const calendarId = `calendar-${doctor.id}`;
             let stars ;
             if (this.roundDownToNearestHalf(doctor.rating) === 5) {
-                stars = '<img src="../../assets/icon/5 estrelas.svg"' +
+                stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/5 estrelas.svg"' +
                     ' alt="Star"' +
                     ' class="feedback-star">'
             }
             if (this.roundDownToNearestHalf(doctor.rating) === 4.5) {
-                stars = '<img src="../../assets/icon/4,5%20estrelas.svg"' +
+                stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/4,5%20estrelas.svg"' +
                     ' alt="Star"' +
                     ' class="feedback-star">'
             }
             if (this.roundDownToNearestHalf(doctor.rating) === 4) {
-                stars = '<img src="../../assets/icon/4%20estrelas.svg"' +
+                stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/4%20estrelas.svg"' +
                     ' alt="Star"' +
                     ' class="feedback-star">'
             }
             if (this.roundDownToNearestHalf(doctor.rating) === 3.5) {
-                stars = '<img src="../../assets/icon/3,5%20estrelas.svg"' +
+                stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/3,5%20estrelas.svg"' +
                     ' alt="Star"' +
                     ' class="feedback-star">'
             }
             if (this.roundDownToNearestHalf(doctor.rating) === 3) {
-                stars = '<img src="../../assets/icon/3%20estrelas.svg"' +
+                stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/3%20estrelas.svg"' +
                     ' alt="Star"' +
                     ' class="feedback-star">'
             }
@@ -210,7 +210,7 @@ export class SearchDoctorController {
                     </div>
                     <div class="location-icon-position mt-5">
                         <div style="width: 10%">
-                            <img src="../../assets/icon/local.png" alt="" class="doctor-info-icone">
+                            <img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/local.png" alt="" class="doctor-info-icone">
                         </div>
                         <div style="width: 90%" class="doctor-address">
                             <span>Endereço <br> ${doctor.street}, <br> ${doctor.neighborhood}, ${doctor.city}, <br> CEP ${doctor.zip_code}, Brasil</span>
