@@ -19,10 +19,13 @@ hr{
 }
 
 .box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
     margin-top: 2rem;
     border-radius: 5px;
     box-shadow: 3px 3px 4px 1px rgba(3, 103, 165, 0.25), 0px -3px 4px 0px rgba(3, 103, 165, 0.25);
-    width: 37.5rem;
     height: auto;
     margin-bottom: 1.875rem;
 }
@@ -35,9 +38,12 @@ hr{
 }
 
 .dra{
-    width: 100px;
-    height: 100px;
-    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 100px;
+        height: 100px;
+    }
 }
 .reagendar{
     margin-top: 30px;
@@ -51,12 +57,16 @@ hr{
     font-weight: bold;
 }
 .informações{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 60px;
+
 }
 .informações>img{
-    width: 2rem;
-    margin-left: 2rem;
-    float: left;
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
 }
 .informações>p{
     margin-left: 5rem;
@@ -85,7 +95,7 @@ hr{
     margin-bottom: 40px;
 }
 
-button{
+.finalizar-button{
     font-family: "Open Sans";
     background-color: #0367A5;
     color: white;

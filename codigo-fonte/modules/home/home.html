@@ -31,55 +31,20 @@
                         Clique</h1>
                     <form class="row g-3 " >
                         <div class="col-auto">
-                            <label for="especialidade" class="visually-hidden">Especialidade, doença
+                            <label for="specialties" class="visually-hidden">Especialidade, doença
                                 ou nome</label>
-                            <select class="form-select" id="especialidade">
-                                <option selected>Especialidade, doença ou nome</option>
-                                <option value="1">Cardiologia</option>
-                                <option value="2">Dermatologia</option>
-                                <option value="3">Neurologia</option>
+                            <select class="form-select" id="specialties">
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label for="cidade" class="visually-hidden">Filtre sua cidade</label>
-                            <select class="form-select" id="cidade">
-                                <option selected>Filtre sua cidade</option>
-                                <option value="1">São Paulo</option>
-                                <option value="2">Rio de Janeiro</option>
-                                <option value="3">Belo Horizonte</option>
-                                <option value="4">Campinas</option>
+                            <label for="cities" class="visually-hidden">Filtre sua cidade</label>
+                            <select class="form-select" id="cities">
                             </select>
                         </div>
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-primary" id="pesq_button">
+                            <button class="btn btn-primary" type="button" id="searchButton">
                                 <i class="bi bi-search"></i> Pesquise
                             </button>
-                            
-                            <script>
-                                import SearchDoctorService from './SearchDoctorHome.js';
-
-                                document.addEventListener('DOMContentLoaded', () => {
-                                    const searchButton = document.querySelector('#searchButton');
-
-                                    searchButton.addEventListener('click', async () => {
-                                        const specialtyInput = document.querySelector('#specialtyInput').value;
-                                        const cityInput = document.querySelector('#cityInput').value;
-
-                                        const searchService = new SearchDoctorService();
-                                        const data = await searchService.fetchData('doctors'); // Assumindo que o arquivo JSON é doctors.json
-
-                                        const filteredData = data.filter(doctor => {
-                                            return (doctor.specialty.includes(specialtyInput) || doctor.name.includes(specialtyInput) || doctor.disease.includes(specialtyInput)) 
-                                                && doctor.city.includes(cityInput);
-                                        });
-
-                                        // Exibir os resultados filtrados (aqui você pode personalizar a exibição)
-                                        console.log(filteredData);
-                                        const resultsContainer = document.querySelector('#resultsContainer');
-                                        resultsContainer.innerHTML = filteredData.map(doctor => `<div>${doctor.name} - ${doctor.specialty} - ${doctor.city}</div>`).join('');
-                                    });
-                                });
-                            </script>
                         </div>
                     </form>
                 </div>
@@ -229,6 +194,6 @@
         </div>
     </div>
 </footer>
-    
 
+<script src="home-controller.js" type="module"></script>
 

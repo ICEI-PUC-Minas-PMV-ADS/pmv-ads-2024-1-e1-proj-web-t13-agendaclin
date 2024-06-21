@@ -34,3 +34,18 @@ export function emailSignUp(email, password) {
 export function emailReset(email) {
    return firebase.auth().sendPasswordResetEmail(email);
 }
+// export async function getUserEvents(userId) {
+//     const db = firebase.firestore();
+//     const eventsRef = db.collection('events');
+//     const snapshot = await eventsRef.where('userId', '==', userId).get();
+//     if (snapshot.empty) {
+//         console.log('No matching documents.');
+//         return [];
+//     }
+//
+//     const events = [];
+//     snapshot.forEach(doc => {
+//         events.push(doc.data());
+//     });
+//     return events;
+// }

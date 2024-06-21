@@ -7,28 +7,34 @@ export class DoctorSignupStep2Controller {
     }
 
     setData() {
-        document.addEventListener('submit', (e)=> {
+        document.getElementById('signUp').addEventListener('submit', (e) => {
             e.preventDefault();
-            this.login();
-            localStorage.setItem('novo usuário', JSON.stringify(this.homeService));
+            const city = document.getElementById("city").value;
+            const dde = document.getElementById('DDE').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById("password").value;
             
-        })
+            const userData = { city, dde, phone, email, password };
+            localStorage.setItem('userDetails', JSON.stringify(userData));
+
+            this.login(city, dde, phone, email, password);
+        });
     }
 
-    login() {
-        const city = document.getElementById("city").value;
-        const dde = document.getElementById('DDE').value;
-        const phone = document.getElementById('phone').value;
-        const email = document.getElementById('email').value;
-        const password = document.getElementById("password").value;
-
+    login(city, dde, phone, email, password) {
         this.homeService.authenticate(city, dde, phone, email, password).then(message => {
             document.getElementById('messageBox').innerText = message;
-            console.error(message);
+            console.log(message);
+            // Redirecionar para a próxima página após login bem-sucedido
+            window.location.href = "/home.html"; 
         }).catch(err => {
             document.getElementById('messageBox').innerText = 'Login failed';
             console.error(err);
         });
     }
-
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    new DoctorSignupStep2Controller();
+});
