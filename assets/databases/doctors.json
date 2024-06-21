@@ -10,7 +10,7 @@
     "neighborhood": "Centro",
     "zip_code": "12345-678",
     "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Sofia Martinez.jpg",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Sofia Martinez.jpg",
     "reviews": [
       {
         "reviewer": "Ana Paula",
@@ -35,7 +35,7 @@
     "neighborhood": "Batel",
     "zip_code": "45678-901",
     "insurance_accepted": ["SulAmérica", "Porto Seguro", "Allianz"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Pedro Ferreira.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Pedro Ferreira.webp",
     "reviews": [
       {
         "reviewer": "Juliana Silva",
@@ -60,7 +60,7 @@
     "neighborhood": "Botafogo",
     "zip_code": "23456-789",
     "insurance_accepted": ["Amil", "Unimed", "Bradesco Saúde"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Carla Mendes.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Carla Mendes.webp",
     "reviews": [
       {
         "reviewer": "Marina Costa",
@@ -85,7 +85,7 @@
     "neighborhood": "Copacabana",
     "zip_code": "23456-789",
     "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Paulo Almeida.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Paulo Almeida.webp",
     "reviews": [
       {
         "reviewer": "João Carlos",
@@ -110,7 +110,7 @@
     "neighborhood": "Jardins",
     "zip_code": "12345-678",
     "insurance_accepted": ["Allianz", "Hapvida", "Bradesco Saúde"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Mariana Torres.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Mariana Torres.webp",
     "reviews": [
       {
         "reviewer": "Carlos Mendes",
@@ -135,7 +135,7 @@
     "neighborhood": "Centro",
     "zip_code": "56789-012",
     "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Ricardo Silva.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Ricardo Silva.webp",
     "reviews": [
       {
         "reviewer": "Mariana Lopes",
@@ -160,7 +160,7 @@
     "neighborhood": "Savassi",
     "zip_code": "34567-890",
     "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Renata Oliveira.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Renata Oliveira.webp",
     "reviews": [
       {
         "reviewer": "Lucas Martins",
@@ -185,7 +185,7 @@
     "neighborhood": "Bela Vista",
     "zip_code": "12345-678",
     "insurance_accepted": ["SulAmérica", "Allianz", "Porto Seguro"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. André Lima.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. André Lima.webp",
     "reviews": [
       {
         "reviewer": "Fernanda Rocha",
@@ -210,7 +210,7 @@
     "neighborhood": "Botafogo",
     "zip_code": "23456-789",
     "insurance_accepted": ["Amil", "Unimed", "Bradesco Saúde"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Júlia Costa.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Júlia Costa.webp",
     "reviews": [
       {
         "reviewer": "Renata Ferreira",
@@ -235,7 +235,7 @@
     "neighborhood": "Batel",
     "zip_code": "45678-901",
     "insurance_accepted": ["Allianz", "Hapvida", "Porto Seguro"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Carlos Yu.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Carlos Yu.webp",
     "reviews": [
       {
         "reviewer": "Ricardo Santos",
@@ -260,7 +260,7 @@
     "neighborhood": "Centro",
     "zip_code": "12345-678",
     "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Pedro Santos.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Pedro Santos.webp",
     "reviews": [
       {
         "reviewer": "José Almeida",
@@ -285,7 +285,7 @@
     "neighborhood": "Lapa",
     "zip_code": "23456-789",
     "insurance_accepted": ["SulAmérica", "Allianz", "Porto Seguro"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Ana Pereira.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Ana Pereira.webp",
     "reviews": [
       {
         "reviewer": "Fábio Souza",
@@ -310,7 +310,7 @@
     "neighborhood": "Moinhos de Vento",
     "zip_code": "56789-012",
     "insurance_accepted": ["Unimed", "Amil", "Bradesco Saúde"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Ana Costa.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Ana Costa.webp",
     "reviews": [
       {
         "reviewer": "Bruno Almeida",
@@ -335,7 +335,7 @@
     "neighborhood": "Jardins",
     "zip_code": "12345-678",
     "insurance_accepted": ["SulAmérica", "Allianz", "Porto Seguro"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Felipe Lima.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Felipe Lima.webp",
     "reviews": [
       {
         "reviewer": "Joana Carvalho",
@@ -360,7 +360,7 @@
     "neighborhood": "Copacabana",
     "zip_code": "23456-789",
     "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Camila Santos.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Camila Santos.webp",
     "reviews": [
       {
         "reviewer": "Fernanda Rocha",
@@ -385,7 +385,7 @@
     "neighborhood": "Centro",
     "zip_code": "67890-123",
     "insurance_accepted": ["SulAmérica", "Allianz", "Hapvida"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Ricardo Lima.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Ricardo Lima.webp",
     "reviews": [
       {
         "reviewer": "Paula Castro",
@@ -410,7 +410,7 @@
     "neighborhood": "Consolação",
     "zip_code": "12345-678",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Carolina Souza.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Carolina Souza.webp",
     "reviews": [
       {
         "reviewer": "Márcia Almeida",
@@ -435,7 +435,7 @@
     "neighborhood": "Barra da Tijuca",
     "zip_code": "23456-789",
     "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Marcos Silva.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Marcos Silva.webp",
     "reviews": [
       {
         "reviewer": "Fernanda Lima",
@@ -460,7 +460,7 @@
     "neighborhood": "Meireles",
     "zip_code": "89012-345",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Allianz"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Fernanda Sousa.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Fernanda Sousa.webp",
     "reviews": [
       {
         "reviewer": "Carlos Eduardo",
@@ -485,7 +485,7 @@
     "neighborhood": "Higienópolis",
     "zip_code": "12345-678",
     "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. João Alves.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. João Alves.webp",
     "reviews": [
       {
         "reviewer": "Marina Costa",
@@ -510,7 +510,7 @@
     "neighborhood": "Botafogo",
     "zip_code": "23456-789",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Ana Clara.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Ana Clara.webp",
     "reviews": [
       {
         "reviewer": "Fernanda Souza",
@@ -535,7 +535,7 @@
     "neighborhood": "Barra",
     "zip_code": "78901-234",
     "insurance_accepted": ["Unimed", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. João Silva.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. João Silva.webp",
     "reviews": [
       {
         "reviewer": "Marcos Teixeira",
@@ -560,7 +560,7 @@
     "neighborhood": "Jardins",
     "zip_code": "12345-678",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Paulo Andrade.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Paulo Andrade.webp",
     "reviews": [
       {
         "reviewer": "Fernanda Lima",
@@ -585,7 +585,7 @@
     "neighborhood": "Barra da Tijuca",
     "zip_code": "23456-789",
     "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Marina Souza.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Marina Souza.webp",
     "reviews": [
       {
         "reviewer": "Carlos Eduardo",
@@ -610,7 +610,7 @@
     "neighborhood": "Asa Sul",
     "zip_code": "34567-890",
     "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Pedro Oliveira.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Pedro Oliveira.webp",
     "reviews": [
       {
         "reviewer": "Gabriel Alves",
@@ -635,7 +635,7 @@
     "neighborhood": "Bela Vista",
     "zip_code": "12345-678",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Marcelo Lima.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Marcelo Lima.webp",
     "reviews": [
       {
         "reviewer": "Juliana Souza",
@@ -660,7 +660,7 @@
     "neighborhood": "Botafogo",
     "zip_code": "23456-789",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Clara Souza.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Clara Souza.webp",
     "reviews": [
       {
         "reviewer": "Renata Souza",
@@ -685,7 +685,7 @@
     "neighborhood": "Adrianópolis",
     "zip_code": "56789-012",
     "insurance_accepted": ["SulAmérica", "Allianz", "Hapvida"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Beatriz Almeida.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Beatriz Almeida.webp",
     "reviews": [
       {
         "reviewer": "Felipe Costa",
@@ -710,7 +710,7 @@
     "neighborhood": "Consolação",
     "zip_code": "12345-678",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Gustavo Lima.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Gustavo Lima.webp",
     "reviews": [
       {
         "reviewer": "Marina Souza",
@@ -735,7 +735,7 @@
     "neighborhood": "Copacabana",
     "zip_code": "23456-789",
     "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Patrícia Silva.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Patrícia Silva.webp",
     "reviews": [
       {
         "reviewer": "Gabriel Almeida",
@@ -760,7 +760,7 @@
     "neighborhood": "Boa Viagem",
     "zip_code": "67890-123",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Allianz"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Julia Ramos.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Julia Ramos.webp",
     "reviews": [
       {
         "reviewer": "Renato Oliveira",
@@ -785,7 +785,7 @@
     "neighborhood": "Bela Vista",
     "zip_code": "12345-678",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Amanda Silva.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Amanda Silva.webp",
     "reviews": [
       {
         "reviewer": "Fernanda Souza",
@@ -810,7 +810,7 @@
     "neighborhood": "Botafogo",
     "zip_code": "23456-789",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Rafael Almeida.webp",
+    "profile_pic_url": "/../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Rafael Almeida.webp",
     "reviews": [
       {
         "reviewer": "Mariana Lima",
