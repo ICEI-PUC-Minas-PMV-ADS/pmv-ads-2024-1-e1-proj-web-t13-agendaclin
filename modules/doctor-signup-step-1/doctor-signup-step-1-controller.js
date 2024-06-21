@@ -2,7 +2,7 @@ import { docCad } from './doctor-signup-step-1-service.js'
 
 export class DoctorSignupController {
     constructor() {
-        this.newUser = null;
+        this.newUser = new docCad();
         this.setData();
     }
 
@@ -14,24 +14,25 @@ export class DoctorSignupController {
             const specialty = document.getElementById('specialty').value;
             const userName = document.getElementById('name').value;
             const userSurname = document.getElementById('surname').value;
-            
-            this.newUser = new docCad();
+
             localStorage.setItem('novo usuário', JSON.stringify({ option, specialty, userName, userSurname }));
 
             this.login(option, specialty, userName, userSurname);
+            
         });
     }
 
     login(option, specialty, userName, userSurname) {
-        this.newUser.authenticate(option, specialty, userName, userSurname).then(message => {
-            document.getElementById('messageBox').innerText = message;
-            console.log(message);
+        try {
+            this.newUser.authenticate(option, specialty, userName, userSurname);
+            console.log("usuário criado com sucesso");
             // Redirecionar para a próxima página após login bem-sucedido
-            window.location.href = "doctor-signup-step-2.html"; 
-        }).catch(err => {
-            document.getElementById('messageBox').innerText = 'Login failed';
+            window.location.href = "/#/doctor-signup-step-2.html"; 
+        } catch(err) {
             console.error(err);
-        });
+            alert("não foi possível criar o usuário");
+        }      
+       
     }
 }
 
