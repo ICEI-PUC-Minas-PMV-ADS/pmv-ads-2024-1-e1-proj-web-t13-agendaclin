@@ -1,4 +1,4 @@
-const basePath = '/meu-app';
+const basePath = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin';
 
 export const Router = {
     routes: {
