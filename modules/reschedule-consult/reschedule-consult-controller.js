@@ -89,6 +89,7 @@ export class RescheduleConsultController {
 
     loadEvents(calendarId) {
         const events = JSON.parse(localStorage.getItem('events')) || [];
+        if ( events.filter(element => element !== null).length === 0) return [];
         this.currentEvents = events.filter(event => event.calendarId === calendarId);
         return this.currentEvents.map(event => {
             event.color = 'green'; // Alterar a cor do evento confirmado

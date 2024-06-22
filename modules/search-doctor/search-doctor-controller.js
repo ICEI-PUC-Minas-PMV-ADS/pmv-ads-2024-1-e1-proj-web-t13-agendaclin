@@ -270,7 +270,7 @@ export class SearchDoctorController {
                 // deleteButton.addEventListener('click', function() {
                 //     info.event.remove(); // Remove o evento do calendário
                 //     const events = JSON.parse(localStorage.getItem('events')) || [];
-                //     const updatedEvents = events.filter(e => e.id !== info.event.id);
+ if ( events.filter(element => element !== null).length === 0) return [];        //     const updatedEvents = events.filter(e => e.id !== info.event.id);
                 //     localStorage.setItem('events', JSON.stringify(updatedEvents)); // Atualiza o localStorage
                 // });
                 // info.el.appendChild(deleteButton);
@@ -315,18 +315,18 @@ export class SearchDoctorController {
 
         // Remove o evento do localStorage
         const events = JSON.parse(localStorage.getItem('events')) || [];
-        const updatedEvents = events.filter(e => e.id !== event.id);
+ if ( events.filter(element => element !== null).length === 0) return [];const updatedEvents = events.filter(e => e.id !== event.id);
         localStorage.setItem('events', JSON.stringify(updatedEvents));
     }
     saveEvent(eventData) {
         console.log('eventData', eventData)
         const events = JSON.parse(localStorage.getItem('events')) || [];
-        events.push(eventData);
+ if ( events.filter(element => element !== null).length === 0) return [];events.push(eventData);
         localStorage.setItem('events', JSON.stringify(events));
     }
     loadEvents(calendarId) {
         const events = JSON.parse(localStorage.getItem('events')) || [];
-        // console.log('events', events)
+ if ( events.filter(element => element !== null).length === 0) return [];// console.log('events', events)
         return events.filter(event => event.calendarId === calendarId);
     }
     startConsultation(eventData) {

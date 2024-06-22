@@ -50,7 +50,7 @@ export class DoctorProfessionalProfileController {
 
     loadEvents(calendarId) {
         const events = JSON.parse(localStorage.getItem('events')) || [];
-        return events.filter(event => event.calendarId === calendarId);
+ if ( events.filter(element => element !== null).length === 0) return [];return events.filter(event => event.calendarId === calendarId);
     }
 
     loadSegment() {
