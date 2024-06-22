@@ -13,6 +13,7 @@ export { salvarDados };
 class ScheduleConsultStep1Service {
     async getEventData() {
         const data = localStorage.getItem('currentEvent');
+        console.log("Dados do evento recuperados do localStorage:", data);
         return data ? JSON.parse(data) : null;
     }
 
@@ -26,7 +27,11 @@ class ScheduleConsultStep1Service {
         const doctors = await this.fetchDoctorsData();
         return doctors.find(doctor => doctor.id === id);
     }
-}
 
+    salvarDadosEvento(eventData) {
+        localStorage.setItem('currentEvent', JSON.stringify(eventData));
+        console.log("Dados do evento salvos no localStorage:", eventData);
+    }
+}
 
 export { ScheduleConsultStep1Service };
