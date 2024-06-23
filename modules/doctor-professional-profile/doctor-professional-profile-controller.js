@@ -105,7 +105,7 @@ export class DoctorProfessionalProfileController {
         }
       localStorage.setItem('currentDashboard', JSON.stringify(this.currentDoctor));
         const container = document.getElementById('doctor-card');
-        const profilePicture = this.currentDoctor.profile_pic_url || '../../assets/icon/medico.png';
+        const profilePicture = this.currentDoctor.profile_pic_url || '../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/medico.png';
         container.innerHTML = ` <div class="profile">
                 <img src="${profilePicture}" alt="Dra. Sofia Martinez Rivera"
                      class="profile-img">
@@ -114,7 +114,7 @@ export class DoctorProfessionalProfileController {
                     <p class="escritas">${this.currentDoctor.specialty}</p>
                     <p class="escritas">Número de Registro: 63215</p>
                     <div class="estrelas">
-                        <img src="../../assets/icon/5%20estrelas.svg" alt="">
+                        <img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/5%20estrelas.svg" alt="">
                     </div>
                 </div>
             </div>

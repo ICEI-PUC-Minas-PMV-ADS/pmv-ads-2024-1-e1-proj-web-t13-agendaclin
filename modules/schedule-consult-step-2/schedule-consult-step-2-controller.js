@@ -33,7 +33,7 @@ export class ScheduleConsultStep2Controller {
                 </div>
                 <div id="dadosHorario">
                     <div id="containerIconCalendar">
-                        <img id="iconCalendar" src="../../assets/icon/calendar.png">
+                        <img id="iconCalendar" src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/calendar.png">
                     </div>
                     <span>${starDate[0]},
                         <time datetime="${eventData.start}">${starDate[1]}</time>
@@ -42,7 +42,7 @@ export class ScheduleConsultStep2Controller {
                 </div>
                 <div id="dadosLocal">
                     <div id="containerIconLocal">
-                        <img id="iconLocal" src="../../assets/icon/local.png" alt="Ícone de localização">
+                        <img id="iconLocal" src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/local.png" alt="Ícone de localização">
                     </div>
                     <div class="containerLocal">
                         <div class="tituloLocal">Endereço</div>

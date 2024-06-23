@@ -21,7 +21,7 @@ export class RescheduleConsultController {
                                 <p>Reagendar consulta</p>
                             </div>
                             <div class="informações">
-                                <img src="../../assets/icon/medico.png"/>
+                                <img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/medico.png"/>
                                 <span>${this.currentReschedule.doctor.name}<br>
                                     ${this.currentReschedule.doctor.specialty}</span>
                             </div>

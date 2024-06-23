@@ -125,27 +125,27 @@ export class DoctorProfileController {
         const calendarId = `calendar-${doctor.id}`;
         let stars ;
         if (this.roundDownToNearestHalf(doctor.rating) === 5) {
-            stars = '<img src="../../assets/icon/5 estrelas.svg"' +
+            stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/5 estrelas.svg"' +
                 ' alt="Star"' +
                 ' class="feedback-star">'
         }
         if (this.roundDownToNearestHalf(doctor.rating) === 4.5) {
-            stars = '<img src="../../assets/icon/4,5%20estrelas.svg"' +
+            stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/4,5%20estrelas.svg"' +
                 ' alt="Star"' +
                 ' class="feedback-star">'
         }
         if (this.roundDownToNearestHalf(doctor.rating) === 4) {
-            stars = '<img src="../../assets/icon/4%20estrelas.svg"' +
+            stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/4%20estrelas.svg"' +
                 ' alt="Star"' +
                 ' class="feedback-star">'
         }
         if (this.roundDownToNearestHalf(doctor.rating) === 3.5) {
-            stars = '<img src="../../assets/icon/3,5%20estrelas.svg"' +
+            stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/3,5%20estrelas.svg"' +
                 ' alt="Star"' +
                 ' class="feedback-star">'
         }
         if (this.roundDownToNearestHalf(doctor.rating) === 3) {
-            stars = '<img src="../../assets/icon/3%20estrelas.svg"' +
+            stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/3%20estrelas.svg"' +
                 ' alt="Star"' +
                 ' class="feedback-star">'
         }
@@ -172,7 +172,7 @@ export class DoctorProfileController {
             <div class="clinic-info">
                 <h3 class="titulo"><strong>Consultório</strong></h3>
                 <br>
-                <img src="../../assets/icon/local.png" style="height: 15px; width: 15px;">
+                <img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/local.png" style="height: 15px; width: 15px;">
                 <span class="escritas">Endereços <br> ${doctor.street}, <br> ${doctor.neighborhood}, ${doctor.city}, <br> CEP ${doctor.zip_code}, Brasil</span>
                 <p class="escritas">Rua das Acácias, 157, Apartamento 402, Bairro<br>
                     Jardim Primavera, Cidade das Flores, Estado do Sol,<br>
@@ -191,7 +191,7 @@ export class DoctorProfileController {
                 
                 <br><br><br>
                 
-                <img src="../../assets/icon/telefone.png" style="height: 15px; width: 15px;">
+                <img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/telefone.png" style="height: 15px; width: 15px;">
                 <span class="escritas">Número de Telefone</span>
                 <p class="escritas">(xx) 9985-6723</p>
                 <br>
@@ -272,7 +272,7 @@ export class DoctorProfileController {
             <h4 class="titulo"><strong>Opiniões de pacientes</strong></h4>
         </div>
         <div class="col-8 offset-2  p-0 ">
-            <img class="classificacao-geral" src="../../assets/icon/5%20estrelas.svg" alt="">
+            <img class="classificacao-geral" src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/5%20estrelas.svg" alt="">
         </div>
         <div class="col-8 offset-2 p-0  pt-3 ">
             <p class="escritas">Classificação Geral</p>
@@ -290,11 +290,11 @@ export class DoctorProfileController {
         <div class="col-8 offset-2 p-0  pt-5 ">
             <div class="card">
                 <div class="profile">
-                    <img src="../../assets/icon/icone_1.png" class="perfil">
+                    <img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/icone_1.png" class="perfil">
                     <div>
                         <h3><span style="color: #0367A5;">Maria Eduarda Lima</span></h3>
                         <div class="estrelas">
-                            <img src="../../assets/icon/5%20estrelas.svg" alt="">
+                            <img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/5%20estrelas.svg" alt="">
                         </div>
                         <p class="escritas">A Dra.Ana Beatriz é Incrível!Sempreme senti muito
                             nervosa em
@@ -313,11 +313,11 @@ export class DoctorProfileController {
         <div class="col-8 offset-2 p-0  pt-5 ">
             <div class="card">
                 <div class="profile">
-                    <img src="../../assets/icon/icone_2.png" class="perfil">
+                    <img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/icone_2.png" class="perfil">
                     <div>
                         <h3><span style="color: #0367A5;">Carolina Soares</span></h3>
                         <div class="estrelas">
-                            <img src="../../assets/icon/5%20estrelas.svg" alt="">
+                            <img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/5%20estrelas.svg" alt="">
                         </div>
                         <p class="escritas">Depois de anos lutando com endometriose e consultando
                             vários

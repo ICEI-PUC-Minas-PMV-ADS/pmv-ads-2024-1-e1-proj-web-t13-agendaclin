@@ -1,5 +1,5 @@
 import { LoginService } from './login-service.js';
-import {googleLogin, emailLogin, emailReset} from '/js/shared/auth.js';
+import {googleLogin, emailLogin} from '/js/shared/auth.js';
 
 export class LoginController {
     constructor() {
