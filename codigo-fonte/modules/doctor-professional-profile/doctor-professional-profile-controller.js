@@ -1,8 +1,12 @@
+import DoctorProfessionalProfileService from "./doctor-professional-profile-service.js";
 export class DoctorProfessionalProfileController {
+    doctorProfessionalProfileService = new DoctorProfessionalProfileService();
+    currentDoctor;
     constructor() {
         this.loadSegment();
-        this.setupEventListeners();
+
         this.setupSaveButtonListener();
+        this.loadDoctorProfile();
     }
 
     setupEventListeners() {
@@ -50,6 +54,7 @@ export class DoctorProfessionalProfileController {
 
     loadEvents(calendarId) {
         const events = JSON.parse(localStorage.getItem('events')) || [];
+        if ( events.filter(element => element !== null).length === 0) return [];
         return events.filter(event => event.calendarId === calendarId);
     }
 
@@ -88,9 +93,33 @@ export class DoctorProfessionalProfileController {
             experiencia,
             formacao
         };
-        console.log(doctorProfile);
+        //console.log(doctorProfile);
         localStorage.setItem('doctorProfile', JSON.stringify(doctorProfile));
         alert('Dados salvos com sucesso!');
+    }
+
+  async  loadDoctorProfile() {
+        this.currentDoctor = JSON.parse(localStorage.getItem('novoMedico')) || '';
+        if (!this.currentDoctor) {
+            this.currentDoctor = await this.doctorProfessionalProfileService.fetchData(localStorage.getItem('loggedDoctor') || '') ;
+        }
+      localStorage.setItem('currentDashboard', JSON.stringify(this.currentDoctor));
+        const container = document.getElementById('doctor-card');
+        const profilePicture = this.currentDoctor.profile_pic_url || '../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/medico.png';
+        container.innerHTML = ` <div class="profile">
+                <img src="${profilePicture}" alt="Dra. Sofia Martinez Rivera"
+                     class="profile-img">
+                <div style="font-size: 18px;">
+                    <h3 style="color: #0367A5;">${this.currentDoctor.name}</h3>
+                    <p class="escritas">${this.currentDoctor.specialty}</p>
+                    <p class="escritas">Número de Registro: 63215</p>
+                    <div class="estrelas">
+                        <img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/5%20estrelas.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="doctor-container"></div>`
+        this.setupEventListeners();
     }
 }
 

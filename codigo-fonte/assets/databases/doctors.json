@@ -9,8 +9,12 @@
     "street": "Rua das Amélias",
     "neighborhood": "Centro",
     "zip_code": "12345-678",
-    "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Sofia Martinez.jpg",
+    "insurance_accepted": [
+      "Bradesco Saúde",
+      "Amil",
+      "Unimed"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Sofia Martinez.jpg",
     "reviews": [
       {
         "reviewer": "Ana Paula",
@@ -22,7 +26,8 @@
         "comment": "Atendimento rápido e eficaz.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "sofia.martinez@example.com"
   },
   {
     "id": 2,
@@ -34,8 +39,12 @@
     "street": "Avenida das Araucárias",
     "neighborhood": "Batel",
     "zip_code": "45678-901",
-    "insurance_accepted": ["SulAmérica", "Porto Seguro", "Allianz"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Pedro Ferreira.webp",
+    "insurance_accepted": [
+      "SulAmérica",
+      "Porto Seguro",
+      "Allianz"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Pedro Ferreira.webp",
     "reviews": [
       {
         "reviewer": "Juliana Silva",
@@ -47,7 +56,8 @@
         "comment": "Atendimento excelente.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "pedro.ferreira@example.com"
   },
   {
     "id": 3,
@@ -59,8 +69,12 @@
     "street": "Rua das Laranjeiras",
     "neighborhood": "Botafogo",
     "zip_code": "23456-789",
-    "insurance_accepted": ["Amil", "Unimed", "Bradesco Saúde"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Carla Mendes.webp",
+    "insurance_accepted": [
+      "Amil",
+      "Unimed",
+      "Bradesco Saúde"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Carla Mendes.webp",
     "reviews": [
       {
         "reviewer": "Marina Costa",
@@ -72,7 +86,8 @@
         "comment": "Excelente atendimento.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "carla.mendes@example.com"
   },
   {
     "id": 4,
@@ -84,8 +99,12 @@
     "street": "Avenida das Nações",
     "neighborhood": "Copacabana",
     "zip_code": "23456-789",
-    "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Paulo Almeida.webp",
+    "insurance_accepted": [
+      "SulAmérica",
+      "Porto Seguro",
+      "NotreDame"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Paulo Almeida.webp",
     "reviews": [
       {
         "reviewer": "João Carlos",
@@ -97,7 +116,8 @@
         "comment": "Ótimo atendimento, me senti muito bem acolhida.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "paulo.almeida@example.com"
   },
   {
     "id": 5,
@@ -109,8 +129,12 @@
     "street": "Rua das Palmeiras",
     "neighborhood": "Jardins",
     "zip_code": "12345-678",
-    "insurance_accepted": ["Allianz", "Hapvida", "Bradesco Saúde"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Mariana Torres.webp",
+    "insurance_accepted": [
+      "Allianz",
+      "Hapvida",
+      "Bradesco Saúde"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Mariana Torres.webp",
     "reviews": [
       {
         "reviewer": "Carlos Mendes",
@@ -122,7 +146,8 @@
         "comment": "Muito atenciosa e competente.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "mariana.torres@example.com"
   },
   {
     "id": 6,
@@ -134,8 +159,12 @@
     "street": "Avenida Borges de Medeiros",
     "neighborhood": "Centro",
     "zip_code": "56789-012",
-    "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Ricardo Silva.webp",
+    "insurance_accepted": [
+      "SulAmérica",
+      "Porto Seguro",
+      "NotreDame"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Ricardo Silva.webp",
     "reviews": [
       {
         "reviewer": "Mariana Lopes",
@@ -147,7 +176,8 @@
         "comment": "Profissional atencioso e qualificado.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "ricardo.silva@example.com"
   },
   {
     "id": 7,
@@ -159,8 +189,12 @@
     "street": "Rua das Flores",
     "neighborhood": "Savassi",
     "zip_code": "34567-890",
-    "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Renata Oliveira.webp",
+    "insurance_accepted": [
+      "Bradesco Saúde",
+      "Amil",
+      "Unimed"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Renata Oliveira.webp",
     "reviews": [
       {
         "reviewer": "Lucas Martins",
@@ -172,7 +206,8 @@
         "comment": "Excelente psicóloga, recomendo.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "renata.oliveira@example.com"
   },
   {
     "id": 8,
@@ -184,8 +219,12 @@
     "street": "Avenida Paulista",
     "neighborhood": "Bela Vista",
     "zip_code": "12345-678",
-    "insurance_accepted": ["SulAmérica", "Allianz", "Porto Seguro"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. André Lima.webp",
+    "insurance_accepted": [
+      "SulAmérica",
+      "Allianz",
+      "Porto Seguro"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. André Lima.webp",
     "reviews": [
       {
         "reviewer": "Fernanda Rocha",
@@ -197,7 +236,8 @@
         "comment": "Profissional qualificado, recomendo.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "andre.lima@example.com"
   },
   {
     "id": 9,
@@ -209,8 +249,12 @@
     "street": "Rua das Laranjeiras",
     "neighborhood": "Botafogo",
     "zip_code": "23456-789",
-    "insurance_accepted": ["Amil", "Unimed", "Bradesco Saúde"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Júlia Costa.webp",
+    "insurance_accepted": [
+      "Amil",
+      "Unimed",
+      "Bradesco Saúde"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Júlia Costa.webp",
     "reviews": [
       {
         "reviewer": "Renata Ferreira",
@@ -222,7 +266,8 @@
         "comment": "Atendimento excelente.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "julia.costa@example.com"
   },
   {
     "id": 10,
@@ -234,8 +279,12 @@
     "street": "Avenida das Araucárias",
     "neighborhood": "Batel",
     "zip_code": "45678-901",
-    "insurance_accepted": ["Allianz", "Hapvida", "Porto Seguro"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Carlos Yu.webp",
+    "insurance_accepted": [
+      "Allianz",
+      "Hapvida",
+      "Porto Seguro"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Carlos Yu.webp",
     "reviews": [
       {
         "reviewer": "Ricardo Santos",
@@ -247,7 +296,8 @@
         "comment": "Muito bom, atendimento eficiente.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "carlos.yu@example.com"
   },
   {
     "id": 11,
@@ -259,8 +309,12 @@
     "street": "Rua da Consolação",
     "neighborhood": "Centro",
     "zip_code": "12345-678",
-    "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Pedro Santos.webp",
+    "insurance_accepted": [
+      "Bradesco Saúde",
+      "Amil",
+      "Unimed"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Pedro Santos.webp",
     "reviews": [
       {
         "reviewer": "José Almeida",
@@ -272,7 +326,8 @@
         "comment": "Atendimento excelente, recomendo.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "pedro.santos@example.com"
   },
   {
     "id": 12,
@@ -284,8 +339,12 @@
     "street": "Rua da Glória",
     "neighborhood": "Lapa",
     "zip_code": "23456-789",
-    "insurance_accepted": ["SulAmérica", "Allianz", "Porto Seguro"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Ana Pereira.webp",
+    "insurance_accepted": [
+      "SulAmérica",
+      "Allianz",
+      "Porto Seguro"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Ana Pereira.webp",
     "reviews": [
       {
         "reviewer": "Fábio Souza",
@@ -297,7 +356,8 @@
         "comment": "Profissional excelente.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "ana.pereira@example.com"
   },
   {
     "id": 13,
@@ -309,8 +369,12 @@
     "street": "Rua das Acácias",
     "neighborhood": "Moinhos de Vento",
     "zip_code": "56789-012",
-    "insurance_accepted": ["Unimed", "Amil", "Bradesco Saúde"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Ana Costa.webp",
+    "insurance_accepted": [
+      "Unimed",
+      "Amil",
+      "Bradesco Saúde"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Ana Costa.webp",
     "reviews": [
       {
         "reviewer": "Bruno Almeida",
@@ -322,7 +386,8 @@
         "comment": "Ótima dermatologista, recomendo.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "ana.costa@example.com"
   },
   {
     "id": 14,
@@ -334,8 +399,12 @@
     "street": "Avenida Paulista",
     "neighborhood": "Jardins",
     "zip_code": "12345-678",
-    "insurance_accepted": ["SulAmérica", "Allianz", "Porto Seguro"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Felipe Lima.webp",
+    "insurance_accepted": [
+      "SulAmérica",
+      "Allianz",
+      "Porto Seguro"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Felipe Lima.webp",
     "reviews": [
       {
         "reviewer": "Joana Carvalho",
@@ -347,7 +416,8 @@
         "comment": "Excelente atendimento.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "felipe.lima@example.com"
   },
   {
     "id": 15,
@@ -359,8 +429,12 @@
     "street": "Avenida Atlântica",
     "neighborhood": "Copacabana",
     "zip_code": "23456-789",
-    "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Camila Santos.webp",
+    "insurance_accepted": [
+      "Bradesco Saúde",
+      "Amil",
+      "Unimed"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Camila Santos.webp",
     "reviews": [
       {
         "reviewer": "Fernanda Rocha",
@@ -372,7 +446,8 @@
         "comment": "Muito atenciosa e competente.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "camila.santos@example.com"
   },
   {
     "id": 16,
@@ -384,8 +459,12 @@
     "street": "Avenida Beira Mar",
     "neighborhood": "Centro",
     "zip_code": "67890-123",
-    "insurance_accepted": ["SulAmérica", "Allianz", "Hapvida"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Ricardo Lima.webp",
+    "insurance_accepted": [
+      "SulAmérica",
+      "Allianz",
+      "Hapvida"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Ricardo Lima.webp",
     "reviews": [
       {
         "reviewer": "Paula Castro",
@@ -397,7 +476,8 @@
         "comment": "Atendimento rápido e eficaz.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "ricardo.lima@example.com"
   },
   {
     "id": 17,
@@ -409,8 +489,12 @@
     "street": "Rua Augusta",
     "neighborhood": "Consolação",
     "zip_code": "12345-678",
-    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Carolina Souza.webp",
+    "insurance_accepted": [
+      "Amil",
+      "Bradesco Saúde",
+      "Unimed"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Carolina Souza.webp",
     "reviews": [
       {
         "reviewer": "Márcia Almeida",
@@ -422,7 +506,8 @@
         "comment": "Muito atenciosa e competente.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "carolina.souza@example.com"
   },
   {
     "id": 18,
@@ -434,8 +519,12 @@
     "street": "Avenida das Américas",
     "neighborhood": "Barra da Tijuca",
     "zip_code": "23456-789",
-    "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Marcos Silva.webp",
+    "insurance_accepted": [
+      "SulAmérica",
+      "Porto Seguro",
+      "NotreDame"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Marcos Silva.webp",
     "reviews": [
       {
         "reviewer": "Fernanda Lima",
@@ -447,7 +536,8 @@
         "comment": "Muito bom, recomendo.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "marcos.silva@example.com"
   },
   {
     "id": 19,
@@ -459,8 +549,12 @@
     "street": "Avenida do Sol",
     "neighborhood": "Meireles",
     "zip_code": "89012-345",
-    "insurance_accepted": ["Amil", "Bradesco Saúde", "Allianz"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Fernanda Sousa.webp",
+    "insurance_accepted": [
+      "Amil",
+      "Bradesco Saúde",
+      "Allianz"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Fernanda Sousa.webp",
     "reviews": [
       {
         "reviewer": "Carlos Eduardo",
@@ -472,7 +566,8 @@
         "comment": "Muito atenciosa e competente.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "fernanda.sousa@example.com"
   },
   {
     "id": 20,
@@ -484,8 +579,12 @@
     "street": "Rua da Consolação",
     "neighborhood": "Higienópolis",
     "zip_code": "12345-678",
-    "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. João Alves.webp",
+    "insurance_accepted": [
+      "SulAmérica",
+      "Porto Seguro",
+      "NotreDame"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. João Alves.webp",
     "reviews": [
       {
         "reviewer": "Marina Costa",
@@ -497,7 +596,8 @@
         "comment": "Excelente oftalmologista, recomendo.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "joao.alves@example.com"
   },
   {
     "id": 21,
@@ -509,8 +609,12 @@
     "street": "Rua das Laranjeiras",
     "neighborhood": "Botafogo",
     "zip_code": "23456-789",
-    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Ana Clara.webp",
+    "insurance_accepted": [
+      "Amil",
+      "Bradesco Saúde",
+      "Unimed"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Ana Clara.webp",
     "reviews": [
       {
         "reviewer": "Fernanda Souza",
@@ -522,7 +626,8 @@
         "comment": "Ótimo atendimento, recomendo.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "ana.clara@example.com"
   },
   {
     "id": 22,
@@ -534,8 +639,12 @@
     "street": "Rua do Farol",
     "neighborhood": "Barra",
     "zip_code": "78901-234",
-    "insurance_accepted": ["Unimed", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. João Silva.webp",
+    "insurance_accepted": [
+      "Unimed",
+      "Porto Seguro",
+      "NotreDame"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. João Silva.webp",
     "reviews": [
       {
         "reviewer": "Marcos Teixeira",
@@ -547,7 +656,8 @@
         "comment": "Atendimento rápido e eficiente.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "joao.silva@example.com"
   },
   {
     "id": 23,
@@ -559,8 +669,12 @@
     "street": "Rua Augusta",
     "neighborhood": "Jardins",
     "zip_code": "12345-678",
-    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Paulo Andrade.webp",
+    "insurance_accepted": [
+      "Amil",
+      "Bradesco Saúde",
+      "Unimed"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Paulo Andrade.webp",
     "reviews": [
       {
         "reviewer": "Fernanda Lima",
@@ -572,7 +686,8 @@
         "comment": "Atendimento muito bom.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "paulo.andrade@example.com"
   },
   {
     "id": 24,
@@ -584,8 +699,12 @@
     "street": "Avenida das Américas",
     "neighborhood": "Barra da Tijuca",
     "zip_code": "23456-789",
-    "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Marina Souza.webp",
+    "insurance_accepted": [
+      "SulAmérica",
+      "Porto Seguro",
+      "NotreDame"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Marina Souza.webp",
     "reviews": [
       {
         "reviewer": "Carlos Eduardo",
@@ -597,7 +716,8 @@
         "comment": "Excelente cardiologista, recomendo.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "marina.souza@example.com"
   },
   {
     "id": 25,
@@ -609,8 +729,12 @@
     "street": "Rua das Palmeiras",
     "neighborhood": "Asa Sul",
     "zip_code": "34567-890",
-    "insurance_accepted": ["Bradesco Saúde", "Amil", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Pedro Oliveira.webp",
+    "insurance_accepted": [
+      "Bradesco Saúde",
+      "Amil",
+      "Unimed"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Pedro Oliveira.webp",
     "reviews": [
       {
         "reviewer": "Gabriel Alves",
@@ -622,7 +746,8 @@
         "comment": "Atendimento de qualidade, recomendo.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "pedro.oliveira@example.com"
   },
   {
     "id": 26,
@@ -634,8 +759,12 @@
     "street": "Avenida Paulista",
     "neighborhood": "Bela Vista",
     "zip_code": "12345-678",
-    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Marcelo Lima.webp",
+    "insurance_accepted": [
+      "Amil",
+      "Bradesco Saúde",
+      "Unimed"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Marcelo Lima.webp",
     "reviews": [
       {
         "reviewer": "Juliana Souza",
@@ -647,7 +776,8 @@
         "comment": "Muito bom, recomendo.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "marcelo.lima@example.com"
   },
   {
     "id": 27,
@@ -659,8 +789,12 @@
     "street": "Rua das Laranjeiras",
     "neighborhood": "Botafogo",
     "zip_code": "23456-789",
-    "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Clara Souza.webp",
+    "insurance_accepted": [
+      "Amil",
+      "Bradesco Saúde",
+      "Unimed"
+    ],
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Clara Souza.webp",
     "reviews": [
       {
         "reviewer": "Renata Souza",
@@ -672,7 +806,8 @@
         "comment": "Ótima profissional, recomendo.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "clara.souza@example.com"
   },
   {
     "id": 28,
@@ -685,7 +820,7 @@
     "neighborhood": "Adrianópolis",
     "zip_code": "56789-012",
     "insurance_accepted": ["SulAmérica", "Allianz", "Hapvida"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Beatriz Almeida.webp",
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Beatriz Almeida.webp",
     "reviews": [
       {
         "reviewer": "Felipe Costa",
@@ -697,7 +832,8 @@
         "comment": "Muito boa, recomendo a todos.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "beatriz.almeida@example.com"
   },
   {
     "id": 29,
@@ -710,7 +846,7 @@
     "neighborhood": "Consolação",
     "zip_code": "12345-678",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Gustavo Lima.webp",
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Gustavo Lima.webp",
     "reviews": [
       {
         "reviewer": "Marina Souza",
@@ -722,7 +858,8 @@
         "comment": "Ótimo profissional, muito competente.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "gustavo.lima@example.com"
   },
   {
     "id": 30,
@@ -735,7 +872,7 @@
     "neighborhood": "Copacabana",
     "zip_code": "23456-789",
     "insurance_accepted": ["SulAmérica", "Porto Seguro", "NotreDame"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Patrícia Silva.webp",
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Patrícia Silva.webp",
     "reviews": [
       {
         "reviewer": "Gabriel Almeida",
@@ -747,7 +884,8 @@
         "comment": "Excelente atendimento, recomendo.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "patricia.silva@example.com"
   },
   {
     "id": 31,
@@ -760,7 +898,7 @@
     "neighborhood": "Boa Viagem",
     "zip_code": "67890-123",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Allianz"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Julia Ramos.webp",
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Julia Ramos.webp",
     "reviews": [
       {
         "reviewer": "Renato Oliveira",
@@ -772,7 +910,8 @@
         "comment": "Ótima profissional, recomendo.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "julia.ramos@example.com"
   },
   {
     "id": 32,
@@ -785,7 +924,7 @@
     "neighborhood": "Bela Vista",
     "zip_code": "12345-678",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dra. Amanda Silva.webp",
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dra. Amanda Silva.webp",
     "reviews": [
       {
         "reviewer": "Fernanda Souza",
@@ -797,7 +936,8 @@
         "comment": "Atendimento de qualidade, recomendo.",
         "rating": 5
       }
-    ]
+    ],
+    "email": "amanda.silva@example.com"
   },
   {
     "id": 33,
@@ -810,7 +950,7 @@
     "neighborhood": "Botafogo",
     "zip_code": "23456-789",
     "insurance_accepted": ["Amil", "Bradesco Saúde", "Unimed"],
-    "profile_pic_url": "../../assets/img/doctors/Dr. Rafael Almeida.webp",
+    "profile_pic_url": "../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/doctors/Dr. Rafael Almeida.webp",
     "reviews": [
       {
         "reviewer": "Mariana Lima",
@@ -822,6 +962,7 @@
         "comment": "Ótimo atendimento, recomendo.",
         "rating": 4
       }
-    ]
+    ],
+    "email": "rafael.almeida@example.com"
   }
-  ]
+]

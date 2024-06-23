@@ -110,6 +110,7 @@ hr {
     display: flex;
     align-items: center;
     font-size: 100%;
+    padding-top: 15px;
 }
 
 #containerIconLocal {
@@ -117,6 +118,7 @@ hr {
     height: 10%;
     max-height: 30px;
     max-width: 30px;
+    margin-top: 20px;
 }
 
 #iconLocal {
@@ -130,7 +132,7 @@ hr {
 }
 
 .tituloLocal {
-    margin-bottom: 8px;
+    margin-top: 20px;
 }
 
 #local {
@@ -293,12 +295,14 @@ input::placeholder {
     }
 
     #dadosHorario {
+
         font-size: 60%;
     }
 
     #containerIconLocal {
         width: 25%;
         height: auto;
+        margin-top: 25px;
     }
 
     #dadosLocal {
