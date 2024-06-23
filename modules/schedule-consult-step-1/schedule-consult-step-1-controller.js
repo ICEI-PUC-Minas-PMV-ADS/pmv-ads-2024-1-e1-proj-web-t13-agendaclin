@@ -1,179 +1,130 @@
-import { salvarDados } from './schedule-consult-step-1-service.js';
-import { ScheduleConsultStep1Service, SearchDoctorService } from './schedule-consult-step-1-service.js';
+import {ScheduleConsultStep1Service} from './schedule-consult-step-1-service.js';
 
-export class SearchDoctorController {
-    doctors = [];
-    cities = [];
-    specialties = [];
-    insurances = [];
-    searchDoctorService = new SearchDoctorService();
+export class ScheduleConsultStep1Controller {
+    eventData;
 
     constructor() {
-        this.getAllData();
+        this.service = new ScheduleConsultStep1Service();
+        this.loadData();
         this.addEventListeners();
-        this.setupSearchButton();
     }
 
-    async getAllData() {
-        try {
-            this.doctors = JSON.parse(localStorage.getItem('filteredDoctors')) || [];
-            if (this.doctors.length === 0) {
-                this.doctors = await this.searchDoctorService.fetchData('doctors');
-            }
-            this.cities = await this.searchDoctorService.fetchData('cities');
-            this.specialties = await this.searchDoctorService.fetchData('specialties');
-            this.insurances = await this.searchDoctorService.fetchData('insurances');
-
-            this.renderDoctors(this.doctors);
-            this.renderSelectOptions('cities', this.cities, 'Cidade');
-            this.renderSelectOptions('specialties', this.specialties, 'Especialidade');
-            this.renderSelectOptions('insurances', this.insurances, 'Convênios');
-
-            const neighborhoodsSelect = document.getElementById('neighborhoods');
-            neighborhoodsSelect.disabled = true;
-            localStorage.removeItem('filteredDoctors');
-        } catch (error) {
-            console.error('Failed to fetch doctors data:', error);
+    async loadData() {
+        const eventData = await this.service.getEventData();
+        if (eventData) {
+            this.loadDoctorData(eventData);
+        } else {
+            console.error('No event data found in localStorage');
         }
     }
 
-    renderSelectOptions(selectId, options, defaultValue) {
-        const selectElement = document.getElementById(selectId);
-        selectElement.innerHTML = ''; // Limpa as opções existentes
+    loadDoctorData(eventData) {
+        this.eventData = eventData;
+        const doctorData = eventData.doctor;
+        const starDate = this.formatDateToBrasilia(eventData.start);
+        const container = document.getElementById('tableMedico');
+        container.innerHTML = `
+            <div id="containerDadosTable">
+                <div id="dadosMedico">
+                    <div id="containerImagemMedico">
+                        <img id="imagemMedico" src="${doctorData.profile_pic_url}" alt="Foto do médico">
+                    </div>
+                    <div id="containerNomeMedico">
+                        <p id="nomeMedico">${doctorData.name}<br><span id="especialidadeDoMedico">${doctorData.specialty}</span></p>
+                    </div>
+                </div>
+                <div id="dadosHorario">
+                    <div id="containerIconCalendar">
+                        <img id="iconCalendar" src="../../assets/icon/calendar.png">
+                    </div>
+                    <span>${starDate[0]},
+                        <time datetime="${eventData.start}">${starDate[1]}</time>
+                        <br> Fuso horário de Brasília
+                    </span>
+                </div>
+                <div id="dadosLocal">
+                    <div id="containerIconLocal">
+                        <img id="iconLocal" src="../../assets/icon/local.png" alt="Ícone de localização">
+                    </div>
+                    <div class="containerLocal">
+                        <div class="tituloLocal">Endereço</div>
+                        <div id="local">
+                            ${doctorData.street}, ${doctorData.neighborhood}, ${doctorData.city}, CEP ${doctorData.zip_code}, Brasil
+                        </div>
+                    </div>
+                </div>
+            </div>`;
 
-        // Adiciona uma opção padrão
+        const containerSelect = document.getElementById('convenioSelect');
+        containerSelect.innerHTML = '';
         const defaultOption = document.createElement('option');
         defaultOption.selected = true;
         defaultOption.disabled = true;
-        defaultOption.textContent = defaultValue;
-        selectElement.appendChild(defaultOption);
-
-        this.searchDoctorService.sortObjectsByField(options, 'name').forEach(option => {
-            const optionElement = document.createElement('option');
-            optionElement.value = option.name;
-            optionElement.textContent = option.name;
-            selectElement.appendChild(optionElement);
+        defaultOption.textContent = 'Escolha seu convênio';
+        containerSelect.appendChild(defaultOption);
+        doctorData.insurance_accepted.push('Particular');
+        const orderedInsurances = doctorData.insurance_accepted.sort((a, b) => a.localeCompare(b));
+        orderedInsurances.forEach(insurance => {
+            const option = document.createElement('option');
+            option.value = insurance;
+            option.innerText = insurance;
+            containerSelect.appendChild(option);
         });
     }
 
-    setupSearchButton() {
-        const searchlupa = document.querySelector('#searchlupa');
-        searchlupa.addEventListener('click', () => this.handleSearch());
-    }
-
-    handleSearch() {
-        const specialtyInput = document.querySelector('#specialties').value;
-        const cityInput = document.querySelector('#cities').value;
-        console.log('Search:', specialtyInput, cityInput);
-        const filteredDoctors = this.doctors.filter(doctor => {
-            const matchesSpecialty = specialtyInput === 'Especialidade' || doctor.specialty === specialtyInput;
-            const matchesCity = cityInput === 'Cidade' || doctor.city === cityInput;
-
-            return matchesSpecialty && matchesCity;
-        });
-        localStorage.setItem('filteredDoctors', JSON.stringify(filteredDoctors));
-        window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
-        console.log('Filtered Doctors:', filteredDoctors);
-        this.getAllData();
+    formatDateToBrasilia(dateString) {
+        console.log('dateString:', dateString)
+        const date = new Date(dateString);
+        const options = {
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            timeZone: 'America/Sao_Paulo',
+            timeZoneName: 'short'
+        };
+        const formatter = new Intl.DateTimeFormat('pt-BR', options);
+        const formattedDate = formatter.format(date);
+        const [datePart, timePart] = formattedDate.split('às ');
+        const [day, month, year] = datePart.split(' de ');
+        const [time, timeZone] = timePart?.split(' ');
+        return [`${day} ${month} ${year}`, `${time}`];
     }
 
     addEventListeners() {
-        const citySelect = document.getElementById('cities');
-        const specialtySelect = document.getElementById('specialties');
-        const insuranceSelect = document.getElementById('insurances');
-        const neighborhoodSelect = document.getElementById('neighborhoods');
-
-        citySelect.addEventListener('change', (event) => {
-            const selectedCityId = event.target.value;
-            console.log('city', selectedCityId)
-            this.updateNeighborhoodsSelect(selectedCityId);
-        });
-
-        insuranceSelect.addEventListener('change', () => this.filterDoctors('Convênios'));
-        neighborhoodSelect.addEventListener('change', () => this.filterDoctors('Bairro'));
+        const buttonContinuar = document.getElementById('buttonContinuar');
+        buttonContinuar.removeEventListener('click', this.validateForm);
+        buttonContinuar.addEventListener('click', this.validateForm.bind(this));
     }
 
-    updateNeighborhoodsSelect(cityName) {
-        const selectedCity = this.cities.find(city => city.name === cityName);
-        if (selectedCity) {
-            const neighborhoodsSelect = document.getElementById('neighborhoods');
-            neighborhoodsSelect.disabled = false; // Enable the neighborhood select
-            this.renderNeighborhoodOptions('neighborhoods', selectedCity.neighborhoods);
+    validateForm() {
+        const convenioSelect = document.getElementById('convenioSelect');
+        const radioButtons = document.querySelectorAll('input[name="primeiraConsulta"]');
+        const selectedRadio = Array.from(radioButtons).find(radio => radio.checked);
+        const errors = [];
+
+        if (!convenioSelect.value || convenioSelect.value === 'Escolha seu convênio') {
+            errors.push('Por favor, selecione um convênio médico.');
+        }
+
+        if (!selectedRadio) {
+            errors.push('Por favor, selecione se é a sua primeira consulta.');
+        }
+
+        if (errors.length > 0) {
+            alert(errors.join('\n'));
         } else {
-            const neighborhoodsSelect = document.getElementById('neighborhoods');
-            neighborhoodsSelect.disabled = true;
-            neighborhoodsSelect.innerHTML = '';
+            this.submitForm(convenioSelect.value, selectedRadio.value);
         }
     }
 
-    renderNeighborhoodOptions(selectId, neighborhoods) {
-        const selectElement = document.getElementById(selectId);
-        selectElement.innerHTML = '';
-        const defaultOption = document.createElement('option');
-        defaultOption.selected = true;
-        defaultOption.disabled = true;
-        defaultOption.textContent = 'Bairro';
-        selectElement.appendChild(defaultOption);
-        neighborhoods.sort().forEach(neighborhood => {
-            const optionElement = document.createElement('option');
-            optionElement.value = neighborhood;
-            optionElement.textContent = neighborhood;
-            selectElement.appendChild(optionElement);
-        });
-    }
-
-    filterDoctors() {
-        const citySelect = document.getElementById('cities');
-        const specialtySelect = document.getElementById('specialties');
-        const insuranceSelect = document.getElementById('insurances');
-        const neighborhoodSelect = document.getElementById('neighborhoods');
-
-        const selectedCity = citySelect.value;
-        const selectedSpecialty = specialtySelect.value;
-        const selectedInsurance = insuranceSelect.value;
-        const selectedNeighborhood = neighborhoodSelect.value;
-
-        let filteredDoctors = this.doctors;
-        switch (true) {
-            case selectedCity !== 'Cidade':
-                filteredDoctors = filteredDoctors.filter(doctor => doctor.city === selectedCity);
-            case selectedSpecialty !== 'Especialidade':
-                filteredDoctors = filteredDoctors.filter(doctor => doctor.specialty === selectedSpecialty);
-            case selectedInsurance !== 'Convênios':
-                filteredDoctors = filteredDoctors.filter(doctor => doctor.insurance === selectedInsurance);
-            case selectedNeighborhood !== 'Bairro':
-                filteredDoctors = filteredDoctors.filter(doctor => doctor.neighborhoods.includes(selectedNeighborhood));
-        }
-
-        this.renderDoctors(filteredDoctors);
-    }
-
-    renderDoctors(doctors) {
-        const doctorListElement = document.querySelector('.medico-lista');
-        doctorListElement.innerHTML = '';
-
-        doctors.forEach(doctor => {
-            const doctorElement = document.createElement('div');
-            doctorElement.className = 'medico-item';
-            doctorElement.innerHTML = `
-                <div class="medico-card">
-                    <div class="doctor-photo">
-                        <img src="${doctor.photo}" alt="${doctor.name}">
-                    </div>
-                    <div class="doctor-info">
-                        <h4 class="doctor-name">${doctor.name}</h4>
-                        <p class="doctor-specialty">${doctor.specialty}</p>
-                        <p class="doctor-city">${doctor.city}</p>
-                        <p class="doctor-insurance">${doctor.insurance}</p>
-                    </div>
-                </div>
-            `;
-            doctorElement.addEventListener('click', () => {
-                console.log('Doctor clicked:', doctor);
-                localStorage.setItem('selectedDoctor', JSON.stringify(doctor));
-                window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/doctor-detail';
-            });
-            doctorListElement.appendChild(doctorElement);
-        });
+    submitForm(convenio, primeiraConsulta) {
+        this.eventData['step-1'] = {convenio, primeiraConsulta};
+        const user = JSON.parse(localStorage.getItem('userToken'));
+        this.eventData['username'] = user.additionalUserInfo.profile.name;
+        this.eventData['email'] = user.additionalUserInfo.profile.email;
+        localStorage.setItem('step1Data', JSON.stringify(this.eventData));
+        window.location.href = '/#/schedule-consult-step-2';
     }
 }

@@ -1,67 +1,29 @@
 <header>
     <div id="cabecalho">
-        <a href="../../index.html"><img id="logoAgendaClim" src = "../../assets/img/agendaClinLightgradiente.png" alt="Logo da AgendaClim"></a>
+        <a href="../../index.html"><img alt="Logo da AgendaClim"
+                                        id="logoAgendaClim"
+                                        src="../../assets/img/agendaClinLightgradiente.png"></a>
         <hr>
     </div>
 </header>
-
-    <main>
-        <div id="tableMedico">
-            <div id="containerDadosTable">
-                <div id="dadosMedico">
-                    <div id="containerImagemMedico">
-                        <img id="imagemMedico" src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/Dra.jpg" alt="Foto do medico">
-                    </div>
-                    <div id="containerNomeMedico">
-                        <p id="nomeMedico">Dra. Sofia Martinez Riveira<br><span id="especialidadeDoMedico">Ginecologista</span></p>
-                    </div>
-                </div>
-                <div id="dadosHorario">
-                    <div id="containerIconCalendar">
-                        <img id="iconCalendar" src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/calendar.png">
-                    </div>
-                    <p>03 Abril 2024, <time datetime="2024-04-03T14:30">14:30</time> <br> Fuso horário de Brasília</p>
-                </div>
-                <div id="dadosLocal">
-                    <div id="containerIconLocal">
-                        <img id="iconLocal" src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/local.png" alt="Icone de localizacao">
-                    </div>
-                    <div class="containerLocal">
-                        <div class="tituloLocal">Endereço</div>
-                        <div id="local">
-                            Rua das Acácias, 157, Apartamento 402, Bairro Jardim Primavera, Cidade das Flores, Estado do Sol. CEP 55235-000, Brasil
-                        </div>
-                    </div>
-                </div>
+<main>
+    <div id="tableMedico">
+    </div>
+    <form id="containerSelectConvenio">
+        <div id="containerConvenio">
+            <label for="convenioSelect">Convênio medico*</label> <br>
+            <select id="convenioSelect" required></select>
+        </div>
+        <div id="primeiraConsulta">
+            <p>É a sua primeira consulta?</p>
+            <div id="inputPrimeiraConsulta">
+                <input name="primeiraConsulta" type="radio" value="true">Sim
+                <input name="primeiraConsulta" type="radio" value="false">Não
             </div>
         </div>
-        <form id="containerSelectConvenio">
-            <div id="containerConvenio">
-                <label for="convenioSelect">Convênio medico*</label> <br>
-                <select id="convenioSelect" required>
-                    <option value="Selecione" selected disabled>Escolha seu convênio</option>
-                    <option value="Particular">Particular</option>
-                    <option value="Amil">Amil</option>
-                    <option value="Bradesco">Bradesco</option>
-                    <option value="Hapvida">Hapvida</option>
-                    <option value="NotreDame">Porto Seguro</option>
-                    <option value="Unimed">Unimed</option>
-                </select>
-            </div>
-            <div id="primeiraConsulta">
-                <p>É a sua primeira consulta?</p>
-                <div id="inputPrimeiraConsulta">
-                    <input type="radio" name="primeiraConsulta" value="true">Sim
-                    <input type="radio" name="primeiraConsulta" value="false">Não
-                </div>
-            </div>
-            <div id="containerButtonContinuar">
-                <button type="button" id="buttonContinuar">Continuar</button>
-            </div>
-        </form>
-    </main>
-    <footer></footer>
-    <script type="module" src="schedule-consult-step-1.js"></script>
-    <script type="module" src="schedule-consult-step-1-controller.js"></script>
-</body>
-</html>
+        <div id="containerButtonContinuar">
+            <button id="buttonContinuar" type="button">Continuar</button>
+        </div>
+    </form>
+</main>
+<script src="schedule-consult-step-1-controller.js" type="module"></script>

@@ -247,7 +247,7 @@ h1, h2 {
      
      
      #nextStep {
-         min-width: 512px;
+         min-width: 530px;
          height: 40px;
          background-color: var(--color);
          border: 1px solid var(--color);
@@ -258,7 +258,7 @@ h1, h2 {
      }
      
      #nextStep:hover {
-        min-width: 512px;
+        min-width: 530px;
         height: 40px;
         background-color: #8994a5;
         border: 1px solid #000000;

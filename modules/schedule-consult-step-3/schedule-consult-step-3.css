@@ -129,6 +129,7 @@ hr {
     height: 10%;
     max-height: 30px;
     max-width: 30px;
+    margin-top: 25px;
 }
 
 #iconLocal {
@@ -150,10 +151,15 @@ hr {
     width: 90%;
     line-height: 1.5;
 }
+#bottonFinalizarConsulta {
+    margin: 0 auto;
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+}
 
 #bottonReagendar {
     margin: 0 auto;
-    margin-top: 100px;
     display: block;
     text-align: center;
 }
@@ -223,4 +229,14 @@ button {
     button {
         font-size: 80%;
     }
+}
+.tituloLocal {
+    margin-top: 20px;
+}
+.dados-medico {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }

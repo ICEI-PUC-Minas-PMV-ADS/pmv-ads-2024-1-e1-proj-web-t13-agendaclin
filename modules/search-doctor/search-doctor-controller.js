@@ -60,7 +60,6 @@ export class SearchDoctorController {
     handleSearch() {
         const specialtyInput = document.querySelector('#specialties').value;
         const cityInput = document.querySelector('#cities').value;
-        console.log('Search:', specialtyInput, cityInput);
         const filteredDoctors = this.doctors.filter(doctor => {
             const matchesSpecialty = specialtyInput === 'Especialidade' || doctor.specialty === specialtyInput;
             const matchesCity = cityInput === 'Cidade' || doctor.city === cityInput;
@@ -68,7 +67,7 @@ export class SearchDoctorController {
             return matchesSpecialty && matchesCity;
         });
         localStorage.setItem('filteredDoctors', JSON.stringify(filteredDoctors));
-        window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
+        window.location.href = '/#/search-doctor';
         console.log('Filtered Doctors:', filteredDoctors);
         this.getAllData();
     }
@@ -165,35 +164,34 @@ export class SearchDoctorController {
             const calendarId = `calendar-${doctor.id}`;
             let stars ;
             if (this.roundDownToNearestHalf(doctor.rating) === 5) {
-                stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/5 estrelas.svg"' +
+                stars = '<img src="../../assets/icon/5 estrelas.svg"' +
                     ' alt="Star"' +
                     ' class="feedback-star">'
             }
             if (this.roundDownToNearestHalf(doctor.rating) === 4.5) {
-                stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/4,5%20estrelas.svg"' +
+                stars = '<img src="../../assets/icon/4,5%20estrelas.svg"' +
                     ' alt="Star"' +
                     ' class="feedback-star">'
             }
             if (this.roundDownToNearestHalf(doctor.rating) === 4) {
-                stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/4%20estrelas.svg"' +
+                stars = '<img src="../../assets/icon/4%20estrelas.svg"' +
                     ' alt="Star"' +
                     ' class="feedback-star">'
             }
             if (this.roundDownToNearestHalf(doctor.rating) === 3.5) {
-                stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/3,5%20estrelas.svg"' +
+                stars = '<img src="../../assets/icon/3,5%20estrelas.svg"' +
                     ' alt="Star"' +
                     ' class="feedback-star">'
             }
             if (this.roundDownToNearestHalf(doctor.rating) === 3) {
-                stars = '<img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/3%20estrelas.svg"' +
+                stars = '<img src="../../assets/icon/3%20estrelas.svg"' +
                     ' alt="Star"' +
                     ' class="feedback-star">'
             }
-            console.log('stars',  this.roundDownToNearestHalf(doctor.rating))
             // console.log(stars, stars)
 
             doctorCard.innerHTML = `
-                <div class="col-5" style="border-right:  1.5px solid #0367A5;">
+                <div class="col-5" style="border-right:  1.5px solid #0367A5;" id="doctor-info-${calendarId}">
                     <div class="doctor-info">
                         <div style="width: 30%"><img src="${doctor.profile_pic_url}" alt="${doctor.name}" class="img-fluid doctor-img-avatar"></div>
                         <div style="width: 70%">
@@ -210,7 +208,7 @@ export class SearchDoctorController {
                     </div>
                     <div class="location-icon-position mt-5">
                         <div style="width: 10%">
-                            <img src="../../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/icon/local.png" alt="" class="doctor-info-icone">
+                            <img src="../../assets/icon/local.png" alt="" class="doctor-info-icone">
                         </div>
                         <div style="width: 90%" class="doctor-address">
                             <span>Endereço <br> ${doctor.street}, <br> ${doctor.neighborhood}, ${doctor.city}, <br> CEP ${doctor.zip_code}, Brasil</span>
@@ -223,7 +221,8 @@ export class SearchDoctorController {
             `;
             container.appendChild(doctorCard);
             this.setupCalendar(calendarId); // Inicializa o calendário para o médico atual
-            doctorCard.addEventListener('click', () => this.handleCardClick(doctor));
+            const doctorInfo = document.getElementById(`doctor-info-${calendarId}`);
+            doctorInfo.addEventListener('click', () => this.handleCardClick(doctor));
 
         });
     }
@@ -270,7 +269,7 @@ export class SearchDoctorController {
                 // deleteButton.addEventListener('click', function() {
                 //     info.event.remove(); // Remove o evento do calendário
                 //     const events = JSON.parse(localStorage.getItem('events')) || [];
- if ( events.filter(element => element !== null).length === 0) return [];        //     const updatedEvents = events.filter(e => e.id !== info.event.id);
+                //     const updatedEvents = events.filter(e => e.id !== info.event.id);
                 //     localStorage.setItem('events', JSON.stringify(updatedEvents)); // Atualiza o localStorage
                 // });
                 // info.el.appendChild(deleteButton);
@@ -298,47 +297,49 @@ export class SearchDoctorController {
         //     this.saveEvent(eventData); // Salva o evento no localStorage
 
         // Iniciar a consulta
+            const id = calendarId.split('-')[1];
+            const currentDoctor = this.doctors.find(doctor => doctor.id == id);
+            console.log(currentDoctor, 'currentDoctor')
             const eventData = {
                 id:new Date().getTime(),
                 start: info.date,
                 allDay: info.allDay,
                 calendarId: calendarId,
-                name: 'Consulta com Dr. Fulano',
+                doctor: currentDoctor,
             };
             this.startConsultation(eventData);
-
-
     }
     deleteEvent(event) {
         // Remove o evento do calendário
         event.remove();
 
         // Remove o evento do localStorage
-        const events = JSON.parse(localStorage.getItem('events')) || [];
- if ( events.filter(element => element !== null).length === 0) return [];const updatedEvents = events.filter(e => e.id !== event.id);
-        localStorage.setItem('events', JSON.stringify(updatedEvents));
+        const events = JSON.parse(localStorage.getItem('allSchedules')) || [];
+        const updatedEvents = events.filter(e => e.id !== event.id);
+        localStorage.setItem('allSchedules', JSON.stringify(updatedEvents));
     }
     saveEvent(eventData) {
         console.log('eventData', eventData)
-        const events = JSON.parse(localStorage.getItem('events')) || [];
- if ( events.filter(element => element !== null).length === 0) return [];events.push(eventData);
-        localStorage.setItem('events', JSON.stringify(events));
+        const events = JSON.parse(localStorage.getItem('allSchedules')) || [];
+        events.push(eventData);
+        localStorage.setItem('allSchedules', JSON.stringify(events));
     }
     loadEvents(calendarId) {
-        const events = JSON.parse(localStorage.getItem('events')) || [];
- if ( events.filter(element => element !== null).length === 0) return [];// console.log('events', events)
+        const events = JSON.parse(localStorage.getItem('allSchedules')) || [];
+        if ( events.filter(element => element !== null).length === 0) return [];
+        // console.log('events', events)
         return events.filter(event => event.calendarId === calendarId);
     }
     startConsultation(eventData) {
         console.log('eventData', eventData)
         localStorage.setItem('currentEvent', JSON.stringify(eventData));
-        window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/schedule-consult-step-1';
+        window.location.href = '/#/schedule-consult-step-1';
     }
 
     handleCardClick(doctor) {
         console.log('Doctor:', doctor);
         localStorage.setItem('currentDoctor', JSON.stringify(doctor));
-        window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/doctor-profile';
+        window.location.href = '/#/doctor-profile';
     }
     roundDownToNearestHalf(num) {
         return Math.floor(num * 2) / 2;

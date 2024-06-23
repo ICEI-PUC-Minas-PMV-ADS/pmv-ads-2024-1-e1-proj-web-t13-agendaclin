@@ -1,10 +1,8 @@
-import { DoctorLogin } from './doctor-login-service.js'; 
-import { googleLogin, emailLogin, emailReset } from '/js/shared/auth.js';
+import { googleLogin, emailLogin, emailReset } from "/js/shared/auth.js";
 
-export class DoctorController {
+export class DoctorLoginController  {
     constructor() {
-        this.DoctorLogin = new DoctorLogin();
-        console.log('docLogin-controller instanciado');
+        console.log('LoginController instanciado');
         this.setupEventListeners();
     }
 
@@ -21,11 +19,14 @@ export class DoctorController {
             event.preventDefault();
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
-            emailLogin(email, password);
+            console.log('email', email);
+            console.log('password', password);
+            localStorage.setItem('loggedDoctor', email);
+            localStorage.removeItem('novoMedico');
+            window.location.href = '/#/doctor-professional-profile';
         });
     }
 }
-// Função de reset de senha
 document.getElementById('forgotPasswordForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -43,11 +44,3 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', functio
             console.error('Erro ao enviar email de redefinição:', error.message);
         });
 });
-
-// Garantir que o DoctorController seja instanciado após o carregamento do DOM
-document.addEventListener('DOMContentLoaded', () => {
-    new DoctorController();
-});
-
-
-

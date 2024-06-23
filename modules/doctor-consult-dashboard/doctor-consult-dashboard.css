@@ -140,6 +140,7 @@ button {
 }
 .fc-timegrid-slot, .fc-timegrid-slot-label {
     width: 100% !important;
+    height: 50px !important;
 }
 .custom-header {
     font-size: 16px !important;
@@ -160,7 +161,7 @@ button {
 
 /* Ajusta a altura dos eventos */
 .fc-event {
-    height: 25px;
+    height: 50px !important;
     font-size: 16px; /* Altere este valor conforme necessário */
     line-height: 1.2; /* Ajusta a altura da linha para o texto */
     white-space: normal; /* Permite quebra de linha no texto */

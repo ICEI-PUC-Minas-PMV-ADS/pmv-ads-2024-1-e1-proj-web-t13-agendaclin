@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <base href="/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/">
-    
-    <!--    instalação do bootstrap -->
+<!--    instalação do bootstrap -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 <!--    arquivo css principal-->
     <link rel="stylesheet" href="css/main.css">
@@ -56,16 +54,15 @@
             const src = element.getAttribute('src');
             const href = element.getAttribute('href');
             if (src && src.startsWith('assets/')) {
-                element.src = `${basePath}/${src}`;
+                element.src = `/${src}`;
             }
             if (href && href.startsWith('assets/')) {
-                element.href = `${basePath}/${href}`;
+                element.href = `/${href}`;
             }
         });
     };
     
     document.addEventListener('DOMContentLoaded', adjustAssetPaths);
-
 </script>
 </body>
 </html>

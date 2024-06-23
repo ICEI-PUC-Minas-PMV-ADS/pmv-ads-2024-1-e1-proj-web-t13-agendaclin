@@ -24,11 +24,11 @@ export class SignupController {
                 localStorage.setItem('userToken', JSON.stringify(signup));
                 $('#successModal').modal('show');
                 document.getElementById('closeModalButton').addEventListener('click', function() {
-                    window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
+                    window.location.href = '/#/search-doctor';
                 });
 
                 document.getElementById('closeModalicon').addEventListener('click', function() {
-                    window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
+                    window.location.href = '/#/search-doctor';
                 });
 
             } catch (error) {

@@ -42,6 +42,18 @@ export class DoctorConsultDashboardController {
                 slotMinTime: '8:00:00',
                 slotMaxTime: '18:00:00',
                 events: this.loadEvents(calendarId),
+                eventContent: function(arg) {
+                    const event = arg.event;
+                    const startTime = event.start.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                    const username = event.extendedProps.username;
+
+                    // Custom HTML for the event content
+                    return {
+                        html: `<div class="fc-event-time">${startTime}</div>
+             <div class="fc-event-title">${event.title}</div>
+             <div class="fc-event-username">${username}</div>`
+                    };
+                },
             });
             calendar.render();
         const timeGridSlots = calendarEl.querySelectorAll('.fc-timegrid-slot');
@@ -50,9 +62,9 @@ export class DoctorConsultDashboardController {
         });
     }
     loadEvents(calendarId) {
-        const events = JSON.parse(localStorage.getItem('events')) || [];
- if ( events.filter(element => element !== null).length === 0) return [];// console.log('events', events)
+        const events = JSON.parse(localStorage.getItem('allSchedules')) || [];
+        if ( events.filter(element => element !== null).length === 0) return [];
+        console.log('events', events)
         return events.filter(event => event.calendarId === calendarId);
     }
 }
-new DoctorConsultDashboardController();
