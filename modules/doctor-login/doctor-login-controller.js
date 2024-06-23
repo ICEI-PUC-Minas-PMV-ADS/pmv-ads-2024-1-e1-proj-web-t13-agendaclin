@@ -1,4 +1,4 @@
-import { googleLogin, emailLogin, emailReset } from "/js/shared/auth.js";
+import { googleLogin, emailLogin, emailReset } from "/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/js/shared/auth.js";
 
 export class DoctorLoginController  {
     constructor() {
