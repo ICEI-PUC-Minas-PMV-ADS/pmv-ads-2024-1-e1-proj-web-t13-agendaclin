@@ -40,11 +40,11 @@ export class RescheduleConsultController {
         });
         document.getElementById('closeSuccessModalButton').addEventListener('click', function () {
             $('#successModal').modal('hide');
-            window.location.href = '/';
+            window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin';
         });
         document.getElementById('closeSuccessModalIcon').addEventListener('click', function () {
             $('#successModal').modal('hide');
-            window.location.href = '/';
+            window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin';
         });
         document.getElementById('confirmEventBtn').addEventListener('click', this.confirmEvent.bind(this));
         document.getElementById('finalizarBtn').addEventListener('click', this.finalizeReschedule.bind(this));

@@ -1,0 +1,25 @@
+message: Please cite this software using these metadata.
+title: AgendaClin
+authors:
+  - family-names: Marques
+    given-names: Breno
+  - family-names: Gonçalves Shintaku
+    given-names: Giovanni
+  - family-names: de Jesus Souza e Cota
+    given-names: Ícaro
+  - family-names: Benyamin Gorenstein Brasil
+    given-names: Michael
+  - family-names: Machado Lima
+    given-names: Vinicius
+  - family-names: Brandão Nunes
+    given-names: Yasmim Emmeline
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names:Nepomuceno Curto
+    given-names: Hayala
+keywords:
+  - Saúde
+  - Agendamento Médico
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS//pmv-ads-2024-1-e1-proj-web-t13-agendaclin
+version: 1.0.0
+date-released: 2024-06-23

@@ -74,7 +74,7 @@ export class ScheduleConsultStep3Controller {
         const buttonFinish = document.getElementById('buttonFinish');
         buttonFinish.addEventListener('click', () => {
             alert('Agendamento realizado com sucesso!');
-            window.location.href = '/';
+            window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin';
         });
         const resSchedule = document.getElementById('bottonReagendar');
         resSchedule.addEventListener('click', () => {
@@ -84,8 +84,10 @@ export class ScheduleConsultStep3Controller {
         });
         const cancelConsult = document.getElementById('bottonCancelar');
         cancelConsult.addEventListener('click', () => {
-
-            alert('Agendamento realizado com sucesso!');
+            let allSchedules = JSON.parse(localStorage.getItem('allSchedules')) || [];
+            allSchedules = allSchedules.filter(schedule => schedule.id !== this.eventData.id);
+            localStorage.setItem('allSchedules', JSON.stringify(allSchedules));
+            window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/cancel-consult';
         });
     }
 }
