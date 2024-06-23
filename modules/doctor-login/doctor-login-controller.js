@@ -23,7 +23,7 @@ export class DoctorLoginController  {
             console.log('password', password);
             localStorage.setItem('loggedDoctor', email);
             localStorage.removeItem('novoMedico');
-            window.location.href = '/#/doctor-professional-profile';
+            window.location.href = 'pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/doctor-professional-profile';
         });
     }
 }

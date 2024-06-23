@@ -125,6 +125,6 @@ export class ScheduleConsultStep1Controller {
         this.eventData['username'] = user.additionalUserInfo.profile.name;
         this.eventData['email'] = user.additionalUserInfo.profile.email;
         localStorage.setItem('step1Data', JSON.stringify(this.eventData));
-        window.location.href = '/#/schedule-consult-step-2';
+        window.location.href = 'pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/schedule-consult-step-2';
     }
 }

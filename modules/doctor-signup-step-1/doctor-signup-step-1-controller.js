@@ -15,7 +15,7 @@ export class DoctorSignupStep1Controller {
             const userSurname = document.getElementById('surname').value;
             localStorage.setItem('novoMedico', JSON.stringify({ option, specialty, name: `${userName} ${userSurname}`  }));
             // this.login(option, specialty, userName, userSurname);
-            window.location.href = "/#/doctor-signup-step-2";
+            window.location.href = "pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/doctor-signup-step-2";
         });
     }
 

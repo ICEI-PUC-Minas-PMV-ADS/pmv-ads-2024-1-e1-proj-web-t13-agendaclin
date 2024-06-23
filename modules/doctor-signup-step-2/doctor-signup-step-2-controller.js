@@ -23,7 +23,7 @@ export class DoctorSignupStep2Controller {
             currentDoctor['password'] = password;
             localStorage.setItem('novoMedico', JSON.stringify(currentDoctor));
             alert("Cadastro realizado com sucesso!");
-            window.location.href = "/#/doctor-professional-profile";
+            window.location.href = "pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/doctor-professional-profile";
             // this.login(city, dde, phone, email, password);
         });
     }

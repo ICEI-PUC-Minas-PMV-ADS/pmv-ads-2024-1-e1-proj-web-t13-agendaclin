@@ -105,7 +105,7 @@ export class ScheduleConsultStep2Controller {
                 localStorage.setItem('allSchedules', JSON.stringify([this.eventData]));
             }
             localStorage.setItem('currentSchedule', JSON.stringify(this.eventData));
-            window.location.href = '/#/schedule-consult-step-3';
+            window.location.href = 'pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/schedule-consult-step-3';
         } else {
             alert(`Por favor, corrija os seguintes campos:\n${invalidFields.join('\n')}`);
         }

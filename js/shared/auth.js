@@ -5,7 +5,7 @@ export function googleLogin() {
     firebase.auth().signInWithPopup(provider).then(function(result) {
         console.log('Usuário autenticado com sucesso', result);
         localStorage.setItem('userToken', JSON.stringify(result));
-        window.location.href = '/#/search-doctor';
+        window.location.href = 'pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
     }).catch(function(error) {
         console.error('Erro na autenticação', error);
     });
@@ -16,7 +16,7 @@ export function emailLogin(email, password) {
     firebase.auth().signInWithEmailAndPassword(email, password).then(function(result) {
         console.log('Usuário autenticado com sucesso');
         localStorage.setItem('userToken', JSON.stringify(result));
-        window.location.href = '/#/search-doctor';
+        window.location.href = 'pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
     }).catch(function(error) {
         alert('Erro ao fazer login, verifique usuário e senha');
         console.error('Erro na autenticação', error);
