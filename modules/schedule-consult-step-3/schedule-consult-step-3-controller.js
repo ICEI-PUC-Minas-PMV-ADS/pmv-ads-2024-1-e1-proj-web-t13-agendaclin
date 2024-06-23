@@ -52,7 +52,7 @@ export class ScheduleConsultStep3Controller {
             </div>`;
     }
     formatDateToBrasilia(dateString) {
-        console.log('dateString2:', dateString)
+        //console.log('dateString2:', dateString)
         const date = new Date(dateString);
         const options = {
             day: '2-digit',

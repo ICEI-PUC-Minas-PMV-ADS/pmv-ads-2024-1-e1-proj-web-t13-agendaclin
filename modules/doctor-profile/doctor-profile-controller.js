@@ -47,7 +47,7 @@ export class DoctorProfileController {
     handleSearch() {
         const specialtyInput = document.querySelector('#specialties').value;
         const cityInput = document.querySelector('#cities').value;
-        console.log('Search:', specialtyInput, cityInput);
+        //console.log('Search:', specialtyInput, cityInput);
         const filteredDoctors = this.doctors.filter(doctor => {
             const matchesSpecialty = specialtyInput === 'Especialidade, doença ou nome' || doctor.specialty === specialtyInput;
             const matchesCity = cityInput === 'Filtre sua cidade' || doctor.city === cityInput;
@@ -56,7 +56,7 @@ export class DoctorProfileController {
 
         localStorage.setItem('filteredDoctors', JSON.stringify(filteredDoctors));
         window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
-        console.log('Filtered Doctors:', filteredDoctors);
+        //console.log('Filtered Doctors:', filteredDoctors);
     }
 
     setupCalendar(calendarId) {
@@ -149,7 +149,7 @@ export class DoctorProfileController {
                 ' alt="Star"' +
                 ' class="feedback-star">'
         }
-        console.log('stars',  this.roundDownToNearestHalf(doctor.rating))
+        //console.log('stars',  this.roundDownToNearestHalf(doctor.rating))
         // console.log(stars, stars)
 
         doctorCard.innerHTML = `
@@ -342,7 +342,7 @@ export class DoctorProfileController {
     handleDateClick(info) {
         const calendarEl = info.view.calendar;
         const calendarId = calendarEl.el.id; // Obtém o ID do calendário
-        console.log('calendarId', calendarId);
+        //console.log('calendarId', calendarId);
 
         // Iniciar a consulta
         const eventData = {
@@ -361,7 +361,7 @@ export class DoctorProfileController {
         return events.filter(event => event.calendarId === calendarId);
     }
     startConsultation(eventData) {
-        console.log('eventData', eventData)
+        //console.log('eventData', eventData)
         localStorage.setItem('currentEvent', JSON.stringify(eventData));
         window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/schedule-consult-step-1';
     }
@@ -369,7 +369,7 @@ export class DoctorProfileController {
         const segmentButtons = document.querySelectorAll('.segment-button');
         segmentButtons.forEach(button => {
             button.addEventListener('click', function () {
-                console.log('click')
+                //console.log('click')
                 segmentButtons.forEach(btn => btn.classList.remove('active'));
                 this.classList.add('active');
             });

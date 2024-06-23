@@ -4,7 +4,7 @@ import {googleLogin, emailLogin} from '/pmv-ads-2024-1-e1-proj-web-t13-agendacli
 export class LoginController {
     constructor() {
         this.loginService = new LoginService();
-        console.log('LoginController instanciado');
+        //console.log('LoginController instanciado');
         this.setupEventListeners();
     }
 

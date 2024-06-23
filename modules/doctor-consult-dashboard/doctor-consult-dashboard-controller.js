@@ -64,7 +64,7 @@ export class DoctorConsultDashboardController {
     loadEvents(calendarId) {
         const events = JSON.parse(localStorage.getItem('allSchedules')) || [];
         if ( events.filter(element => element !== null).length === 0) return [];
-        console.log('events', events)
+        //console.log('events', events)
         return events.filter(event => event.calendarId === calendarId);
     }
 }

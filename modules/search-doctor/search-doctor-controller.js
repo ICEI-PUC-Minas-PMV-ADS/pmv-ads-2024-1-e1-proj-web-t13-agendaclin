@@ -68,7 +68,7 @@ export class SearchDoctorController {
         });
         localStorage.setItem('filteredDoctors', JSON.stringify(filteredDoctors));
         window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
-        console.log('Filtered Doctors:', filteredDoctors);
+        //console.log('Filtered Doctors:', filteredDoctors);
         this.getAllData();
     }
 
@@ -80,7 +80,7 @@ export class SearchDoctorController {
 
         citySelect.addEventListener('change', (event) => {
             const selectedCityId = event.target.value;
-            console.log('city', selectedCityId)
+            //console.log('city', selectedCityId)
             this.updateNeighborhoodsSelect(selectedCityId);
             // this.filterDoctors('Cidade');
         });
@@ -284,7 +284,7 @@ export class SearchDoctorController {
     handleDateClick(info) {
         const calendarEl = info.view.calendar;
         const calendarId = calendarEl.el.id; // Obtém o ID do calendário
-        console.log('calendarId', calendarId)
+        //console.log('calendarId', calendarId)
         //Criar evento para Teste
         //     const eventId = new Date().getTime();
         //     const eventData = {
@@ -299,7 +299,7 @@ export class SearchDoctorController {
         // Iniciar a consulta
             const id = calendarId.split('-')[1];
             const currentDoctor = this.doctors.find(doctor => doctor.id == id);
-            console.log(currentDoctor, 'currentDoctor')
+            //console.log(currentDoctor, 'currentDoctor')
             const eventData = {
                 id:new Date().getTime(),
                 start: info.date,
@@ -319,7 +319,7 @@ export class SearchDoctorController {
         localStorage.setItem('allSchedules', JSON.stringify(updatedEvents));
     }
     saveEvent(eventData) {
-        console.log('eventData', eventData)
+        //console.log('eventData', eventData)
         const events = JSON.parse(localStorage.getItem('allSchedules')) || [];
         events.push(eventData);
         localStorage.setItem('allSchedules', JSON.stringify(events));
@@ -331,13 +331,13 @@ export class SearchDoctorController {
         return events.filter(event => event.calendarId === calendarId);
     }
     startConsultation(eventData) {
-        console.log('eventData', eventData)
+        //console.log('eventData', eventData)
         localStorage.setItem('currentEvent', JSON.stringify(eventData));
         window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/schedule-consult-step-1';
     }
 
     handleCardClick(doctor) {
-        console.log('Doctor:', doctor);
+        //console.log('Doctor:', doctor);
         localStorage.setItem('currentDoctor', JSON.stringify(doctor));
         window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/doctor-profile';
     }

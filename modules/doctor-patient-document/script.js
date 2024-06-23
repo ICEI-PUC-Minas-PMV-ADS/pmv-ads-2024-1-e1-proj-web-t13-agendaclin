@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const patientList = document.getElementById('patientList');
 
   addPatientButton.addEventListener('click', () => {
-      console.log('Botão "Adicionar pacientes" clicado');
+      //console.log('Botão "Adicionar pacientes" clicado');
       patientForm.style.display = patientForm.style.display === 'none' ? 'block' : 'none';
   });
 
   newPatientForm.addEventListener('submit', (event) => {
       event.preventDefault();
-      console.log('Formulário submetido');
+      //console.log('Formulário submetido');
 
       const nome = document.getElementById('nome').value;
       const sobrenome = document.getElementById('sobrenome').value;

@@ -30,8 +30,8 @@ export class RescheduleConsultController {
                             </div>
                             <div id="doctor-container"></div>`; // Limpa o conteúdo existente
 
-        console.log('this.currentDoctorEvents:',this.currentDoctorEvents);
-        console.log('currentReschedule:', this.currentReschedule);
+        //console.log('this.currentDoctorEvents:',this.currentDoctorEvents);
+        //console.log('currentReschedule:', this.currentReschedule);
         this.loadCalendar()
     }
     setupEventListeners() {

@@ -93,7 +93,7 @@ export class DoctorProfessionalProfileController {
             experiencia,
             formacao
         };
-        console.log(doctorProfile);
+        //console.log(doctorProfile);
         localStorage.setItem('doctorProfile', JSON.stringify(doctorProfile));
         alert('Dados salvos com sucesso!');
     }

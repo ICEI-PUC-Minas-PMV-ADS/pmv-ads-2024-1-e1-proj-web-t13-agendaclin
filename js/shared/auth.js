@@ -1,9 +1,9 @@
 // Login com Google
 export function googleLogin() {
-    console.log('clicou no login google')
+    //console.log('clicou no login google')
     const provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(provider).then(function(result) {
-        console.log('Usuário autenticado com sucesso', result);
+        //console.log('Usuário autenticado com sucesso', result);
         localStorage.setItem('userToken', JSON.stringify(result));
         window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
     }).catch(function(error) {
@@ -12,9 +12,9 @@ export function googleLogin() {
 }
 // Login com e-mail e senha
 export function emailLogin(email, password) {
-    console.log('Login email e senha');
+    //console.log('Login email e senha');
     firebase.auth().signInWithEmailAndPassword(email, password).then(function(result) {
-        console.log('Usuário autenticado com sucesso');
+        //console.log('Usuário autenticado com sucesso');
         localStorage.setItem('userToken', JSON.stringify(result));
         window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
     }).catch(function(error) {

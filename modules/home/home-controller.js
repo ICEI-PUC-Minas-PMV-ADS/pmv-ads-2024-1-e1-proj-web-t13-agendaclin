@@ -50,7 +50,7 @@ export class HomeController {
     handleSearch() {
         const specialtyInput = document.querySelector('#specialties').value;
         const cityInput = document.querySelector('#cities').value;
-        console.log('Search:', specialtyInput, cityInput);
+        //console.log('Search:', specialtyInput, cityInput);
         const filteredDoctors = this.doctors.filter(doctor => {
             const matchesSpecialty = specialtyInput === 'Especialidade, doença ou nome' || doctor.specialty === specialtyInput;
             const matchesCity = cityInput === 'Filtre sua cidade' || doctor.city === cityInput;
@@ -59,7 +59,7 @@ export class HomeController {
 
         localStorage.setItem('filteredDoctors', JSON.stringify(filteredDoctors));
         window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
-        console.log('Filtered Doctors:', filteredDoctors);
+        //console.log('Filtered Doctors:', filteredDoctors);
     }
 
 }

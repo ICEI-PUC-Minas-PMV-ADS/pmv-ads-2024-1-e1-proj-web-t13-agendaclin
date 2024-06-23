@@ -73,7 +73,7 @@ export class ScheduleConsultStep1Controller {
     }
 
     formatDateToBrasilia(dateString) {
-        console.log('dateString:', dateString)
+        //console.log('dateString:', dateString)
         const date = new Date(dateString);
         const options = {
             day: '2-digit',

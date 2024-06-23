@@ -31,7 +31,7 @@ export class DoctorSignupStep2Controller {
     login(city, dde, phone, email, password) {
         this.homeService.authenticate(city, dde, phone, email, password).then(message => {
             document.getElementById('messageBox').innerText = message;
-            console.log(message);
+            //console.log(message);
             // Redirecionar para a próxima página após login bem-sucedido
             window.location.href = "/home.html"; 
         }).catch(err => {

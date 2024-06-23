@@ -8,7 +8,7 @@ export class DoctorPatientListController {
         const doctorId = 1;
         const allEvents = JSON.parse(localStorage.getItem('allSchedules'));
         const doctorSchedules = allEvents.filter(event => event.doctor.id === doctorId);
-        console.log('doctorSchedules:', doctorSchedules);
+        //console.log('doctorSchedules:', doctorSchedules);
         const container = document.getElementById('container-table');
 
         // Inicializar a tabela com cabeçalho

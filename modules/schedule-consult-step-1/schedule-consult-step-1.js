@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttonContinuar = document.getElementById("buttonContinuar");
     if (buttonContinuar) {
         buttonContinuar.addEventListener("click", handleButtonClick);
-        console.log("Button 'Continuar' event listener added");
+        //console.log("Button 'Continuar' event listener added");
     } else {
         console.error("Button 'Continuar' not found");
     }
