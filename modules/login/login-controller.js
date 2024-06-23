@@ -1,5 +1,5 @@
 import { LoginService } from './login-service.js';
-import {googleLogin, emailLogin} from '/js/shared/auth.js';
+import {googleLogin, emailLogin} from '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/js/shared/auth.js';
 
 export class LoginController {
     constructor() {

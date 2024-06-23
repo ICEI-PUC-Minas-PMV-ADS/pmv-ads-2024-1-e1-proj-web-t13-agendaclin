@@ -50,7 +50,7 @@ body
 
 .full-width-image 
 {
-    background-image: url('../pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/Background.png');
+    background-image: url('/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/assets/img/Background.png');
     width: auto;
    min-height: 700px;
     background-position: center center;
