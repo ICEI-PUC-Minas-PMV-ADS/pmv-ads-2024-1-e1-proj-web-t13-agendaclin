@@ -55,7 +55,7 @@ export class DoctorProfileController {
         });
 
         localStorage.setItem('filteredDoctors', JSON.stringify(filteredDoctors));
-        window.location.href = 'pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
+        window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
         console.log('Filtered Doctors:', filteredDoctors);
     }
 
@@ -363,7 +363,7 @@ export class DoctorProfileController {
     startConsultation(eventData) {
         console.log('eventData', eventData)
         localStorage.setItem('currentEvent', JSON.stringify(eventData));
-        window.location.href = 'pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/schedule-consult-step-1';
+        window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/schedule-consult-step-1';
     }
     loadSegment() {
         const segmentButtons = document.querySelectorAll('.segment-button');

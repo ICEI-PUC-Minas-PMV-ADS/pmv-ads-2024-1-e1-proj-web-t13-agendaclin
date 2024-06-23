@@ -80,7 +80,7 @@ export class ScheduleConsultStep3Controller {
         resSchedule.addEventListener('click', () => {
             this.eventData['reschedula'] = true;
             localStorage.setItem('reschedule', JSON.stringify(this.eventData));
-            window.location.href = 'pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/reschedule-consult';
+            window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/reschedule-consult';
         });
         const cancelConsult = document.getElementById('bottonCancelar');
         cancelConsult.addEventListener('click', () => {

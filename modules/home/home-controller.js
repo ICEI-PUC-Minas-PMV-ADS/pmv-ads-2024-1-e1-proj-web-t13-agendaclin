@@ -58,7 +58,7 @@ export class HomeController {
         });
 
         localStorage.setItem('filteredDoctors', JSON.stringify(filteredDoctors));
-        window.location.href = 'pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
+        window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
         console.log('Filtered Doctors:', filteredDoctors);
     }
 

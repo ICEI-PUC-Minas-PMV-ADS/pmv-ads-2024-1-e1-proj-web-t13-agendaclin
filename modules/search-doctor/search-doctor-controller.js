@@ -67,7 +67,7 @@ export class SearchDoctorController {
             return matchesSpecialty && matchesCity;
         });
         localStorage.setItem('filteredDoctors', JSON.stringify(filteredDoctors));
-        window.location.href = 'pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
+        window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/search-doctor';
         console.log('Filtered Doctors:', filteredDoctors);
         this.getAllData();
     }
@@ -333,13 +333,13 @@ export class SearchDoctorController {
     startConsultation(eventData) {
         console.log('eventData', eventData)
         localStorage.setItem('currentEvent', JSON.stringify(eventData));
-        window.location.href = 'pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/schedule-consult-step-1';
+        window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/schedule-consult-step-1';
     }
 
     handleCardClick(doctor) {
         console.log('Doctor:', doctor);
         localStorage.setItem('currentDoctor', JSON.stringify(doctor));
-        window.location.href = 'pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/doctor-profile';
+        window.location.href = '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/#/doctor-profile';
     }
     roundDownToNearestHalf(num) {
         return Math.floor(num * 2) / 2;
