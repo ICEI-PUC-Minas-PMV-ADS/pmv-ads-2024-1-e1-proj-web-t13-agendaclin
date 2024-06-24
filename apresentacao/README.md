@@ -4,8 +4,7 @@
 
 1. Apresentação de slides
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/blob/main/apresentacao/AgendaClin.pdf
-
+[AgendaClin.pdf](https://github.com/user-attachments/files/15958073/AgendaClin.pdf)
 
 
 ## Vídeo de apresentação
