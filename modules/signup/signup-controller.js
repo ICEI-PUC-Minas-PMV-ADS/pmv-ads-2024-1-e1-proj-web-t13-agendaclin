@@ -1,5 +1,5 @@
 import { SignupService } from './signup-service.js';
-import { googleLogin, emailSignUp } from '/js/shared/auth.js';
+import { googleLogin, emailSignUp } from '/pmv-ads-2024-1-e1-proj-web-t13-agendaclin/js/shared/auth.js';
 
 export class SignupController {
     constructor() {
